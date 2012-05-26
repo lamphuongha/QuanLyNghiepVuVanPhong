@@ -1,0 +1,47 @@
+<fieldset>
+        <table class="table1" width="100%" align="center">
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Trình độ</th>
+            <th>Chọn</th>
+            <th>Chức năng</th>
+
+          </tr>
+          <% @sinhviensearchs.each do |sinhvien| %>
+          <tr>
+            <td ><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+            <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+            <td>
+              <input type="checkbox"
+                 id="<%= sinhvien.id %>"
+                 name="sinhvien_ids[]"
+                 class="checksv"
+                 data-value="<%= sinhvien.id %>"
+                 value="<%= sinhvien.id %>"
+                 <% if @noitru.sinhviens.include? sinhvien%>checked="checked"<%end%>
+                 >
+            </td>
+            <td>
+              <%= link_to 'Xem  ', sinhvien , :style=>"color:#000"%>
+            </td> 
+          </tr>
+        <% end %>
+          
+        </table>
+        <%= will_paginate @sinhviensearchs %>
+      </fieldset>
+<br/>
+    
+      

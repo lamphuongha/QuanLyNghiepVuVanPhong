@@ -1,0 +1,38 @@
+
+
+<%= form_for(@hocvi, :html =>{ :multipart =>true}) do |f| %>
+  <% if @hocvi.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@hocvi.errors.count, "lỗi:") %> Lưu không thành công:</h3>
+        <ul>
+          <% @hocvi.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <h1>Chi tiết học vị</h1>
+  <table width ="50%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td><%= f.label 'Mã học vị:' %></td>
+        <td><%= f.text_field:MaHocVi  %> </td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Tên học vị:' %></td>
+        <td><%= f.text_field:TenHocVi%></td>
+      </tr>
+      <tr>
+        <td colspan="2" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+            
+          </div>
+          
+        </td>
+        
+      </tr>
+    <% end %>
+      
+  </table>
+  

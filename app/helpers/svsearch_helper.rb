@@ -1,0 +1,2 @@
+module SvsearchHelper
+end

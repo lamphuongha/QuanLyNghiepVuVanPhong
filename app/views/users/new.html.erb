@@ -1,0 +1,52 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 65%; height: 60%; top: 10%; left: 15%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  <div id="user_nav">
+    <% if current_user %>
+      Logged in as <%= current_user.email %>.
+      <%= link_to "Log out", logout_path %>
+    <% else %>
+      <%= link_to "Sign up", signup_path %> or
+      <%= link_to "log in", login_path %>
+    <% end %>
+  </div>
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+<h1>Sign Up</h1>
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="field">
+    <%= f.label 'Giảng viên:' %>
+    <td><%= collection_select(:user, :giangvien_id, Giangvien.all, :id, :HoTenGV) %></td>
+  </div>
+
+  <div class="actions"><%= f.submit %></div>
+<% end %>
+  
+  
+</div>
+<div class="lock-screen" id="lock" style="display:block"></div> 

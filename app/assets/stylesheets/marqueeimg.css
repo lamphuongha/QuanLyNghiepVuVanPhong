@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.carousel {
+                            /*border: 1px solid #8A52AF;*/
+							border: 1px solid #033;
+                            width:550px;
+                        }
+                        .carousel img {
+                            width: 160px;
+                            min-height:100px;
+                            opacity: 0.99;
+                            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
+                        /* For IE 8 */
+                        -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+                        }
+                        .carousel li {
+                            border: 1px solid #161616;
+                            width: 160px;
+                            height:135px;
+                            margin: 10px;
+							position:relative;
+							
+                        }
+                        .carousel a:hover .cap 
+                        {
+                             color  :#F90;
+                        }
+                         /*.carousel a:hover img {                         
+                           
+                             width: 200px;
+                             left:-20px;
+                             position:absolute;                                                     
+                             opacity: 0.99;
+                             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);*/
+                        /* For IE 8 */
+                        /*-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                         }*/
+						 .cap {
+	position:inherit;
+	/*left:0%;
+	top:86%;*/
+	height:45px;
+	width:160px;
+	background-color:#003333;
+	/*z-index:123;*/
+	opacity: 0.9;
+	color:#FF0;
+
+
+                             filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=700);
+	/* For IE 8 */
+                        -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=700)";
+	font: 14px "Arial";
+	padding: 2px;
+                                                 }
+                                                 .carousel cap{
+                                                     
+                                                 }

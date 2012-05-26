@@ -1,0 +1,38 @@
+
+
+<%= form_for(@ngach, :html =>{ :multipart =>true}) do |f| %>
+  <% if @ngach.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@ngach.errors.count, "lỗi:") %> Lưu không thành công:</h3>
+        <ul>
+          <% @ngach.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <h1>Chi tiết ngạch</h1>
+  <table width ="50%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td><%= f.label 'Mã ngạch:' %></td>
+        <td><%= f.text_field:MaNgach  %> </td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Tên ngạch:' %></td>
+        <td><%= f.text_field:TenNgach%></td>
+      </tr>
+      <tr>
+        <td colspan="2" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+            
+          </div>
+          
+        </td>
+        
+      </tr>
+    <% end %>
+      
+  </table>
+  

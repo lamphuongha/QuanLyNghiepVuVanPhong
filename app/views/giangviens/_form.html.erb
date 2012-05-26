@@ -1,0 +1,73 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 70%; top: 10%; left: 10%;overflow: auto" align="center"> 
+
+<div id="close" class="closebutton" style="right: 10px" align="right">
+     <%= link_to image_tag('closex.jpg'),'/giangviens'%>
+    </div>
+<%= form_for (@giangvien) do |f| %>
+      <% if @giangvien.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@giangvien.errors.count, "lỗi:") %> Lưu không thành công:</h2>
+          <ul>
+          <% @giangvien.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+ 
+<div  align="center" ><h1>Giảng viên</h1>
+<table width="100%" align="center" class ="table1">
+   
+<!--      <div class="field"> -->
+     
+      <tr>
+         <td width="160" height="33"><b><%= f.label 'Mã giảng viên:'%></b></td>
+         <td width="328"><%= f.text_field :MaGV %>  </td>
+         <td width="160" height="33"><b><%= f.label 'Họ tên :' %></b></td>
+         <td><%= f.text_field :HoTenGV %></td>
+      </tr>
+       <tr>
+         <td height="33"><b><%= f.label 'Địa chỉ :' %></b></td>
+         <td><%= f.text_field :DiaChiGV %></td>
+         <td height="33"><b><%= f.label 'Số Điện thoại:' %></b></td>
+        <td><%= f.text_field :SDTGV %></td>
+      </tr>
+      <tr>
+        <td height="33"><b><%= f.label 'Chức vụ:' %></b></td>
+        
+        <td><%= collection_select(:giangvien, :chucvu_id, Chucvu.all, :id, :TenCV) %><%= link_to "Thêm chức vụ",:style=>"color:#000", :controller => "chucvus", :action => "new", :id => @chucvu %></td>
+        <td height="33"><b><%= f.label 'Học vị:' %></b></td>
+        
+       <td><%= collection_select(:giangvien, :hocvi_id, Hocvi.all, :id, :TenHocVi) %><%= link_to "Thêm học vị", :controller => "hocvis", :action => "new", :id => @hocvi,:style=>"color:#000"%></td>
+      <tr>
+       <td height="33"><b><%= f.label 'Ngạch:' %></b></td>
+       <td><%= collection_select(:giangvien,:ngach_id, Ngach.all, :id, :TenNgach) %><%= link_to "Thêm ngạch", :controller => "ngaches", :action => "new", :id => @ngach,:style=>"color:#000"%></td>
+       <td height="33"><b><%= f.label 'Học hàm:' %></b></td>
+       <td><%= f.select :Hocham, options_for_select([["Không","Không"],["Phó Giáo Sư","Phó Giáo Sư"],["Giáo Sư","Giáo Sư"]])%> </td>
+      </tr>
+      <tr>
+        <td ><b><%= f.label 'Ghi chú:' %></td>
+        <td colspan="4"><b><%= f.text_area:GhiChu,:size => "88x5" %></td>
+      </tr>
+</table>
+  </div>
+    <br>
+    <br></br>
+          <div class="action" colspan ="2" align ="center">
+            <%= f.submit 'Lưu lại'%>
+
+          </div>
+        <br>
+    <br>
+    <br>
+    <br>
+
+    
+<% end %>
+    
+</div>
+<div class="lock-screen" id="lock" style="display:block"></div> 
+
+
+
+

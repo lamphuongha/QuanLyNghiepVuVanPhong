@@ -1,0 +1,49 @@
+<%= form_for(@thongtinthuctap) do |f| %>
+  <% if @thongtinthuctap.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@thongtinthuctap.errors.count, "error") %> prohibited this thongtinthuctap from being saved:</h2>
+
+      <ul>
+      <% @thongtinthuctap.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sinhvien_id %><br />
+    <%= f.number_field :sinhvien_id %>
+  </div>
+  <div class="field">
+    <%= f.label :loaithuctap_id %><br />
+    <%= f.number_field :loaithuctap_id %>
+  </div>
+  <div class="field">
+    <%= f.label :TenCongTy %><br />
+    <%= f.text_field :TenCongTy %>
+  </div>
+  <div class="field">
+    <%= f.label :DiaChi %><br />
+    <%= f.text_field :DiaChi %>
+  </div>
+  <div class="field">
+    <%= f.label :SDT %><br />
+    <%= f.text_field :SDT %>
+  </div>
+  <div class="field">
+    <%= f.label :HocKy %><br />
+    <%= f.number_field :HocKy %>
+  </div>
+  <div class="field">
+    <%= f.label :NamHoc %><br />
+    <%= f.text_field :NamHoc %>
+  </div>
+  <div class="field">
+    <%= f.label :GhiChu %><br />
+    <%= f.text_field :GhiChu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

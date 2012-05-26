@@ -1,0 +1,39 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã BTH</th>
+    <th>Tên BTH</th>
+    <th>Loại</th>
+    <th>Công văn</th>
+    <th>Học Kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+
+  </tr>
+
+<% @buocthoihocs.each do |buocthoihoc| %>
+  <tr>
+    <th><%= buocthoihoc.id %></th>
+    <td><%= buocthoihoc.MaBTH %></td>
+    <td><%= buocthoihoc.TenBTH %></td>
+    <td><%= buocthoihoc.loaibuocthoihoc.TenLoaiBTH %></td>
+    <td><%= buocthoihoc.congvan.SoCV %></td>
+    <td><%= buocthoihoc.HocKy %></td>
+    <td><%= buocthoihoc.NamHoc %></td>
+    <td><%= link_to 'Xem', buocthoihoc , :style=>"color:#000"%> | 
+    <%= link_to 'Sửa', edit_buocthoihoc_path(buocthoihoc) , :style=>"color:#000"%> | 
+    <%= link_to 'Xóa', buocthoihoc, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+</div>
+<br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @buocthoihocs %>
+      <br />
+    </div>

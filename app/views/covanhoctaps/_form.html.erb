@@ -1,0 +1,50 @@
+<%= form_for(@covanhoctap, :html =>{ :multipart =>true}) do |f| %>
+  <% if @covanhoctap.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@covanhoctap.errors.count, "lỗi:") %> Lưu không thành công:</h3>
+        <ul>
+          <% @covanhoctap.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <h1>Cố vấn học tập</h1>
+  <table width ="70%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td><%= f.label 'Cố vấn học tập:' %></td>
+       <!-- <td><%= f.text_field:giangvien_id  %> </td>-->
+        <td><%= collection_select(:covanhoctap, :giangvien_id, Giangvien.all, :id, :HoTenGV) %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Lớp:' %></td>
+        <td><%= collection_select(:covanhoctap, :lop_id, Lop.all, :id, :TenLop) %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field:HocKy%></td>
+      </tr>
+       <tr>
+        <td><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field:NamHoc%></td>
+         
+      </tr>
+       <tr>
+        <td height="auto"><%= f.label 'Ghi chú:' %></td>
+        <td><%= f.text_area:GhiChu,:size => "50x5" %></td>
+      </tr>
+      <tr>
+        <td colspan="2" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+            
+          </div>
+          
+        </td>
+        
+      </tr>
+    <% end %>
+      
+  </table>
+  

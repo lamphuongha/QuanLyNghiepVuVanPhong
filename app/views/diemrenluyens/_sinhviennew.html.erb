@@ -1,0 +1,21 @@
+<table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Điểm</th>
+            <th>Chức năng</th>
+
+          </tr>
+          <% @sinhviens.each do |sinhvien| %>
+             <%= fields_for :chitietdiemrenluyens do |builder|  %>
+             <%= render 'chitietdiemrenluyen_fields',:f => builder, :diemrenluyen => @diemrenluyen, :sinhvien => sinhvien %>
+            <%end%>
+          <% end %>
+        </table>
+<br />

@@ -1,0 +1,121 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 7%; left: 7%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+   
+    <%= form_for(@diemrenluyen) do |f| %>
+      <% if @diemrenluyen.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@diemrenluyen.errors.count, "error") %> prohibited this diemrenluyen from being saved:</h2>
+
+          <ul>
+          <% @diemrenluyen.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+  <h1>Chi tiết bảng điểm rèn luyện</h1>
+<fieldset>
+  <table width ="100%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Mã điểm rèn luyện:'%></td>
+        <td align="left"><%= f.text_field :MaDRL, :size => "29x1" %></td>
+        
+        <td align="left" width="15%"><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field :HocKy %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Tên điểm rèn luyện:' %></td>
+        <td><%= f.text_field :TenDRL %></td>
+        
+        
+        <td align="left" width="15%"><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field :NamHoc %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Công văn số:' %></td>
+        <td><%= collection_select(:diemrenluyen, :congvan_id, Congvan.all, :id, :SoCV) %></td>
+      </tr>
+           
+      <tr>
+        <td align="left"><%= f.label 'Ghi Chú:' %></td>
+        <td colspan="4"><%= f.text_area :GhiChu,:size => "80x3"%></td>
+      </tr>
+  
+  </table>
+</fieldset>
+<br />
+
+ <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Chọn</th>
+            <th>Điểm</th>
+            <th>Chức năng</th>
+
+          </tr>
+             <%= f.fields_for :chitietdiemrenluyens do |builder|  %>
+             <%= render 'chitietdiemrenluyen_fields',:f => builder, :diemrenluyen => @diemrenluyen, :sinhvien => builder.object.sinhvien %>
+            <%end%>
+        </table>
+<br />
+
+  
+  <div class="actions">
+    <%= f.submit 'Lưu lại' %>
+  </div>
+  <%= link_to 'Quay lại', diemrenluyens_path %>
+  
+<% end %>
+<br />
+<!--
+<fieldset>
+        <legend>Tìm kiếm nâng cao</legend>
+    <%= form_tag '#', :method => 'get' do %>  
+    <table width ="100%">
+      <tr>
+        <td width ="20%">Mã số sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :MSSV, params[:MSSV], :size =>'19px'%></td>
+        <td>Ngày sinh: </td>
+        <td width ="30%"><%= text_field_tag :NgaySinh, params[:NgaySinh], :size =>'19px'%></td>
+        
+        
+      </tr>
+       <tr>
+        <td width ="20%">Họ tên sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :HoTenSV, params[:HoTenSV], :size =>'19px'%></td>
+        
+        <td>Giới tính: </td>
+        <td><%= select_tag :GioiTinh, options_for_select([["",""], ["Nam", "Nam"], ["Nữ", "Nữ"]],params[:GioiTinh]) %></td>
+        
+      </tr>
+
+      <tr>
+         <td>Địa chỉ:</td>
+        <td><%= text_field_tag :DiaChi, params[:DiaChi], :size =>"19"%></td>  
+        <td>Trình độ đào tạo : </td>
+        <td><%= select_tag :trinhdodaotao_id, options_from_collection_for_select(Trinhdodaotao.all, :id,  :TenTDDT, params[:trinhdodaotao_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Số điện thoại:</td>
+        <td><%= text_field_tag :SDT, params[:SDT], :size =>"19"%></td>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil%>
+    <% end %>
+</fieldset>
+-->
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+

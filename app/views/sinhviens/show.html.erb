@@ -1,0 +1,61 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 60%; height: 60%; top: 20%; left: 20%;" align="center">   
+
+<div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/sinhviens'%>
+    </div>
+<div align="center">
+  <h1><b>Chi tiết Sinh viên</b></h1>
+
+  <table height="250" align ="center" >  
+      <tr>
+        <td colspan="2">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td width="160" height="33"><b>Mã sinh viên:</b></td>
+        <td width="160" height="33"><%= @sinhvien.MSSV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Họ tên :</b></td>
+        <td><%= @sinhvien.HoTenSV %></td>
+      </tr>
+        <tr>
+        <td><b>Ngày sinh :</b></td>
+        <td><%= @sinhvien.NgaySinh %></td>
+      </tr>
+       <tr>
+        <td><b>Giới tính :</b></td>
+        <td><%= @sinhvien.GioiTinh %></td>
+      </tr>
+      <tr>
+        <td><b>Địa chỉ :</b></td>
+        <td><%= @sinhvien.DiaChi %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Số Điện thoại:</b></td>
+        <td><%= @sinhvien.SDT %></td>
+      </tr>
+
+      <tr>
+        <td><b>Lớp:</b></td>
+        <td><%= @sinhvien.lop.TenLop %></td>
+      </tr>
+      <tr>
+        <td><b>Trình độ đào tạo:</b></td>
+        <td><%= @sinhvien.trinhdodaotao.TenTDDT %></td>
+      </tr>
+          <tr>
+        <td colspan="2" align="center">
+          <%= link_to 'Sửa', edit_sinhvien_path(@sinhvien) ,:style=>"color:#000"%> | 
+          <%= link_to 'Thêm', new_sinhvien_path ,:style=>"color:#000"%>
+        
+        </td>
+    </tr>
+     </table>
+</div> 
+ </div>
+<div class="lock-screen" id="lock" style="display:block"></div>

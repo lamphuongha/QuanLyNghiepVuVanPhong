@@ -1,0 +1,35 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+    </div>
+     
+    <h1>Danh sách ngạch</h1>
+    <div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th> Mã Ngạch</th>
+        <th>Tên Ngạch</th>
+        <th></th>
+      </tr>
+      
+      <% @ngach.each do |ngach| %>
+      <tr>
+        
+        <td><%= ngach.MaNgach %></td>
+        <td><%= ngach.TenNgach%></td>
+        <td>
+          <%= link_to 'Xem', ngach , :style=>"color:#000"%> | 
+          <%= link_to 'Sửa', edit_ngach_path(ngach) , :style=>"color:#000"%> | 
+          <%= link_to 'Xóa', ngach, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+          
+        </td>
+      </tr>
+    <% end %>
+      
+    </table>
+ 
+
+</div>
+</div>
+   
+<div class="lock-screen" id="lock" style="display:block"></div>

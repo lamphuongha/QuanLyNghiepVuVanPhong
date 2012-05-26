@@ -1,0 +1,52 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+        <th>Số CV</th>
+        <th>Ngày ra CV</th>
+        <th>Ngày nhận CV </th>
+        <!--<th>Nội dung</th>-->
+        <th>Tác giả</th>
+        <th>Người nhận</th>
+       <!-- <th>Loại CV</th>
+        <th>Nơi gửi</th>
+        <th>Nơi nhận</th>
+        <th>Nhóm cv</th>-->
+        <th>Công văn liên quan</th>
+        <th>Chức năng</th>
+      </tr>
+      
+      <% @congvans.each do |congvan| %>
+      <tr>
+        <th><%= congvan.id %> </th>
+        <td><%= congvan.SoCV %></td>
+        <td><%= congvan.NgayRaCV%></td>
+        <td><%= congvan.NgayNhanCV %></td>
+        <!--<td><%= congvan.NoiDungCV %></td>-->
+        <td><%= congvan.TacGia %></td>
+        <td><%= congvan.NguoiNhan %></td>
+        <!--<td><%= congvan.image_file_name%></td>-->
+       <!-- <td><%= congvan.loaicv_id %></td>
+        <td><%= congvan.NoiGui %></td>
+        <td><%= congvan.NoiNhan %></td>
+        <td><%= congvan.nhomloaicv_id %></td>
+        -->
+        <td>
+          <% for nhomcv in congvan.nhomcvs %>
+            <%=nhomcv.TenNhomCV%>
+          <%end%>
+        </td>
+        <td>
+          <%= link_to 'Xem', congvan %> | 
+          <%= link_to 'Sửa', edit_congvan_path(congvan) %> | 
+          <%= link_to 'Xóa', congvan, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete %>
+          
+        </td>
+      </tr>
+    <% end %>
+      
+    </table>
+    </div>
+    <br />
+      <%= will_paginate @congvans %>
+    <br />

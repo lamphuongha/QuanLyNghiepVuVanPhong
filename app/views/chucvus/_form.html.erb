@@ -1,0 +1,36 @@
+<%= form_for(@chucvu, :html =>{ :multipart =>true}) do |f| %>
+  <% if @chucvu.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@chucvu.errors.count, "lỗi:") %> Lưu không thành công:</h3>
+        <ul>
+          <% @chucvu.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <h1>Chi tiết chức vụ</h1>
+  <table width ="50%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td><%= f.label 'Mã chức vụ:' %></td>
+        <td><%= f.text_field:MaCV  %> </td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Tên chức vụ:' %></td>
+        <td><%= f.text_field:TenCV%></td>
+      </tr>
+      <tr>
+        <td colspan="2" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+            
+          </div>
+          
+        </td>
+        
+      </tr>
+    <% end %>
+      
+  </table>
+  

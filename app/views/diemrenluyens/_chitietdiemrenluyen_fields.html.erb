@@ -1,0 +1,23 @@
+<tr>
+            <td><%= sinhvien.id %></td>  
+            <td><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+            <td align="center">
+              
+                <%= f.text_field :Diem , :size => '10px'%>
+                <%= f.hidden_field :sinhvien_id, :value => sinhvien.id %>
+              
+            </td>
+            <td>
+              <%= link_to 'Xem  ', sinhvien, :style => "color:#000" %>
+            </td> 
+           
+            
+</tr>
+
+

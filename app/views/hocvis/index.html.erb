@@ -1,0 +1,35 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+    </div>
+     
+    <h1>Danh sách học vị</h1>
+    <div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th> Mã học vị</th>
+        <th>Tên học vị</th>
+        <th></th>
+      </tr>
+      
+      <% @hocvis.each do |hocvi| %>
+      <tr>
+        
+        <td><%= hocvi.MaHocVi %></td>
+        <td><%= hocvi.TenHocVi%></td>
+        <td>
+          <%= link_to 'Xem', hocvi , :style=>"color:#000"%> | 
+          <%= link_to 'Sửa', edit_hocvi_path(hocvi) , :style=>"color:#000"%> | 
+          <%= link_to 'Xóa', hocvi, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+          
+        </td>
+      </tr>
+    <% end %>
+      
+    </table>
+ 
+
+</div>
+</div>
+   
+

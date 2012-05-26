@@ -1,0 +1,112 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 80%; top: 8%; left: 13%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  
+<%= form_for(@noitru) do |f| %>
+  <% if @noitru.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@noitru.errors.count, "error") %> prohibited this noitru from being saved:</h2>
+
+      <ul>
+      <% @noitru.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <h1>Chi tiết nội trú</h1>
+<fieldset>
+  <table width ="100%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Mã nội trú:'%></td>
+        <td align="left"><%= f.text_field :MaNoiTru, :size => "29x1" %></td>
+        
+        <td align="left" width="15%"><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field :HocKy %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Tên nội trú:' %></td>
+        <td><%= f.text_field :TenNoiTru %></td>
+        
+        
+        <td align="left" width="15%"><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field :NamHoc %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Công văn số:' %></td>
+        <td><%= collection_select(:noitru, :congvan_id, Congvan.all, :id, :SoCV) %></td>
+      </tr>
+           
+      <tr>
+        <td align="left"><%= f.label 'Ghi Chú:' %></td>
+        <td colspan="4"><%= f.text_area :GhiChu,:size => "80x3"%></td>
+      </tr>
+  
+  </table>
+</fieldset>
+<br />
+
+<div id ="sinhviens">
+  <%= render :partial => 'sinhvien' %>
+</div>
+<script>
+$(document).ready(function() {
+    $('.pagination a').attr('data-remote', 'true');
+});</script>
+<div style="display :none">
+<fieldset>
+        
+        <table class="table2" width="100%" align="center">
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Trình độ</th>
+            <th>Chọn</th>
+            <th>Chức năng</th>
+
+          </tr>
+          <% @sinhviens.each do |sinhvien| %>
+          <tr>
+            <td ><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+            <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+            <td>
+              <input type="checkbox"
+                 id="<%= sinhvien.id %>"
+                 name="sinhvien_ids[]"
+                 value="<%= sinhvien.id %>"
+                 <% if @noitru.sinhviens.include? sinhvien%>checked="checked"<%end%>
+                 >
+            </td>
+            <td>
+              <%= link_to 'Xem  ', sinhvien %>
+            </td> 
+          </tr>
+        <% end %>
+        </table>
+        
+      </fieldset>
+</div>
+<br />
+  <div class="actions">
+    <%= f.submit 'Lưu lại'%>
+  </div>
+<%= link_to 'Quay lại', noitrus_path %>
+<% end %>
+<%= render :partial => 'partials/searchsv'%>  
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+

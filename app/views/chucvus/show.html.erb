@@ -1,0 +1,36 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+    </div>
+    <h1>Chi tiết chức vụ</h1>
+     <table width ="50%" align ="center" >  
+      <tr>
+        <td colspan="2">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+               
+      <tr>
+        <td><b>Mã chức vụ:</b></td>
+        <td><%= @chucvu.MaCV%></td>
+      </tr>
+      
+      <tr>
+        <td><b> Tên chức vụ:</b></td>
+        <td><%= @chucvu.TenCV %></td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr>
+        <td colspan="3" align="center">
+            <%= link_to 'Sửa', edit_chucvu_path(@chucvu) ,:style =>"color:#000"%> | 
+        
+            <%= link_to 'Quay lại', chucvus_path ,:style =>"color:#000"%> |
+            <%= link_to 'Thêm chức vụ', new_chucvu_path ,:style =>"color:#000" %>
+        </td>
+    </tr>
+     </table>
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

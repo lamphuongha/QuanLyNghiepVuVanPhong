@@ -1,0 +1,75 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trocaps'%>
+    </div>
+<h1>Tìm kiếm nâng cao</h1>
+    <%= form_tag '/trocaps/search', :method => 'get' do %>  
+    <fieldset>
+    <table width ="100%">
+      <tr>
+        <td>Mã danh sách: </td>
+        <td><%= text_field_tag :MaTroCap, params[:MaTroCap], :size =>'19px'%></td>
+        <td>Loại trợ cấp:</td>
+        <td width ="30%"><%= select_tag :loaitrocap_id, options_from_collection_for_select(Loaitrocap.all, :id,  :TenLoaiTroCap, params[:loaitrocap_id]), :include_blank=>'Tất cả' %></td>
+       
+      </tr>
+      <tr>
+        <td>Tên danh sách: </td>
+        <td><%= text_field_tag :TenTroCap, params[:TenTroCap], :size =>'19px'%></td>
+        <td>Học kỳ:</td>
+        <td width ="30%"><%= text_field_tag :HocKy, params[:HocKy], :size =>'19px'%></td>
+        
+      </tr>
+     <tr>
+         <td>Công văn:</td>
+        <td width ="30%"><%= select_tag :congvan_id, options_from_collection_for_select(Congvan.all, :id,  :SoCV, params[:congvan_id]), :include_blank=>'Tất cả' %></td>
+        <td>Năm học:</td>
+        <td width ="30%"><%= text_field_tag :NamHoc, params[:NamHoc], :size =>'19px'%></td>
+     </tr>
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil %>
+    
+    </fieldset>
+<%end%>
+    
+    <h1>Danh sách trợ cấp</h1>
+    <div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+     <tr>
+    <th>STT</th>
+    <th>Mã trợ cấp</th>
+    <th>Tên trợ cấp</th>
+    <th>Loại trợ cấp</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+  </tr>
+
+<% @trocaps.each do |trocap| %>
+  <tr>
+    <th><%= trocap.id %></th>
+    <td><%= trocap.MaTroCap %></td>
+    <td><%= trocap.TenTroCap %></td>
+    <td><%= trocap.loaitrocap.TenLoaiTroCap %></td>
+    <td><%= trocap.congvan.SoCV %></td>
+    <td><%= trocap.HocKy %></td>
+    <td><%= trocap.NamHoc %></td>
+    <td><%= link_to 'Xem', trocap , :style=>"color:#000"%> | 
+    <%= link_to 'Sửa', edit_trocap_path(trocap) , :style=>"color:#000"%> | 
+    <%= link_to 'Xóa', trocap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+<% end %>
+      
+    </table>
+    </div>
+    <br />
+      <%= will_paginate @trocaps %>
+    <br />
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

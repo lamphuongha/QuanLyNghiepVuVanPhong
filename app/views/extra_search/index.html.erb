@@ -1,0 +1,138 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 70%; height: 80%; top: 8%; left: 13%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+<h1>Tìm kiếm nâng cao</h1>
+    <%= form_tag '/extra_search', :method => 'get' do %>  
+    <fieldset>
+    <table width ="100%">
+      <tr>
+        <td width ="20%">Số công văn:</td>
+        <td width ="30%"><%= text_field_tag :SoCV, params[:SoCV], :size =>'19px'%></td>
+        
+        <td colspan="2">Nơi ban hành: </td>
+        <td><%= select_tag :NoiGui, options_from_collection_for_select(Phongban.all, :id,  :TenPB, params[:NoiGui]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Loại công văn:</td>
+        <!--<td><%= collection_select(:congvan, :loaicv_id, Loaicv.all, :id, :TenLoaiCV,:include_blank=>'Tất cả')  %></td>-->
+        <td><%= select_tag :loaicv_id, options_from_collection_for_select(Loaicv.all, :id,  :TenLoaiCV, params[:loaicv_id]), :include_blank=>'Tất cả' %></td>
+        <td colspan="2">Nơi nhận: </td>
+        <td><%= select_tag :NoiNhan, options_from_collection_for_select(Phongban.all, :id,  :TenPB, params[:NoiNhan]), :include_blank=>'Tất cả' %></td>
+        
+      </tr>
+      <tr>
+        <td>Nhóm công văn:</td>
+        <td><%= select_tag :nhomloaicv_id, options_from_collection_for_select(Nhomloaicv.all, :id,  :TenNhomLoaiCV, params[:nhomloaicv_id]), :include_blank=>'Tất cả' %></td>
+        <td width ="25%" colspan="2">Công văn liên quan:</td>
+        <td rowspan ="4">
+          <% for nhomcv in @nhomcvs  %>
+          <input type="checkbox"
+                 id="<%= nhomcv.id %>"
+                 name="nhomcv_ids[]"
+                 value="<%= nhomcv.id %>"
+                 ><%= nhomcv.TenNhomCV %> <br/>
+          <%end%>
+        </td>
+        
+        
+      </tr>
+      <tr>
+        <td>Nội dung trích yếu:</td>
+        <td><%= text_field :NoiDungCV, params[:NoiDungCV], :size =>"19"%></td>
+      </tr>
+      <tr>
+        <td>Tác giả:</td>
+        <td><%= text_field :TacGia, params[:TacGia], :size =>"19"%></td>   
+      </tr>
+      <tr>
+        <td>Người nhận:</td>
+        <td><%= text_field :NguoiNhan, params[:NguoiNhan], :size =>"19"%></td>   
+      </tr>
+      <tr>
+        <td>Ngày nhận công văn: </td>
+        <!--<td><%= date_select params[:NgayNhanCV],:NgayNhanCV,:start_year =>2002,:end_year =>Time.now.year,:order =>[:day, :month, :year],:include_blank => :true %></td>-->
+        <td><%= text_field params[:NgayNhanCV],:NgayNhanCV,:id => "select_day" %></td>
+        <!--<td>
+          <div id="date-picker">
+		<label for="occurred_on">Date event occurred:</label>
+		
+          </div>
+          <script type="text/javascript">
+          $('#date-picker').datePicker({inline:true});
+          </script>
+
+        </td>-->
+        <td>Khoảng thời gian:</td>
+        <td>Từ ngày:</td>
+        <td><%= text_field params[:startday],:startday %></td>
+      </tr>
+      <tr>
+        <td>Ngày ra công văn: </td>
+        <td><%= text_field params[:NgayRaCV],:NgayRaCV %></td>
+        <td></td>
+        <td>Đến ngày:</td>
+        <td><%= text_field params[:endday],:endday %></td>
+      </tr>
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil %>
+    <%= link_to 'Quay lại', congvans_path %>
+    </fieldset>
+<%end%>
+    
+    <h1>Danh sách công văn</h1>
+    <div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+        <th>Số CV</th>
+        <th>Ngày ra CV</th>
+        <th>Ngày nhận CV </th>
+        <th>Nội dung</th>
+        <th>Tác giả</th>
+        <th>Người nhận</th>
+       <!-- <th>Loại CV</th>
+        <th>Nơi gửi</th>
+        <th>Nơi nhận</th>
+        <th>Nhóm cv</th>-->
+        <th>Công văn liên quan</th>
+        <th>Chức năng</th>
+      </tr>
+      
+      <% @congvans.each do |congvan| %>
+      <tr>
+        <th><%= congvan.id %> </th>
+        <td><%= congvan.SoCV %></td>
+        <td><%= congvan.NgayRaCV%></td>
+        <td><%= congvan.NgayNhanCV %></td>
+        <td><%= congvan.NoiDungCV %></td>
+        <td><%= congvan.TacGia %></td>
+        <td><%= congvan.NguoiNhan %></td>
+        <!--<td><%= congvan.image_file_name%></td>-->
+       <!-- <td><%= congvan.loaicv_id %></td>
+        <td><%= congvan.NoiGui %></td>
+        <td><%= congvan.NoiNhan %></td>
+        <td><%= congvan.nhomloaicv_id %></td>
+        -->
+        <td>
+          <% for nhomcv in congvan.nhomcvs %>
+            <%=nhomcv.TenNhomCV%>
+          <%end%>
+        </td>
+        <td>
+          <%= link_to 'Xem', congvan %> | 
+          <%= link_to 'Sửa', edit_congvan_path(congvan) %> | 
+          <%= link_to 'Xóa', congvan, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete %>
+          
+        </td>
+      </tr>
+    <% end %>
+      
+    </table>
+    </div>
+    <br />
+      <%= will_paginate @congvans %>
+    <br />
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

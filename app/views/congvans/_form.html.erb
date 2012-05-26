@@ -1,0 +1,148 @@
+<%= form_for(@congvan, :html =>{ :multipart =>true}) do |f| %>
+  <% if @congvan.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@congvan.errors.count, "lỗi:") %> Lưu không thành công:</h3>
+        <ul>
+          <% @congvan.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <h1>Chi tiết công văn</h1>
+  <table width ="100%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <!--<td><%= f.text_field :HinhAnhCV %></td>-->
+        <td rowspan="10" width ="30%" align="center">
+          <%= f.label 'File đính kèm:' %>
+          <br>
+          <br>
+<!--          <% if @congvan.image? %>
+            <%= image_tag @congvan.image.url %>
+            <br>
+            <%= link_to @congvan.image_file_name,@congvan.image.url %>
+          <% end %>
+
+          <br>
+          <%= f.file_field :image %></p>
+-->
+<!--          
+          <%= f.fields_for :assets do |asset_fields| %>
+            <%= asset_fields.file_field :image%>
+          <%end%>
+-->
+          <%= f.fields_for :assets do |asset_fields| %>
+            <% unless asset_fields.object.new_record? %>
+              <!--<%= image_tag asset_fields.object.image.url %>-->
+              <li>
+              <%= link_to image_tag(asset_fields.object.image.url(:thumb)),
+                          asset_fields.object.image.url(:original)%>
+              <%= asset_fields.check_box :_destroy %>
+              </li>
+            <%end%>
+          <%end%>
+          
+          <%= f.fields_for :assets do |asset_fields| %>
+            <% if asset_fields.object.new_record? %>
+              <%= asset_fields.file_field :image%>
+            <%end%>
+          <%end%>
+
+        </td>
+        <td align="left" width="15%"><%= f.label 'Số công văn:'%></td>
+        <td align="left"><%= f.text_field :SoCV, :size => "29x1" %><td>
+      </tr>
+      
+      <tr>
+        <td><%= f.label 'Ngày ra CV:' %></td>
+        <td><%= f.date_select :NgayRaCV,:start_year =>2002,:order =>[:day, :month, :year] , :size => "40px"%> </td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Ngày nhận CV:' %></td>
+        <td><%= f.date_select :NgayNhanCV,:start_year =>2002,:order =>[:day, :month, :year] %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field :HocKy %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field :NamHoc %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Nội dung:' %></td>
+        <td><%= f.text_field :NoiDungCV %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Nơi gửi:' %></td>
+        <td><%= collection_select(:congvan, :NoiGui, Phongban.all, :id, :TenPB) %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Tác giả:' %></td>
+        <td><%= f.text_field :TacGia %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Nơi nhận:' %></td>
+        <td><%= collection_select(:congvan, :NoiNhan, Phongban.all, :id, :TenPB) %></td>
+      </tr>
+      <tr>
+        <td><%= f.label 'Người nhận:' %></td>
+        <td><%= f.text_field :NguoiNhan %></td>
+      </tr>
+      
+      <tr>
+        <td align="right"><%= f.label 'Loại công văn:' %></td>
+        <!--<td><%= f.number_field :loaicv_id %></td>-->
+        <!--<td><%= f.select :loaicv_id, options_for_select([["Công văn đến", "1"], ["Công văn đi", "2"]]) %></td>-->
+        <td colspan="2"><%= collection_select(:congvan, :loaicv_id, Loaicv.all, :id, :TenLoaiCV) %></td>
+        
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td align="right"><%= f.label 'Nhóm công văn:' %></td>
+        <!--<td><%= select :NhomLoaiCV,:congvan, options_for_select([["Công văn đến", "1"], ["Công văn đi", "2"]]) %></td>-->
+        <td colspan="2"><%= collection_select(:congvan, :nhomloaicv_id, Nhomloaicv.all, :id, :TenNhomLoaiCV) %></td>
+      </tr>
+      
+      <tr>
+        <td>
+          
+        </td>
+      </tr>
+      
+      <tr>
+        <td align="right"><%= f.label 'Công văn liên quan:' %></td>
+        <td colspan ="3">
+          <% for nhomcv in @nhomcvs %>
+          <input type="checkbox"
+                 id="<%= nhomcv.id %>"
+                 name="nhomcv_ids[]"
+                 value="<%= nhomcv.id %>"
+                 <% if @congvan.nhomcvs.include? nhomcv%>checked="checked"<%end%>
+                 > <%= nhomcv.TenNhomCV %>
+          <%end%>
+        </td>
+      </tr>
+      
+     
+      <tr>
+        <td align="right"><%= f.label 'Ghi Chú:' %></td>
+        <td colspan="2"><%= f.text_area :GhiChu,:size => "50x5"%></td>
+      </tr>
+      <tr>
+        <td colspan="3" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+            
+          </div>
+          
+        </td>
+        
+      </tr>
+    <% end %>
+      
+  </table>
+  

@@ -1,0 +1,17 @@
+<fieldset>
+        <legend>Tìm kiếm nâng cao</legend>
+    <%= form_tag '#',:remote => true, :method => 'get' do %>  
+    <table width ="50%">
+      <tr>
+        <td>Trình độ đào tạo : </td>
+        <td><%= select_tag :trinhdodaotao_id, options_from_collection_for_select(Trinhdodaotao.all, :id,  :TenTDDT, params[:trinhdodaotao_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil%>
+    <% end %>
+</fieldset>

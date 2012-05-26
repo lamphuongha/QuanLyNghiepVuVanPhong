@@ -1,0 +1,18 @@
+ <table class="table2" width="100%" align="center">
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Chọn</th>
+            <th>Điểm</th>
+            <th>Chức năng</th>
+
+          </tr>
+             <%= f.fields_for :chitietdiemrenluyens do |builder|  %>
+             <%= render 'chitietdiemrenluyen_fields',:f => builder, :diemrenluyen => @diemrenluyen, :sinhvien => builder.object.sinhvien %>
+            <%end%>
+        </table>

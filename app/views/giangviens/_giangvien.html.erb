@@ -1,0 +1,34 @@
+<div id="shadow" class="shadow" >
+<table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+       <th class ="menu-header">Mã GV</th>
+       <th class ="menu-header">Họ tên</th>
+       <th class ="menu-header">SĐT</th>
+       <th class ="menu-header">Chức vụ</th>
+       <th class ="menu-header">Học vị</th>
+       <th class ="menu-header">Ngạch</th>
+       <th class ="menu-header">Chức năng</th>
+       
+      </tr>
+      <% @giangviens.each do |giangvien| %>
+      <tr>
+        <th><%= giangvien.id %></th>
+        <td ><%= giangvien.MaGV %></td>
+        <td><%= giangvien.HoTenGV %></td>
+        <td><%= giangvien.SDTGV %></td>
+        <td><%= giangvien.chucvu.TenCV%></td>
+        <td><%= giangvien.hocvi.TenHocVi %></td>
+        <td><%= giangvien.ngach.TenNgach%></td>
+        <td>
+          <%= link_to 'Xem  ', giangvien , :style=>"color:#000"%> | 
+          <%= link_to 'Sửa  ', edit_giangvien_path(giangvien) , :style=>"color:#000" %> | 
+          <%= link_to 'Xóa', giangvien, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+          
+        </td> 
+      </tr>
+    <% end %>
+    </table>
+</div>
+    <br />
+ <%= will_paginate @giangviens %>

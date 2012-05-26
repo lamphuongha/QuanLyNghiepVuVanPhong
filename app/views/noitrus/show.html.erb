@@ -1,0 +1,82 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  <h1>Chi tiết học bổng</h1>
+     <table width ="100%" align ="center" >  
+      <tr>
+        <td colspan="3">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Mã nội trú:</b></td>
+        <td><%= @noitru.MaNoiTru %></td>
+      </tr>
+      <tr>
+        <td><b>Tên nội trú:</b></td>
+        <td align="left"><%= @noitru.TenNoiTru %><td>
+      </tr>
+      <tr>
+        <td><b>Công văn số:</b></td>
+        <td><%= @noitru.congvan.SoCV %></td>
+      </tr>
+      <tr>
+        <td><b>Học kỳ:</b></td>
+        <td><%= @noitru.HocKy %></td>
+      </tr>
+      <tr>
+        <td><b>Năm học:</b></td>
+        <td><%= @noitru.NamHoc %></td>
+      </tr>
+      <tr>
+        <td><b>Ghi Chú:</b></td>
+        <td><%= @noitru.GhiChu %></td>
+      </tr>
+      <tr>
+        <td align="right"><b>SV nội trú:</b></td>
+        <td colspan ="2">
+          <% for sinhvien in @noitru.sinhviens %>
+            <%=sinhvien.MSSV%>,
+          <%end%>
+        </td>
+      </tr>
+      
+  <tr>
+        <td colspan="3" align ="center">
+        <%= link_to 'Sửa', edit_noitru_path(@noitru) , :style=>"color:#000"%> |
+        <%= link_to 'Quay lại', noitrus_path , :style=>"color:#000"%> | 
+        <%= link_to 'Thêm nội trú', new_noitru_path , :style=>"color:#000"%>
+        </td>
+  </tr>
+  </table>
+  <fieldset>
+        <table class="table1" width="100%" align="center">
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+          </tr>
+          <% for sinhvien in @noitru.sinhviens %>
+          <tr>
+            <td ><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+          </tr>
+        <% end %>
+        </table>
+      </fieldset>
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+
+
+

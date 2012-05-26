@@ -1,0 +1,68 @@
+<!--<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 65%; top: 15%; left: 10.5%;" align="center">--> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 60%; height: 60%; top: 20%; left: 20%;" align="center">   
+
+<div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/giangviens'%>
+    </div>
+<div align="center">
+  <h1><b>Chi tiết Giảng viên</b></h1>
+  <table  height="250" align ="center" >  
+      <tr>
+        <td colspan="2">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      
+      <tr>
+        <td width="160" height="33"><b>Mã giảng viên:</b></td>
+        <td width="160" height="33"><%= @giangvien.MaGV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Họ tên :</b></td>
+        <td><%= @giangvien.HoTenGV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Địa chỉ :</b></td>
+        <td><%= @giangvien.DiaChiGV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Số Điện thoại:</b></td>
+        <td><%= @giangvien.SDTGV %></td>
+      </tr>
+
+      <tr>
+        <td><b>Chức vụ:</b></td>
+        <td><%= @giangvien.chucvu.TenCV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Học vị:</b></td>
+        <td><%= @giangvien.hocvi.TenHocVi %></td>
+      </tr>   
+      <tr>
+        <td><b>Học hàm:</b></td>
+        <td><%= @giangvien.Hocham %></td>
+      </tr>
+      <tr>
+        <td><b>Ngạch:</b></td>
+        <td><%= @giangvien.ngach.TenNgach %></td>
+      </tr>
+      <tr>
+        <td><b>Ghi Chú:</b></td>
+        <td><%= @giangvien.GhiChu %></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+            <%= link_to 'Sửa', edit_giangvien_path(@giangvien) ,:style=>"color:#000"%> | 
+          <%= link_to 'Thêm', new_giangvien_path ,:style=>"color:#000"%>
+   
+        
+        </td>
+    </tr>
+     </table>
+</div> 
+ </div>
+<div class="lock-screen" id="lock" style="display:block"></div>

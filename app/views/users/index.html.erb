@@ -1,0 +1,44 @@
+
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to "Thêm tài khoản", signup_path %>
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+<h1>Danh sách tài khoản</h1>
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Email</th>
+    <th>Mã GV</th>
+    <th>Tên GV</th>
+    <th>Vai trò</th>
+    <th>Chức năng</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <th><%= user.id %></th>
+    <td><%= user.email %></td>
+    <td><%= user.giangvien.MaGV%></td>
+    <td><%= user.giangvien.HoTenGV %></td>
+    <td><%= user.role.TenRole %></td>
+    <td><%= link_to 'Xem', user , :style=>"color:#000"%> | 
+    <%= link_to 'Sửa', edit_user_path(user) , :style=>"color:#000"%> | 
+    <%= link_to 'Xóa', user, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+</div>
+<br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @users %>
+      <br />
+    </div>
+<br />
+</div>  
+
+<div class="lock-screen" id="lock" style="display:block"></div>
+

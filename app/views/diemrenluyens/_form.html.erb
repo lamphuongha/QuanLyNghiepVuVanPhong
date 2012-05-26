@@ -1,0 +1,73 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 80%; top: 8%; left: 13%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+<%= render :partial => 'partials/searchdrl'%>   
+    <%= form_for(@diemrenluyen) do |f| %>
+      <% if @diemrenluyen.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@diemrenluyen.errors.count, "error") %> prohibited this diemrenluyen from being saved:</h2>
+
+          <ul>
+          <% @diemrenluyen.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+  <h1>Chi tiết bảng điểm rèn luyện</h1>
+<fieldset>
+  <table width ="100%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Mã điểm rèn luyện:'%></td>
+        <td align="left"><%= f.text_field :MaDRL, :size => "29x1" %></td>
+        
+        <td align="left" width="15%"><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field :HocKy %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Tên điểm rèn luyện:' %></td>
+        <td><%= f.text_field :TenDRL %></td>
+        
+        
+        <td align="left" width="15%"><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field :NamHoc %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Công văn số:' %></td>
+        <td><%= collection_select(:diemrenluyen, :congvan_id, Congvan.all, :id, :SoCV) %></td>
+      </tr>
+           
+      <tr>
+        <td align="left"><%= f.label 'Ghi Chú:' %></td>
+        <td colspan="4"><%= f.text_area :GhiChu,:size => "80x3"%></td>
+      </tr>
+  
+  </table>
+</fieldset>
+<br />
+
+<div id ="sinhviens">
+  <%= render :partial => 'sinhviennew', :f => f%>
+</div>
+<script>
+$(document).ready(function() {
+    $('.pagination a').attr('data-remote', 'true');
+});</script>      
+
+<br />
+
+  
+  <div class="actions">
+    <%= f.submit 'Lưu lại' %>
+  </div>
+  <%= link_to 'Quay lại', diemrenluyens_path %>
+  
+<% end %>
+<br />
+
+
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+

@@ -1,0 +1,33 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>Mã điểm rèn luyện</th>
+    <th>Tên điểm rèn luyện</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Ghi chú</th>
+    <th>Chức năng</th>
+  </tr>
+
+<% @diemrenluyens.each do |diemrenluyen| %>
+  <tr>
+    <td><%= diemrenluyen.MaDRL %></td>
+    <td><%= diemrenluyen.TenDRL %></td>
+    <td><%= diemrenluyen.congvan.SoCV %></td>
+    <td><%= diemrenluyen.HocKy %></td>
+    <td><%= diemrenluyen.NamHoc %></td>
+    <td><%= diemrenluyen.GhiChu %></td>
+    <td><%= link_to 'Xem', diemrenluyen %>
+    <%= link_to 'Sửa', edit_diemrenluyen_path(diemrenluyen) %>
+    <%= link_to 'Xóa', diemrenluyen, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @buocthoihocs %>
+      <br />
+    </div>
+</div>

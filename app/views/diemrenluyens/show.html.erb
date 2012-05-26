@@ -1,0 +1,85 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 7%; left: 7%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  <h1>Chi tiết điểm rèn luyện</h1>
+     <table width ="70%" align ="center" >  
+      <tr>
+        <td colspan="3">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="20%"><b>Mã điểm rèn luyện:</b></td>
+        <td><%= @diemrenluyen.MaDRL %></td>
+      </tr>
+      <tr>
+        <td><b>Tên điểm rèn luyện:</b></td>
+        <td align="left"><%= @diemrenluyen.TenDRL %><td>
+      </tr>
+      <tr>
+        <td><b>Công văn số:</b></td>
+        <td><%= @diemrenluyen.congvan.SoCV %></td>
+      </tr>
+      <tr>
+        <td><b>Học kỳ:</b></td>
+        <td><%= @diemrenluyen.HocKy %></td>
+      </tr>
+      <tr>
+        <td><b>Năm học:</b></td>
+        <td><%= @diemrenluyen.NamHoc %></td>
+      </tr>
+      <tr>
+        <td><b>Ghi Chú:</b></td>
+        <td><%= @diemrenluyen.GhiChu %></td>
+      </tr>
+
+      
+  <tr>
+        <td colspan="3" align ="center">
+        <%= link_to 'Sửa', edit_diemrenluyen_path(@diemrenluyen), :style=>"color:#000" %> |
+        <%= link_to 'Quay lại', diemrenluyens_path, :style=>"color:#000" %> | 
+        <%= link_to 'Thêm', new_diemrenluyen_path, :style=>"color:#000" %>
+        </td>
+  </tr>
+  </table>
+        <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Điểm</th>
+          </tr>
+          <% dem = 1 %>
+          <% for sinhvien in @diemrenluyen.sinhviens %>
+          <tr>
+            <% chitietdiemrenluyen = Chitietdiemrenluyen.find(
+              :first, :conditions => {:sinhvien_id => sinhvien.id, :diemrenluyen_id => @diemrenluyen.id}) %>
+            <% if !chitietdiemrenluyen.nil? %>
+            <th><%=dem%></th>
+              <td ><%= sinhvien.MSSV %></td>
+              <td><%= sinhvien.HoTenSV %></td>
+              <td><%= sinhvien.NgaySinh %></td>
+              <td><%= sinhvien.GioiTinh %></td>
+              <td><%= sinhvien.DiaChi %></td>
+              <td><%= sinhvien.SDT %></td>
+              <td><%= sinhvien.lop.TenLop %></td>
+              <td><%=h chitietdiemrenluyen.Diem %></td>
+            <% else %>
+              <td>Not yet tested</td>
+              <td>Not yet tested</td>
+            <% end %>
+            
+          </tr>
+          <% dem= dem+1 %>
+        <% end %>
+        </table>
+    
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+

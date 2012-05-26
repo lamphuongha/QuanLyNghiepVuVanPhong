@@ -1,0 +1,44 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 70%; height: 80%; top: 8%; left: 13%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/covanhoctaps'%>
+    </div>
+<h1>Tìm kiếm nâng cao</h1>
+    <%= form_tag '/covanhoctaps/search',:remote => true, :method => 'get' do %>  
+    <fieldset>
+    <table width ="100%">
+      <tr>
+        <td>Giảng viên: </td>
+        <td><%= select_tag :giangvien_id, options_from_collection_for_select(Giangvien.all, :id,  :HoTenGV, params[:giangvien_id]), :include_blank=>'Tất cả' %></td>
+        <td>Học kỳ:</td>
+        <td width ="30%"><%= text_field_tag :HocKy, params[:HocKy], :size =>'19px'%></td>
+      </tr>
+      <tr>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+        
+        <td>Năm học:</td>
+        <td width ="30%"><%= text_field_tag :NamHoc, params[:NamHoc], :size =>'19px'%></td>
+      </tr>
+     
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil %>
+    
+    </fieldset>
+<%end%>
+    
+    <h1>Danh sách cố vấn học tập</h1>
+    <div id ="covanhoctapss">
+        <%= render :partial => 'covanhoctap' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

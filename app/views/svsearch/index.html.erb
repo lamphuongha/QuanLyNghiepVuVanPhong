@@ -1,0 +1,86 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 65%; height: 50%; top: 20%; left: 15%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/sinhviens/index'%>
+    </div>
+
+<h1>Tìm kiếm nâng cao</h1>
+    
+    <%= form_tag '/hocbongs/new', :method => 'get' do %> 
+    <table width ="100%">
+      <tr>
+        <td width ="20%">Mã số sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :MSSV, params[:MSSV], :size =>'19px'%></td>
+        
+        <td width ="20%">Họ tên sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :HoTenSV, params[:HoTenSV], :size =>'19px'%></td>
+      </tr>
+       <tr>
+        <td>Ngày sinh: </td>
+        <!--<td><%= date_select params[:NgaySinh],:NgaySinh,:start_year =>1979,:end_year =>Time.now.year,:order =>[:day, :month, :year],:include_blank => :true %></td>-->
+        <td><%= text_field_tag :NgaySinh,params[:NgaySinh] %></td>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+
+      <tr>
+        <td>Địa chỉ:</td>
+        <td><%= text_field_tag :DiaChi, params[:DiaChi], :size =>"19"%></td>  
+        <td>Số điện thoại:</td>
+        <td><%= text_field_tag :SDT, params[:SDT], :size =>"19"%></td>
+      </tr>
+      
+     
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil%>
+    <% end %>
+    
+    <div style="overflow:auto;height:400px;" >     
+                 <table class="table1" width="100%" align="center">
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+        <th>Ngày sinh</th>
+        <th>Giới tính</th>
+        <th>Địa chỉ </th>
+        <th>Số điện thoại</th>
+        <th>Lớp</th>
+        <th>Chọn</th>
+        <th>Chức năng</th>
+        
+       
+      </tr>
+      <% @sinhviens.each do |sinhvien| %>
+      <tr>
+        <td ><%= sinhvien.MSSV %></td>
+        <td><%= sinhvien.HoTenSV %></td>
+        <td><%= sinhvien.NgaySinh %></td>
+        <td><%= sinhvien.GioiTinh %></td>
+        <td><%= sinhvien.DiaChi %></td>
+        <td><%= sinhvien.SDT %></td>
+        <td><%= sinhvien.lop_id %></td>
+        <td>
+          <input type="checkbox"
+                 id="<%= sinhvien.id %>"
+                 name="sinhvien_ids[]"
+                 value="<%= sinhvien.id %>"
+                 
+                 >
+          <!-- if @chitiethocbong.sinhviens.include? sinhvien%>checked="checked"-->
+        </td>
+        <td>
+          <%= link_to 'Xem  ', sinhvien %>
+          <%= link_to 'Sửa  ', edit_sinhvien_path(sinhvien) %>
+          <%= link_to 'Xóa', sinhvien, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete %>
+          
+        </td> 
+      </tr>
+    <% end %>
+    </table>
+    </div>
+    
+    <div class="action">
+            <%= submit_tag 'Lưu lại'%>
+    </div>
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

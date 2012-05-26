@@ -1,0 +1,2 @@
+module ExtraSearchHelper
+end

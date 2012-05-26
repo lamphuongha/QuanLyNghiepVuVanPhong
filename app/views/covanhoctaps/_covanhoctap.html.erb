@@ -1,0 +1,35 @@
+<!--<div id="shadow" class="shadow" >-->
+<table border ="1" width ="70%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+        <th>Cố vấn học tập</th>
+        <th>Lớp</th>
+        <th>Học kỳ</th>
+        <th>Năm học</th>
+        <th>Chức năng  </th>
+      </tr>
+      <% dem = 1 %>
+      <% @covanhoctaps.each do |covanhoctap| %>
+      <tr>
+        <th><%= dem %></th>
+        <td><%= covanhoctap.giangvien.HoTenGV%></td>
+        <td><%= covanhoctap.lop.TenLop %></td>
+        <td><%= covanhoctap.HocKy %></td>
+        <td><%= covanhoctap.NamHoc %></td>
+        <td>
+          <%= link_to 'Xem', covanhoctap ,:style =>"color:#000"%> | 
+          <%= link_to 'Sửa', edit_covanhoctap_path(covanhoctap) ,:style =>"color:#000"%> | 
+          <%= link_to 'Xóa', covanhoctap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%>
+        </td>
+      </tr>
+      <% dem = dem + 1 %>
+    <% end %>
+      
+    </table>
+<!--</div>   -->
+      <br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @covanhoctaps %>
+      <br />
+      </div>
+      

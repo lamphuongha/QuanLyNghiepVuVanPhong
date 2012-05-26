@@ -1,0 +1,115 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+    <h1>Chi tiết công văn</h1>
+     <table width ="100%" align ="center" >  
+      <tr>
+        <td colspan="3">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="10" width ="30%" align="center">
+          <b>File đính kèm:</b>
+          <br>
+          <br>
+          <% if @congvan.image? %>
+          <%= image_tag @congvan.image.url %>
+          <br>
+          <%= link_to @congvan.image_file_name,@congvan.image.url %>
+          <% end %>
+          
+          <% for asset in @congvan.assets %>
+            <li> <%= link_to image_tag(asset.image.url(:thumb)), asset.image.url(:original)%> </li>
+          <%end%>
+        </td>
+        <td align="left" width="20%"><b>Số công văn:</b></td>
+        <td align="left"><%= @congvan.SoCV %></td>
+      </tr>
+           
+      <tr>
+        <td><b>Ngày ra CV:</b></td>
+        <td><%= @congvan.NgayRaCV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Ngày nhận CV:</b></td>
+        <td><%= @congvan.NgayNhanCV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Nội dung:</b></td>
+        <td><%= @congvan.NoiDungCV %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Nơi gửi:</b></td>
+        <!--<td><%= @congvan.NoiGui %>
+          
+        </td>-->
+        <td><%= collection_select(:congvan, :NoiGui, Phongban.all, :id, :TenPB) %></td>
+        
+      </tr>
+      
+      <tr>
+        <td><b>Tác giả:</b></td>
+        <td><%= @congvan.TacGia %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Nơi nhận:</b></td>
+        <!--<td><%= @congvan.NoiNhan %></td>-->
+        <td><%= collection_select(:congvan, :NoiNhan, Phongban.all, :id, :TenPB) %></td>
+      </tr>
+      
+      <tr>
+        <td><b>Người nhận:</b></td>
+        <td><%= @congvan.NguoiNhan %></td>
+      </tr>
+      
+      <!--<tr>
+        <td><b>Hình ảnh:</b></td>
+        <!--<%= @congvan.HinhAnhCV %></td>
+        <!--<td><%= @congvan.image_file_name%> </td>
+              
+      </tr>-->
+      
+      <tr>
+        <td><b>Loại công văn:</b></td>
+        <td><%= @congvan.loaicv.TenLoaiCV %></td>
+        
+      </tr>
+      
+      <tr>
+        <td><b>Nhóm công văn:</b></td>
+        <td><%= @congvan.nhomloaicv.TenNhomLoaiCV %></td>
+        
+      </tr>
+      
+      <tr>
+        <td align="right"><b>Công văn liên quan:</b></td>
+        <td colspan ="2">
+          <% for nhomcv in @congvan.nhomcvs %>
+            <%=nhomcv.TenNhomCV%>,
+          <%end%>
+        </td>
+      </tr>
+      
+      <tr>
+        <td align="right"><b>Ghi Chú:</b></td>
+        <td><%= @congvan.GhiChu %></td>
+      </tr>
+      
+      <tr>
+        <td colspan="3" align="center">
+            <%= link_to 'Sửa', edit_congvan_path(@congvan) %> | 
+        
+            <%= link_to 'Quay lại', congvans_path %> |
+            <%= link_to 'Thêm công văn', :action => 'new' %>
+        </td>
+    </tr>
+     </table>
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

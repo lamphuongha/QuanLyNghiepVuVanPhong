@@ -1,0 +1,52 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/covanhoctaps'%>
+    </div>
+    <h1>Cố vấn học tập</h1>
+     <table width ="50%" align ="center" >  
+      <tr>
+        <td colspan="2">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+               
+      <tr>
+        <td><b>Cố vấn học tập:</b></td>
+        <td><%= @covanhoctap.giangvien.HoTenGV%></td>
+      </tr>
+      
+      <tr>
+        <td><b>Lớp:</b></td>
+        <td><%= @covanhoctap.lop.TenLop %></td>
+      </tr> 
+       <tr>
+        <td><b>Học kỳ:</b></td>
+        <td><%= @covanhoctap.HocKy %></td>
+      </tr> 
+       <tr>
+        <td><b>Năm học:</b></td>
+        <td><%= @covanhoctap.NamHoc %></td>
+      </tr>
+       <tr>
+        <td><b>Ghi chú:</b></td>
+        <td><%= @covanhoctap.GhiChu %></td>
+      </tr> 
+      <tr>
+        <td colspan="2" align="center">
+          <% if can? :update, @covanhoctap %>
+            <%= link_to 'Sửa', edit_covanhoctap_path(@covanhoctap) ,:style =>"color:#000"%> | 
+          <% end %> 
+          <% if can? :destroy, @covanhoctap %>
+            <%= link_to 'Xóa', @covanhoctap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%> |
+          <% end %> 
+          <% if can? :create, @covanhoctap %>
+            <%= link_to 'Thêm ', new_covanhoctap_path ,:style =>"color:#000"%> |  
+          <% end %>
+            <%= link_to 'Quay lại', covanhoctaps_path ,:style =>"color:#000"%>
+          
+        </td>
+    </tr>
+     </table>
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

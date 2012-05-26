@@ -1,0 +1,53 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to 'Thêm', new_noitru_path %>
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  <%= form_tag noitrus_path, :method => 'get' do %>  
+     <fieldset>
+        <legend>Lọc danh sách nội trú</legend>
+      <%= text_field_tag :search, params[:search] %> 
+      
+      <%= submit_tag "Lọc", :name => nil %>
+        <%= link_to 'Tìm kiếm nâng cao', '/noitrus/search'  %>
+       </fieldset>
+    <%end%>
+<h1>Danh sách nội trú</h1>
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã danh sách</th>
+    <th>Tên danh sách</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+
+  </tr>
+
+<% @noitrus.each do |noitru| %>
+  <tr>
+    <th><%= noitru.id %></th>
+    <td><%= noitru.MaNoiTru %></td>
+    <td><%= noitru.TenNoiTru %></td>
+    <td><%= noitru.congvan.SoCV %></td>
+    <td><%= noitru.HocKy %></td>
+    <td><%= noitru.NamHoc %></td>
+    <td><%= link_to 'Xem', noitru , :style=>"color:#000"%> | 
+    <%= link_to 'Sửa', edit_noitru_path(noitru) , :style=>"color:#000"%> | 
+    <%= link_to 'Xóa', noitru, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+<% end %>
+</table>
+<br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @noitrus %>
+      <br />
+    </div>
+<br />
+</div>
+</div>  
+
+<div class="lock-screen" id="lock" style="display:block"></div>
+

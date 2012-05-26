@@ -1,0 +1,38 @@
+<fieldset>
+        <legend>Tìm kiếm nâng cao</legend>
+    <%= form_tag '#',:remote => true, :method => 'get' do %>  
+    <table width ="100%">
+      <tr>
+        <td width ="20%">Mã số sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :MSSV, params[:MSSV], :size =>'19px'%></td>
+        <td>Ngày sinh: </td>
+        <td width ="30%"><%= text_field_tag :NgaySinh, params[:NgaySinh], :size =>'19px'%></td>
+        
+        
+      </tr>
+       <tr>
+        <td width ="20%">Họ tên sinh viên:</td>
+        <td width ="30%"><%= text_field_tag :HoTenSV, params[:HoTenSV], :size =>'19px'%></td>
+        
+        <td>Giới tính: </td>
+        <td><%= select_tag :GioiTinh, options_for_select([["",""], ["Nam", "Nam"], ["Nữ", "Nữ"]],params[:GioiTinh]) %></td>
+        
+      </tr>
+
+      <tr>
+         <td>Địa chỉ:</td>
+        <td><%= text_field_tag :DiaChi, params[:DiaChi], :size =>"19"%></td>  
+        <td>Trình độ đào tạo : </td>
+        <td><%= select_tag :trinhdodaotao_id, options_from_collection_for_select(Trinhdodaotao.all, :id,  :TenTDDT, params[:trinhdodaotao_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Số điện thoại:</td>
+        <td><%= text_field_tag :SDT, params[:SDT], :size =>"19"%></td>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil%>
+    <% end %>
+</fieldset>

@@ -1,0 +1,548 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuanLyCongVan</title>
+  <%= stylesheet_link_tag    "application", "marqueeimg", :media => "all" %>
+  
+  <%= javascript_include_tag :all%>
+  <%= javascript_include_tag "application","jcarousellite_1.0.1.min","general","jquery-1.2.6.min","jquery.bgpos","slideshow.js","flashobject","ddaccordion","jquery.filestyle.js","sorttable-small"%>
+  
+  <%= csrf_meta_tags %>
+  
+  <style type="text/css">
+    th {
+      background: #66ccff;
+    }
+    tr.alt td{
+      background: #ecf6fc;
+    }
+    tr.over td{
+      background: #bcd4ec;
+    }
+
+  </style>
+ <script type="text/javascript"> 
+  $(document).ready(function(){
+    $('.alternative tr').mouseover(function(){
+      $(this).addClass('over');
+    });
+    $('.alternative tr').mouseout(function(){
+      $(this).removeClass('over');
+    });
+    $('.alternative tr:even').addClass('alt');
+  
+  });
+ </script>
+ 
+   <!--Hoc bong-->
+  
+
+<script type="text/javascript">
+     $('input.checksv').live('click',function(e) {
+        
+        var $this = $(this);
+        
+        var checkboxes = $this.closest('form').find('input:checkbox[value="'+$this.data('value')+'"]');
+        if ( this.checked ) {
+        checkboxes.attr('checked', 'checked');
+        }
+        else 
+        checkboxes.attr('checked', false);
+    });
+  </script>
+  <!--<style type="text/css">
+@import url("style.css");
+@import url("marqueeimg.css");
+@import url("showproduct.css");
+@import url("slideshow.css");
+@import url("starvote.css");
+  </style>-->
+<script type="text/javascript">
+
+//Initialize Arrow Side Menu:
+ddaccordion.init({
+	headerclass: "menuheaders", //Shared CSS class name of headers group
+	contentclass: "menucontents", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", or "clickgo" mouseover
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["unselected", "selected"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: 500, //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+ddaccordion.init({ //2nd level headers initialization
+	headerclass: "subexpandable", //Shared CSS class name of sub headers group that are expandable
+	contentclass: "subcategoryitems", //Shared CSS class name of sub contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["opensubheader", "closedsubheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+<script type="text/javascript">
+    $(function () {
+        // Hieu ung menu
+
+        
+        $('#left-menu a')
+		.css({ backgroundPosition: "0 0" })
+		.mouseover(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 -30px) " }, { duration: 200 })
+		})
+		.mouseout(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 0)" }, { duration: 300 })
+		})
+        $('#tab-menu .l1 a')
+		.css({ backgroundPosition: "0 0" })
+		.mouseover(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 -50px) " }, { duration: 300 })
+		})
+		.mouseout(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 0)" }, { duration: 100 })
+		})
+    })
+    ;
+</script>   
+<!-- Slideshow eff -->
+
+<!-- Product Animation-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+            //Vertical Sliding
+            $('.boxgrid.slidedown').hover(function () {
+                $(".cover", this).stop().animate({ top: '-260px' }, { queue: false, duration: 300 });
+            }, function () {
+                $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 300 });
+            });
+            //Horizontal Sliding
+            $('.effect').hover(function () {
+                $(".cover", this).stop().animate({ top: '-150px' }, { queue: false, duration: 300 });
+            }, function () {
+                $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 300 });
+            });
+
+            
+        });
+		</script>
+  <script type="text/javascript" charset="utf-8">
+    FancyZoomBox.directory="<%= img_assets_path(image_path('fancyzoom/br.png')) %>";
+    $(document).observe('dom:loaded', function() {
+            $$(".photo a").each(function(el) { new FancyZoom(el); });
+    });
+  </script>
+</head>
+<body>
+<!--<form name="aspnetForm"  onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">-->
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MDg3OTY1OTcPZBYCZg9kFgICAw9kFgwCAQ8PFgIeCEltYWdlVXJsBQ9pbWFnZXMvY2FydC5wbmdkZAIDDw8WAh4EVGV4dAUBMGRkAgUPDxYCHwEFATBkZAINDxAPFgYeDURhdGFUZXh0RmllbGQFBk5hbWVWbh4ORGF0YVZhbHVlRmllbGQFBk5hbWVWbh4LXyFEYXRhQm91bmRnZBAVCgxOaOG6q24gxJHGoW4JTOG6r2MgdGF5C0zhuq9jIGNow6JuB0hvYSB0YWkNRMOieSBjaHV54buBbgxOaOG6q24gY+G6t3AKTeG6t3QgZMOieRBUcmFuZyBz4bupYyBi4buZEVRyYW5nIHPhu6ljIGtow6FjClThuqV0IGPhuqMVCgxOaOG6q24gxJHGoW4JTOG6r2MgdGF5C0zhuq9jIGNow6JuB0hvYSB0YWkNRMOieSBjaHV54buBbgxOaOG6q24gY+G6t3AKTeG6t3QgZMOieRBUcmFuZyBz4bupYyBi4buZEVRyYW5nIHPhu6ljIGtow6FjASUUKwMKZ2dnZ2dnZ2dnZ2RkAh8PZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYCZg8VAQI1MmQCJQ9kFgwCAQ8WAh8FAgYWDGYPZBYCZg8VBAVTQzAwMQVTQzAwMQVzdGFyNQ9wcm9kdWN0L2NyMS5qcGdkAgEPZBYCZg8VBAVTQzAwNQVTQzAwNQVzdGFyNQ9wcm9kdWN0L2NyNS5qcGdkAgIPZBYCZg8VBAVTRTAwNQVTRTAwNQVzdGFyNQ9wcm9kdWN0L3JlNC5qcGdkAgMPZBYCZg8VBAVTRzAwMgVTRzAwMgVzdGFyNBNwcm9kdWN0L25vaW1hZ2UuanBnZAIED2QWAmYPFQQFU04wMDMFU04wMDMFc3RhcjQPcHJvZHVjdC9zbjIuanBnZAIFD2QWAmYPFQQFU0MwMDkFU0MwMDkFc3RhcjQQcHJvZHVjdC9jcjEwLmpwZ2QCAg8WAh8FZmQCAw8PFgQeC05hdmlnYXRlVXJsBQc/cGFnZT0xHgdWaXNpYmxlaGRkAgQPDxYCHwdoZGQCBQ8PFgIfB2hkZAIGDw8WBB8GBQc/cGFnZT0xHwdoZGQYAQUaY3RsMDAkY3RsMTAkTXVsdGlWaWV3TG9naW4PD2RmZISeqgSvtGKH7PQxAw30rGKoc/lJ" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEAKEo/3gDgLPjafVBQKOkrn2CAL84fGHBQLxjYbcAwKJyJalCQKoteq6CgL73LmtBgKa9dbfAQLZwpPfCAKIlMPRCQLu76qrAwKpyrWwCQLBs/fvCALAs/fvCAKLkrn2CMNmkkXBRBE0hUpfmJ05UNcAdy4c" />
+</div>
+    <div class="center" id="container">
+    <div class="center" id="top-center-wrap">
+        <div id="left-wrap">
+            <div id="logo-cont">
+            <div style="z-index: 1; left: 0px; width: 45px; position: absolute; top: -30px; height: 1px"></div>
+            <embed allowfullscreen="false" allowscriptaccess="always" height="202" menu="false" quality="high" src="/images/flash.swf" type="application/x-shockwave-flash" width="300" wmode="transparent"> </embed>
+            
+            
+            </div>
+            <div id="menu-cont">
+      <!-- LEFT SIDE : start  -->    
+                  <% if current_user %>
+                  Logged in as <%= current_user.email %>.
+                  
+                  <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Quản lý người dùng</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <li><%= link_to "Đăng xuất", logout_path, :style=>"color:#000" %></li>
+                            <li><%= link_to "Thay đổi mật khẩu" , new_password_reset_path, :style=>"color:#000"%></li>
+                            <li><%= link_to 'Thay đổi thông tin cá nhân', edit_giangvien_path(current_user) , :style=>"color:#000" %></li>
+                           
+                          
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                <% end %>
+                
+                <% if current_user %>
+                  <% if current_user.role_id == 1 %>
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Tài khoản</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <li><%= link_to 'Quản lý tài khoản','/users',:style=>"color:#000" %></li>
+                            <li><%= link_to "Tìm kiếm tài khoản","/congvans/search", :style=>"color:#000"%></li>
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                    <% end %>
+                  <% end %>
+                  
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Công văn</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <li><%= link_to 'Quản lý công văn','/congvans',:style=>"color:#000" %></li>
+                            <li><%= link_to "Tìm kiếm công văn","/congvans/search", :style=>"color:#000"%></li>
+                          
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                
+               
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Giảng viên</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <li>
+                                <%= link_to 'Quản lý giảng viên','/giangviens',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Cố vấn học tập','/covanhoctaps',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Tìm kiếm giảng viên','/giangviens/search',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Tìm kiếm cố vấn','/covanhoctaps/search',:style=>"color:#000" %>
+                            </li>
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                  
+                  
+                <!-- GROUP: end -->
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Sinh viên</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <!--<li class="menuheaders"><a style="color:#000">Quản lý công văn</a>
+                              <ul class="menucontents">
+                                <li ><a style="color:#000">
+                                  <%= link_to "Công văn đến", :action => "../congvans/search", :id =>'1'%></a>
+                                  </a>
+                                </li>
+                                <li ><a class="subexpandable" style="color:#000">Công văn đi</a>
+                                  <ul class="subcategoryitems">
+                                    <li ><a style="color:#000">Đơn vị gửi</a></li>
+                                    <li ><a style="color:#000">Giảng viên</a></li>
+                                    <li ><a style="color:#000">Sinh viên</a></li>
+                                  </ul> 
+                                </li>
+                              </ul>
+                            </li>-->
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <%= link_to 'Quản lý sinh viên','/sinhviens',:style=>"color:#000" %>
+                            </li>
+                             <li>
+                                <%= link_to 'Danh sách trợ cấp','/trocaps',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Danh sách học bổng','/hocbongs',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Danh sách nội trú','/noitrus',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Danh sách ngoại trú','/ngoaitrus',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Danh sách bảo lưu','/baoluus',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Danh sách buộc thôi học','/buocthoihocs',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Điểm rèn luyện','/diemrenluyens',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Thông tin thực tập','/thongtinthuctaps',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to "Tra cứu nâng cao", '/layouts/extra_search',:style=>"color:#000"%>
+                            <li>
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+               
+                <!-- GROUP: end -->
+                  
+               
+                <div class="menu-group" id="menu-ads">
+                    <div id="top-menu"><h2>Liên kết quảng cáo</h2></div>
+                    <div id="body-menu">
+                       
+                            &nbsp;<a id="ctl00_ctl08_Ads" href="http://chipchipshop.com" target="_blank">
+                              
+                              <%=image_tag'adsImg/chipchip.jpg', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:75px;width:100px;' %>
+             
+                              
+                            </a>'
+                            <span style="display: block;text-align: right;margin-right: 25px;font-size: 11px;"><a href="./lienhequangcao.aspx">Đặt quảng cáo</a></span>
+                    </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                <!-- GROUP: end -->
+               
+                <div class="menu-group" id="menu-overview">
+                    <div id="top-menu"><h2>Thống kê</h2></div>
+                    <div id="body-menu">
+                        
+ <div id='stat-cont'>
+                            
+                                <ul id='stats-list'>                                    
+                                    <li> <a style="color:#000">
+                                        Khách đang xem:  <span class='light'> 52</span> </a>
+                                        </li>
+                                   
+                                    
+                                    
+                                </ul>
+                            
+                            
+                        </div>
+                    </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                
+                
+      <!-- LEFT SIDE : end  -->       
+            </div>
+        </div>
+        <div id="right-wrap">
+      <!--  RIGHT SIDE : start  -->    
+            <div id="header-cont">
+                <div id="tab-cont">
+                    <ul id="tab-menu">
+                        <li class="l1"><a href="/trangchu">Trang chủ</a></li>
+                        <li class="l1"><a href="/chitiet/gioithieu">Giới thiệu</a></li>
+                        <li class="l1"><a href="KhuyenMai.aspx">Liên kết</a></li>
+                        <li class="l1"><a href="/chitiet/loingo">Lời ngỏ</a></li>
+                        <li class="l1" id="end">
+                          <% if current_user %>
+                          <%= current_user.giangvien.HoTenGV %>
+                          <!--<%= current_user.email %>.-->
+                          <% else %>
+                          <a >Thành viên  </a>
+                           
+                           <div id="submenu">
+                              <%= link_to "Đăng ký", signup_path %>
+                              <%= link_to "Đăng nhập", login_path %>
+                              <a href="lostpassword.aspx">Quên mật khẩu</a>
+                           </div>
+                        <% end %>
+                        
+    
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GROUP : end  --> 
+            <div id="intro-cont">
+                
+        <div id="bg">            
+                
+                    <div align="center" class="slideshow1" id="slide1">
+                        <%=image_tag'hh1.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh2.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh3.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh4.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh5.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh6.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh7.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh8.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        <%=image_tag'hh9.jpg',:class=>"active", :alt=>"Khoa Công nghệ thông tin - Trường Đại Học Sài Gòn "%>
+                        
+                        <div class="description"><a></a></div>
+    
+                    </div>
+                    <!-- Script config slideshow here -->
+                    <SCRIPT type="text/javascript">
+                
+                        $('#slide1').slideMe({
+                
+                            width:610,
+                
+                            height:220,				
+                
+                            transition_duration: 1000
+                
+                        });
+                
+                    </SCRIPT>
+    
+                
+                </div>
+            </div>
+            
+           <!-- GROUP : end  --> 
+           
+       <!--     ContentPlaceHolder : start -->  
+<% if flash.present? %>
+<div class='group-cont'>
+                <div id="top-group"><h3></h3></div>
+                <div id="body-group">
+                 <!-- Show: Noi bat -->
+                  <div class="items-cont" title='Tin tức noi bat'> 
+                                    <div class="title-items">
+                                       <% flash.each do |name, msg| %>
+                                        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+                                    <% end %>
+                                    </div>    
+
+                  </div>  
+                     <!-- Show: products -->
+                     
+                    
+                  <!-- end: Show product -->   
+                 </div>
+                 <div id="bottom-group"></div>
+ </div>    
+<% end %>                           
+
+  <!-- Start: Main group -->
+<div class='group-cont'>
+                <div id="top-group"><h3></h3></div>
+                <div id="body-group">
+                 <!-- Show: Noi bat -->
+                    
+                    <%= yield %>
+                      
+                     <!-- Show: products -->
+                     
+                    
+                  <!-- end: Show product -->   
+                 </div>
+                 <div id="bottom-group"></div>
+ </div> 
+ <!-- End: Main group 
+  Start: Profile -->
+   
+            
+  <!-- End: Profile -->
+   <!--   Start: Payment link -->
+   
+   <div class='group-cont'>
+                <div id="top-group"><h3></h3></div>
+                <div id="body-group">
+                 <!-- Show: Noi bat -->
+						   
+                    <div class="items-cont" title='Liên kết'> 
+                    	<div class="title-items">Liên kết</div>    
+                        <div class="content-items" id='id-noibat'>	
+                                
+                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=424&Itemid=103"><%=image_tag 'Logo_Doan.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html"><%=image_tag 'Logo_chuandaura.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://mail.google.com/a/sgu.edu.vn"><%=image_tag 'SGUMail.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'TTDT_new.jpg', :height => "50%", :width =>"22%"%></a>
+                          <br />
+                          <br />
+                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=1066&Itemid=525"><%=image_tag 'ChiboSV.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html"><%=image_tag 'LogoCongkhai20092010.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'sgu-mail2.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'opac(2).gif', :height => "50%", :width =>"22%"%></a>
+                                           
+                                    <div class="clear"></div>   
+                          </div>
+                     </div>
+                      
+                     <!-- Show: products -->
+                     
+                    
+                  <!-- end: Show product -->   
+                 </div>
+                 <div id="bottom-group"></div>
+ </div> 
+  <!-- End: -->
+
+  <!-- Giam gia: Load len 2 field Price, OPrice, IsSale
+    Khong giam gia % ma chi ban luon gia goc...
+ -->
+           
+                                   
+         <!--    ContentPlaceHolder : end  -->            
+                
+            
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!-- Footer here -->
+    <div class="center" id="footer-center-wrap">
+        
+ <div id="copyright-cont">
+        <a href="/trangchu">Trang chủ</a>  |   
+         <a href="../HDThanhToan.aspx">Giới thiệu </a>  |   
+         <a href="../BaoHanh.aspx">Khoa CNTT</a>   |   
+         <a href="../DoiTac.aspx">Đối tác</a>  |   
+         <a href="../LienHe.aspx">Liên hệ</a>
+        <br />
+        Khoa công nghệ thông tin - Trường đại học Sài Gòn  © 2012
+        </div>
+    </div>
+</div>
+   
+    
+
+<!--</form>-->
+
+
+</body>
+</html>
+
+ 

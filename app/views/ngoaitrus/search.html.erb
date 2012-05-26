@@ -1,0 +1,76 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/ngoaitrus'%>
+    </div>
+<h1>Tìm kiếm nâng cao</h1>
+    <%= form_tag '/ngoaitrus/search', :method => 'get' do %>  
+    <fieldset>
+    <table width ="100%">
+      <tr>
+        <td>Mã ngoại trú: </td>
+        <td><%= text_field_tag :MaNgoaiTru, params[:MaNgoaiTru], :size =>'19px'%></td>
+        <td>Loại ngoại trú:</td>
+        <td width ="30%"><%= select_tag :loaingoaitru_id, options_from_collection_for_select(Loaingoaitru.all, :id,  :TenLoaiNgoaiTru, params[:loaingoaitru_id]), :include_blank=>'Tất cả' %></td>
+       
+      </tr>
+      <tr>
+        <td>Tên danh sách: </td>
+        <td><%= text_field_tag :TenNgoaiTru, params[:TenNgoaiTru], :size =>'19px'%></td>
+        <td>Học kỳ:</td>
+        <td width ="30%"><%= text_field_tag :HocKy, params[:HocKy], :size =>'19px'%></td>
+        
+      </tr>
+     <tr>
+         <td>Công văn:</td>
+        <td width ="30%"><%= select_tag :congvan_id, options_from_collection_for_select(Congvan.all, :id,  :SoCV, params[:congvan_id]), :include_blank=>'Tất cả' %></td>
+        <td>Năm học:</td>
+        <td width ="30%"><%= text_field_tag :NamHoc, params[:NamHoc], :size =>'19px'%></td>
+     </tr>
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil %>
+    
+    </fieldset>
+<%end%>
+    
+    <h1>Danh sách ngoại trú</h1>
+    <div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+     <tr>
+    <th>STT</th>
+    <th>Mã ngoại trú</th>
+    <th>Tên ngoại trú</th>
+    <th>Loại ngoại trú</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+
+  </tr>
+
+<% @ngoaitrus.each do |ngoaitru| %>
+  <tr>
+    <th><%= ngoaitru.id %></th>
+    <td><%= ngoaitru.MaNgoaiTru %></td>
+    <td><%= ngoaitru.TenNgoaiTru %></td>
+    <td><%= ngoaitru.loaingoaitru.TenLoaiNgoaiTru %></td>
+    <td><%= ngoaitru.congvan.SoCV %></td>
+    <td><%= ngoaitru.HocKy %></td>
+    <td><%= ngoaitru.NamHoc %></td>
+    <td><%= link_to 'Xem', ngoaitru , :style=>"color:#000"%> | 
+    <%= link_to 'Sửa', edit_ngoaitru_path(ngoaitru) , :style=>"color:#000"%> | 
+    <%= link_to 'Xóa', ngoaitru, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+<% end %>
+      
+    </table>
+    </div>
+    <br />
+      <%= will_paginate @ngoaitrus %>
+    <br />
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

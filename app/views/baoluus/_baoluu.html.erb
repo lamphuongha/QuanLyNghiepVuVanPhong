@@ -1,0 +1,37 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã bảo lưu</th>
+    <th>Tên bảo lưu</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+  </tr>
+<% dem = 1 %>
+<% @baoluus.each do |baoluu| %>
+  <tr>
+    <td>
+      <%= dem %>
+    </td>
+    <td><%= baoluu.MaBaoLuu %></td>
+    <td><%= baoluu.TenBaoLuu %></td>
+    <td><%= baoluu.congvan.SoCV %></td>
+    <td><%= baoluu.HocKy %></td>
+    <td><%= baoluu.NamHoc %></td>
+    <td><%= link_to 'Xem', baoluu , :style=>"color:#000"%> |
+    <%= link_to 'Sửa', edit_baoluu_path(baoluu) , :style=>"color:#000"%> |
+    <%= link_to 'Xóa', baoluu, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+  </tr>
+ <% dem = dem + 1 %>
+<% end %>
+</table>
+
+<br />
+</div>
+<br />
+      <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @baoluus %>
+      <br />
+    </div>

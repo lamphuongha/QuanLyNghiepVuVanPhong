@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuanLyCongVan</title>
+  <%= stylesheet_link_tag    "application", "marqueeimg","jquery-ui", :media => "all" %>
+  <%= javascript_include_tag :all%>
+  <%= javascript_include_tag "application","jcarousellite_1.0.1.min","general","jquery-1.2.6.min","jquery.bgpos","slideshow.js","flashobject","ddaccordion","jquery.filestyle.js","sorttable-small","jquery-ui.min","jquery.min",'rails','jquery-latest'%>
+  
+  <%= csrf_meta_tags %>
+
+  <style type="text/css">
+    th {
+      background: #66ccff;
+    }
+    tr.alt td{
+      background: #ecf6fc;
+    }
+    tr.over td{
+      background: #bcd4ec;
+    }
+
+  </style>
+  <script type="text/javascript">
+  $(".checkbox").click(function(){
+
+   $(this).parent().next("div").toggle();    
+
+});​
+  </script>
+<!--hide-->  
+<script type="text/javascript">
+  $(function(){
+   $('.myclassname .mylink').click(function(){
+      $(this).hide();
+      $('.myclassname .form').show();
+      $('.searchlink .show').show();
+      return false;
+   });
+});
+  </script>
+
+<script type="text/javascript">
+  $(function(){
+   $('.searchlink .show').click(function(){
+      $(this).hide();
+      $('.searchlink .formsearchsv').show();
+      return false;
+   });
+});
+  </script>
+  
+  <!--Toggle-->
+ <script type="text/javascript">
+   $(function(){
+       $('.toggleLink').click(function(){
+           $('#toggle_div').toggle();
+       });
+   });
+
+   // notice the hash(#) and dot(.) before the elements? A hash represents an HTML ID and a 
+   // dot represents an HTML class. I made the link have a class, and the toggle_div an ID 
+   // but you may use whatever you'd like, just make sure if you're referencing an ID that you put
+   // a hash(#) before it and if you're referencing a class, make sure you put a dot(.) before it.
+
+
+   // this javascript should also be in your application.js, or some other JS file. The whole reason link_to_remote and 
+   // those other "remote" tags were deprecated is to maintain unobtrusive javascript (take the JS out of the views).
+   // this makes for cleaner, separated, more modular code.
+
+</script>  
+  
+<!--Paginate-->
+<script type="text/javascript">
+$(function () {  
+  $('#sinhviens .pagination a').live('click', 
+    function () {  
+      $.getScript(this.href);  
+      return false;  
+    }  
+  );  
+});
+  </script>
+  <!--Điểm rèn luyện-->
+ <script type="text/javascript"> 
+  $('input.filldrl').live('keyup',function(e) {
+        
+        var $this = $(this);
+        value = $this.val();
+        name = $this.attr("name");
+        alert(name);                    
+        //alert(value);
+        id = $this.attr("id");
+        //alert(id);
+            var checkboxes = $this.closest('form').find($(":input[name='" + name + "']"));
+    var $same = $(":input[name='" + name + "']");
+    
+      
+        value1 = $same.attr("name");
+         $same.val(value);
+          //alert(value1);  
+//        checkboxes.attr('id')===;
+});
+​</script>
+  
+  <!--Hoc bong-->
+  
+
+<script type="text/javascript">
+     $('input.checksv').live('click',function(e) {
+        
+        var $this = $(this);
+        
+        var checkboxes = $this.closest('form').find('input:checkbox[value="'+$this.data('value')+'"]');
+        if ( this.checked ) {
+        checkboxes.attr('checked', 'checked');
+        }
+        else 
+        checkboxes.attr('checked', false);
+    });
+  </script>
+  
+  
+ <script type="text/javascript"> 
+  $(document).ready(function(){
+    $('.alternative tr').mouseover(function(){
+      $(this).addClass('over');
+    });
+    $('.alternative tr').mouseout(function(){
+      $(this).removeClass('over');
+    });
+    $('.alternative tr:even').addClass('alt');
+  
+  });
+ </script>
+  <!--<style type="text/css">
+@import url("style.css");
+@import url("marqueeimg.css");
+@import url("showproduct.css");
+@import url("slideshow.css");
+@import url("starvote.css");
+  </style>-->
+
+<script type="text/javascript">
+    $(function () {
+        // Hieu ung menu
+
+        
+        $('#left-menu a')
+		.css({ backgroundPosition: "0 0" })
+		.mouseover(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 -30px) " }, { duration: 200 })
+		})
+		.mouseout(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 0)" }, { duration: 300 })
+		})
+        $('#tab-menu .l1 a')
+		.css({ backgroundPosition: "0 0" })
+		.mouseover(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 -50px) " }, { duration: 300 })
+		})
+		.mouseout(function () {
+		    $(this).stop().animate({ backgroundPosition: "(0 0)" }, { duration: 100 })
+		})
+    })
+    ;
+</script>   
+<!-- Slideshow eff -->
+
+<!-- Product Animation-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+            //Vertical Sliding
+            $('.boxgrid.slidedown').hover(function () {
+                $(".cover", this).stop().animate({ top: '-260px' }, { queue: false, duration: 300 });
+            }, function () {
+                $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 300 });
+            });
+            //Horizontal Sliding
+            $('.effect').hover(function () {
+                $(".cover", this).stop().animate({ top: '-150px' }, { queue: false, duration: 300 });
+            }, function () {
+                $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 300 });
+            });
+
+            
+        });
+		</script>
+
+</head>
+<body>
+  
+<%= yield %> 
+
+<!--<form name="aspnetForm"  onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">-->
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MDg3OTY1OTcPZBYCZg9kFgICAw9kFgwCAQ8PFgIeCEltYWdlVXJsBQ9pbWFnZXMvY2FydC5wbmdkZAIDDw8WAh4EVGV4dAUBMGRkAgUPDxYCHwEFATBkZAINDxAPFgYeDURhdGFUZXh0RmllbGQFBk5hbWVWbh4ORGF0YVZhbHVlRmllbGQFBk5hbWVWbh4LXyFEYXRhQm91bmRnZBAVCgxOaOG6q24gxJHGoW4JTOG6r2MgdGF5C0zhuq9jIGNow6JuB0hvYSB0YWkNRMOieSBjaHV54buBbgxOaOG6q24gY+G6t3AKTeG6t3QgZMOieRBUcmFuZyBz4bupYyBi4buZEVRyYW5nIHPhu6ljIGtow6FjClThuqV0IGPhuqMVCgxOaOG6q24gxJHGoW4JTOG6r2MgdGF5C0zhuq9jIGNow6JuB0hvYSB0YWkNRMOieSBjaHV54buBbgxOaOG6q24gY+G6t3AKTeG6t3QgZMOieRBUcmFuZyBz4bupYyBi4buZEVRyYW5nIHPhu6ljIGtow6FjASUUKwMKZ2dnZ2dnZ2dnZ2RkAh8PZBYCAgEPFgIeC18hSXRlbUNvdW50AgEWAmYPZBYCZg8VAQI1MmQCJQ9kFgwCAQ8WAh8FAgYWDGYPZBYCZg8VBAVTQzAwMQVTQzAwMQVzdGFyNQ9wcm9kdWN0L2NyMS5qcGdkAgEPZBYCZg8VBAVTQzAwNQVTQzAwNQVzdGFyNQ9wcm9kdWN0L2NyNS5qcGdkAgIPZBYCZg8VBAVTRTAwNQVTRTAwNQVzdGFyNQ9wcm9kdWN0L3JlNC5qcGdkAgMPZBYCZg8VBAVTRzAwMgVTRzAwMgVzdGFyNBNwcm9kdWN0L25vaW1hZ2UuanBnZAIED2QWAmYPFQQFU04wMDMFU04wMDMFc3RhcjQPcHJvZHVjdC9zbjIuanBnZAIFD2QWAmYPFQQFU0MwMDkFU0MwMDkFc3RhcjQQcHJvZHVjdC9jcjEwLmpwZ2QCAg8WAh8FZmQCAw8PFgQeC05hdmlnYXRlVXJsBQc/cGFnZT0xHgdWaXNpYmxlaGRkAgQPDxYCHwdoZGQCBQ8PFgIfB2hkZAIGDw8WBB8GBQc/cGFnZT0xHwdoZGQYAQUaY3RsMDAkY3RsMTAkTXVsdGlWaWV3TG9naW4PD2RmZISeqgSvtGKH7PQxAw30rGKoc/lJ" />
+</div>
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEAKEo/3gDgLPjafVBQKOkrn2CAL84fGHBQLxjYbcAwKJyJalCQKoteq6CgL73LmtBgKa9dbfAQLZwpPfCAKIlMPRCQLu76qrAwKpyrWwCQLBs/fvCALAs/fvCAKLkrn2CMNmkkXBRBE0hUpfmJ05UNcAdy4c" />
+</div>
+    <div class="center" id="container">
+    <div class="center" id="top-center-wrap">
+        <div id="left-wrap">
+            <div id="logo-cont">
+            <div style="z-index: 1; left: 0px; width: 45px; position: absolute; top: -30px; height: 1px"></div>
+            <embed allowfullscreen="false" allowscriptaccess="always" height="202" menu="false" quality="high" src="/images/flash.swf" type="application/x-shockwave-flash" width="300" wmode="transparent"> </embed>
+            
+            
+            </div>
+            <div id="menu-cont">
+      <!-- LEFT SIDE : start  -->      
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Quản lý người dùng</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <li><a href="catelogy.aspx?cat=5" style="color:#000">Đăng xuất</a></li>
+                            <li><a href="catelogy.aspx?cat=6" style="color:#000">Thay đổi mật khẩu</a></li>
+                            <li><a href="catelogy.aspx?cat=2" style="color:#000">Thay đổi thông tin cá nhân</a></li>
+                           
+                          
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                <!-- GROUP: end -->
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Công văn</h2></div>
+                    <div id="body-menu">
+                        <ul id="left-menu">
+                            <!--<li class="menuheaders"><a style="color:#000">Quản lý công văn</a>
+                              <ul class="menucontents">
+                                <li ><a style="color:#000">
+                                  <%= link_to "Công văn đến", :action => "../congvans/search", :id =>'1'%></a>
+                                  </a>
+                                </li>
+                                <li ><a class="subexpandable" style="color:#000">Công văn đi</a>
+                                  <ul class="subcategoryitems">
+                                    <li ><a style="color:#000">Đơn vị gửi</a></li>
+                                    <li ><a style="color:#000">Giảng viên</a></li>
+                                    <li ><a style="color:#000">Sinh viên</a></li>
+                                  </ul> 
+                                </li>
+                              </ul>
+                            </li>-->
+                            
+                            <li><%= link_to 'Thêmcông văn','/congvans/new',:style=>"color:#000" %></li>
+                            <li><%= link_to 'Danh sách công văn','/congvans',:style=>"color:#000" %></li>
+                            <li>
+                                <%= link_to "Công văn đến",:style=>"color:#000", :action => "../congvans/search", :loai =>'true'%> 
+                            <li>
+                            <li>
+                                <%= link_to "Công văn đi",:style=>"color:#000", :action => "../congvans/search", :loai =>'false'%> 
+                            <li>
+                            <li>
+                                <%= link_to 'Quản lý giảng viên','/giangviens/index',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Quản lý sinh viên','/sinhviens/index',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to "Tra cứu nâng cao",:style=>"color:#000", :action => "../layouts/extra_search"%>
+                            <li>
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+               
+                <!-- GROUP: end -->
+                  
+               
+                <div class="menu-group" id="menu-ads">
+                    <div id="top-menu"><h2>Liên kết quảng cáo</h2></div>
+                    <div id="body-menu">
+                       
+                            &nbsp;<a id="ctl00_ctl08_Ads" href="http://chipchipshop.com" target="_blank">
+                              
+                              <%=image_tag'adsImg/chipchip.jpg', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:75px;width:100px;' %>
+             
+                              
+                            </a>'
+                            <span style="display: block;text-align: right;margin-right: 25px;font-size: 11px;"><a href="./lienhequangcao.aspx">Đặt quảng cáo</a></span>
+                    </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                <!-- GROUP: end -->
+               
+                <div class="menu-group" id="menu-overview">
+                    <div id="top-menu"><h2>Thống kê</h2></div>
+                    <div id="body-menu">
+                        
+ <div id='stat-cont'>
+                            
+                                <ul id='stats-list'>                                    
+                                    <li> <a style="color:#000">
+                                        Khách đang xem:  <span class='light'> 52</span> </a>
+                                        </li>
+                                   
+                                    
+                                    
+                                </ul>
+                            
+                            
+                        </div>
+                    </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                
+                
+      <!-- LEFT SIDE : end  -->       
+            </div>
+        </div>
+        <div id="right-wrap">
+      <!--  RIGHT SIDE : start  -->    
+            <div id="header-cont">
+                <div id="tab-cont">
+                    <ul id="tab-menu">
+                        <li class="l1"><a href="index">Trang chủ</a></li>
+                        <li class="l1"><a href="GioiThieu.aspx">Giới thiệu</a></li>
+                        <li class="l1"><a href="KhuyenMai.aspx">Liên kết</a></li>
+                        <li class="l1"><a href="HuongDan.aspx">Hướng dẫn</a></li>
+                        <li class="l1" id="end">                                                
+                        <a >Thành viên  </a>
+                           
+         <div id="submenu">
+            <%= link_to 'Đăng nhập','/sessions/new' %>
+            <a href="register.aspx">Đăng kí</a>
+            <a href="lostpassword.aspx">Quên mật khẩu</a>
+         </div>
+    
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- GROUP : end  --> 
+            <div id="intro-cont">
+                
+        <div id="bg">            
+                
+                    <div align="center" class="slideshow1" id="slide1">
+                        <%=image_tag'hh1.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh2.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh3.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh4.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh5.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh6.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh7.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh8.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        <%=image_tag'hh9.jpg',:class=>"active", :alt=>"Khoa công nghệ thông tin - Trường đại học Sài Gòn "%>
+                        
+                        <div class="description"><a></a></div>
+    
+                    </div>
+                    <!-- Script config slideshow here -->
+                    <SCRIPT type="text/javascript">
+                
+                        $('#slide1').slideMe({
+                
+                            width:610,
+                
+                            height:220,				
+                
+                            transition_duration: 1000
+                
+                        });
+                
+                    </SCRIPT>
+    
+                
+                </div>
+            </div>
+            
+           <!-- GROUP : end  --> 
+           
+       <!--     ContentPlaceHolder : start -->  
+   
+                 
+
+  <!-- Start: Main group -->
+<div class='group-cont'>
+                <div id="top-group"><h3></h3></div>
+                <div id="body-group">
+                 <!-- Show: Noi bat -->
+						   
+                    <div class="items-cont" title='Tin tức noi bat'> 
+                    	<div class="title-items">Tin tức nổi bật</div>    
+                        <div class="content-items" id='id-noibat'>	
+                                
+                                <div class="carousel">
+                                    
+                                     
+                                  <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                                    
+                                      <a href="detail.aspx?id=SC001">» Mã: SC001</br><%=image_tag'hh6.jpg'%></a>           
+                                      <a href="detail.aspx?id=SC005">» Mã: SC001 <%=image_tag'hh1.jpg'%></a>           
+                                      <a href="detail.aspx?id=SE005">» Mã: SC001<%=image_tag'hh9.jpg'%></a>          
+                                                                 
+                                  </marquee>
+                                                
+                                            
+                                       
+                                    
+                                    <div class="clear"></div>   
+                                </div>
+                          </div>
+                     </div>
+                      
+                     <!-- Show: products -->
+                     
+                    
+                  <!-- end: Show product -->   
+                 </div>
+                 <div id="bottom-group"></div>
+ </div> 
+ <!-- End: Main group 
+  Start: Profile -->
+   
+            
+  <!-- End: Profile -->
+   <!--   Start: Payment link -->
+   
+            <div class="group-cont">
+                <div id="top-group"> </div>
+                 <div id="body-group">
+                 	 <div class="items-cont" title='Liên kết' >
+                		<div class="title-items">Liên kết </div>    
+                        <div class="content-items" id='id-thanhtoan'>
+                        	<!--<img class="cover" src="images/taikhoan.png"> -->
+                        </div>
+                 	</div>
+                 
+                 </div>
+                 <div id='bottom-group'></div>
+            </div>
+  <!-- End: -->
+
+  <!-- Giam gia: Load len 2 field Price, OPrice, IsSale
+    Khong giam gia % ma chi ban luon gia goc...
+ -->
+           
+                                   
+         <!--    ContentPlaceHolder : end  -->            
+                
+            
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!-- Footer here -->
+    <div class="center" id="footer-center-wrap">
+        
+ <div id="copyright-cont">
+        <a href="index.aspx">Trang chủ</a>  |   
+         <a href="../HDThanhToan.aspx">Giới thiệu </a>  |   
+         <a href="../BaoHanh.aspx">Khoa CNTT</a>   |   
+         <a href="../DoiTac.aspx">Đối tác</a>  |   
+         <a href="../LienHe.aspx">Liên hệ</a>
+        <br />
+        Khoa công nghệ thông tin - Trường đại học Sài Gòn  © 2012
+        </div>
+    </div>
+</div>
+   
+    
+
+<!--</form>-->
+</body>
+</html>

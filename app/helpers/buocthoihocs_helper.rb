@@ -1,0 +1,2 @@
+module BuocthoihocsHelper
+end

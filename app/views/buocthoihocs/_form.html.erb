@@ -1,0 +1,118 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 80%; top: 8%; left: 13%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+<%= form_for(@buocthoihoc) do |f| %>
+  <% if @buocthoihoc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@buocthoihoc.errors.count, "error") %> prohibited this buocthoihoc from being saved:</h2>
+
+      <ul>
+      <% @buocthoihoc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h1>Chi tiết buộc thôi học</h1>
+<fieldset>
+  <table width ="100%" align ="center" >
+<!--      <div class="field"> -->
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Mã buộc thôi học:'%></td>
+        <td align="left"><%= f.text_field :MaBTH, :size => "29x1" %></td>
+        
+        <td align="left" width="15%"><%= f.label 'Loại:'%></td>
+        <td><%= collection_select(:buocthoihoc, :loaibuocthoihoc_id, Loaibuocthoihoc.all, :id, :TenLoaiBTH) %></td>
+        
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Tên buộc thôi học:' %></td>
+        <td><%= f.text_field :TenBTH %></td>
+
+          
+        <td align="left" width="15%"><%= f.label 'Học kỳ:' %></td>
+        <td><%= f.text_field :HocKy %></td>
+      </tr>
+      <tr>
+        <td align="left" width="15%"><%= f.label 'Công văn số:' %></td>
+        <td><%= collection_select(:buocthoihoc, :congvan_id, Congvan.all, :id, :SoCV) %></td>
+        
+        <td align="left" width="15%"><%= f.label 'Năm học:' %></td>
+        <td><%= f.text_field :NamHoc %></td>
+      </tr>
+           
+      <tr>
+        <td align="left"><%= f.label 'Ghi Chú:' %></td>
+        <td colspan="4"><%= f.text_area :GhiChu,:size => "80x3"%></td>
+      </tr>
+  
+  </table>
+</fieldset>
+<br />
+
+<div id ="sinhviens">
+  <%= render :partial => 'sinhvien' %>
+</div>
+<script>
+$(document).ready(function() {
+    $('.pagination a').attr('data-remote', 'true');
+});</script>
+<div style="display :none">
+<fieldset>
+        
+        <table class="table2" width="100%" align="center">
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Trình độ</th>
+            <th>Chọn</th>
+            <th>Chức năng</th>
+
+          </tr>
+          <% @sinhviens.each do |sinhvien| %>
+          <tr>
+            <td ><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+            <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+            <td>
+              <input type="checkbox"
+                 id="<%= sinhvien.id %>"
+                 name="sinhvien_ids[]"
+                 value="<%= sinhvien.id %>"
+                 <% if @buocthoihoc.sinhviens.include? sinhvien%>checked="checked"<%end%>
+                 >
+            </td>
+            <td>
+              <%= link_to 'Xem  ', sinhvien %>
+            </td> 
+          </tr>
+        <% end %>
+        </table>
+        
+      </fieldset>
+</div>
+<br />
+  <div class="actions">
+    <%= f.submit 'Lưu lại'%>
+  </div>
+<%= link_to 'Quay lại', buocthoihocs_path %>
+<% end %>
+<%= render :partial => 'partials/searchsv'%>  
+  
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+
+
+

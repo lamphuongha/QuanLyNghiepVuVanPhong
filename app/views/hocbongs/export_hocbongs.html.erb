@@ -1,0 +1,98 @@
+<div class="page">
+<!--<div class="logo">
+<%=image_tag'logo_sgu.png', :style=>'height:75px;width:75px;top:15%;left:15%;' %>  
+</div>
+<div class="leftheader">
+  <p>UBND TP.Hồ Chí Minh<br />
+    Trường Đại Học Sài Gòn<br />
+    Số:<%= @hocbong.congvan.SoCV %>
+   </p>
+  </div>
+  <div class="middleheader">
+    <p>Cộng hòa xã hội chủ nghĩa Việt Nam</p>
+    <p>Độc lập - Tự do - Hạnh phúc</p>
+  </div>
+<div class="rightheader">
+  <p><%= @hocbong.MaHocBong%> - <%= @hocbong.NgayLap %></p>
+   
+</div>
+-->
+<table width="100%" cellspacing ="0">
+  <tr>
+    <td width="5%">
+      <%=image_tag'logo_sgu.png', :style=>'height:60px;width:60px' %>  
+    </td>
+    <td width="30%">
+      UBND TP.Hồ Chí Minh<br />
+    Trường Đại Học Sài Gòn<br />
+    Số:<%= @hocbong.congvan.SoCV %>
+   
+    </td>
+    <td align="center">
+      <p>
+        <br />
+    Cộng hòa xã hội chủ nghĩa Việt Nam
+      <br />
+  Độc lập - Tự do - Hạnh phúc
+    <hr width="40%"/>
+    </p>
+    <p><%= @hocbong.MaHocBong%> - <%= @hocbong.NgayLap %></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="3">
+      <h3><p><%= @hocbong.TenHocBong %></p></h3>
+      <p>Học kỳ <%= @hocbong.HocKy %> - Năm học <%= @hocbong.NamHoc %></p>
+    </td>
+  </tr>
+</table>
+
+        <table border ="1" width ="90%" align="center" cellspacing ="0" cellpadding ="0">
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+          </tr>
+          <% dem = 1 %>
+          <% for sinhvien in @hocbong.sinhviens %>
+          <tr>
+            <td>
+              <%= dem %>
+            </td>
+            <td><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td align="center"><%= sinhvien.NgaySinh %></td>
+            <td align="center"><%= sinhvien.GioiTinh %></td>
+            <td align="center"><%= sinhvien.DiaChi %></td>
+            <td align="center"><%= sinhvien.SDT %></td>
+            <td align="center"><%= sinhvien.lop.TenLop %></td>
+          </tr>
+          <% dem = dem + 1 %>
+        <% end %>
+          <tr></tr>
+        </table>
+<p>
+  <%= @hocbong.GhiChu %>
+</p>
+<br />
+<table>
+  <tr>
+    <td width="40%"></td>
+    <td width="30%"></td>
+    <td align="center">
+      TPHCM,&nbsp;ngày&nbsp;&nbsp;&nbsp;&nbsp;tháng&nbsp;&nbsp;&nbsp;&nbsp;năm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      Ký tên
+      <br />
+      <br />
+      <br />
+      <br />
+    </td>
+  </tr>
+</table>
+</div>

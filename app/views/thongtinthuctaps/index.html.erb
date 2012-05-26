@@ -1,0 +1,60 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to 'Thêm', new_thongtinthuctap_path %>
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+  <%= form_tag thongtinthuctaps_path, :method => 'get' do %>  
+     <fieldset>
+        <legend>Lọc</legend>
+      <%= text_field_tag :search, params[:search] %> 
+      
+      <%= submit_tag "Lọc", :name => nil %>
+        <%= link_to 'Tìm kiếm nâng cao', '/thongtinthuctaps/search'  %>
+       </fieldset>
+    <%end%>
+<h1>Danh sách sinh viên thực tập</h1>
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã sinh viên</th>
+    <th>Loại thực tập</th>
+    <th>Tên công ty</th>
+    <th>Địa chỉ</th>
+    <th>SĐT</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Ghi chú</th>
+
+  </tr>
+
+    <% @thongtinthuctaps.each do |thongtinthuctap| %>
+  <tr>
+    <td><%= thongtinthuctap.id %></td>
+    <td><%= thongtinthuctap.sinhvien_id %></td>
+    <td><%= thongtinthuctap.loaithuctap_id %></td>
+    <td><%= thongtinthuctap.TenCongTy %></td>
+    <td><%= thongtinthuctap.DiaChi %></td>
+    <td><%= thongtinthuctap.SDT %></td>
+    <td><%= thongtinthuctap.HocKy %></td>
+    <td><%= thongtinthuctap.NamHoc %></td>
+    <td><%= thongtinthuctap.GhiChu %></td>
+ 
+    <td><%= link_to 'Show', thongtinthuctap %></td>
+    <td><%= link_to 'Edit', edit_thongtinthuctap_path(thongtinthuctap) %></td>
+    <td><%= link_to 'Destroy', thongtinthuctap, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  
+<% end %>
+
+</table>
+
+<br />
+
+
+</div>
+<br />
+
+</div>  
+
+<div class="lock-screen" id="lock" style="display:block"></div>

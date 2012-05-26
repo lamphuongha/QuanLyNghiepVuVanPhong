@@ -1,0 +1,55 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 75%; top: 8%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closex.jpg'),'/giangviens'%>
+    </div>
+<h1>Tìm kiếm nâng cao</h1>
+    <%= form_tag '/giangviens/search',:remote => true, :method => 'get' do %>  
+    <fieldset>
+    <table width ="100%">
+      <tr>
+        <td width ="20%">Mã giảng viên:</td>
+        <td width ="30%"><%= text_field_tag :MaGV, params[:MaGV], :size =>'19px'%></td>
+        
+        <td>Chức vụ: </td>
+        <td><%= select_tag :chucvu_id, options_from_collection_for_select(Chucvu.all, :id,  :TenCV, params[:chucvu_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Họ tên:</td>
+        <td width ="30%"><%= text_field_tag :HoTenGV, params[:HoTenGV], :size =>'19px'%></td>
+        
+        <td>Học vị: </td>
+        <td><%= select_tag :hocvi_id, options_from_collection_for_select(Hocvi.all, :id,  :TenHocVi, params[:hocvi_id]), :include_blank=>'Tất cả' %></td>
+        
+      </tr>
+      <tr>
+        <td>Địa chỉ:</td>
+        <td width ="30%"><%= text_field_tag :DiaChiGV, params[:DiaChiGV], :size =>'19px'%></td>
+        <td>Ngạch: </td>
+        <td><%= select_tag :ngach_id, options_from_collection_for_select(Ngach.all, :id,  :TenNgach, params[:ngach_id]), :include_blank=>'Tất cả' %></td>
+        
+        
+      </tr>
+      <tr>
+        <td>SDT:</td>
+        <td width ="30%"><%= text_field_tag :SDTGV, params[:SDTGV], :size =>'19px'%></td>
+        <td>Học hàm:</td>
+        <td width ="30%"><%= text_field_tag :Hocham, params[:Hocham], :size =>'19px'%></td>
+      </tr>
+      
+      
+    </table>
+    <%= submit_tag "Tìm kiếm", :name => nil %>
+    
+    </fieldset>
+<%end%>
+    
+    <h1>Danh sách giảng viên</h1>
+<div id ="giangviens">
+        <%= render :partial => 'giangvien' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

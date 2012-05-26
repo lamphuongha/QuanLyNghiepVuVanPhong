@@ -1,0 +1,15 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 65%; height: 60%; top: 10%; left: 15%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+<h1>Thay đổi mật khẩu</h1>
+
+<%= form_tag password_resets_path, :method => :post do %>
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="actions"><%= submit_tag "Thay đổi mật khẩu" %></div>
+<% end %>
+</div>
+<div class="lock-screen" id="lock" style="display:block"></div> 

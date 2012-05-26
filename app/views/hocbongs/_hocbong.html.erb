@@ -1,0 +1,42 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã học bổng</th>
+    <th>Tên học bổng</th>
+    <th>Số công văn</th>
+    <th>Loại học bổng</th>
+    <th>Nơi cấp</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Ngày lập</th>
+    <th>Chức năng</th>
+  </tr>
+
+<% @hocbongs.each do |hocbong| %>
+  <tr>
+    <th><%= hocbong.id %> </th>
+    <td><%= hocbong.MaHocBong %> </td>
+    <td><%= hocbong.TenHocBong %> </td>
+    <td><%= hocbong.congvan.SoCV %> </td>
+    <td><%= hocbong.loaihocbong.TenLoaiHocBong %> </td>
+    <td><%= hocbong.NoiCap %> </td>
+    <td><%= hocbong.HocKy %> </td>
+    <td><%= hocbong.NamHoc %> </td>
+    <td><%= hocbong.NgayLap %> </td>
+    <td><%= link_to 'Xem', hocbong , :style=>"color:#000"%> | 
+        <%= link_to 'Sửa', edit_hocbong_path(hocbong) , :style=>"color:#000"%> | 
+        <%= link_to 'Xóa', hocbong, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%> | 
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @hocbongs %>
+      <br />
+    </div>
+</div>
+<br />
+      

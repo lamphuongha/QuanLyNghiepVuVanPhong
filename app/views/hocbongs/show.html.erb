@@ -1,0 +1,101 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 8%; left: 8%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+      <%= link_to 'In danh sách',{:action=>:export_hocbongs}, {:popup=>true},:style=>"color:#000" %>
+        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+        
+
+    </div>
+  <h1>Chi tiết học bổng</h1>
+     <table width ="60%" align ="center" >  
+      <tr>
+        <td colspan="3">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="20%"><b>Mã học bổng:</b></td>
+        <td><%= @hocbong.MaHocBong%></td>
+      </tr>
+      <tr>
+        <td><b>Tên học bổng:</b></td>
+        <td align="left"><%= @hocbong.TenHocBong %><td>
+      </tr>
+      <tr>
+        <td><b>Loại học bổng:</b></td>
+        <td><%= @hocbong.loaihocbong.TenLoaiHocBong %></td>
+      </tr>
+      <tr>
+        <td><b>Công văn số:</b></td>
+        <td><%= @hocbong.congvan.SoCV %></td>
+      </tr>
+      <tr>
+        <td><b>Nơi cấp:</b></td>
+        <td><%= @hocbong.NoiCap %></td>
+      </tr>
+      <tr>
+        <td><b>Học kỳ:</b></td>
+        <td><%= @hocbong.HocKy %></td>
+      </tr>
+      <tr>
+        <td><b>Năm học:</b></td>
+        <td><%= @hocbong.NamHoc %></td>
+      </tr>
+      <tr>
+        <td><b>Ngày lập học bổng:</b></td>
+        <td><%= @hocbong.NgayLap %></td>
+      </tr>
+      <tr>
+        <td><b>Ghi Chú:</b></td>
+        <td><%= @hocbong.GhiChu %></td>
+      </tr>
+      <!--<tr>
+        <td align="right"><b>SV nhận học bổng:</b></td>
+        <td colspan ="2">
+          <% for sinhvien in @hocbong.sinhviens %>
+            <%=sinhvien.MSSV%>,
+          <%end%>
+        </td>
+      </tr>-->
+      
+  <tr>
+        <td colspan="3" align ="center">
+        <%= link_to 'Sửa', edit_hocbong_path(@hocbong) , :style=>"color:#000" %> |
+        <%= link_to 'Quay lại', hocbongs_path , :style=>"color:#000"%> |
+        <%= link_to 'Thêm học bổng', new_hocbong_path, :style=>"color:#000"%>
+        </td>
+  </tr>
+  </table>
+        <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+            <th>Trình độ đào tạo</th>
+          </tr>
+          <% dem = 1 %>
+          <% for sinhvien in @hocbong.sinhviens %>
+          <tr>
+            <td><%= dem %></td>
+            <td ><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td><%= sinhvien.NgaySinh %></td>
+            <td><%= sinhvien.GioiTinh %></td>
+            <td><%= sinhvien.DiaChi %></td>
+            <td><%= sinhvien.SDT %></td>
+            <td><%= sinhvien.lop.TenLop %></td>
+            <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+          </tr>
+          <% dem = dem +1 %>
+        <% end %>
+        </table>
+        
+
+
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>
+
