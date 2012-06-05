@@ -1,8 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'rubygems'
-require 'Spreadsheet'
+#require 'rubygems'
+#require 'Spreadsheet'
 #require 'pdfkit'
 #Date::MONTHNAMES=[nil,"tháng 1","tháng 2","tháng 3","tháng 4","tháng 5","tháng 6","tháng 7","tháng 8","tháng 9","tháng 10","tháng 11","tháng 12"]
 if defined?(Bundler)
