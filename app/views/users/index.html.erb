@@ -1,10 +1,14 @@
 
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to "Thêm tài khoản", signup_path %>
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <h1>Danh sách tài khoản</h1>
+<div align="left">
+     
+   <%= link_to image_tag('new.png'), signup_path %> Thêm người dùng
+     
+   </div>
 <div id="shadow" class="shadow" >
     <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
   <tr>
@@ -23,9 +27,9 @@
     <td><%= user.giangvien.MaGV%></td>
     <td><%= user.giangvien.HoTenGV %></td>
     <td><%= user.role.TenRole %></td>
-    <td><%= link_to 'Xem', user , :style=>"color:#000"%> | 
-    <%= link_to 'Sửa', edit_user_path(user) , :style=>"color:#000"%> | 
-    <%= link_to 'Xóa', user, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+    <td><%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), user , :style=>"color:#000"%> | 
+    <%= link_to image_tag('edit.png'), edit_user_path(user) , :style=>"color:#000"%> | 
+    <%= link_to image_tag('delete_1.png'), user, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
   </tr>
 <% end %>
 </table>

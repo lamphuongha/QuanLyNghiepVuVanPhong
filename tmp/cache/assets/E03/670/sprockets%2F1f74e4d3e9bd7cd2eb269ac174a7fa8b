@@ -1,0 +1,34 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155586.095:@expires_in0:@value";{"
+class"ProcessedAsset"logical_path"blueprint/print.css"pathname"5$root/app/assets/stylesheets/blueprint/print.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthi"digest"%061707df6f7e160de83246c1a0a15073"source"/* -----------------------------------------------------------------------
+
+
+ Blueprint CSS Framework 0.9
+ http://blueprintcss.org
+
+   * Copyright (c) 2007-Present. See LICENSE for more info.
+   * See README for instructions on how to use Blueprint.
+   * For credits and origins, see AUTHORS.
+   * This is a compressed file. See the sources in the 'src' directory.
+
+----------------------------------------------------------------------- */
+
+/* print.css */
+
+body {line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:none;font-size:10pt;}
+.container {background:none;}
+hr {background:#ccc;color:#ccc;width:100%;height:2px;margin:2em 0;padding:0;border:none;}
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+h1, h2, h3, h4, h5, h6 {font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;}
+code {font:.9em "Courier New", Monaco, Courier, monospace;}
+a img {border:none;}
+p img.top {margin-top:0;}
+blockquote {margin:1.5em;padding:1em;font-style:italic;font-size:.9em;}
+.small {font-size:.9em;}
+.large {font-size:1.1em;}
+.quiet {color:#999;}
+.hide {display:none;}
+a:link, a:visited {background:transparent;font-weight:700;text-decoration:underline;}
+a:link:after, a:visited:after {content:" (" attr(href) ")";font-size:90%;}
+"dependency_digest"%2ed141072965563192ea5c2d74d34128"required_paths["5$root/app/assets/stylesheets/blueprint/print.css"dependency_paths[{"	path"5$root/app/assets/stylesheets/blueprint/print.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%d91ff076b76aea3e22c1f1c31efa6c51"_version"%aa7d0db7619379e13b08335dee027df2

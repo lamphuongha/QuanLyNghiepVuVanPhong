@@ -1,5 +1,5 @@
 <!--<div id="shadow" class="shadow" >-->
-<table border ="1" width ="70%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+<table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
       <tr>
         <th>STT</th>
         <th>Cố vấn học tập</th>
@@ -17,9 +17,9 @@
         <td><%= covanhoctap.HocKy %></td>
         <td><%= covanhoctap.NamHoc %></td>
         <td>
-          <%= link_to 'Xem', covanhoctap ,:style =>"color:#000"%> | 
-          <%= link_to 'Sửa', edit_covanhoctap_path(covanhoctap) ,:style =>"color:#000"%> | 
-          <%= link_to 'Xóa', covanhoctap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%>
+          <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), covanhoctap , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_covanhoctap_path(covanhoctap) , :style=>"color:#000" %> | 
+          <%= link_to image_tag('delete_1.png'), covanhoctap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
         </td>
       </tr>
       <% dem = dem + 1 %>

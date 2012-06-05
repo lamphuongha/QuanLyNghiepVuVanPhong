@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1338571915.233:@expires_in0:@value"ù{"
+class"StaticAsset"logical_path"khoa.png"pathname"%$root/app/assets/images/khoa.png"content_type"image/png"
+mtime"2012-06-02T00:28:44+07:00"lengthi©v"digest"%998429ff68915ade8ef32fcc1c04debe"_version"%aa7d0db7619379e13b08335dee027df2

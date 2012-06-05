@@ -1,0 +1,44 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989050.153:@expires_in0:@value"F{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/z.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/z.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi“"digest"%beb54a7101963fbc3a3977210f621750"source"“/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/z.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'ZHcy': '\u0416',
+    'Zacute': '\u0179',
+    'Zcaron': '\u017D',
+    'Zcy': '\u0417',
+    'Zdot': '\u017B',
+    'ZeroWidthSpace': '\u200B',
+    'zacute': '\u017A',
+    'zcaron': '\u017E',
+    'zcy': '\u0437',
+    'zdot': '\u017C',
+    'zeetrf': '\u2128',
+    'zhcy': '\u0436'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/z.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%6898ab6c9c384c3947519bc3077735d8"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/z.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/z.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%56e2fdb7cac7dc8a66c9fb5f30b061ab"_version"%aa7d0db7619379e13b08335dee027df2

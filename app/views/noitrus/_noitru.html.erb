@@ -1,0 +1,36 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã danh sách</th>
+    <th>Tên danh sách</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+
+  </tr>
+
+<% @noitrus.each do |noitru| %>
+  <tr>
+    <th><%= noitru.id %></th>
+    <td><%= noitru.MaNoiTru %></td>
+    <td><%= noitru.TenNoiTru %></td>
+    <td><%= noitru.congvan.SoCV %></td>
+    <td><%= noitru.HocKy %></td>
+    <td><%= noitru.NamHoc %></td>
+    <td>
+   <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), noitru , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_noitru_path(noitru) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), noitru, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+  </tr>
+<% end %>
+</table>
+<br />
+<div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @noitrus %>
+      <br />
+    </div>
+</div>
+<br />
+      

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989042.282:@expires_in0:@value"±{"
+class"ProcessedAsset"logical_path"IMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/SuppMathOperators.js"pathname"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/SuppMathOperators.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiª"digest"%2b1f6ed9ebeace6773daef47c3e156db"source"ª/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/SuppMathOperators.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{10815:[687,1,900,38,861],10927:[696',',199,894,96,797','],10928:[698',3,']});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/SuppMathOperators.js");']
+]);
+
+"dependency_digest"%21cc80ef91e4d8ddab013bc676d2b3bc"required_paths["f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/SuppMathOperators.js"dependency_paths[{"	path"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/SuppMathOperators.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%c7774337380dd1c45543ba0b69875e52"_version"%aa7d0db7619379e13b08335dee027df2

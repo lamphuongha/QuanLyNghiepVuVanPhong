@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.422:@expires_in0:@value"8{"
+class"ProcessedAsset"logical_path"SMathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/AlphaPresentForms.js"pathname"p$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/AlphaPresentForms.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi	"digest"%f9fe3ad2e7ae2ac16b447f13cd4ea86d"source"	/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/AlphaPresentForms.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold-italic"],{64256:[698,205,613,-169,726],64257:[703,205,556,-188,514],64258:[704,205,556,-186,553],64259:[703,205,856,-169,814],64260:[704,205,854,-169,851]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/BoldItalic/AlphaPresentForms.js");']
+]);
+
+"dependency_digest"%3076e00bf4e80725421e4bc62eb3c9c6"required_paths["p$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/AlphaPresentForms.js"dependency_paths[{"	path"p$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/AlphaPresentForms.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%a9d0a8831a09684713d7da248f825148"_version"%aa7d0db7619379e13b08335dee027df2

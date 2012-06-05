@@ -1,10 +1,16 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 65%; top: 10%; left: 10%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
      
     <h1>Danh sách học vị</h1>
     <div id="shadow" class="shadow" >
+       <br />
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm học vị"), new_hocvi_path %> Thêm học vị
+     
+   </div>                 
     <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
       <tr>
         <th> Mã học vị</th>
@@ -18,9 +24,9 @@
         <td><%= hocvi.MaHocVi %></td>
         <td><%= hocvi.TenHocVi%></td>
         <td>
-          <%= link_to 'Xem', hocvi , :style=>"color:#000"%> | 
-          <%= link_to 'Sửa', edit_hocvi_path(hocvi) , :style=>"color:#000"%> | 
-          <%= link_to 'Xóa', hocvi, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+           <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), hocvi , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_hocvi_path(hocvi) , :style=>"color:#000" %> | 
+          <%= link_to image_tag('delete_1.png'), hocvi, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
           
         </td>
       </tr>
@@ -32,4 +38,4 @@
 </div>
 </div>
    
-
+<div class="lock-screen" id="lock" style="display:block"></div>

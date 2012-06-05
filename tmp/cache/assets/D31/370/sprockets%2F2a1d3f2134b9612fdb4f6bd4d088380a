@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508072.824:@expires_in0:@value"ÿ{"
+class"StaticAsset"logical_path"left-bg.png"pathname"($root/app/assets/images/left-bg.png"content_type"image/png"
+mtime"2011-10-11T20:51:05+07:00"lengthi*0"digest"%d08d9b79889fc44d5181c154713de38d"_version"%aa7d0db7619379e13b08335dee027df2

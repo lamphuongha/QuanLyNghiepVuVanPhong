@@ -1,0 +1,81 @@
+<div class="page">
+<table width="100%" cellspacing ="0">
+  <tr>
+    <td width="5%">
+      <%=image_tag'logo_sgu.png', :style=>'height:60px;width:60px' %>  
+    </td>
+    <td width="30%">
+      UBND TP.Hồ Chí Minh<br />
+    Trường Đại Học Sài Gòn<br />
+    Số:<%= @trocap.congvan.SoCV %>
+   
+    </td>
+    <td align="center">
+      <p>
+        <br />
+    Cộng hòa xã hội chủ nghĩa Việt Nam
+      <br />
+  Độc lập - Tự do - Hạnh phúc
+    <hr width="40%"/>
+    </p>
+    <p><%= @trocap.MaTroCap%> - <%= Time.now.strftime("%d/%m/%Y") %></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="3">
+      <h3><p><%= @trocap.TenTroCap %></p></h3>
+      <p>Học kỳ <%= @trocap.HocKy %> - Năm học <%= @trocap.NamHoc %></p>
+      <p>Thuộc diện: <%= @trocap.loaitrocap.TenLoaiTroCap %></p>
+    </td>
+  </tr>
+</table>
+
+        <table border ="1" width ="90%" align="center" cellspacing ="0" cellpadding ="0">
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Địa chỉ </th>
+            <th>Số điện thoại</th>
+            <th>Lớp</th>
+          </tr>
+          <% dem = 1 %>
+          <% for sinhvien in @trocap.sinhviens %>
+          <tr>
+            <td>
+              <%= dem %>
+            </td>
+            <td><%= sinhvien.MSSV %></td>
+            <td><%= sinhvien.HoTenSV %></td>
+            <td align="center"><%= sinhvien.NgaySinh.strftime("%d/%m/%Y") %></td>
+            <td align="center"><%= sinhvien.GioiTinh %></td>
+            <td align="center"><%= sinhvien.DiaChi %></td>
+            <td align="center"><%= sinhvien.SDT %></td>
+            <td align="center"><%= sinhvien.lop.TenLop %></td>
+          </tr>
+          <% dem = dem + 1 %>
+        <% end %>
+          <tr></tr>
+        </table>
+<p>
+  <%= @trocap.GhiChu %>
+</p>
+<br />
+<table>
+  <tr>
+    <td width="40%"></td>
+    <td width="30%"></td>
+    <td align="center">
+      TPHCM,&nbsp;ngày&nbsp;&nbsp;&nbsp;&nbsp;tháng&nbsp;&nbsp;&nbsp;&nbsp;năm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br />
+      Ký tên
+      <br />
+      <br />
+      <br />
+      <br />
+    </td>
+  </tr>
+</table>
+</div>

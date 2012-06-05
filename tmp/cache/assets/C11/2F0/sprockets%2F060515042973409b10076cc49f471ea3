@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989011.171:@expires_in0:@value"){"
+class"ProcessedAsset"logical_path"@MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscTechnical.js"pathname"]$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscTechnical.js"content_type"application/javascript"
+mtime"2010-07-26T02:35:02+07:00"lengthiF"digest"%193e8b50de1bb60e6d485b43eb1d23f3"source"F/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscTechnical.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_AMS:{8994:[[5,3,0],[6,3,0','],[8,3,-1],[9,4,-1],[','10,5,-1],[12,6,-1],[15,6,-2],[17,7,-2],[20',',8,-3],[24,9,-4],[29,','11,-4],[34,13,-5],[40,15,-6],[48,17,-8]],8995:[[5,2,-1],[6,3,-1',2,'11,4,-2],[13,5,-2],[15,5,-3],[17,6,-3],[21',4,'10,-5],[34,12,-6],[40,14,-7],[48,16,-9]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/AMS/Regular"+',0,'imgPacked+"/MiscTechnical.js");']
+]);
+
+"dependency_digest"%c9916f55005641f4bc605e5e32ca6b47"required_paths["]$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscTechnical.js"dependency_paths[{"	path"]$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscTechnical.js"
+mtime"2010-07-26T02:35:02+07:00"digest"%368db9c663c68ac2f9f684d062a514ac"_version"%aa7d0db7619379e13b08335dee027df2

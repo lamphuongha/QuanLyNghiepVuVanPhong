@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989033.692:@expires_in0:@value"Þ{"
+class"ProcessedAsset"logical_path"NMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CurrencySymbols.js"pathname"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CurrencySymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÃ"digest"%547c42a9db4e9cf8f21420c708c74f47"source"Ã/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CurrencySymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{8355:[662,0,556,11,546],8356:[676,8,500,12,490],8359:[662,10,1182,16,1141],8364:[664,12,500,38,462]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/CurrencySymbols.js");']
+]);
+
+"dependency_digest"%a5054491df474689e2bbba658dbe1659"required_paths["k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CurrencySymbols.js"dependency_paths[{"	path"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CurrencySymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%d56953c5f08d8d48b28fed55f089d74d"_version"%aa7d0db7619379e13b08335dee027df2

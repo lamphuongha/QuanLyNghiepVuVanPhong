@@ -1,0 +1,28 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155583.088:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"blueprint/common.css"pathname"6$root/app/assets/stylesheets/blueprint/common.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthiÛ"digest"%491ae44c0fe952116929579aed492774"source"ÛBODY 
+{
+	
+	font: 0.8em Verdana; 
+}
+
+IMG.image_align 
+{ 
+	float: left;
+	padding: 3px;
+}
+
+IMG.image_border 
+{ 
+	border: 1px solid black; 
+	margin: 5px; 
+}
+
+.right 
+{ 
+	position: absolute; 
+	right: 0px; 
+	border: none; 
+}
+"dependency_digest"%1c0e3ffabd93b01b4fd40f98ebb2e2fb"required_paths["6$root/app/assets/stylesheets/blueprint/common.css"dependency_paths[{"	path"6$root/app/assets/stylesheets/blueprint/common.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%3dad89dd1701546bb5fa78e783168a25"_version"%aa7d0db7619379e13b08335dee027df2

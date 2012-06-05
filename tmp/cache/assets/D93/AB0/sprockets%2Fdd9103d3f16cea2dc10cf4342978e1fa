@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989024.893:@expires_in0:@value"Š{"
+class"ProcessedAsset"logical_path"9MathJax/jax/element/mml/optable/LetterlikeSymbols.js"pathname"V$root/app/assets/javascripts/MathJax/jax/element/mml/optable/LetterlikeSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÃ"digest"%c39d291f32611865182fbcef1ac5214a"source"Ã/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/LetterlikeSymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{prefix:{"\\u2145":c.ORD21,"\\u2146":[2,0,b.ORD],"\\u2147":c.ORD,"\\u2148":c.ORD,"\\u2149":c.ORD}}});MathJax.Ajax.loadComplete(a.optableDir+"/LetterlikeSymbols.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%21b3d5e0e9e4a11792b4821155fe380f"required_paths["V$root/app/assets/javascripts/MathJax/jax/element/mml/optable/LetterlikeSymbols.js"dependency_paths[{"	path"V$root/app/assets/javascripts/MathJax/jax/element/mml/optable/LetterlikeSymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%2f0451ca3cb5613732af352ca8804d56"_version"%aa7d0db7619379e13b08335dee027df2

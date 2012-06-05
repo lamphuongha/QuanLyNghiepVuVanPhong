@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989042.213:@expires_in0:@value"å{"
+class"ProcessedAsset"logical_path"EMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscTechnical.js"pathname"b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscTechnical.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiî"digest"%625ec840fd24f57328dabd10acd31c02"source"î/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscTechnical.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{8968:[750',',248,511,194,493],','8969:[750',',248,511,17,317],','8970:[749',3,'8971:[749',5,'8994:[405,-108,1150,64,1084],8995:[393,-126,1150,64,1085]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/MiscTechnical.js");']
+]);
+
+"dependency_digest"%fa38c5a92719e0b1023720187c413862"required_paths["b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscTechnical.js"dependency_paths[{"	path"b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscTechnical.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%4ee3b16fad4488165de732b65a0d9af7"_version"%aa7d0db7619379e13b08335dee027df2

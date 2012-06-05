@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989024.464:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"0MathJax/jax/element/mml/optable/Dingbats.js"pathname"M$root/app/assets/javascripts/MathJax/jax/element/mml/optable/Dingbats.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthio"digest"%de5af2e3643b188dbe7da03894b7d4e1"source"o/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/Dingbats.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{infix:{"\\u2713":c.WIDEACCENT}}});MathJax.Ajax.loadComplete(a.optableDir+"/Dingbats.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%e5868f8b9b2b3acebd52c743aae3401e"required_paths["M$root/app/assets/javascripts/MathJax/jax/element/mml/optable/Dingbats.js"dependency_paths[{"	path"M$root/app/assets/javascripts/MathJax/jax/element/mml/optable/Dingbats.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%42158894f6752ba0edeb9ba5d9d66597"_version"%aa7d0db7619379e13b08335dee027df2

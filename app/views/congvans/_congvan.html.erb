@@ -1,4 +1,8 @@
- <div id="shadow" class="shadow" >
+
+<div id="shadow" class="shadow" >
+ <div align="left">
+Kết quả: <%= @countds %> danh sách
+</div>  
     <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
       <tr>
         <th>STT</th>
@@ -15,10 +19,11 @@
         <th>Công văn liên quan</th>-->
         <th>Chức năng</th>
       </tr>
-      
+      <% i=0%>
       <% @congvans.each do |congvan| %>
       <tr>
-        <th><%= congvan.id %> </th>
+       
+        <th><%= i=i+1 %> </th>
         <td><%= congvan.SoCV %></td>
         <td><%= congvan.NgayRaCV%></td>
         <td><%= congvan.NgayNhanCV %></td>
@@ -37,16 +42,20 @@
           <%end%>
         </td>-->
         <td>
-          <%= link_to 'Xem', congvan , :style=>"color:#000"%> | 
-          <%= link_to 'Sửa', edit_congvan_path(congvan) , :style=>"color:#000"%> | 
-          <%= link_to 'Xóa', congvan, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+          <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), congvan , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_congvan_path(congvan) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), congvan, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
           
         </td>
       </tr>
     <% end %>
       
     </table>
-    </div>
-    <br />
+        <div align="left">
+        Hiển thị: <%= i %> / <%= @countds %>
+        </div>
+      <br />
       <%= will_paginate @congvans %>
     <br />
+    </div>
+    

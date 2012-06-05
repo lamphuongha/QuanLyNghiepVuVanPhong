@@ -1,10 +1,9 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 65%; top: 15%; left: 13%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 75%; top: 8%; left: 10%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
-    <%= link_to 'Thêm phân công', new_covanhoctap_path ,:style =>"color:#000"%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
      <%= form_tag covanhoctaps_path,:remote => true, :method => 'get' do %>  
-     <fieldset>
+     <fieldset style="width: 50%">
        <legend>Lọc danh sách</legend>
       <%= text_field_tag :search, params[:search] %> 
       
@@ -15,6 +14,12 @@
     <% end %>
         <br /> 
     <h1>Danh sách cố vấn học tập</h1>
+         <br />
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm cố vấn học tập"), new_covanhoctap_path %> Thêm cố vấn học tập
+     
+   </div>        
     <div id ="covanhoctaps">
         <%= render :partial => 'covanhoctap' %>
       </div>

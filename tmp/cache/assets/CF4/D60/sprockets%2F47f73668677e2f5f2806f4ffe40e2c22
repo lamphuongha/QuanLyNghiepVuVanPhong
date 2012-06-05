@@ -1,0 +1,51 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508061.67:@expires_in0:@value"ª{"
+class"ProcessedAsset"logical_path"tooltipfm.js"pathname".$root/app/assets/javascripts/tooltipfm.js"content_type"application/javascript"
+mtime"2011-11-03T01:14:30+07:00"lengthiƒ"digest"%0a6469ac1c34f371a8658c6a294eae69"source"ƒ// Show tooltip in form
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            oldonload();
+            func();
+        }
+    }
+}
+function Hints() {
+
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+        // test to see if the hint span exists first
+        if (inputs[i].parentNode.getElementsByTagName("span")[0]) {
+            // the span exists!  on focus, show the hint
+            inputs[i].onfocus = function () {
+                this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+            }
+            // when the cursor moves away from the field, hide the hint
+            inputs[i].onblur = function () {
+                this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+
+            }
+        }
+    }
+    var selects = document.getElementsByTagName("select");
+    for (var i = 0; i < inputs.length; i++) {
+        // test to see if the hint span exists first
+        if (selects[i].parentNode.getElementsByTagName("span")[0]) {
+            // the span exists!  on focus, show the hint
+            selects[i].onfocus = function () {
+                this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+            }
+            // when the cursor moves away from the field, hide the hint
+            selects[i].onblur = function () {
+                this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+
+            }
+        }
+    }
+}
+addLoadEvent(Hints);
+    	
+"dependency_digest"%de710e0b758febade8023d9923eba5a6"required_paths[".$root/app/assets/javascripts/tooltipfm.js"dependency_paths[{"	path".$root/app/assets/javascripts/tooltipfm.js"
+mtime"2011-11-03T01:14:30+07:00"digest"%ce855ab6344f166d8b73c0b96e76499a"_version"%aa7d0db7619379e13b08335dee027df2

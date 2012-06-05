@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989008.147:@expires_in0:@value"Z{"
+class"ProcessedAsset"logical_path"8MathJax/docs/html/_static/mathjax_wikipedia.user.js"pathname"U$root/app/assets/javascripts/MathJax/docs/html/_static/mathjax_wikipedia.user.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:40+07:00"lengthi—"digest"%61d5bf2adc18069d97d2dd79a7696c14"source"—// ==UserScript==
+// @name           MathJax in Wikipedia
+// @namespace      http://www.mathjax.org/
+// @description    Insert MathJax into Wikipedia pages
+// @include        http://en.wikipedia.org/wiki/*
+// ==/UserScript==
+
+if ((window.unsafeWindow == null ? window : unsafeWindow).MathJax == null) {
+  //
+  //  Replace the images with MathJax scripts of type math/tex
+  //
+  var images = document.getElementsByTagName('img');
+  for (var i = images.length - 1; i >= 0; i--) {
+    var img = images[i];
+    if (img.className === "tex") {
+      var script = document.createElement("script"); script.type = "math/tex";
+      if (window.opera) {script.innerHTML = img.alt} else {script.text = img.alt}
+      img.parentNode.replaceChild(script,img);
+    }
+  }
+  //
+  //  Load MathJax and have it process the page
+  //
+  var script = document.createElement("script");
+  script.src = "http://www.yoursite.edu/MathJax/MathJax.js";  // put your URL here
+  var config = 'MathJax.Hub.Config({' +
+                 'config: ["MMLorHTML.js"],' +
+                 'extensions:["TeX/noErrors.js","TeX/noUndefined.js",' +
+                             '"TeX/AMSmath.js","TeX/AMSsymbols.js"],' +
+                 'jax:["input/TeX"]' +
+               '});' +
+               'MathJax.Hub.Startup.onload()';
+  if (window.opera) {script.innerHTML = config} else {script.text = config}
+  document.getElementsByTagName("head")[0].appendChild(script);
+}
+;
+"dependency_digest"%85712fd84ca7bae687edd37bc1239d4a"required_paths["U$root/app/assets/javascripts/MathJax/docs/html/_static/mathjax_wikipedia.user.js"dependency_paths[{"	path"U$root/app/assets/javascripts/MathJax/docs/html/_static/mathjax_wikipedia.user.js"
+mtime"2010-08-10T15:06:40+07:00"digest"%b3e6a64ce6d8e694c2989fdff87328f3"_version"%aa7d0db7619379e13b08335dee027df2

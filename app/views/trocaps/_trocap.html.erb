@@ -1,0 +1,39 @@
+<div id="shadow" class="shadow" >
+    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+     <tr>
+    <th>STT</th>
+    <th>Mã trợ cấp</th>
+    <th>Tên trợ cấp</th>
+    <th>Loại trợ cấp</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+  </tr>
+
+<% @trocaps.each do |trocap| %>
+  <tr>
+    <th><%= trocap.id %></th>
+    <td><%= trocap.MaTroCap %></td>
+    <td><%= trocap.TenTroCap %></td>
+    <td><%= trocap.loaitrocap.TenLoaiTroCap %></td>
+    <td><%= trocap.congvan.SoCV %></td>
+    <td><%= trocap.HocKy %></td>
+    <td><%= trocap.NamHoc %></td>
+    <td>
+          <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), trocap , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_trocap_path(trocap) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), trocap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+  </tr>
+<% end %>
+      
+    </table>
+
+<br />
+<div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @trocaps %>
+      <br />
+    </div>
+</div>
+<br />
+      

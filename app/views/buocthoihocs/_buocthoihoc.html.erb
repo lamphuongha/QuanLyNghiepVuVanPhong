@@ -21,9 +21,9 @@
     <td><%= buocthoihoc.congvan.SoCV %></td>
     <td><%= buocthoihoc.HocKy %></td>
     <td><%= buocthoihoc.NamHoc %></td>
-    <td><%= link_to 'Xem', buocthoihoc , :style=>"color:#000"%> | 
-    <%= link_to 'Sửa', edit_buocthoihoc_path(buocthoihoc) , :style=>"color:#000"%> | 
-    <%= link_to 'Xóa', buocthoihoc, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+    <td><%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), buocthoihoc , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_buocthoihoc_path(buocthoihoc) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), buocthoihoc, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
   </tr>
 <% end %>
 </table>

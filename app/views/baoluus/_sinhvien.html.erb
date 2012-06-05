@@ -1,6 +1,9 @@
-<fieldset>
-        <table class="table1" width="100%" align="center">
+<div align="left">
+Kết quả: <%= @sinhviens.size %> sinh viên
+</div>
+        <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
           <tr>
+            <th>STT</th>
             <th>Mã SV</th>
             <th>Họ tên</th>
             <th>Ngày sinh</th>
@@ -10,11 +13,12 @@
             <th>Lớp</th>
             <th>Trình độ</th>
             <th>Chọn</th>
-            <th>Chức năng</th>
 
           </tr>
+          <% dem = 1 %>
           <% @sinhviensearchs.each do |sinhvien| %>
           <tr>
+            <th><%= dem %></th>
             <td ><%= sinhvien.MSSV %></td>
             <td><%= sinhvien.HoTenSV %></td>
             <td><%= sinhvien.NgaySinh %></td>
@@ -33,15 +37,15 @@
                  <% if @baoluu.sinhviens.include? sinhvien%>checked="checked"<%end%>
                  >
             </td>
-            <td>
-              <%= link_to 'Xem  ', sinhvien , :style=>"color:#000"%>
-            </td> 
           </tr>
+          <% dem = dem +1 %>
         <% end %>
           
         </table>
+<div align="left">
+Hiển thị: <%= dem - 1 %> / <%= @sinhviens.size %>
+</div>
         <%= will_paginate @sinhviensearchs %>
-      </fieldset>
 <br/>
     
       

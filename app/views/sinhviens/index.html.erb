@@ -1,58 +1,32 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 85%; top: 5%; left: 7%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
-    <%= form_tag sinhviens_path, :method => 'get' do %>  
-     <fieldset>
+    <%= form_tag sinhviens_path,:remote => true, :method => 'get' do %>  
+     <fieldset style="width:50%">
         <legend>Lọc sinh viên</legend>
       <%= text_field_tag :search, params[:search] %> 
       
       <%= submit_tag "Lọc", :name => nil %>
-      <%= link_to 'Tìm kiếm nâng cao','/sinhviens/search'  %>
+      <%= link_to 'Tìm kiếm nâng cao','/sinhviens/search', :style => "color:#000"  %>
        </fieldset>
     <% end %>
         <br />
     <h1>Danh sách sinh viên</h1>
       
         <br />
-                 
-      <!--<div style="overflow:auto;height:400px;background-color:white;" >--> 
-      <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
-      <tr>
-        <th>STT</th>
-        <th class ="menu-header">Mã SV</th>
-        <th class ="menu-header">Họ tên</th>
-        <th class ="menu-header">Ngày sinh</th>
-        <th class ="menu-header">Giới tính</th>
-        <th class ="menu-header">Lớp</th>
-        <th class ="menu-header">Chức năng</th>
-       
-      </tr>
-      <% @sinhviens.each do |sinhvien| %>
-      <tr>
-        <th><%= sinhvien.id %></th>
-        <td ><%= sinhvien.MSSV %></td>
-        <td><%= sinhvien.HoTenSV %></td>
-        <td><%= sinhvien.NgaySinh %></td>
-        <td><%= sinhvien.GioiTinh %></td>
-        <td><%= sinhvien.lop.TenLop %></td>
-        
-        <td>
-          <%= link_to 'Xem  ', sinhvien , :style=>"color:#000"%> | 
-          <%= link_to 'Sửa  ', edit_sinhvien_path(sinhvien) , :style=>"color:#000"%> | 
-          <%= link_to 'Xóa', sinhvien, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
-          
-        </td> 
-      </tr>
-    <% end %>
-    </table>
-    <br />
-    <div class ="menu-header" style="text-align:center" >
-      <%= will_paginate @giangviens %>
-    <br />
-    </div>   
+     <div align="left">
+     <%= link_to image_tag('new.png'), new_sinhvien_path %> Thêm sinh viên    
      </div>
-    </div>
+        <div id ="sinhviens">
+        <%= render :partial => 'sinhvien' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
+     <!--</div>-->
+    <!--</div>-->
  
 </div>
 <div class="lock-screen" id="lock" style="display:block"></div> 

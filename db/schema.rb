@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120517063227) do
+ActiveRecord::Schema.define(:version => 20120604131036) do
 
   create_table "assets", :force => true do |t|
     t.integer  "congvan_id"
@@ -149,11 +149,11 @@ ActiveRecord::Schema.define(:version => 20120517063227) do
     t.string  "TenHocBong"
     t.integer "loaihocbong_id"
     t.integer "congvan_id"
-    t.integer "NoiCap"
     t.integer "HocKy"
     t.string  "NamHoc"
     t.date    "NgayLap"
     t.string  "GhiChu"
+    t.string  "NoiCap",         :limit => 100
   end
 
   create_table "hocvis", :force => true do |t|
@@ -221,6 +221,11 @@ ActiveRecord::Schema.define(:version => 20120517063227) do
     t.string  "GhiChu"
   end
 
+  create_table "nguoilienquans", :force => true do |t|
+    t.integer "congvan_id"
+    t.integer "giangvien_id"
+  end
+
   create_table "nhomcvs", :force => true do |t|
     t.string "MaNhomCV"
     t.string "TenNhomCV"
@@ -260,6 +265,12 @@ ActiveRecord::Schema.define(:version => 20120517063227) do
     t.string  "SDT"
     t.integer "lop_id"
     t.integer "trinhdodaotao_id"
+    t.integer "loaithuctap_id"
+    t.string  "TenCongTy"
+    t.string  "DiaChiCT"
+    t.string  "SDTCT"
+    t.integer "HocKyTT"
+    t.string  "NamHocTT"
   end
 
   create_table "thongtinthuctaps", :force => true do |t|
@@ -283,6 +294,17 @@ ActiveRecord::Schema.define(:version => 20120517063227) do
     t.string  "TenTroCap"
     t.integer "loaitrocap_id"
     t.integer "congvan_id"
+    t.integer "HocKy"
+    t.string  "NamHoc"
+    t.string  "GhiChu"
+  end
+
+  create_table "ttthuctaps", :force => true do |t|
+    t.integer "sinhvien_id"
+    t.integer "loaithuctap_id"
+    t.string  "TenCongTy"
+    t.string  "DiaChi"
+    t.string  "SDT"
     t.integer "HocKy"
     t.string  "NamHoc"
     t.string  "GhiChu"

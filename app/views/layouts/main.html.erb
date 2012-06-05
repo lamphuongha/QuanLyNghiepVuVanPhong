@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>QuanLyCongVan</title>
+  <title>Quản lý nghiệp vụ văn phòng</title>
   <%= stylesheet_link_tag    "application", "marqueeimg", :media => "all" %>
   
   <%= javascript_include_tag :all%>
@@ -193,8 +193,7 @@ return true;
             <div id="menu-cont">
       <!-- LEFT SIDE : start  -->    
                   <% if current_user %>
-                  Logged in as <%= current_user.email %>.
-                  
+                 
                   <div class="menu-group" id="menu-main">
                     <div id="top-menu"><h2>Quản lý người dùng</h2></div>
                     <div id="body-menu">
@@ -249,10 +248,16 @@ return true;
                                 <%= link_to 'Cố vấn học tập','/covanhoctaps',:style=>"color:#000" %>
                             </li>
                             <li>
-                                <%= link_to 'Tìm kiếm giảng viên','/giangviens/search',:style=>"color:#000" %>
+                                <%= link_to 'Quản lý lớp','/lops',:style=>"color:#000" %>
                             </li>
                             <li>
-                                <%= link_to 'Tìm kiếm cố vấn','/covanhoctaps/search',:style=>"color:#000" %>
+                                <%= link_to 'Quản lý chức vụ','/chucvus',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Quản lý ngạch','/ngaches',:style=>"color:#000" %>
+                            </li>
+                            <li>
+                                <%= link_to 'Quản lý học vị','/hocvis',:style=>"color:#000" %>
                             </li>
                       </ul> 
                   </div>
@@ -280,11 +285,7 @@ return true;
                                 </li>
                               </ul>
                             </li>-->
-                            
-                            
-                            
-                            
-                            
+                                                       
                             <li>
                                 <%= link_to 'Quản lý sinh viên','/sinhviens',:style=>"color:#000" %>
                             </li>
@@ -309,56 +310,49 @@ return true;
                             <li>
                                 <%= link_to 'Điểm rèn luyện','/diemrenluyens',:style=>"color:#000" %>
                             </li>
-                            <li>
+                           <!-- <li>
                                 <%= link_to 'Thông tin thực tập','/thongtinthuctaps',:style=>"color:#000" %>
                             </li>
-                            <li>
-                                <%= link_to "Tra cứu nâng cao", '/layouts/extra_search',:style=>"color:#000"%>
-                            <li>
+                            -->
                       </ul> 
                   </div>
                     <div id="bottom-menu"></div>
                 </div>
                
                 <!-- GROUP: end -->
-                  
-               
-                <div class="menu-group" id="menu-ads">
-                    <div id="top-menu"><h2>Liên kết quảng cáo</h2></div>
+                <div class="menu-group" id="menu-main">
+                    <div id="top-menu"><h2>Thống kê - Báo cáo</h2></div>
                     <div id="body-menu">
+                        <ul id="left-menu">
+                            <li>
+                                <%= link_to 'Thống kê','/statistics',:style=>"color:#000" %>
+                            </li>
+                            
+                      </ul> 
+                  </div>
+                    <div id="bottom-menu"></div>
+                </div>
+                  
+                  
+                <!-- GROUP: end -->  
+               
+                <%#*<div class="menu-group" id="menu-ads">%>
+                    <%#*<div id="top-menu"><h2>Liên kết quảng cáo</h2></div>%>
+                    <%#*<div id="body-menu">%>
                        
-                            &nbsp;<a id="ctl00_ctl08_Ads" href="http://chipchipshop.com" target="_blank">
+                            <%#*&nbsp;<a id="ctl00_ctl08_Ads" href="http://chipchipshop.com" target="_blank">%>
                               
-                              <%=image_tag'adsImg/chipchip.jpg', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:75px;width:100px;' %>
+                              <%#=image_tag'adsImg/chipchip.jpg', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:75px;width:100px;' %>
              
                               
-                            </a>'
-                            <span style="display: block;text-align: right;margin-right: 25px;font-size: 11px;"><a href="./lienhequangcao.aspx">Đặt quảng cáo</a></span>
-                    </div>
-                    <div id="bottom-menu"></div>
-                </div>
+                            <%#*</a>'%>
+                            <%#*<span style="display: block;text-align: right;margin-right: 25px;font-size: 11px;"><a href="./lienhequangcao.aspx">Đặt quảng cáo</a></span>%>
+                    <%#*</div>%>
+                    <%#*<div id="bottom-menu"></div>%>
+                <%#*</div>%>
                 <!-- GROUP: end -->
                
-                <div class="menu-group" id="menu-overview">
-                    <div id="top-menu"><h2>Thống kê</h2></div>
-                    <div id="body-menu">
-                        
- <div id='stat-cont'>
-                            
-                                <ul id='stats-list'>                                    
-                                    <li> <a style="color:#000">
-                                        Khách đang xem:  <span class='light'> 52</span> </a>
-                                        </li>
-                                   
-                                    
-                                    
-                                </ul>
-                            
-                            
-                        </div>
-                    </div>
-                    <div id="bottom-menu"></div>
-                </div>
+                
                 
                 
       <!-- LEFT SIDE : end  -->       
@@ -371,19 +365,20 @@ return true;
                     <ul id="tab-menu">
                         <li class="l1"><a href="/trangchu">Trang chủ</a></li>
                         <li class="l1"><a href="/chitiet/gioithieu">Giới thiệu</a></li>
-                        <li class="l1"><a href="KhuyenMai.aspx">Liên kết</a></li>
                         <li class="l1"><a href="/chitiet/loingo">Lời ngỏ</a></li>
-                        <li class="l1" id="end">
                           <% if current_user %>
-                          <%= current_user.giangvien.HoTenGV %>
+                        &nbsp;
+                          <%=image_tag'00000000.png',:style=>'top:12em;',:align=>"center"%>
+                          Chào: <%= current_user.giangvien.HoTenGV %>
                           <!--<%= current_user.email %>.-->
                           <% else %>
+                          <li class="l1"><a href="http://fit.sgu.edu.vn/drupal/">Liên kết</a></li>
+                          <li class="l1" id="end">
                           <a >Thành viên  </a>
-                           
                            <div id="submenu">
                               <%= link_to "Đăng ký", signup_path %>
                               <%= link_to "Đăng nhập", login_path %>
-                              <a href="lostpassword.aspx">Quên mật khẩu</a>
+                              <%= link_to "Quên mật khẩu" ,'/password_resets/new'%>
                            </div>
                         <% end %>
                         
@@ -456,7 +451,35 @@ return true;
  </div>    
 <% end %>                           
 
-  <!-- Start: Main group -->
+
+     <!--   Start: Payment link -->
+   <% if current_user %>
+   <div class='group-cont'>
+                <div id="top-group"><h3></h3></div>
+                <div id="body-group">
+                 <!-- Show: Noi bat -->
+						   
+                    <div class="items-cont" title='Khoa Công nghệ thông tin'> 
+                    	<div class="title-items">Website Khoa Công nghệ thông tin - Trường Đại học Sài Gòn</div>    
+                        <div class="content-items" id='id-noibat'>	
+                          <br />      
+                          <a href="http://fit.sgu.edu.vn/drupal/" target="_blank"><%=image_tag 'khoa.png',:style=>'height:5em;width:21em;'%></a>
+                          <a href="http://sgu.edu.vn/" target="_blank"><%=image_tag 'sgu.png',:style=>'height:5em;width:21em;'%></a>
+                                           
+                           <div class="clear"></div>   
+                          </div>
+                     </div>
+                      
+                     <!-- Show: products -->
+                     
+                    
+                  <!-- end: Show product -->   
+                 </div>
+                 <div id="bottom-group"></div>
+ </div> 
+  <!-- End: -->
+  <% else %>
+      <!-- Start: Main group -->
 <div class='group-cont'>
                 <div id="top-group"><h3></h3></div>
                 <div id="body-group">
@@ -473,8 +496,7 @@ return true;
  </div> 
  <!-- End: Main group 
   Start: Profile -->
-   
-            
+ <% end %>           
   <!-- End: Profile -->
    <!--   Start: Payment link -->
    
@@ -487,16 +509,16 @@ return true;
                     	<div class="title-items">Liên kết</div>    
                         <div class="content-items" id='id-noibat'>	
                                 
-                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=424&Itemid=103"><%=image_tag 'Logo_Doan.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html"><%=image_tag 'Logo_chuandaura.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://mail.google.com/a/sgu.edu.vn"><%=image_tag 'SGUMail.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'TTDT_new.jpg', :height => "50%", :width =>"22%"%></a>
+                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=424&Itemid=103" target="_blank"><%=image_tag 'Logo_Doan.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html" target="_blank"><%=image_tag 'Logo_chuandaura.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://mail.google.com/a/sgu.edu.vn" target="_blank"><%=image_tag 'SGUMail.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn" target="_blank"><%=image_tag 'TTDT_new.jpg', :height => "50%", :width =>"22%"%></a>
                           <br />
                           <br />
-                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=1066&Itemid=525"><%=image_tag 'ChiboSV.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html"><%=image_tag 'LogoCongkhai20092010.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'sgu-mail2.jpg', :height => "50%", :width =>"25%"%></a>
-                          <a href="http://thongtindaotao.sgu.edu.vn"><%=image_tag 'opac(2).gif', :height => "50%", :width =>"22%"%></a>
+                          <a href="http://sgu.edu.vn/index.php?option=com_content&view=article&id=1066&Itemid=525" target="_blank"><%=image_tag 'ChiboSV.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://sgu.edu.vn/CDR_Public/chuandaura.html" target="_blank"><%=image_tag 'LogoCongkhai20092010.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn" target="_blank"><%=image_tag 'sgu-mail2.jpg', :height => "50%", :width =>"25%"%></a>
+                          <a href="http://thongtindaotao.sgu.edu.vn" target="_blank"><%=image_tag 'opac(2).gif', :height => "50%", :width =>"22%"%></a>
                                            
                                     <div class="clear"></div>   
                           </div>
@@ -527,10 +549,10 @@ return true;
         
  <div id="copyright-cont">
         <a href="/trangchu">Trang chủ</a>  |   
-         <a href="../HDThanhToan.aspx">Giới thiệu </a>  |   
-         <a href="../BaoHanh.aspx">Khoa CNTT</a>   |   
-         <a href="../DoiTac.aspx">Đối tác</a>  |   
-         <a href="../LienHe.aspx">Liên hệ</a>
+         <a href="/chitiet/gioithieu">Giới thiệu </a>  |   
+         <a href="http://fit.sgu.edu.vn/drupal/">Khoa CNTT</a>   |   
+         <a href="http://sgu.edu.vn/">Trường Đại học Sài Gòn</a>  |   
+         <a href="/chitiet/loingo">Lời ngỏ</a>
         <br />
         Khoa công nghệ thông tin - Trường đại học Sài Gòn  © 2012
         </div>

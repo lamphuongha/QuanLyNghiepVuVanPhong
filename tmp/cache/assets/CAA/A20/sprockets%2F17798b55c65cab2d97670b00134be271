@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989047.845:@expires_in0:@value"-{"
+class"ProcessedAsset"logical_path"DMathJax/unpacked/jax/element/mml/optable/CombDiactForSymbols.js"pathname"a$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/CombDiactForSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi:"digest"%39a164282036f4d253eacfc420023de4"source":/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/optable/CombDiactForSymbols.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MML) {
+  var MO = MML.mo.OPTYPES;
+  var TEXCLASS = MML.TEXCLASS;
+
+  MathJax.Hub.Insert(MML.mo.prototype,{
+    OPTABLE: {
+      postfix: {
+        '\u20DB': MO.ACCENT    // combining three dots above
+      }
+    }
+  });
+
+  MathJax.Ajax.loadComplete(MML.optableDir+"/CombDiactForSymbols.js");
+
+})(MathJax.ElementJax.mml);
+"dependency_digest"%2489b3bd254db3e11d04be3784a204c4"required_paths["a$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/CombDiactForSymbols.js"dependency_paths[{"	path"a$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/CombDiactForSymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%18bab3e8be7034acdab7f5addae25c2d"_version"%aa7d0db7619379e13b08335dee027df2

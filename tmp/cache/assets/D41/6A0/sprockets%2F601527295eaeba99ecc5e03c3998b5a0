@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1336527780.913:@expires_in0:@value"{"
+class"StaticAsset"logical_path"Logo_Doan.jpg"pathname"*$root/app/assets/images/Logo_Doan.jpg"content_type"image/jpeg"
+mtime"2012-05-09T08:42:38+07:00"lengthi0"digest"%bd10c802a1ea6fd2060f384df4fa0abe"_version"%aa7d0db7619379e13b08335dee027df2

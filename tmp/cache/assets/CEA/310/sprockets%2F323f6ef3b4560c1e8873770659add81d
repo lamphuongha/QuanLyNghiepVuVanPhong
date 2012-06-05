@@ -1,0 +1,33 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989061.964:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"NMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscSymbols.js"pathname"k$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthið"digest"%55fba20008617c5546136b82a3519f03"source"ð/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscSymbols.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_AMS'],
+  {
+    0x2605: [695,111,944,49,896]       // BLACK STAR
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/AMS/Regular/MiscSymbols.js");
+"dependency_digest"%3f7ce8d4b42e70bd0754e86822f2932d"required_paths["k$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscSymbols.js"dependency_paths[{"	path"k$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscSymbols.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%92f505f548ac50f4ad711d771497f58c"_version"%aa7d0db7619379e13b08335dee027df2

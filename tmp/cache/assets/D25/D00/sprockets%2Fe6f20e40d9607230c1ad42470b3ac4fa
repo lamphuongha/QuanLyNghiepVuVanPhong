@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989033.232:@expires_in0:@value"/{"
+class"ProcessedAsset"logical_path"LMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/BlockElements.js"pathname"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/BlockElements.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi"digest"%eed9d53782d7825051c70c2b5dd20bea"source"/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/BlockElements.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{9600:[910,-304',',1213,0,1213],','9604:[303,303',3,'9608:[910,303',3,'9612',':[910,303,1212,','0,606],9616',9,'606,1212],9617:[860,258,1200,0,1200],9618',':[874,273,1200,0,1200','],9619',13,']});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/BlockElements.js");']
+]);
+
+"dependency_digest"%8a133d7bfe12aea377bbd1111736551b"required_paths["i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/BlockElements.js"dependency_paths[{"	path"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/BlockElements.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%ab830526f0e6187e296f07ea7ade8620"_version"%aa7d0db7619379e13b08335dee027df2

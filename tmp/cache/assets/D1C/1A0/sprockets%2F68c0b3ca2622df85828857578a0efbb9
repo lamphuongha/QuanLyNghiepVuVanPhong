@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989027.583:@expires_in0:@value"å{"
+class"ProcessedAsset"logical_path"+MathJax/jax/input/MathML/entities/x.js"pathname"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/x.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiV"digest"%01b129ab2ad98feb09fb02d6dd9cc928"source"V/*
+ *  ../SourceForge/trunk/mathjax/jax/input/MathML/entities/x.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){MathJax.Hub.Insert(a.Parse.Entity,{xcap:"\\u22C2",xcirc:"\\u25EF",xcup:"\\u22C3",xdtri:"\\u25BD",xhArr:"\\u27FA",xharr:"\\u27F7",xlArr:"\\u27F8",xlarr:"\\u27F5",xmap:"\\u27FC",xnis:"\\u22FB",xodot:"\\u2A00",xoplus:"\\u2A01",xotime:"\\u2A02",xrArr:"\\u27F9",xrarr:"\\u27F6",xsqcup:"\\u2A06",xuplus:"\\u2A04",xutri:"\\u25B3",xvee:"\\u22C1",xwedge:"\\u22C0"});MathJax.Ajax.loadComplete(a.entityDir+"/x.js")})(MathJax.InputJax.MathML);']
+]);
+
+"dependency_digest"%3d4b75c7eb6822b02d92f4821d224749"required_paths["H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/x.js"dependency_paths[{"	path"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/x.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%58bccc43f15706b836ffab746d6d04e1"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,31 @@
+<div id="shadow" class="shadow" style="width: 80%" >
+<table border ="1" width ="70%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã lớp</th>
+    <th>Tên lớp</th>
+    <th>Chức năng</th>
+  </tr>
+  <% dem = 1 %>
+<% @lops.each do |lop| %>
+  <tr>
+    <th><%= dem %> </th>
+    <td><%= lop.MaLop %> </td>
+    <td><%= lop.TenLop %> </td>
+    <td><%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), lop , :style=>"color:#000"%> | 
+        <%= link_to image_tag('edit.png'), edit_lop_path(lop) , :style=>"color:#000"%> | 
+        <%= link_to image_tag('delete_1.png'), lop, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+    </td>
+  </tr>
+  <% dem = dem + 1 %>
+<% end %>
+</table>
+
+<br />
+<div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @lops %>
+      <br />
+    </div>
+<br />
+</div>
+      

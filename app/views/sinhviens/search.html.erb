@@ -1,10 +1,11 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 75%; top: 8%; left: 8%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/sinhviens'%>
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), sinhviens_path %>
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <h1>Tìm kiếm nâng cao</h1>
 
-    <%= form_tag '/sinhviens/search', :method => 'get' do %>  
+    <%= form_tag '/sinhviens/search',:remote => true, :method => 'get' do %>  
 <fieldset>
     <table width ="100%">
       <tr>
@@ -42,43 +43,12 @@
   </fieldset>
     <% end %>
 <br />
-    <div style="overflow:auto;height:400px;" >     
-      <table class="table1" width="100%" align="center">
-      <tr>
-        <th>Mã SV</th>
-        <th>Họ tên</th>
-        <th>Ngày sinh</th>
-        <th>Giới tính</th>
-        <th>Địa chỉ </th>
-        <th>Số điện thoại</th>
-        <th>Lớp</th>
-        <th>Trình độ đào tạo</th>
-        <th>Chức năng</th>
-       
-      </tr>
-      <% @sinhviens.each do |sinhvien| %>
-      <tr>
-        <td ><%= sinhvien.MSSV %></td>
-        <td><%= sinhvien.HoTenSV %></td>
-        <td><%= sinhvien.NgaySinh %></td>
-        <td><%= sinhvien.GioiTinh %></td>
-        <td><%= sinhvien.DiaChi %></td>
-        <td><%= sinhvien.SDT %></td>
-        <td><%= sinhvien.lop.TenLop %></td>
-        <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
-        
-        <td>
-          <%= link_to 'Xem  ', sinhvien , :style=>"color:#000"%> | 
-          <%= link_to 'Sửa  ', edit_sinhvien_path(sinhvien) , :style=>"color:#000"%> | 
-          <%= link_to 'Xóa', sinhvien, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
-          
-        </td> 
-      </tr>
-    <% end %>
-    </table>
-    </div>
-    <br />
-      <%= will_paginate @congvans %>
-    <br />
+    <div id ="sinhviens">
+        <%= render :partial => 'sinhvien' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>

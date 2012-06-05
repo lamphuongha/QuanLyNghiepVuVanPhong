@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989075.561:@expires_in0:@value"·{"
+class"ProcessedAsset"logical_path"'tiny_mce/themes/simple/langs/en.js"pathname"D$root/app/assets/javascripts/tiny_mce/themes/simple/langs/en.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi8"digest"%6a595892860f534b18749824d3d48e70"source"8tinyMCE.addI18n('en.simple',{
+bold_desc:"Bold (Ctrl+B)",
+italic_desc:"Italic (Ctrl+I)",
+underline_desc:"Underline (Ctrl+U)",
+striketrough_desc:"Strikethrough",
+bullist_desc:"Unordered list",
+numlist_desc:"Ordered list",
+undo_desc:"Undo (Ctrl+Z)",
+redo_desc:"Redo (Ctrl+Y)",
+cleanup_desc:"Cleanup messy code"
+});
+"dependency_digest"%b1e5fc8217792d3bbbec190d08db412d"required_paths["D$root/app/assets/javascripts/tiny_mce/themes/simple/langs/en.js"dependency_paths[{"	path"D$root/app/assets/javascripts/tiny_mce/themes/simple/langs/en.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%9758dbb788f2a55da5f92f8021e6c079"_version"%aa7d0db7619379e13b08335dee027df2

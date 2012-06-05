@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989041.84:@expires_in0:@value"n{"
+class"ProcessedAsset"logical_path"FMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedB.js"pathname"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedB.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthis"digest"%a87f9b05458056db659b83c60b1aef82"source"s/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedB.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{567:[451,201,439,-12,420]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/LatinExtendedB.js");']
+]);
+
+"dependency_digest"%904ce9ccb2beb100c8d00e8ef828fe94"required_paths["c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedB.js"dependency_paths[{"	path"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedB.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%4344a101efb4b33ff8b56b9ff6bb749c"_version"%aa7d0db7619379e13b08335dee027df2

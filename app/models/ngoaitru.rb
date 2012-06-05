@@ -5,8 +5,9 @@ class Ngoaitru < ActiveRecord::Base
   has_many :sinhviens, :through => :chitietngoaitrus
   
   
-  validates_presence_of :MaNgoaiTru, :TenNgoaiTru, :loaingoaitru_id,:congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaNgoaiTru
+  validates_presence_of :MaNgoaiTru, :TenNgoaiTru, :loaingoaitru_id,:congvan_id, :HocKy, :NamHoc , :message => "không được trống"
+  validates_uniqueness_of :MaNgoaiTru, :message => "đã tồn tại"
+
    cattr_reader :per_page
   @@per_page = 20
   

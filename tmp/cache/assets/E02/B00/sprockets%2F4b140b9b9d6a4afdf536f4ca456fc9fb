@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989049.309:@expires_in0:@value"ö{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/k.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/k.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiC"digest"%018a6abeba4183a197bd19330177693c"source"C/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/k.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'KHcy': '\u0425',
+    'KJcy': '\u040C',
+    'Kcedil': '\u0136',
+    'Kcy': '\u041A',
+    'kcedil': '\u0137',
+    'kcy': '\u043A',
+    'kgreen': '\u0138',
+    'khcy': '\u0445',
+    'kjcy': '\u045C'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/k.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%14547f12e6de8331d230c7bb7cc8fab4"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/k.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/k.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%aa95e503dcbe9b9687024e77a74a0a70"_version"%aa7d0db7619379e13b08335dee027df2

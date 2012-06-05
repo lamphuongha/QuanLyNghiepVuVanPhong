@@ -1,6 +1,7 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 80%; top: 8%; left: 13%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), noitrus_path %>  
+<%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
   
 <%= form_for(@noitru) do |f| %>
@@ -48,7 +49,10 @@
 </fieldset>
 <br />
 
-<div id ="sinhviens">
+<div class="myclassname">
+   <a href="#" class="mylink" style="color:#000"><%=image_tag'addstudent.png'%></a>
+   <div class="form">
+      <div id ="sinhviens">
   <%= render :partial => 'sinhvien' %>
 </div>
 <script>
@@ -58,7 +62,7 @@ $(document).ready(function() {
 <div style="display :none">
 <fieldset>
         
-        <table class="table2" width="100%" align="center">
+       <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
           <tr>
             <th>Mã SV</th>
             <th>Họ tên</th>
@@ -91,7 +95,7 @@ $(document).ready(function() {
                  >
             </td>
             <td>
-              <%= link_to 'Xem  ', sinhvien %>
+             <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), sinhvien , :style=>"color:#000"%>
             </td> 
           </tr>
         <% end %>
@@ -103,9 +107,16 @@ $(document).ready(function() {
   <div class="actions">
     <%= f.submit 'Lưu lại'%>
   </div>
-<%= link_to 'Quay lại', noitrus_path %>
+
 <% end %>
-<%= render :partial => 'partials/searchsv'%>  
+</div>
+</div>
+<div class="searchlink">
+   <a href="#" class="show"><%=image_tag'search.png'%></a>
+   <div class="formsearchsv">
+<%= render :partial => 'partials/searchsv'%> 
+     </div>
+</div>
   
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>

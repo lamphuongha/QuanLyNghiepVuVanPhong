@@ -1,0 +1,7 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.95:@expires_in0:@value"Ï{"
+class"ProcessedAsset"logical_path")tiny_mce/plugins/example/langs/en.js"pathname"F$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiQ"digest"%747169d8fe96d7a5d87bafe98d9853c4"source"QtinyMCE.addI18n('en.example',{
+	desc : 'This is just a template button'
+});
+"dependency_digest"%5bee38f675226059d41a723a17b6c815"required_paths["F$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en.js"dependency_paths[{"	path"F$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%68723ef346b9f75f2f2b0c852f9b5caf"_version"%aa7d0db7619379e13b08335dee027df2

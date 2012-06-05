@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.626:@expires_in0:@value"¥{"
+class"ProcessedAsset"logical_path"QMathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/ControlPictures.js"pathname"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/ControlPictures.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiç"digest"%09e9f7a9fcb491c829d58d5e0478d25a"source"ç/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/ControlPictures.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold-italic"],{9251:[31,120,500,40,460]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/BoldItalic/ControlPictures.js");']
+]);
+
+"dependency_digest"%a9bdacd80d2751f6892c335ac34f83f9"required_paths["n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/ControlPictures.js"dependency_paths[{"	path"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/ControlPictures.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%fba67477aaac8c66f17559641d3e8440"_version"%aa7d0db7619379e13b08335dee027df2

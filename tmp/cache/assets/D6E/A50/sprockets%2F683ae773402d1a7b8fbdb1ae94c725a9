@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1331021770.094:@expires_in0:@value"ÿ{"
+class"StaticAsset"logical_path"sym-tab.png"pathname"($root/app/assets/images/sym-tab.png"content_type"image/png"
+mtime"2012-03-01T14:30:44+07:00"lengthi0"digest"%de0a793da3ac17fd83e833c80c095da4"_version"%aa7d0db7619379e13b08335dee027df2

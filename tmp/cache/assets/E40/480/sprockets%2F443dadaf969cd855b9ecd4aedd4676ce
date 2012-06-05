@@ -1,0 +1,42 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989015.121:@expires_in0:@value"Ô{"
+class"ProcessedAsset"logical_path"MMathJax/fonts/HTML-CSS/TeX/png/Main/Bold/unpacked/CombDiactForSymbols.js"pathname"j$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/unpacked/CombDiactForSymbols.js"content_type"application/javascript"
+mtime"2010-07-26T02:28:32+07:00"lengthi½"digest"%3074a1211c5c7e428554deb57a842faa"source"½/*************************************************************
+ *
+ *  MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js
+ *  
+ *  Defines the image size data needed for the HTML-CSS OutputJax
+ *  to display mathematics using fallback images when the fonts
+ *  are not availble to the client browser.
+ *
+ *  ---------------------------------------------------------------------
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.OutputJax["HTML-CSS"].defineImageData({
+  "MathJax_Main-bold": {
+    0x20D7: [  // COMBINING RIGHT ARROW ABOVE
+      [4,2,-3],[5,3,-4],[6,3,-5],[7,3,-6],[8,3,-7],[9,5,-8],[11,5,-10],[13,6,-11],
+      [15,6,-14],[17,8,-16],[21,9,-20],[25,11,-23],[29,13,-28],[34,15,-33]
+    ]
+  }
+});
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].imgDir+"/Main/Bold"+
+                          MathJax.OutputJax["HTML-CSS"].imgPacked+"/CombDiactForSymbols.js");
+"dependency_digest"%86417214b028684e3a820e3708332675"required_paths["j$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/unpacked/CombDiactForSymbols.js"dependency_paths[{"	path"j$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/unpacked/CombDiactForSymbols.js"
+mtime"2010-07-26T02:28:32+07:00"digest"%595b785d98eaeedebd44276ca1657134"_version"%aa7d0db7619379e13b08335dee027df2

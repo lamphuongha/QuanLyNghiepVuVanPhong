@@ -1,7 +1,8 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 70%; top: 10%; left: 10%;overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 70%; top: 10%; left: 10%;overflow: auto" align="center"> 
 
 <div id="close" class="closebutton" style="right: 10px" align="right">
-     <%= link_to image_tag('closex.jpg'),'/giangviens'%>
+    <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), giangviens_path %>
+     <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <%= form_for (@giangvien) do |f| %>
       <% if @giangvien.errors.any? %>
@@ -16,14 +17,15 @@
       <% end %>
  
 <div  align="center" ><h1>Giảng viên</h1>
+ 
 <table width="100%" align="center" class ="table1">
    
 <!--      <div class="field"> -->
      
       <tr>
-         <td width="160" height="33"><b><%= f.label 'Mã giảng viên:'%></b></td>
-         <td width="328"><%= f.text_field :MaGV %>  </td>
-         <td width="160" height="33"><b><%= f.label 'Họ tên :' %></b></td>
+         <td><b><%= f.label 'Mã giảng viên:'%></b></td>
+         <td><%= f.text_field :MaGV %>  </td>
+         <td ><b><%= f.label 'Họ tên :' %></b></td>
          <td><%= f.text_field :HoTenGV %></td>
       </tr>
        <tr>
@@ -35,13 +37,13 @@
       <tr>
         <td height="33"><b><%= f.label 'Chức vụ:' %></b></td>
         
-        <td><%= collection_select(:giangvien, :chucvu_id, Chucvu.all, :id, :TenCV) %><%= link_to "Thêm chức vụ",:style=>"color:#000", :controller => "chucvus", :action => "new", :id => @chucvu %></td>
+        <td><%= collection_select(:giangvien, :chucvu_id, Chucvu.all, :id, :TenCV) %></td>
         <td height="33"><b><%= f.label 'Học vị:' %></b></td>
         
-       <td><%= collection_select(:giangvien, :hocvi_id, Hocvi.all, :id, :TenHocVi) %><%= link_to "Thêm học vị", :controller => "hocvis", :action => "new", :id => @hocvi,:style=>"color:#000"%></td>
+       <td><%= collection_select(:giangvien, :hocvi_id, Hocvi.all, :id, :TenHocVi) %></td>
       <tr>
        <td height="33"><b><%= f.label 'Ngạch:' %></b></td>
-       <td><%= collection_select(:giangvien,:ngach_id, Ngach.all, :id, :TenNgach) %><%= link_to "Thêm ngạch", :controller => "ngaches", :action => "new", :id => @ngach,:style=>"color:#000"%></td>
+       <td><%= collection_select(:giangvien,:ngach_id, Ngach.all, :id, :TenNgach) %></td>
        <td height="33"><b><%= f.label 'Học hàm:' %></b></td>
        <td><%= f.select :Hocham, options_for_select([["Không","Không"],["Phó Giáo Sư","Phó Giáo Sư"],["Giáo Sư","Giáo Sư"]])%> </td>
       </tr>

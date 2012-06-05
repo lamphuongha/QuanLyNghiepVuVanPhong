@@ -1,3 +1,6 @@
+<div align="left">
+Kết quả: <%= @dem %> danh sách
+</div>
 <div id="shadow" class="shadow" >
     <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
   <tr>
@@ -20,14 +23,18 @@
     <td><%= baoluu.congvan.SoCV %></td>
     <td><%= baoluu.HocKy %></td>
     <td><%= baoluu.NamHoc %></td>
-    <td><%= link_to 'Xem', baoluu , :style=>"color:#000"%> |
-    <%= link_to 'Sửa', edit_baoluu_path(baoluu) , :style=>"color:#000"%> |
-    <%= link_to 'Xóa', baoluu, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
+    <td> 
+          <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), baoluu , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_baoluu_path(baoluu) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), baoluu, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+    </td>
   </tr>
  <% dem = dem + 1 %>
 <% end %>
 </table>
-
+<div align="left">
+Hiển thị: <%= dem - 1 %> / <%= @dem %>
+</div>
 <br />
 </div>
 <br />

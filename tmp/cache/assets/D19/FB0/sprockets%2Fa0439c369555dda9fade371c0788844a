@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989038.497:@expires_in0:@value"Z{"
+class"ProcessedAsset"logical_path"BMathJax/jax/output/HTML-CSS/fonts/STIX/SizeOneSym/Bold/All.js"pathname"_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeOneSym/Bold/All.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthio"digest"%3e447df8a409e1782fd8b3aa81f10fba"source"o/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/SizeOneSym/Bold/All.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXSizeOneSym-bold"],{8512:[1500,-22,1341,60,1281]});MathJax.Ajax.loadComplete',1,'fontDir+"/SizeOneSym/Bold/All.js");']
+]);
+
+"dependency_digest"%792c53aaa610cdc743c843648dbf805d"required_paths["_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeOneSym/Bold/All.js"dependency_paths[{"	path"_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeOneSym/Bold/All.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%69737ab8dcd77ab39b403337008156fb"_version"%aa7d0db7619379e13b08335dee027df2

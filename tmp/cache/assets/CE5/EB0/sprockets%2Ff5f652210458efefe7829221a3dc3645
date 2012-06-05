@@ -1,0 +1,58 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989071.453:@expires_in0:@value"Œ{"
+class"ProcessedAsset"logical_path"6tiny_mce/plugins/nonbreaking/editor_plugin_src.js"pathname"S$root/app/assets/javascripts/tiny_mce/plugins/nonbreaking/editor_plugin_src.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiÑ"digest"%35a681e63e2da078424548fe45cbc320"source"Ñ/**
+ * editor_plugin_src.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+(function() {
+	tinymce.create('tinymce.plugins.Nonbreaking', {
+		init : function(ed, url) {
+			var t = this;
+
+			t.editor = ed;
+
+			// Register commands
+			ed.addCommand('mceNonBreaking', function() {
+				ed.execCommand('mceInsertContent', false, (ed.plugins.visualchars && ed.plugins.visualchars.state) ? '<span _mce_bogus="1" class="mceItemHidden mceItemNbsp">&nbsp;</span>' : '&nbsp;');
+			});
+
+			// Register buttons
+			ed.addButton('nonbreaking', {title : 'nonbreaking.nonbreaking_desc', cmd : 'mceNonBreaking'});
+
+			if (ed.getParam('nonbreaking_force_tab')) {
+				ed.onKeyDown.add(function(ed, e) {
+					if (tinymce.isIE && e.keyCode == 9) {
+						ed.execCommand('mceNonBreaking');
+						ed.execCommand('mceNonBreaking');
+						ed.execCommand('mceNonBreaking');
+						tinymce.dom.Event.cancel(e);
+					}
+				});
+			}
+		},
+
+		getInfo : function() {
+			return {
+				longname : 'Nonbreaking space',
+				author : 'Moxiecode Systems AB',
+				authorurl : 'http://tinymce.moxiecode.com',
+				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/nonbreaking',
+				version : tinymce.majorVersion + "." + tinymce.minorVersion
+			};
+		}
+
+		// Private methods
+	});
+
+	// Register plugin
+	tinymce.PluginManager.add('nonbreaking', tinymce.plugins.Nonbreaking);
+})();
+"dependency_digest"%177e524d13a72b157977ae9757dbf8e1"required_paths["S$root/app/assets/javascripts/tiny_mce/plugins/nonbreaking/editor_plugin_src.js"dependency_paths[{"	path"S$root/app/assets/javascripts/tiny_mce/plugins/nonbreaking/editor_plugin_src.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%1ed96d6c097030a860e56452de772cf0"_version"%aa7d0db7619379e13b08335dee027df2

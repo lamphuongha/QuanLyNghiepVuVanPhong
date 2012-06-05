@@ -1,0 +1,8 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.043:@expires_in0:@value"‡{"
+class"ProcessedAsset"logical_path"*tiny_mce/plugins/autosave/langs/en.js"pathname"G$root/app/assets/javascripts/tiny_mce/plugins/autosave/langs/en.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiþ"digest"%7ac9a600f6628f5ac7ea408157a3ce9b"source"þtinyMCE.addI18n('en.autosave',{
+restore_content: "Restore auto-saved content",
+warning_message: "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?"
+});
+"dependency_digest"%f7cf4c5020c78397364e14878ef20e08"required_paths["G$root/app/assets/javascripts/tiny_mce/plugins/autosave/langs/en.js"dependency_paths[{"	path"G$root/app/assets/javascripts/tiny_mce/plugins/autosave/langs/en.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%a66224bc10594c0ac15622b0eeebae8a"_version"%aa7d0db7619379e13b08335dee027df2

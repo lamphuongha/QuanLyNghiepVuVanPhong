@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989066.404:@expires_in0:@value"S	{"
+class"ProcessedAsset"logical_path"ZMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"pathname"w$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi"digest"%f3b7f7833ed1b9c9fd088f361dfb1df2"source"/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Typewriter'],
+  {
+    0x300: [611,-485,0,-409,-195],     // COMBINING GRAVE ACCENT
+    0x301: [611,-485,0,-331,-117],     // COMBINING ACUTE ACCENT
+    0x302: [612,-459,0,-430,-97],      // COMBINING CIRCUMFLEX ACCENT
+    0x303: [611,-466,0,-438,-88],      // COMBINING TILDE
+    0x304: [578,-500,0,-453,-74],      // COMBINING MACRON
+    0x306: [612,-503,0,-446,-78],      // COMBINING BREVE
+    0x308: [612,-518,0,-421,-104],     // COMBINING DIAERESIS
+    0x30A: [619,-499,0,-344,-182],     // COMBINING RING ABOVE
+    0x30C: [577,-449,0,-428,-99]       // COMBINING CARON
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Typewriter/Regular/CombDiacritMarks.js");
+"dependency_digest"%e914eab03073c29dbb51be869ecee596"required_paths["w$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"dependency_paths[{"	path"w$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%afd760a9ef49bbf3d5f704251ff9f50a"_version"%aa7d0db7619379e13b08335dee027df2

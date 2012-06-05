@@ -1,0 +1,36 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989064.878:@expires_in0:@value"0{"
+class"ProcessedAsset"logical_path"TMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscMathSymbolsA.js"pathname"q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscMathSymbolsA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthiý"digest"%13990c06c62ab1168ee1bc7dfa84f301"source"ý/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscMathSymbolsA.js
+ *
+ *  Copyright (c) 2009 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Main'],
+  {
+    0x27E8: [750,250,389,110,333],     // MATHEMATICAL LEFT ANGLE BRACKET
+    0x27E9: [750,250,389,55,278],      // MATHEMATICAL RIGHT ANGLE BRACKET
+    0x27EE: [743,242,400,100,344],     // MATHEMATICAL LEFT FLATTENED PARENTHESIS
+    0x27EF: [743,241,400,56,301]       // MATHEMATICAL RIGHT FLATTENED PARENTHESIS
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Main/Regular/MiscMathSymbolsA.js");
+"dependency_digest"%69909141848a40ea1d6a37acb80921cd"required_paths["q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscMathSymbolsA.js"dependency_paths[{"	path"q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscMathSymbolsA.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%49153182abf0b283ff5769b1809e14bb"_version"%aa7d0db7619379e13b08335dee027df2

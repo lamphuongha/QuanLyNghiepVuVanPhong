@@ -1,0 +1,77 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989074.981:@expires_in0:@value"ç
+{"
+class"ProcessedAsset"logical_path")tiny_mce/themes/advanced/js/about.js"pathname"F$root/app/assets/javascripts/tiny_mce/themes/advanced/js/about.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi"digest"%d0ea644ff2da316547d2d2b0a4351c51"source"tinyMCEPopup.requireLangPack();
+
+function init() {
+	var ed, tcont;
+
+	tinyMCEPopup.resizeToInnerSize();
+	ed = tinyMCEPopup.editor;
+
+	// Give FF some time
+	window.setTimeout(insertHelpIFrame, 10);
+
+	tcont = document.getElementById('plugintablecontainer');
+	document.getElementById('plugins_tab').style.display = 'none';
+
+	var html = "";
+	html += '<table id="plugintable">';
+	html += '<thead>';
+	html += '<tr>';
+	html += '<td>' + ed.getLang('advanced_dlg.about_plugin') + '</td>';
+	html += '<td>' + ed.getLang('advanced_dlg.about_author') + '</td>';
+	html += '<td>' + ed.getLang('advanced_dlg.about_version') + '</td>';
+	html += '</tr>';
+	html += '</thead>';
+	html += '<tbody>';
+
+	tinymce.each(ed.plugins, function(p, n) {
+		var info;
+
+		if (!p.getInfo)
+			return;
+
+		html += '<tr>';
+
+		info = p.getInfo();
+
+		if (info.infourl != null && info.infourl != '')
+			html += '<td width="50%" title="' + n + '"><a href="' + info.infourl + '" target="_blank">' + info.longname + '</a></td>';
+		else
+			html += '<td width="50%" title="' + n + '">' + info.longname + '</td>';
+
+		if (info.authorurl != null && info.authorurl != '')
+			html += '<td width="35%"><a href="' + info.authorurl + '" target="_blank">' + info.author + '</a></td>';
+		else
+			html += '<td width="35%">' + info.author + '</td>';
+
+		html += '<td width="15%">' + info.version + '</td>';
+		html += '</tr>';
+
+		document.getElementById('plugins_tab').style.display = '';
+
+	});
+
+	html += '</tbody>';
+	html += '</table>';
+
+	tcont.innerHTML = html;
+
+	tinyMCEPopup.dom.get('version').innerHTML = tinymce.majorVersion + "." + tinymce.minorVersion;
+	tinyMCEPopup.dom.get('date').innerHTML = tinymce.releaseDate;
+}
+
+function insertHelpIFrame() {
+	var html;
+
+	if (tinyMCEPopup.getParam('docs_url')) {
+		html = '<iframe width="100%" height="300" src="' + tinyMCEPopup.editor.baseURI.toAbsolute(tinyMCEPopup.getParam('docs_url')) + '"></iframe>';
+		document.getElementById('iframecontainer').innerHTML = html;
+		document.getElementById('help_tab').style.display = 'block';
+	}
+}
+
+tinyMCEPopup.onInit.add(init);
+"dependency_digest"%b7e7b89c1b1779c2d2f8d6b21f89d2f8"required_paths["F$root/app/assets/javascripts/tiny_mce/themes/advanced/js/about.js"dependency_paths[{"	path"F$root/app/assets/javascripts/tiny_mce/themes/advanced/js/about.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%686c0f63a130cf66ca4b466baa872f66"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989014.069:@expires_in0:@value"Ñ{"
+class"ProcessedAsset"logical_path"DMathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js"pathname"a$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js"content_type"application/javascript"
+mtime"2010-07-26T02:35:16+07:00"lengthiÞ"digest"%c603406ecce6a7e4a469f5c18bc78ecc"source"Þ/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({"MathJax_Main-bold":{8407:[[4,2,-3],[5,3,-4],[6,3,-5],[7,3,-6],[8,3,-7],[9,5,-8],[11,5,-10],[13,6,-11],[15,6,-14],[17,8,-16],[21,9,-20],[25,11,-23],[29,13,-28],[34,15,-33]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/Main/Bold"+',0,'imgPacked+"/CombDiactForSymbols.js");']
+]);
+
+"dependency_digest"%47415a0a2eb7eb6ac1cd71873a49dbf2"required_paths["a$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js"dependency_paths[{"	path"a$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Bold/CombDiactForSymbols.js"
+mtime"2010-07-26T02:35:16+07:00"digest"%80e9164364ae16a0bb46528d4fd9bbf4"_version"%aa7d0db7619379e13b08335dee027df2

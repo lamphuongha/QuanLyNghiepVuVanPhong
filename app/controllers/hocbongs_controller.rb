@@ -5,10 +5,13 @@ class HocbongsController < ApplicationController
   def index
     #@hocbongs = Hocbong.all
     if params[:search]
+      @countcvs=Hocbong.joins(:loaihocbong,:congvan).search(params[:search])
         @hocbongs=Hocbong.joins(:loaihocbong,:congvan).search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
       else
+        @countcvs=Hocbong.all
         @hocbongs = Hocbong.paginate(:page => params[:page], :order => "id DESC")
       end
+      @countds = @countcvs.size
     @congvan = Congvan.find :all
     @loaihocbong = Loaihocbong.find :all
     respond_to do |format|
@@ -44,6 +47,8 @@ class HocbongsController < ApplicationController
   def new
     @hocbong = Hocbong.new
     @sinhviens=Sinhvien.all
+    @countsinhviensearchs=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh])
+    @countds = @countsinhviensearchs.size
     @sinhviensearchs=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh]).paginate(:page => params[:page], :order => "id DESC")
     @hocbong.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
@@ -56,6 +61,8 @@ class HocbongsController < ApplicationController
   # GET /hocbongs/1/edit
   def edit
     @hocbong = Hocbong.find(params[:id])
+    @countsinhviensearchs=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh])
+    @countds = @countsinhviensearchs.size
     @sinhviens=Sinhvien.all
     @sinhviensearchs=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh]).paginate(:page => params[:page], :order => "id DESC")
     @hocbong.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
@@ -78,7 +85,7 @@ class HocbongsController < ApplicationController
     
     respond_to do |format|
       if @hocbong.save
-        format.html { redirect_to @hocbong, :notice => 'Hocbong was successfully created.' }
+        format.html { redirect_to @hocbong, :notice => 'Thêm danh sách thành công.' }
         format.json { render :json => @hocbong, :status => :created, :location => @hocbong }
       else
         format.html { render :action => "new" }
@@ -96,7 +103,7 @@ class HocbongsController < ApplicationController
     @hocbong.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @hocbong.update_attributes(params[:hocbong])
-        format.html { redirect_to @hocbong, :notice => 'Hocbong was successfully updated.' }
+        format.html { redirect_to @hocbong, :notice => 'Cập nhật thành công.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -119,10 +126,13 @@ class HocbongsController < ApplicationController
   
   def search
     if params[:search]
+      @countcvs=Hocbong.search(params[:search])
         @hocbongs=Hocbong.search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
       else
+        @countcvs=Hocbong.search_with_permission(params[:MaHocBong],params[:TenHocBong],params[:loaihocbong_id],params[:congvan_id],params[:NoiCap],params[:HocKy],params[:NamHoc],params[:NgayLap])
         @hocbongs = Hocbong.search_with_permission(params[:MaHocBong],params[:TenHocBong],params[:loaihocbong_id],params[:congvan_id],params[:NoiCap],params[:HocKy],params[:NamHoc],params[:NgayLap]).paginate(:page => params[:page], :order => "id DESC")
       end
+      @countds = @countcvs.size
     @congvan = Congvan.find :all
     @loaihocbong = Loaihocbong.find :all
     respond_to do |format|

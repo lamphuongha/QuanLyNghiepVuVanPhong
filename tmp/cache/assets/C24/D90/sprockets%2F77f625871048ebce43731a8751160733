@@ -1,0 +1,48 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.543:@expires_in0:@value"K{"
+class"ProcessedAsset"logical_path"3tiny_mce/plugins/emotions/editor_plugin_src.js"pathname"P$root/app/assets/javascripts/tiny_mce/plugins/emotions/editor_plugin_src.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiœ"digest"%4001741b54e069e2bc567083546eef18"source"œ/**
+ * editor_plugin_src.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+(function(tinymce) {
+	tinymce.create('tinymce.plugins.EmotionsPlugin', {
+		init : function(ed, url) {
+			// Register commands
+			ed.addCommand('mceEmotion', function() {
+				ed.windowManager.open({
+					file : url + '/emotions.htm',
+					width : 250 + parseInt(ed.getLang('emotions.delta_width', 0)),
+					height : 160 + parseInt(ed.getLang('emotions.delta_height', 0)),
+					inline : 1
+				}, {
+					plugin_url : url
+				});
+			});
+
+			// Register buttons
+			ed.addButton('emotions', {title : 'emotions.emotions_desc', cmd : 'mceEmotion'});
+		},
+
+		getInfo : function() {
+			return {
+				longname : 'Emotions',
+				author : 'Moxiecode Systems AB',
+				authorurl : 'http://tinymce.moxiecode.com',
+				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/emotions',
+				version : tinymce.majorVersion + "." + tinymce.minorVersion
+			};
+		}
+	});
+
+	// Register plugin
+	tinymce.PluginManager.add('emotions', tinymce.plugins.EmotionsPlugin);
+})(tinymce);
+"dependency_digest"%4c06f43f62451023e58d57d97182190c"required_paths["P$root/app/assets/javascripts/tiny_mce/plugins/emotions/editor_plugin_src.js"dependency_paths[{"	path"P$root/app/assets/javascripts/tiny_mce/plugins/emotions/editor_plugin_src.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%ab4240198f327f054631bfce50a91ad7"_version"%aa7d0db7619379e13b08335dee027df2

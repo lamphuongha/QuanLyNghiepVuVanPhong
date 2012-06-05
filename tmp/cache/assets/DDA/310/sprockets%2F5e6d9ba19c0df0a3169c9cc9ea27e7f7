@@ -1,0 +1,61 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989075.323:@expires_in0:@value"ç{"
+class"ProcessedAsset"logical_path"1tiny_mce/themes/advanced/js/source_editor.js"pathname"N$root/app/assets/javascripts/tiny_mce/themes/advanced/js/source_editor.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiÊ"digest"%cf08cc45dce1ab1b5c0c9a355196a589"source"ÊtinyMCEPopup.requireLangPack();
+tinyMCEPopup.onInit.add(onLoadInit);
+
+function saveContent() {
+	tinyMCEPopup.editor.setContent(document.getElementById('htmlSource').value, {source_view : true});
+	tinyMCEPopup.close();
+}
+
+function onLoadInit() {
+	tinyMCEPopup.resizeToInnerSize();
+
+	// Remove Gecko spellchecking
+	if (tinymce.isGecko)
+		document.body.spellcheck = tinyMCEPopup.editor.getParam("gecko_spellcheck");
+
+	document.getElementById('htmlSource').value = tinyMCEPopup.editor.getContent({source_view : true});
+
+	if (tinyMCEPopup.editor.getParam("theme_advanced_source_editor_wrap", true)) {
+		setWrap('soft');
+		document.getElementById('wraped').checked = true;
+	}
+
+	resizeInputs();
+}
+
+function setWrap(val) {
+	var v, n, s = document.getElementById('htmlSource');
+
+	s.wrap = val;
+
+	if (!tinymce.isIE) {
+		v = s.value;
+		n = s.cloneNode(false);
+		n.setAttribute("wrap", val);
+		s.parentNode.replaceChild(n, s);
+		n.value = v;
+	}
+}
+
+function toggleWordWrap(elm) {
+	if (elm.checked)
+		setWrap('soft');
+	else
+		setWrap('off');
+}
+
+function resizeInputs() {
+	var vp = tinyMCEPopup.dom.getViewPort(window), el;
+
+	el = document.getElementById('htmlSource');
+
+	if (el) {
+		el.style.width  = (vp.w - 20) + 'px';
+		el.style.height = (vp.h - 65) + 'px';
+	}
+}
+;
+"dependency_digest"%3e51e38b94c5a088f376cc724ffbafe6"required_paths["N$root/app/assets/javascripts/tiny_mce/themes/advanced/js/source_editor.js"dependency_paths[{"	path"N$root/app/assets/javascripts/tiny_mce/themes/advanced/js/source_editor.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%b4631b9f2deb1fa81956fc0efc0ec7d5"_version"%aa7d0db7619379e13b08335dee027df2

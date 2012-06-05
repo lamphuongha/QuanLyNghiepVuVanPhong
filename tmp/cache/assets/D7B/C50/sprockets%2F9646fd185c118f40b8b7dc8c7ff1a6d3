@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989045.36:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"QMathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"pathname"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiX"digest"%69bcec9d4841973c5de51799295c51e4"source"X/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Typewriter,{768',':[611,-485,0,-','409,-195],769',3,'331,-117],770:[612,-459,0,-430,-97],771:[611,-466,0,-438,-88],772:[578,-500,0,-453,-74],774:[612,-503,0,-446,-78],776:[612,-518,0,-421,-104],778:[619,-499,0,-344,-182],780:[577,-449,0,-428,-99]});MathJax.Ajax.loadComplete',1,'fontDir+"/Typewriter/Regular/CombDiacritMarks.js");']
+]);
+
+"dependency_digest"%e8dd01757c4bec5d1e7be62c396aefc6"required_paths["n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"dependency_paths[{"	path"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%7873e0a500b8cda63de583c2fef5b999"_version"%aa7d0db7619379e13b08335dee027df2

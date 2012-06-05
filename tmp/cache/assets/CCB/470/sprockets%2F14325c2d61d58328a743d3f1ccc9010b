@@ -1,0 +1,40 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989049.926:@expires_in0:@value"á{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/w.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/w.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi."digest"%9b74013c2778f4484325f7c1b579a7e2"source"./*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/w.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'Wcirc': '\u0174',
+    'wcirc': '\u0175',
+    'wedbar': '\u2A5F',
+    'wedge': '\u2227',
+    'wedgeq': '\u2259',
+    'wp': '\u2118',
+    'wr': '\u2240',
+    'wreath': '\u2240'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/w.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%7cbf98e9ca9861cb07b7cf62cb5575e6"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/w.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/w.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%ca2c7b5d70e854a58fbf5fc6e8a3b7a3"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,253 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 75%; top: 8%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    </div>
+<h1>Thống kê</h1>
+<div align="left">
+<fieldset style="width:15em">
+  
+<legend>Danh mục thống kê</legend>
+
+  <div class="statistic">
+   <%=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <a href="#" class="tkcv" style="color:#000;font-size: 13pt">Thống kê công văn</a>
+   </div>
+
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;'%>
+   <%#*<a href="#" class="tkgv" style="color:#000;font-size: 13pt">Thống kê giảng viên</a>%>
+   
+<%#*</div>%>
+<div class="statistic">
+  <%=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <a href="#" class="tksv" style="color:#000;font-size: 13pt">Thống kê sinh viên</a>
+   
+</div>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <%#*<a href="#" class="tkdrl" style="color:#000;font-size: 13pt">Thống kê điểm rèn luyện</a>%>
+   
+<%#*</div>%>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;'%>
+   <%#*<a href="#" class="tkhb" style="color:#000;font-size: 13pt">Thống kê học bổng</a>%>
+   
+<%#*</div>%>
+  <%#*<div class="statistic">%>
+    <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <%#*<a href="#" class="tktc" style="color:#000;font-size: 13pt">Thống kê trợ cấp</a>%>
+   
+<%#*</div>%>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <%#*<a href="#" class="tknt" style="color:#000;font-size: 13pt">Thống kê nội trú</a>%>
+   
+<%#*</div>%>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <%#*<a href="#" class="tkngt" style="color:#000;font-size: 13pt">Thống kê ngoại trú</a>%>
+   
+<%#*</div>%>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;' %>
+   <%#*<a href="#" class="tkbl" style="color:#000;font-size: 13pt">Thống kê bảo lưu</a>%>
+   
+<%#*</div>%>
+<%#*<div class="statistic">%>
+  <%#=image_tag'statistic.png', :class=>'ads-cont',:alt=>'chipchipshop.com', :style=>'border-color:#D4B3FE;border-width:1px;border-style:Solid;height:10px;width:10px;'%>
+   <%#*<a href="#" class="tkbth" style="color:#000;font-size: 13pt">Thống kê buộc thôi học</a>%>
+   
+<%#*</div>%>
+<br />
+</fieldset>
+</div>
+
+  <div align="left" style="padding: 10px; margin: 10px; top: 6em; left: 18em; position:absolute">
+  
+    <div class="statistic">
+    <div class="tkcongvan">
+      <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+      <%= form_tag '#',:remote => true,:method => 'get' do %>
+      <table width ="100%">
+      <tr>
+        <td>Nơi ban hành: </td>
+        <td><%= select_tag :NoiGui, options_from_collection_for_select(Phongban.all, :id,  :TenPB, params[:NoiGui]), :include_blank=>'Tất cả' %></td>
+        <td>Loại công văn:</td>
+        <td><%= select_tag :loaicv_id, options_from_collection_for_select(Loaicv.all, :id,  :TenLoaiCV, params[:loaicv_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Nơi nhận: </td>
+        <td><%= select_tag :NoiNhan, options_from_collection_for_select(Phongban.all, :id,  :TenPB, params[:NoiNhan]), :include_blank=>'Tất cả' %></td>
+        <td>Tác giả:</td>
+        <td width ="30%"><%= text_field_tag :TacGia, params[:TacGia], :size =>'19px'%></td>
+      </tr>
+      <tr>
+        <td>Năm học: </td>
+        <td width ="30%" colspan="3"><%= text_field_tag :NamHoc, params[:NamHoc], :size =>'19px'%> (yyyy-yyyy)</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center">
+          <%= submit_tag "Thống kê", :name => nil %>
+        </td>
+      </tr>
+    </table>
+      <% end %>
+      </fieldset>
+  <br />    
+      <fieldset>
+  <legend>Kết quả</legend>
+      <div id ="congvans">
+        <%= render :partial => 'resultcv' %>
+      </div>
+  </fieldset>
+   </div>
+  </div>
+   <div class="statistic">
+   <div class="tkgiangvien">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tksinhvien">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+        <%= form_tag '#',:remote => true,:method => 'get' do %>  
+    <table width ="70%" align="center">
+      
+      <tr>
+        <td>Trình độ đào tạo : </td>
+        <td><%= select_tag :trinhdodaotao_id, options_from_collection_for_select(Trinhdodaotao.all, :id,  :TenTDDT, params[:trinhdodaotao_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td width ="20%">Khóa:</td>
+        <td width ="30%"><%= text_field_tag :MSSV, params[:MSSV], :size =>'19px'%></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><%= submit_tag "Thống kê", :name => nil %></td>
+      </tr>
+
+    </table>
+    
+      <% end %>
+     </fieldset>
+     <fieldset>
+      <legend>Kết quả</legend>
+      <div id ="sinhviens">
+        <%= render :partial => 'resultsv' %>
+      </div>
+    </fieldset>
+   </div>
+    </div>
+   <div class="statistic">
+   <div class="tkdiemrenluyen">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+        <%= form_tag '#',:remote => true,:method => 'get' do %>  
+    <table width ="70%" align="center">
+      
+      <tr>
+        <td>Trình độ đào tạo : </td>
+        <td><%= select_tag :trinhdodaotao_id, options_from_collection_for_select(Trinhdodaotao.all, :id,  :TenTDDT, params[:trinhdodaotao_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td>Lớp: </td>
+        <td><%= select_tag :lop_id, options_from_collection_for_select(Lop.all, :id,  :TenLop, params[:lop_id]), :include_blank=>'Tất cả' %></td>
+      </tr>
+      <tr>
+        <td width ="20%">Xếp loại:</td>
+        <td width ="30%"><%= text_field_tag :XepLoai, params[:XepLpai], :size =>'19px'%></td>
+      </tr>
+      <tr>
+        <td>Học kỳ: </td>
+        <td width ="30%" colspan="3"><%= text_field_tag :HocKy, params[:HocKy], :size =>'19px'%></td>
+      </tr>
+      <tr>
+        <td>Năm học: </td>
+        <td width ="30%" colspan="3"><%= text_field_tag :NamHoc, params[:NamHoc], :size =>'19px'%> (yyyy-yyyy)</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><%= submit_tag "Thống kê", :name => nil %></td>
+      </tr>
+    </table>
+    
+      <% end %>
+     </fieldset>
+     <fieldset>
+      <legend>Kết quả</legend>
+      <div id ="sinhviens">
+        <%= render :partial => 'resultsv' %>
+      </div>
+    </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tkhocbong">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tktrocap">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tknoitru">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tkngoaitru">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tkbaoluu">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    <div class="statistic">
+   <div class="tkbuocthoihoc">
+     <fieldset style="width:55em">
+      <legend>Điều kiện</legend>
+     <p>Hello 2</p>
+     </fieldset>
+   </div>
+    </div>
+    
+    
+  </div>
+
+
+<div class="statistic">
+<div class="tkcongvan">
+
+</div>
+</div>
+
+
+
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

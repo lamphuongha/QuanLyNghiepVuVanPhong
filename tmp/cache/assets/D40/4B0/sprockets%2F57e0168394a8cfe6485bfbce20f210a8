@@ -1,0 +1,63 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989047.724:@expires_in0:@value"j{"
+class"ProcessedAsset"logical_path";MathJax/unpacked/jax/element/mml/optable/BasicLatin.js"pathname"X$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/BasicLatin.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi›	"digest"%902492c64016b315d335ea5e0166bf59"source"›	/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/optable/BasicLatin.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MML) {
+  var MO = MML.mo.OPTYPES;
+  var TEXCLASS = MML.TEXCLASS;
+
+  MathJax.Hub.Insert(MML.mo.prototype,{
+    OPTABLE: {
+      postfix: {
+        '!!': [1,0,TEXCLASS.BIN], // multiple character operator: !!
+        '\'': MO.ACCENT,       // apostrophe
+        '++': [0,0,TEXCLASS.BIN], // multiple character operator: ++
+        '--': [0,0,TEXCLASS.BIN], // multiple character operator: --
+        '..': [0,0,TEXCLASS.BIN], // multiple character operator: ..
+        '...': MO.ORD          // multiple character operator: ...
+      },
+      infix: {
+        '!=': MO.BIN4,         // multiple character operator: !=
+        '&&': MO.BIN4,         // multiple character operator: &&
+        '**': [1,1,TEXCLASS.BIN], // multiple character operator: **
+        '*=': MO.BIN4,         // multiple character operator: *=
+        '+=': MO.BIN4,         // multiple character operator: +=
+        '-=': MO.BIN4,         // multiple character operator: -=
+        '->': MO.BIN4,         // multiple character operator: ->
+        '//': MO.BIN4,         // multiple character operator: //
+        '/=': MO.BIN4,         // multiple character operator: /=
+        ':=': MO.BIN4,         // multiple character operator: :=
+        '<=': MO.BIN4,         // multiple character operator: <=
+        '<>': [1,1,TEXCLASS.BIN], // multiple character operator: <>
+        '==': MO.BIN4,         // multiple character operator: ==
+        '>=': MO.BIN4,         // multiple character operator: >=
+        '@': MO.ORD11,         // commercial at
+        '||': MO.BIN3          // multiple character operator: ||
+      }
+    }
+  });
+
+  MathJax.Ajax.loadComplete(MML.optableDir+"/BasicLatin.js");
+
+})(MathJax.ElementJax.mml);
+"dependency_digest"%2c6ec26b48c63d76a7b7a1e1acb31aab"required_paths["X$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/BasicLatin.js"dependency_paths[{"	path"X$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/BasicLatin.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%e03c12a92b232ea3ac11159be8ce2fb3"_version"%aa7d0db7619379e13b08335dee027df2

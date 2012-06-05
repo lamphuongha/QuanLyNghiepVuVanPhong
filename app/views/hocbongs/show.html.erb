@@ -1,12 +1,13 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 8%; left: 8%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-      <%= link_to 'In danh sách',{:action=>:export_hocbongs}, {:popup=>true},:style=>"color:#000" %>
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('print.png'),{:action=>:export_hocbongs}, {:popup=>true},:style=>"color:#000" %>
+       <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), hocbongs_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
         
 
     </div>
   <h1>Chi tiết học bổng</h1>
-     <table width ="60%" align ="center" >  
+     <table width ="80%" align ="center" >  
       <tr>
         <td colspan="3">
           <p id="notice"><%= notice %></p>
@@ -59,9 +60,8 @@
       
   <tr>
         <td colspan="3" align ="center">
-        <%= link_to 'Sửa', edit_hocbong_path(@hocbong) , :style=>"color:#000" %> |
-        <%= link_to 'Quay lại', hocbongs_path , :style=>"color:#000"%> |
-        <%= link_to 'Thêm học bổng', new_hocbong_path, :style=>"color:#000"%>
+        <%= link_to image_tag('edit.png'), edit_hocbong_path(@hocbong) , :style=>"color:#000" %> |
+        <%= link_to  image_tag('new.png'), new_hocbong_path, :style=>"color:#000"%>
         </td>
   </tr>
   </table>
@@ -94,7 +94,8 @@
         <% end %>
         </table>
         
-
+<br />
+<br />
 
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>

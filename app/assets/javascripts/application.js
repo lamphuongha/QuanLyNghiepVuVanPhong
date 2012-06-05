@@ -63,3 +63,7 @@ $(function() {
   return false;  
     });  
 });
+
+$(function () {
+  $('#congvan_giangvien_tokens').tokenInput('/giangviens.json', { crossDomain: false });
+});

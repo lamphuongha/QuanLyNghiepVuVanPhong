@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989044.841:@expires_in0:@value"á{"
+class"ProcessedAsset"logical_path"DMathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Regular/Main.js"pathname"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Regular/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiî"digest"%d891eaf19305d4836381bf1ad0cbfa2e"source"î/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Regular/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.','MathJax_SansSerif','={directory:"','SansSerif/Regular','",family:"',2,'",testString:"MathJax SansSerif",Ranges:[[0,127,"BasicLatin"],[128,65535,"Other"],[768,879,"CombDiacritMarks"]]};',0,'initFont("',2,'");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%fd97c1b064f052f53d4cbed6773638c7"required_paths["a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Regular/Main.js"dependency_paths[{"	path"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Regular/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%5156543230d94e4313383a6a6710f553"_version"%aa7d0db7619379e13b08335dee027df2

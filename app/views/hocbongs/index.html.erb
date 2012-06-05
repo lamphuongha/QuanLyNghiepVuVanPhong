@@ -1,10 +1,9 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to 'Thêm học bổng', new_hocbong_path %>
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
   <%= form_tag hocbongs_path,:remote => true, :method => 'get' do %>  
-     <fieldset>
+     <fieldset style="width: 70%">
         <legend>Lọc học bổng</legend>
       <%= text_field_tag :search, params[:search] %> 
       
@@ -13,7 +12,11 @@
        </fieldset>
     <%end%>
 <h1>Danh sách học bổng</h1>
-
+<div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm danh sách"), new_hocbong_path %> Thêm danh sách học bổng 
+     
+   </div>
 <div id ="hocbongs">
         <%= render :partial => 'hocbong' %>
       </div>

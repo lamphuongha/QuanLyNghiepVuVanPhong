@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989032.965:@expires_in0:@value"ý{"
+class"ProcessedAsset"logical_path"PMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/AlphaPresentForms.js"pathname"m$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/AlphaPresentForms.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÚ"digest"%e11738434073fdd5f0cfc7c811d1b504"source"Ú/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/AlphaPresentForms.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{64256',':[683,0,','605,20,655],64257',3,'558,32,523],64258',3,'556,31,522],64259',3,'832,20,797],64260',3,'830,20,796]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/AlphaPresentForms.js");']
+]);
+
+"dependency_digest"%60ea906c7921555203a3f3b1ed66b8f7"required_paths["m$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/AlphaPresentForms.js"dependency_paths[{"	path"m$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/AlphaPresentForms.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%42e87c52e060173895d248b45ad32ad5"_version"%aa7d0db7619379e13b08335dee027df2

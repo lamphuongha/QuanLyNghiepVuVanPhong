@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989025.497:@expires_in0:@value"Q{"
+class"ProcessedAsset"logical_path"'MathJax/jax/input/MathML/config.js"pathname"D$root/app/assets/javascripts/MathJax/jax/input/MathML/config.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÒ"digest"%288a03e937cd47c127b78c71bf8b783f"source"Ò/*
+ *  ../SourceForge/trunk/mathjax/jax/input/MathML/config.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.InputJax','.MathML','=',0,'({name:"','MathML",','version:"1.0",directory:',0,'.directory+"/',5,'extensionDir',':',0,'.',10,'+"/',5,'entityDir:',0,8,'MathML/entities",require:[MathJax.ElementJax',8,'mml/jax.js"],config:{useMathMLspacing:false}});',0,1,'.Register("math/mml");',0,1,'.loadComplete("config.js");']
+]);
+
+"dependency_digest"%3a82a86992569449fd2ecb1ecebf824e"required_paths["D$root/app/assets/javascripts/MathJax/jax/input/MathML/config.js"dependency_paths[{"	path"D$root/app/assets/javascripts/MathJax/jax/input/MathML/config.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%951d2eb10c45f52f1626b1c30b3f9b17"_version"%aa7d0db7619379e13b08335dee027df2

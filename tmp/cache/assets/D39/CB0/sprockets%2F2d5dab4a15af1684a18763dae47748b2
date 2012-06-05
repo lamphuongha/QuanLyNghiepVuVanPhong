@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989042.109:@expires_in0:@value"”{"
+class"ProcessedAsset"logical_path"HMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscMathSymbolsA.js"pathname"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscMathSymbolsA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi‘"digest"%0b06b413734b65d3863c795e4e5614ce"source"‘/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscMathSymbolsA.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{10216',':[750,249,447,','127,382],10217',3,'64,319]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/MiscMathSymbolsA.js");']
+]);
+
+"dependency_digest"%2531090802a740cec66572fbda69f5c7"required_paths["e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscMathSymbolsA.js"dependency_paths[{"	path"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscMathSymbolsA.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%967bbd80dbd1773cc1b3decd253a2b78"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,34 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989054.953:@expires_in0:@value"t{"
+class"ProcessedAsset"logical_path"TMathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/MathOperators.js"pathname"q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/MathOperators.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthiA"digest"%d4149e8dc38f92173addaa4d169990c6"source"A/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/MathOperators.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['STIXGeneral-italic'],
+  {
+    0x2202: [668,11,471,40,471],       // PARTIAL DIFFERENTIAL
+    0x2212: [286,-220,675,86,590]      // MINUS SIGN
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/General/Italic/MathOperators.js");
+"dependency_digest"%f32e403a3a39428dd20c75c136177393"required_paths["q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/MathOperators.js"dependency_paths[{"	path"q$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/MathOperators.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%f7fbe5b2ba331686b04aa1a41ed65ecf"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,6 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330528696.224:@expires_in0:@value"6{"
+class"ProcessedAsset"logical_path"sessions.js"pathname"4$root/app/assets/javascripts/sessions.js.coffee"content_type"application/javascript"
+mtime"2012-02-29T21:54:20+07:00"lengthi"digest"%5b844cf4a2f60e8dbd112b502cb3dcee"source"
+
+"dependency_digest"%5e3193455a4516660caad393ceae8b70"required_paths["4$root/app/assets/javascripts/sessions.js.coffee"dependency_paths[{"	path"4$root/app/assets/javascripts/sessions.js.coffee"
+mtime"2012-02-29T21:54:20+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

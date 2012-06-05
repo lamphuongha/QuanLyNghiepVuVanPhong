@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989040.977:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"AMathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/PUA.js"pathname"^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/PUA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi"digest"%5d86f775d6f23f4398019a86665d7a12"source"/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/PUA.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Fraktur,{58112:[683,32,497,75,430],58113:[616,30,498,35,432],58114:[680,215,333,29,339],58115:[679,224,329,28,318],58116:[471,214,503,52,449],58117:[686,20,333,26,315],58118:[577,22,334,29,347],58119:[475,22,501,10,514]});MathJax.Ajax.loadComplete',1,'fontDir+"/Fraktur/Regular/PUA.js");']
+]);
+
+"dependency_digest"%01b6c33b8d9cdfb1e7ecd5764d3095b5"required_paths["^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/PUA.js"dependency_paths[{"	path"^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/PUA.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%f215dd955b9d350e38702e7689d0a5e8"_version"%aa7d0db7619379e13b08335dee027df2

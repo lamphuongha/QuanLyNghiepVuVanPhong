@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1338861708.326:@expires_in0:@value"{"
+class"StaticAsset"logical_path"sendmail.jpg"pathname")$root/app/assets/images/sendmail.jpg"content_type"image/jpeg"
+mtime"2012-06-05T08:59:20+07:00"lengthiû"digest"%bac6cd736d4477ff8ff8679e016247f5"_version"%aa7d0db7619379e13b08335dee027df2

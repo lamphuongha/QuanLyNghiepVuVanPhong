@@ -18,16 +18,17 @@
     <td><%= diemrenluyen.HocKy %></td>
     <td><%= diemrenluyen.NamHoc %></td>
     <td><%= diemrenluyen.GhiChu %></td>
-    <td><%= link_to 'Xem', diemrenluyen %>
-    <%= link_to 'Sửa', edit_diemrenluyen_path(diemrenluyen) %>
-    <%= link_to 'Xóa', diemrenluyen, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td>
+    <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), diemrenluyen , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_diemrenluyen_path(diemrenluyen) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), diemrenluyen, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
   </tr>
 <% end %>
 </table>
 
 <br />
       <div class ="menu-header" style="text-align:center" >
-      <%= will_paginate @buocthoihocs %>
+      <%= will_paginate @diemrenluyens %>
       <br />
     </div>
 </div>

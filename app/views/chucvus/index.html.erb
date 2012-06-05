@@ -1,10 +1,17 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 70%; height: 65%; top: 15%; left: 15%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 70%; top: 10%; left: 10%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
      
     <h1>Danh sách chức vụ</h1>
-    <div id="shadow" class="shadow" >
+      <div id="shadow" class="shadow" >
+     <br />
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm chức vụ"), new_chucvu_path %> Thêm chức vụ
+     
+   </div>                 
+   
     <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
       <tr>
         <th> Mã chức vụ</th>
@@ -18,9 +25,9 @@
         <td><%= chucvu.MaCV %></td>
         <td><%= chucvu.TenCV%></td>
         <td>
-          <%= link_to 'Xem', chucvu ,:style =>"color:#000" %> | 
-          <%= link_to 'Sửa', edit_chucvu_path(chucvu) ,:style =>"color:#000" %> | 
-          <%= link_to 'Xóa', chucvu, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%>
+           <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), chucvu , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_chucvu_path(chucvu) , :style=>"color:#000" %> | 
+          <%= link_to image_tag('delete_1.png'), chucvu, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
           
         </td>
       </tr>

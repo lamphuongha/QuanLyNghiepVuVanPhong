@@ -1,0 +1,39 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989063.626:@expires_in0:@value"o{"
+class"ProcessedAsset"logical_path"LMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscSymbols.js"pathname"i$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi\"digest"%48476e91d5078f2983e303c0508e8b70"source"\/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscSymbols.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Main-bold'],
+  {
+    0x2660: [720,130,894,63,829],      // BLACK SPADE SUIT
+    0x2661: [711,24,894,65,828],       // WHITE HEART SUIT
+    0x2662: [719,154,894,64,828],      // WHITE DIAMOND SUIT
+    0x2663: [720,130,894,32,861],      // BLACK CLUB SUIT
+    0x266D: [750,17,447,63,382],       // MUSIC FLAT SIGN
+    0x266E: [741,223,447,56,390],      // MUSIC NATURAL SIGN
+    0x266F: [724,224,447,63,383]       // MUSIC SHARP SIGN
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Main/Bold/MiscSymbols.js");
+"dependency_digest"%62e594cf37b11350ebcdd2c50ef6ca58"required_paths["i$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscSymbols.js"dependency_paths[{"	path"i$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/MiscSymbols.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%dc4651ee0332c013e0415c8c042121e3"_version"%aa7d0db7619379e13b08335dee027df2

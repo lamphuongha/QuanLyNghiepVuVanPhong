@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1338618654.962:@expires_in0:@value"ù{"
+class"StaticAsset"logical_path"back.png"pathname"%$root/app/assets/images/back.png"content_type"image/png"
+mtime"2012-06-02T03:45:05+07:00"lengthi5"digest"%c32f7a7adedeca21fc45298698e6e538"_version"%aa7d0db7619379e13b08335dee027df2

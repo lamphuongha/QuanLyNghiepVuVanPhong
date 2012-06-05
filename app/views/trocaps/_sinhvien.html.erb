@@ -1,5 +1,5 @@
 <fieldset>
-        <table class="table1" width="100%" align="center">
+         <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
           <tr>
             <th>Mã SV</th>
             <th>Họ tên</th>
@@ -10,7 +10,7 @@
             <th>Lớp</th>
             <th>Trình độ</th>
             <th>Chọn</th>
-            <th>Chức năng</th>
+            
 
           </tr>
           <% @sinhviensearchs.each do |sinhvien| %>
@@ -33,9 +33,7 @@
                  <% if @trocap.sinhviens.include? sinhvien%>checked="checked"<%end%>
                  >
             </td>
-            <td>
-              <%= link_to 'Xem  ', sinhvien , :style=>"color:#000"%>
-            </td> 
+            
           </tr>
         <% end %>
           

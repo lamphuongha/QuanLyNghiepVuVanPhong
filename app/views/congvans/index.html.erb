@@ -1,26 +1,31 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width:90%; height: 85%; top: 3%; left: 3%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to 'Thêm công văn', :action => 'new'%>
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
      <%= form_tag congvans_path,:remote => true, :method => 'get' do %>  
-     <fieldset>
+     <fieldset style="width: 50%">
         <legend>Lọc công văn</legend>
       <%= text_field_tag :search, params[:search] %> 
       
       <%= submit_tag "Lọc", :name => nil %>
       <!--<%= link_to 'Tìm kiếm nâng cao', :controller =>'extra_search', :action =>'index'  %>-->
         
-        <%= link_to 'Tìm kiếm nâng cao', '/congvans/search'  %>
+        <%= link_to 'Tìm kiếm nâng cao', '/congvans/search', :style => "color:#000"  %>
        </fieldset>
     <%end%>
   
-    <%= form_for  :dump, :url=>{:controller=>"congvans",:action=>"excel_import"}, :html => { :multipart => true } do |f| -%>
-      Chọn file excel:
-      <%= f.file_field :excel_file -%>
-      <%= submit_tag 'Submit' -%>
-    <%end%>
+    <%#= form_for  :dump, :url=>{:controller=>"congvans",:action=>"excel_import"}, :html => { :multipart => true } do |f| -%>
+      <%#*Chọn file excel:%>
+      <%#= f.file_field :excel_file -%>
+      <%#= submit_tag 'Submit' -%>
+    <%#end%>
     <h1>Danh sách công văn</h1>
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm công văn"), :action => 'new',:alt=>"Thêm công văn"%> Thêm công văn 
+     
+   </div>
    <div id ="congvans">
         <%= render :partial => 'congvan' %>
       </div>

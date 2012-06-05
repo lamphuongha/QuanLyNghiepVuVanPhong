@@ -1,0 +1,35 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989063.259:@expires_in0:@value"){"
+class"ProcessedAsset"logical_path"OMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedA.js"pathname"l$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi
+"digest"%47aa7ea08611e3e212fcd9d5195eca0f"source"
+/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedA.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Main-bold'],
+  {
+    0x131: [453,8,394,24,367]          // LATIN SMALL LETTER DOTLESS I
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Main/Bold/LatinExtendedA.js");
+"dependency_digest"%704b8b9b7642df284d661b8116276232"required_paths["l$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedA.js"dependency_paths[{"	path"l$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Main/Bold/LatinExtendedA.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%d6b48bf4418b4667e42fa63b33064214"_version"%aa7d0db7619379e13b08335dee027df2

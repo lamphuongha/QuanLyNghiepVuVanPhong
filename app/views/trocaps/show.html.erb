@@ -1,9 +1,11 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 65%; top: 10%; left: 10%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+       <%= link_to image_tag('print.png'),{:action=>:export_trocaps}, {:popup=>true},:style=>"color:#000" %>
+       <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), trocaps_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
   <h1>Chi tiết trợ cấp</h1>
-     <table width ="100%" align ="center" >  
+     <table width ="50%" align ="center" >  
       <tr>
         <td colspan="3">
           <p id="notice"><%= notice %></p>
@@ -37,26 +39,24 @@
         <td><b>Ghi Chú:</b></td>
         <td><%= @trocap.GhiChu %></td>
       </tr>
-      <tr>
+      <!--<tr>
         <td align="right"><b>SV ngoại trú:</b></td>
         <td colspan ="2">
           <% for sinhvien in @trocap.sinhviens %>
             <%=sinhvien.MSSV%>,
           <%end%>
         </td>
-      </tr>
+      </tr>-->
       
   <tr>
         <td colspan="3" align ="center">
-        <%= link_to 'Sửa', edit_trocap_path(@trocap) , :style=>"color:#000"%> |
-        <%= link_to 'Quay lại', trocaps_path , :style=>"color:#000"%> | 
-        <%= link_to 'Thêm', new_trocap_path , :style=>"color:#000"%>
+         <%= link_to image_tag('edit.png'), edit_trocap_path(@trocap) , :style=>"color:#000" %> |
+        <%= link_to  image_tag('new.png'), new_trocap_path, :style=>"color:#000"%>
         </td>
   </tr>
   </table>
-  <fieldset>
-        <table class="table1" width="100%" align="center">
-          <tr>
+  
+        <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
             <th>Mã SV</th>
             <th>Họ tên</th>
             <th>Ngày sinh</th>
@@ -76,9 +76,7 @@
             <td><%= sinhvien.lop.TenLop %></td>
           </tr>
         <% end %>
-        </table>
-      </fieldset>
-  
+        </table> 
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>
 

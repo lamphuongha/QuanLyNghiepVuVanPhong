@@ -63,7 +63,7 @@ class TrocapsController < ApplicationController
     @trocap.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @trocap.save
-        format.html { redirect_to @trocap, :notice => 'Trocap was successfully created.' }
+        format.html { redirect_to @trocap, :notice => 'Thêm danh sách thành công.' }
         format.json { render :json => @trocap, :status => :created, :location => @trocap }
       else
         format.html { render :action => "new" }
@@ -81,7 +81,7 @@ class TrocapsController < ApplicationController
     @trocap.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @trocap.update_attributes(params[:trocap])
-        format.html { redirect_to @trocap, :notice => 'Trocap was successfully updated.' }
+        format.html { redirect_to @trocap, :notice => 'Cập nhật thành công.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -112,7 +112,14 @@ class TrocapsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @trocaps }
+      format.js
     end
   end
-  
+    def export_trocaps
+    @trocap = Trocap.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout=>'export_lists' }
+      format.xml  { render :xml => @trocap }
+    end
+  end
 end

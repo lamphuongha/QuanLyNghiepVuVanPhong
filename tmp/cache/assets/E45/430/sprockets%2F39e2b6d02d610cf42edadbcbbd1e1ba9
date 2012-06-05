@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989043.769:@expires_in0:@value"ö{"
+class"ProcessedAsset"logical_path"FMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscSymbols.js"pathname"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiû"digest"%7c8786c3ef98316a0fcc78dcf6a6af7a"source"û/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscSymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Main,{9824:[727,131',',778,55,723],','9825:[716,33',3,'9826:[727,163',3,'9827:[726,131,778,28,750],9837:[751,22,389,54,333],9838:[734,223,389,65,324],9839:[723,223,389,54,334]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Regular/MiscSymbols.js");']
+]);
+
+"dependency_digest"%f1ec4642d5940cb14cb7af11f788bcab"required_paths["c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscSymbols.js"dependency_paths[{"	path"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/MiscSymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%ee4e705732ecac0542c09798e65142c0"_version"%aa7d0db7619379e13b08335dee027df2

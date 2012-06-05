@@ -6,15 +6,19 @@ class GiangviensController < ApplicationController
   def index
     #@giangviens = Giangvien.all
     if params[:search]
+        @countcvs=Giangvien.joins(:chucvu,:hocvi,:ngach).search(params[:search])
         @giangviens=Giangvien.joins(:chucvu,:hocvi,:ngach).search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
       else
+        @countcvs=Giangvien.all
         @giangviens=Giangvien.paginate(:page => params[:page], :order => "id DESC")
+        
     end
+    @countds = @countcvs.size
     @chucvus = Chucvu.find :all
     @ngaches = Ngach.find :all
       respond_to do |format|
       format.html # index.html.erb
-      format.json { render :json => @giangviens }
+      format.json { render :json => @giangviens.map(&:attributes) }
       format.xml
       format.js
     end
@@ -96,10 +100,13 @@ class GiangviensController < ApplicationController
   end
   def search
     if params[:search]
+        @countcvs=Giangvien.all
         @giangviens=Giangvien.search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
     else
         @giangviens=Giangvien.search_with_permission(params[:MaGV],params[:HoTenGV],params[:DiaChiGV],params[:SDTGV],params[:chucvu_id],params[:hocvi_id],params[:ngach_id],params[:Hocham]).paginate(:page => params[:page], :order => "id DESC")
+        @countcvs=Giangvien.search_with_permission(params[:MaGV],params[:HoTenGV],params[:DiaChiGV],params[:SDTGV],params[:chucvu_id],params[:hocvi_id],params[:ngach_id],params[:Hocham])
     end
+    @countds = @countcvs.size
     @chucvus = Chucvu.find :all
     @ngaches = Ngach.find :all
       respond_to do |format|

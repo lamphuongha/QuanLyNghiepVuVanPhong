@@ -10,16 +10,17 @@ class SessionsController < ApplicationController
       else
         cookies[:auth_token] = user.auth_token
       end
-      redirect_to root_url, :notice => "Logged in!"
+      redirect_to root_url, :notice => "Đăng nhập thành công!"
     else
-      flash.now.alert = "Invalid email or password"
-      render "new"
+      flash.now.alert = "Email hoặc mật khẩu đăng nhập không đúng"
+      render "#"
+      #redirect_to "#"
     end
   end
   
     def destroy
     cookies.delete(:auth_token)
-    redirect_to root_url, :notice => "Logged out!"
+    redirect_to root_url, :notice => "Đăng xuất thành công!"
   end
   
 end

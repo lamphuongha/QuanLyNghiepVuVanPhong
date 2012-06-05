@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989010.179:@expires_in0:@value"û{"
+class"ProcessedAsset"logical_path";MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Dingbats.js"pathname"X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Dingbats.js"content_type"application/javascript"
+mtime"2010-07-26T02:34:50+07:00"lengthi,"digest"%4e6ec632a32e7297a78193c120facaad"source",/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Dingbats.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_AMS:{10003',':[[6,6,1],[7,7,1],[8,','8,1],[9',',10,1],[11,11,1],[13,13,1],[','15,15,1],[18,18,1],[21,21,1],[25,26,2],[30,30,2],[35,35,2],[42,42,2],[50,50,3]],10016',2,'9,1],[10',4,'16,15,1],[19,18,1],[22,21,1],[26,25,1],[31,30,1],[37,35,1],[44,42,2],[52,50,2]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/AMS/Regular"+',0,'imgPacked+"/Dingbats.js");']
+]);
+
+"dependency_digest"%a4ec4ff5375b0fab9e536eba0c2a90e4"required_paths["X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Dingbats.js"dependency_paths[{"	path"X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Dingbats.js"
+mtime"2010-07-26T02:34:50+07:00"digest"%9c4ae4cfd1e9ac78ae0a27d57f26fd00"_version"%aa7d0db7619379e13b08335dee027df2

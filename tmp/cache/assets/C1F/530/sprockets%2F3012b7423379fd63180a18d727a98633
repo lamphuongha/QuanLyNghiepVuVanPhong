@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.157:@expires_in0:@value"Ê{"
+class"ProcessedAsset"logical_path"NMathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/PhoneticExtensions.js"pathname"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/PhoneticExtensions.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi¯"digest"%bce45323d251c73d5c03d22548a7ab99"source"¯/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Bold/PhoneticExtensions.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold"],{7424:[475,0,515,9,503],7431:[461,0,531,20,511],7452:[461,19,600,16,584]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Bold/PhoneticExtensions.js");']
+]);
+
+"dependency_digest"%f2e9ce23b5c172fd258023afd4c6a556"required_paths["k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/PhoneticExtensions.js"dependency_paths[{"	path"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/PhoneticExtensions.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%63deb2f457712e26623f87cb0bb23836"_version"%aa7d0db7619379e13b08335dee027df2

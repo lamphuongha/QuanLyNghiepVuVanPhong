@@ -1,0 +1,24 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155583.758:@expires_in0:@value"˜{"
+class"ProcessedAsset"logical_path"&blueprint/jquery.ui.accordion.css"pathname"C$root/app/assets/stylesheets/blueprint/jquery.ui.accordion.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthi+"digest"%d1e56ae84f6a1de253c1151128f65de3"source"+/*
+ * jQuery UI Accordion 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Accordion#theming
+ */
+/* IE/Win - Fix animation bug - #4615 */
+
+.ui-accordion { width: 100%; }
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; font-size: 1em; padding: .5em .5em .5em .7em; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+"dependency_digest"%9a95dfaef2d26787b83d8c740ae353d9"required_paths["C$root/app/assets/stylesheets/blueprint/jquery.ui.accordion.css"dependency_paths[{"	path"C$root/app/assets/stylesheets/blueprint/jquery.ui.accordion.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%0adf9b241b2d9c995f72c631cad93a2b"_version"%aa7d0db7619379e13b08335dee027df2

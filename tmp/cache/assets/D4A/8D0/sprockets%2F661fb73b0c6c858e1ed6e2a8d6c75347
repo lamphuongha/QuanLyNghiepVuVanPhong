@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989036.368:@expires_in0:@value"B{"
+class"ProcessedAsset"logical_path"JMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/NumberForms.js"pathname"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/NumberForms.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi7"digest"%7bb42632589b2a917fa3f5aa85f4f0a2"source"7/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/NumberForms.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{8531',':[676,14,750,','36,725],8532',3,'14,731],8533',3,'37,715],8534',3,'14,720],','8535',3,'13,720],8536',3,10,'8537',3,'37,717],8538:[676,15,750,29,722],8539',3,'37,722],8540',3,'13,727],8541',3,'29,727],8542',3,'28,727]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/NumberForms.js");']
+]);
+
+"dependency_digest"%7facc417e8068e01006403e12359c174"required_paths["g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/NumberForms.js"dependency_paths[{"	path"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/NumberForms.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%97b92ca8ad81e0f4a0be009badf7612c"_version"%aa7d0db7619379e13b08335dee027df2

@@ -4,8 +4,9 @@ class Diemrenluyen < ActiveRecord::Base
   has_many :sinhviens, :through => :chitietdiemrenluyens
   accepts_nested_attributes_for :chitietdiemrenluyens, :allow_destroy => true
   
-  validates_presence_of :MaDRL, :TenDRL,:congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaDRL
+  validates_presence_of :MaDRL, :TenDRL,:congvan_id, :HocKy, :NamHoc , :message => "không được trống"
+  validates_uniqueness_of :MaDRL, :message => "đã tồn tại"
+
     cattr_reader :per_page
   @@per_page = 20
   
@@ -24,7 +25,7 @@ class Diemrenluyen < ActiveRecord::Base
     hocky_portion = ' (HocKy=:HocKy) AND ' unless sHocKy.blank?
     namhoc_portion = ' (NamHoc=:NamHoc) AND ' unless sNamHoc.blank?
     
-    search_str='%s %s %s %s %s %s ' % [term_portion, tendiemrenluyen_portion, congvan_portion, hocky_portion, 
+    search_str='%s %s %s %s %s ' % [term_portion, tendiemrenluyen_portion, congvan_portion, hocky_portion, 
       namhoc_portion]
     search_str.strip!
     search_str.gsub!(/^(AND +)+/,'')

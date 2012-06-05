@@ -1,0 +1,45 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155585.799:@expires_in0:@value"×{"
+class"ProcessedAsset"logical_path",blueprint/plugins/link-icons/screen.css"pathname"I$root/app/assets/stylesheets/blueprint/plugins/link-icons/screen.css"content_type"text/css"
+mtime"2012-05-16T15:05:31+07:00"lengthiR"digest"%6bcd02f9d19c5c628f2c20349964d74d"source"R/* -------------------------------------------------------------- 
+  
+   link-icons.css
+   * Icons for links based on protocol or file type.
+   
+   See the Readme file in this folder for additional instructions.
+
+-------------------------------------------------------------- */
+
+/* Use this class if a link gets an icon when it shouldn't. */
+
+body a.noicon { 
+	background:transparent none !important; 
+	padding:0 !important; 
+	margin:0 !important; 
+}
+
+/* Make sure the icons are not cut */
+a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited, 
+a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], 
+a[href$=".rdf"], a[href^="aim:"] {
+  padding:2px 22px 2px 0;
+  margin:-2px 0;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* External links */
+a[href^="http:"]          { background-image: url(icons/external.png); } 
+a[href^="mailto:"]        { background-image: url(icons/email.png); }
+a[href^="http:"]:visited  { background-image: url(icons/visited.png); }
+
+/* Files */
+a[href$=".pdf"]   { background-image: url(icons/pdf.png); }  
+a[href$=".doc"]   { background-image: url(icons/doc.png); }  
+a[href$=".xls"]   { background-image: url(icons/xls.png); }  
+ 
+/* Misc */
+a[href$=".rss"], 
+a[href$=".rdf"]   { background-image: url(icons/feed.png); }
+a[href^="aim:"]   { background-image: url(icons/im.png); }
+"dependency_digest"%4362ab3793b81dbb5b350f3416f23eff"required_paths["I$root/app/assets/stylesheets/blueprint/plugins/link-icons/screen.css"dependency_paths[{"	path"I$root/app/assets/stylesheets/blueprint/plugins/link-icons/screen.css"
+mtime"2012-05-16T15:05:31+07:00"digest"%4b2b4767456c2ff79c867218a4c312f4"_version"%aa7d0db7619379e13b08335dee027df2

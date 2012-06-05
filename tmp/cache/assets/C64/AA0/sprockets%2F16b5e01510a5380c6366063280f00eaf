@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.098:@expires_in0:@value"Ê{"
+class"ProcessedAsset"logical_path"IMathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscTechnical.js"pathname"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscTechnical.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÃ"digest"%2824571dacda9d9d4912325b638b1ce2"source"Ã/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscTechnical.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold"],{8962:[774,0,926,55,871],8968:[731',',193,469,164,459],','8969:[731',',193,469,10,305],','8970:[732',3,'8971:[732',5,'8976',':[399,-108,750,65,685],','8985',11,'8994',':[378,-129,1026,37,990],','8995',15,'9001',':[732,193,445,','69,399],9002',19,'46,376],9014:[751,156,926,85,841],9021:[694,190,924,80,844],9023:[732,200,728,55,673],9135:[297,-209,315,0,315]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Bold/MiscTechnical.js");']
+]);
+
+"dependency_digest"%2740fb91f32a9d985b6474b1f6a528ce"required_paths["f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscTechnical.js"dependency_paths[{"	path"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscTechnical.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%13e88bcf4af1cfeddca330f44b6f1af5"_version"%aa7d0db7619379e13b08335dee027df2

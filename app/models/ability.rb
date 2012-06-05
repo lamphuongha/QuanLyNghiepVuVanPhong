@@ -23,9 +23,8 @@ class Ability
         manager(user) if user.role_id == 2
         basic(user) if user.role_id == 3
       end
-    else
-     
     end
+    can [:new,:create], User
     
   end
   
@@ -50,6 +49,7 @@ class Ability
     crud_noitrus(user)
     crud_trocaps(user)
     crud_sinhviens(user)
+    crud_lops(user)
     
   end
   def basic(user)
@@ -57,6 +57,8 @@ class Ability
     #r_covanhoctaps(user)
     crud_diemrenluyens(user)
     ru_giangvien(user)
+    ru_sinhvien(user)
+    r_congvans(user)
   end
   
   def crud_congvans(user)
@@ -103,9 +105,17 @@ class Ability
   def crud_sinhviens(user)
     can [:create,:read,:update,:destroy,:search], Sinhvien
   end
-  #def register()
-    #can [:new,:create], User
-  #  can [:create], User
+  def crud_lops(user)
+    can [:create,:read,:update,:destroy], Lop
+  end
+  def ru_sinhvien(user)
+    can [:read,:search], Sinhvien
+  end
+  def r_congvans(user)
+    can [:read,:search], Congvan
+  end
+  ## can [:new,:create], User
+    #can [:create], User
   #end
   
 end

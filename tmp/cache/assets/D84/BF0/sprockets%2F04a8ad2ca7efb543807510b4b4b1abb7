@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989041.736:@expires_in0:@value">{"
+class"ProcessedAsset"logical_path"HMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/Latin1Supplement.js"pathname"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/Latin1Supplement.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi;"digest"%eef7d8b21c65c2302e8cb5c7c535011e"source";/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/Latin1Supplement.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{160:[0,0,250,0,0],168:[695,-535,575,96,478],172:[371,-61,767,64,703],175:[607,-540,575,80,494],176:[703,-536,575,160,414],177:[728,35,894,64,829],180:[706,-503,575,236,460],215:[531,29,894,167,727],247:[597,96,894,64,828]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/Latin1Supplement.js");']
+]);
+
+"dependency_digest"%f8ecf7fa7f142d3baabeb996aedf0a15"required_paths["e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/Latin1Supplement.js"dependency_paths[{"	path"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/Latin1Supplement.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%614c1c652698c9b9998ed57868c7838e"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989045.404:@expires_in0:@value"é{"
+class"ProcessedAsset"logical_path"EMathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/Main.js"pathname"b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiò"digest"%ff401d1f97635a7af6bbdf95ed2e3388"source"ò/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.','MathJax_Typewriter','={directory:"','Typewriter/Regular','",family:"',2,'",testString:"MathJax Typewriter",Ranges:[[0,127,"BasicLatin"],[128,65535,"Other"],[768,879,"CombDiacritMarks"]]};',0,'initFont("',2,'");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%02096b49bded80f0113dbda8ad52ad34"required_paths["b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/Main.js"dependency_paths[{"	path"b$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Typewriter/Regular/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%318e06c3e0cd309309070f7498362017"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989024.522:@expires_in0:@value"·{"
+class"ProcessedAsset"logical_path":MathJax/jax/element/mml/optable/GeneralPunctuation.js"pathname"W$root/app/assets/javascripts/MathJax/jax/element/mml/optable/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiì"digest"%c3f2e75eb8eb700ee8c9713beb9c9fea"source"ì/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/GeneralPunctuation.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{prefix:{"\\u2018','":[0,0,b.OPEN,{fence:true','}],"\\u201C',1,'}]},postfix:{"\\u2019','":[0,0,b.CLOSE,{fence:true','}],"\\u201D',5,'}]}}});MathJax.Ajax.loadComplete(a.optableDir+"/GeneralPunctuation.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%4408f73e06e2fd25dc8cdc58d87a4b60"required_paths["W$root/app/assets/javascripts/MathJax/jax/element/mml/optable/GeneralPunctuation.js"dependency_paths[{"	path"W$root/app/assets/javascripts/MathJax/jax/element/mml/optable/GeneralPunctuation.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%db13a6940f34c0e4549122101db0d4d9"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,9 +1,9 @@
 class Covanhoctap < ActiveRecord::Base
   belongs_to :giangvien
   belongs_to :lop
-  validates_presence_of :giangvien_id, :lop_id, :HocKy, :NamHoc
+  validates_presence_of :giangvien_id, :lop_id, :HocKy, :NamHoc, :message => "không được trống"
  #validates_uniqueness_of :giangvien_id
- 
+
   cattr_reader :per_page
   @@per_page = 20
   

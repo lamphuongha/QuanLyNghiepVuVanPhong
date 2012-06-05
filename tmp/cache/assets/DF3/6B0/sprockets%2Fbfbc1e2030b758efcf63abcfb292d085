@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.67:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"QMathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/CurrencySymbols.js"pathname"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/CurrencySymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÜ"digest"%df55a8621cd530d9cad8cf617a9a1562"source"Ü/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/CurrencySymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold-italic"],{8355:[669,0,668,-13,661],8356:[683,12,500,-32,510],8359:[669,13,1229,-28,1173],8364:[681,17,562,34,546]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/BoldItalic/CurrencySymbols.js");']
+]);
+
+"dependency_digest"%c027a61dfce02e805cae659be8046f82"required_paths["n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/CurrencySymbols.js"dependency_paths[{"	path"n$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/CurrencySymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%859827ffe88d0c3aa4d4842dbdc8af20"_version"%aa7d0db7619379e13b08335dee027df2

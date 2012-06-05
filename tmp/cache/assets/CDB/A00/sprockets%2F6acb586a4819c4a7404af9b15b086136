@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989037.343:@expires_in0:@value"¬{"
+class"ProcessedAsset"logical_path"DMathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Bold/All.js"pathname"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Bold/All.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi¹"digest"%7cbc06904c24efc4c7f071bd6742a375"source"¹/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Bold/All.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXIntegralsUpD-bold"],{32',':[0,0,250,0,0],','160',3,'8747',':[2000,269,','515,58,560],8748',7,'875,58,920],8749',7,'1239,59,1281],8750',7,'626,56,695],','8751',7,'1039,39,1039],8752',7,'1384,36,1395],8753',7,'632,47,760],','8754',7,'639,56,769],8755',7,'598,56,778],10764',7,'1595,58,1640],10765',7,'552,-35,590],10766',7,'642,35,680],10767',7,'675,25,752],10768',7,'640,56,646],10769',7,21,'10770',7,'625,58,654],10771',7,'557,58,626],10772',7,'708,58,789],10773',7,14,'10774',7,'718,56,747],10775',7,'963,24,1057],10776',7,'681,62,692],10777',7,'832,65,898],','10778',7,56,'10779:[2182,269,733,0,773],10780:[2000,451,525,58,831]});MathJax.Ajax.loadComplete',1,'fontDir+"/IntegralsUpD/Bold/All.js");']
+]);
+
+"dependency_digest"%2b7addbdc55070b1aff0b64d9d239d20"required_paths["a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Bold/All.js"dependency_paths[{"	path"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Bold/All.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%326740b42dd87e62483ce754a7391b13"_version"%aa7d0db7619379e13b08335dee027df2

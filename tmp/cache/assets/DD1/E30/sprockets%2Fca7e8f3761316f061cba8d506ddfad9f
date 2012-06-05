@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989025.257:@expires_in0:@value"b{"
+class"ProcessedAsset"logical_path"5MathJax/jax/element/mml/optable/MiscTechnical.js"pathname"R$root/app/assets/javascripts/MathJax/jax/element/mml/optable/MiscTechnical.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi«"digest"%ba2a489a7dc2352bbd602243df66e43c"source"«/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/MiscTechnical.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{postfix:{"\\u23B4','":c.WIDEACCENT',',"\\u23B5',1,',"\\u23DC',1,',"\\u23DD',1,'}}});MathJax.Ajax.loadComplete(a.optableDir+"/MiscTechnical.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%34b61bbf28b548b90dab3db612f53234"required_paths["R$root/app/assets/javascripts/MathJax/jax/element/mml/optable/MiscTechnical.js"dependency_paths[{"	path"R$root/app/assets/javascripts/MathJax/jax/element/mml/optable/MiscTechnical.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%9fd2697d899769679f898e6754a922f0"_version"%aa7d0db7619379e13b08335dee027df2

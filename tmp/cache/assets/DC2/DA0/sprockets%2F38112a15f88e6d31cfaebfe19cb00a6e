@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989048.525:@expires_in0:@value"G{"
+class"ProcessedAsset"logical_path"BMathJax/unpacked/jax/element/mml/optable/SpacingModLetters.js"pathname"_$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/SpacingModLetters.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi\"digest"%b2a614a69bff5e7b694167ede1e9083c"source"\/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/optable/SpacingModLetters.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MML) {
+  var MO = MML.mo.OPTYPES;
+  var TEXCLASS = MML.TEXCLASS;
+
+  MathJax.Hub.Insert(MML.mo.prototype,{
+    OPTABLE: {
+      postfix: {
+        '\u02DA': MO.ACCENT,   // ring above
+        '\u02DD': MO.ACCENT    // double acute accent
+      }
+    }
+  });
+
+  MathJax.Ajax.loadComplete(MML.optableDir+"/SpacingModLetters.js");
+
+})(MathJax.ElementJax.mml);
+"dependency_digest"%d69d306462d72f0786f5761f15cc0358"required_paths["_$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/SpacingModLetters.js"dependency_paths[{"	path"_$root/app/assets/javascripts/MathJax/unpacked/jax/element/mml/optable/SpacingModLetters.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%94527300b66567a8bbb1f223f5f57750"_version"%aa7d0db7619379e13b08335dee027df2

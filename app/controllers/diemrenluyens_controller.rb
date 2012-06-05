@@ -1,7 +1,8 @@
 class DiemrenluyensController < ApplicationController
+  load_and_authorize_resource 
   # GET /diemrenluyens
   # GET /diemrenluyens.json
-  layout "main"
+  #layout "main"
     #load_and_authorize_resource 
   def index
    if params[:search]
@@ -76,7 +77,7 @@ class DiemrenluyensController < ApplicationController
     #@diemrenluyen.chitietdiemrenluyens = Chitietdiemrenluyen.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @diemrenluyen.save
-        format.html { redirect_to @diemrenluyen, :notice => 'Diemrenluyen was successfully created.' }
+        format.html { redirect_to @diemrenluyen, :notice => 'Thêm danh sách thành công.' }
         format.json { render :json => @diemrenluyen, :status => :created, :location => @diemrenluyen }
       else
         format.html { render :action => "new" }
@@ -94,7 +95,7 @@ class DiemrenluyensController < ApplicationController
     @diemrenluyen.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @diemrenluyen.update_attributes(params[:diemrenluyen])
-        format.html { redirect_to @diemrenluyen, :notice => 'Diemrenluyen was successfully updated.' }
+        format.html { redirect_to @diemrenluyen, :notice => 'Cập nhật thành công.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -112,6 +113,28 @@ class DiemrenluyensController < ApplicationController
     respond_to do |format|
       format.html { redirect_to diemrenluyens_url }
       format.json { head :no_content }
+    end
+  end
+  def search
+    if params[:search]
+        @diemrenluyens=Diemrenluyen.joins(:congvan).search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
+      else
+        @diemrenluyens = Diemrenluyen.search_with_permission(params[:MaDRL],params[:TenDRL],params[:congvan_id],params[:HocKy],params[:NamHoc]).paginate(:page => params[:page], :order => "id DESC")
+        
+      end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render :json => @buocthoihocs }
+      format.js
+    end
+  end
+  
+    def export_diemrenluyens
+    @diemrenluyen = Diemrenluyen.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout=>'export_lists' }
+      format.xml  { render :xml => @diemrenluyen }
     end
   end
 end

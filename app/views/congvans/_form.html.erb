@@ -1,3 +1,8 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 85%; top: 5%; left: 3%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), congvans_path %>
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    </div>
 <%= form_for(@congvan, :html =>{ :multipart =>true}) do |f| %>
   <% if @congvan.errors.any? %>
     <div id="error_explanation">
@@ -9,12 +14,16 @@
         </ul>
     </div>
   <% end %>
+
+    
+
+
   <h1>Chi tiết công văn</h1>
   <table width ="100%" align ="center" >
 <!--      <div class="field"> -->
       <tr>
         <!--<td><%= f.text_field :HinhAnhCV %></td>-->
-        <td rowspan="10" width ="30%" align="center">
+        <td rowspan="12" width ="30%" align="center">
           <%= f.label 'File đính kèm:' %>
           <br>
           <br>
@@ -37,8 +46,8 @@
               <!--<%= image_tag asset_fields.object.image.url %>-->
               <li>
               <%= link_to image_tag(asset_fields.object.image.url(:thumb)),
-                          asset_fields.object.image.url(:original)%>
-              <%= asset_fields.check_box :_destroy %>
+                          asset_fields.object.image.url(:original),:style => "color:#000"%>
+              <%= asset_fields.check_box :_destroy %> Xóa
               </li>
             <%end%>
           <%end%>
@@ -92,19 +101,19 @@
       </tr>
       
       <tr>
-        <td align="right"><%= f.label 'Loại công văn:' %></td>
+        <td><%= f.label 'Loại công văn:' %></td>
         <!--<td><%= f.number_field :loaicv_id %></td>-->
         <!--<td><%= f.select :loaicv_id, options_for_select([["Công văn đến", "1"], ["Công văn đi", "2"]]) %></td>-->
-        <td colspan="2"><%= collection_select(:congvan, :loaicv_id, Loaicv.all, :id, :TenLoaiCV) %></td>
+        <td><%= collection_select(:congvan, :loaicv_id, Loaicv.all, :id, :TenLoaiCV) %></td>
         
         </td>
       </tr>
       
       
       <tr>
-        <td align="right"><%= f.label 'Nhóm công văn:' %></td>
+        <td><%= f.label 'Nhóm công văn:' %></td>
         <!--<td><%= select :NhomLoaiCV,:congvan, options_for_select([["Công văn đến", "1"], ["Công văn đi", "2"]]) %></td>-->
-        <td colspan="2"><%= collection_select(:congvan, :nhomloaicv_id, Nhomloaicv.all, :id, :TenNhomLoaiCV) %></td>
+        <td><%= collection_select(:congvan, :nhomloaicv_id, Nhomloaicv.all, :id, :TenNhomLoaiCV) %></td>
       </tr>
       
       <tr>
@@ -126,8 +135,30 @@
           <%end%>
         </td>
       </tr>
-      
-     
+<!--      <tr>
+        <td colspan="2"><%= f.label 'Người liên quan:' %></td>
+        <td colspan="3">
+          <div id ="congvan_giangvien_tokens">
+            <%= f.text_field :giangvien_tokens%>
+          </div>
+        </td>
+      </tr>-->
+     <tr>
+        <td align="right"><%= f.label 'Giảng viên liên quan:' %></td>
+        <td colspan ="3"><br />
+          <div id ="flashes">
+              <%= render :partial => 'showflash' %>
+              <br />
+          </div>
+          <div class="myclassname">
+              <a href="#" class="mylink" style="color:#000"><%=image_tag 'addstudent.png'%></a>
+               <div class="form">
+                  <div id ="giangviens">
+                    <%= render :partial => 'giangvien' %>
+            </div>
+        </td>
+      </tr>
+
       <tr>
         <td align="right"><%= f.label 'Ghi Chú:' %></td>
         <td colspan="2"><%= f.text_area :GhiChu,:size => "50x5"%></td>
@@ -145,4 +176,5 @@
     <% end %>
       
   </table>
-  
+ </div>    
+<div class="lock-screen" id="lock" style="display:block"></div>  

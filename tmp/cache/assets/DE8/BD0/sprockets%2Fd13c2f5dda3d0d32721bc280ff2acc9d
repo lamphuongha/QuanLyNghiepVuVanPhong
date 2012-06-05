@@ -1,0 +1,34 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989055.427:@expires_in0:@value"-{"
+class"ProcessedAsset"logical_path"KMathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"pathname"h$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi"digest"%b4cc84e8d467688b05ea82e97f0ca3ad"source"/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['STIXGeneral'],
+  {
+    0x3012: [662,0,685,10,672],        // POSTAL MARK
+    0x3030: [417,-93,1412,45,1367]     // WAVY DASH
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/General/Regular/CJK.js");
+"dependency_digest"%580df0c6af46c5db307fe29cc34a233c"required_paths["h$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"dependency_paths[{"	path"h$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%d6f7d03b67356484f1cb6e89286f2a8d"_version"%aa7d0db7619379e13b08335dee027df2

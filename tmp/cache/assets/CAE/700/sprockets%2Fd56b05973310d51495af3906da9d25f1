@@ -1,0 +1,36 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989074.698:@expires_in0:@value"Í{"
+class"ProcessedAsset"logical_path"0tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js"pathname"M$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi*"digest"%1ef28ca3f9cef61d7e87a496b8926db7"source"*tinyMCE.addI18n('en.xhtmlxtras_dlg',{
+attribute_label_title:"Title",
+attribute_label_id:"ID",
+attribute_label_class:"Class",
+attribute_label_style:"Style",
+attribute_label_cite:"Cite",
+attribute_label_datetime:"Date/Time",
+attribute_label_langdir:"Text Direction",
+attribute_option_ltr:"Left to right",
+attribute_option_rtl:"Right to left",
+attribute_label_langcode:"Language",
+attribute_label_tabindex:"TabIndex",
+attribute_label_accesskey:"AccessKey",
+attribute_events_tab:"Events",
+attribute_attrib_tab:"Attributes",
+general_tab:"General",
+attrib_tab:"Attributes",
+events_tab:"Events",
+fieldset_general_tab:"General Settings",
+fieldset_attrib_tab:"Element Attributes",
+fieldset_events_tab:"Element Events",
+title_ins_element:"Insertion Element",
+title_del_element:"Deletion Element",
+title_acronym_element:"Acronym Element",
+title_abbr_element:"Abbreviation Element",
+title_cite_element:"Citation Element",
+remove:"Remove",
+insert_date:"Insert current date/time",
+option_ltr:"Left to right",
+option_rtl:"Right to left",
+attribs_title:"Insert/Edit Attributes"
+});
+"dependency_digest"%5bc3da7ea78f728370a31276a5292360"required_paths["M$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js"dependency_paths[{"	path"M$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/langs/en_dlg.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%5e30e54a1053c0894b9927c0001befad"_version"%aa7d0db7619379e13b08335dee027df2

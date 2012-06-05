@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989039.746:@expires_in0:@value"½{"
+class"ProcessedAsset"logical_path"JMathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Latin1Supplement.js"pathname"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Latin1Supplement.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi²"digest"%a8e9fe1b929f8ffb4f2f8474245036e1"source"²/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Latin1Supplement.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_AMS,{160:[0,0,250,0,0],165:[684,0,750,11,738],174:[709,175,947,32,915],240:[749,21,556,42,510]});MathJax.Ajax.loadComplete',1,'fontDir+"/AMS/Regular/Latin1Supplement.js");']
+]);
+
+"dependency_digest"%b0acd2ece0c3014f33fcf4304f34efdc"required_paths["g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Latin1Supplement.js"dependency_paths[{"	path"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/Latin1Supplement.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%0f6c0f877221c7c0d88281849890f183"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,10 +1,10 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 85%; top: 5%; left: 7%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width:90%; height: 85%; top: 3%; left: 3%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
-    <%= link_to 'Thêm', new_giangvien_path ,:style=>"color:#000"%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    
     </div>
     <%= form_tag giangviens_path,:remote => true, :method => 'get' do %>  
-     <fieldset>
+     <fieldset style="width: 50%">
        <legend>Lọc giảng viên</legend>
       <%= text_field_tag :search, params[:search] %> 
       
@@ -17,7 +17,11 @@
     <h1>Danh sách giảng viên</h1>
       
         <br />
-                 
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm giảng viên"), new_giangvien_path %> Thêm giảng viên 
+     
+   </div>                 
       <!--<div style="overflow:auto;height:400px;background-color:white;" >--> 
       <div id ="giangviens">
         <%= render :partial => 'giangvien' %>

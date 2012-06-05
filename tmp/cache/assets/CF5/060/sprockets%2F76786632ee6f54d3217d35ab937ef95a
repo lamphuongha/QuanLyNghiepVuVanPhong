@@ -1,0 +1,6 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1336754400.314:@expires_in0:@value"R{"
+class"ProcessedAsset"logical_path"password_resets.js"pathname";$root/app/assets/javascripts/password_resets.js.coffee"content_type"application/javascript"
+mtime"2012-05-11T23:09:06+07:00"lengthi"digest"%5b844cf4a2f60e8dbd112b502cb3dcee"source"
+
+"dependency_digest"%5e3193455a4516660caad393ceae8b70"required_paths[";$root/app/assets/javascripts/password_resets.js.coffee"dependency_paths[{"	path";$root/app/assets/javascripts/password_resets.js.coffee"
+mtime"2012-05-11T23:09:06+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

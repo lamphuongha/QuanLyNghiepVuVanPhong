@@ -1,0 +1,43 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155586.846:@expires_in0:@value"{{"
+class"ProcessedAsset"logical_path"blueprint/src/reset.css"pathname"9$root/app/assets/stylesheets/blueprint/src/reset.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthi6"digest"%1b3d7850f5e4d63c47b0348e7a76fa8c"source"6/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+"dependency_digest"%7854bb360c45d7a028aa874c1a68e04e"required_paths["9$root/app/assets/stylesheets/blueprint/src/reset.css"dependency_paths[{"	path"9$root/app/assets/stylesheets/blueprint/src/reset.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%98f1804e58d632862f7a0e238102fd2b"_version"%aa7d0db7619379e13b08335dee027df2

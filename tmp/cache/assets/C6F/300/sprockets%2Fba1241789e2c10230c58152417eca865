@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989029.225:@expires_in0:@value"õ{"
+class"ProcessedAsset"logical_path"KMathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/GeometricShapes.js"pathname"h$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/GeometricShapes.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiæ"digest"%3aa4d7d736bae6861e7c227ac9ea92e2"source"æ/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Bold/GeometricShapes.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold"],{9651',':[811,127,1145,35,1110','],9655',':[791,284,1043,','70,1008],9661',3,'],9665',5,'35,973],9674:[795,289,790,45,745],9708',3,']});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Bold/GeometricShapes.js");']
+]);
+
+"dependency_digest"%3278fc0ae6989db2d84f6954e96b8759"required_paths["h$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/GeometricShapes.js"dependency_paths[{"	path"h$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/GeometricShapes.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%4dc0fb4a2cee50af0b70fa826daee60e"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989010.978:@expires_in0:@value"¸{"
+class"ProcessedAsset"logical_path"CMathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscMathSymbolsB.js"pathname"`$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscMathSymbolsB.js"content_type"application/javascript"
+mtime"2010-07-26T02:35:00+07:00"lengthiÉ"digest"%9a59ccb35ecf7dc60aa53e211b1c5fa3"source"É/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscMathSymbolsB.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_AMS:{10731:[[5,6,1],[6,8,2],[7,10,2],[8,11,2],[9,12,2],[11,15,3],[12,17,3],[15,21,4],[17,24,4],[21,29,5],[25,35,6],[29,41,7],[34,48,8],[41,57,9]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/AMS/Regular"+',0,'imgPacked+"/MiscMathSymbolsB.js");']
+]);
+
+"dependency_digest"%ba46e622520c2b42a0673a9c1073f457"required_paths["`$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscMathSymbolsB.js"dependency_paths[{"	path"`$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/MiscMathSymbolsB.js"
+mtime"2010-07-26T02:35:00+07:00"digest"%ca341784910fc617cf57e085073c48f6"_version"%aa7d0db7619379e13b08335dee027df2

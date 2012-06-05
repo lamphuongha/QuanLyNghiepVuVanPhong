@@ -1,0 +1,72 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 85%; top: 5%; left: 7%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    </div>
+    <%= form_tag sinhviens_path,:remote => true, :method => 'get' do %>  
+     <fieldset>
+        <legend>Lọc sinh viên</legend>
+      <%= text_field_tag :search, params[:search] %> 
+      
+      <%= submit_tag "Lọc", :name => nil %>
+      <%= link_to 'Tìm kiếm nâng cao','/sinhviens/search'  %>
+       </fieldset>
+    <% end %>
+  <%= form_tag '/sinhviens/updatett' , :method => 'get' do %>
+       
+        <br />
+    <h1>Danh sách sinh viên</h1>
+      
+        <br />
+                 
+      <!--<div style="overflow:auto;height:400px;background-color:white;" >--> 
+      <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+        <th class ="menu-header">Mã SV</th>
+        <th class ="menu-header">Họ tên</th>
+        <th class ="menu-header">Ngày sinh</th>
+        <th class ="menu-header">Giới tính</th>
+        <th class ="menu-header">Lớp</th>
+        <th class ="menu-header">Trình độ đào tạo</th>
+        <th class ="menu-header">Loại thực tập</th>
+        <th class ="menu-header">Tên công ty</th>
+        <th class ="menu-header">Địa chỉ</th>
+        <th class ="menu-header">SDT</th>
+        <th class ="menu-header">Học kỳ</th>
+        <th class ="menu-header">Năm học</th>
+      </tr>
+      <% @sinhviens.each do |sinhvien| %>
+        <tr>
+        <th><%= sinhvien.id %></th>
+        <td ><%= sinhvien.MSSV %></td>
+        <td><%= sinhvien.HoTenSV %></td>
+        <td><%= sinhvien.NgaySinh %></td>
+        <td><%= sinhvien.GioiTinh %></td>
+        <td><%= sinhvien.lop.TenLop %></td>
+        <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+        <td><%= sinhvien.loaithuctap_id %></td>
+        <td>
+          <input type="textbox"
+                 id="<%= sinhvien.id %>"
+                 name="tencongty[]"
+                 value="<%= sinhvien.TenCongTy %>"
+                 >
+          <%= hidden_field_tag "sinhvien_ids[]", sinhvien.id %>
+        </td>
+        <td><%= sinhvien.DiaChiCT %></td>
+        <td><%= sinhvien.SDTCT %></td>
+        <td><%= sinhvien.HocKyTT %></td>
+        <td><%= sinhvien.NamHocTT %></td>
+        
+      </tr>
+    <% end %>
+    </table>
+    <br />
+    <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @giangviens %>
+    <br />
+    </div>
+    <%= submit_tag 'Lưu lại',:controller =>'sinhviens', :action => 'updatett'%>
+<% end %>
+</div>
+<div class="lock-screen" id="lock" style="display:block"></div> 

@@ -618,3 +618,14 @@ padding: 20px;
 .myclassname .form{display:none;}
 .searchlink .formsearchsv{display:none;}
 .searchlink .show{display:none;}
+
+.statistic .tkcongvan{display:none;}
+.statistic .tkgiangvien{display:none;}
+.statistic .tksinhvien{display:none;}
+.statistic .tkhocbong{display:none;}
+.statistic .tktrocap{display:none;}
+.statistic .tknoitru{display:none;}
+.statistic .tkngoaitru{display:none;}
+.statistic .tkbaoluu{display:none;}
+.statistic .tkbuocthoihoc{display:none;}
+.statistic .tkdiemrenluyen{display: none;}

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989031.524:@expires_in0:@value"l{"
+class"ProcessedAsset"logical_path"FMathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/Main.js"pathname"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiq"digest"%ab4811642e8f891b39adb12559d0619d"source"q/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["','STIXGeneral-bold-italic','"]={directory:"','General/BoldItalic','",family:"STIXGeneral",weight:"bold",style:"italic",Ranges:[[0,127,"BasicLatin"],[160,255,"Latin1Supplement"],[256,383,"LatinExtendedA"],[384,591,"LatinExtendedB"],[592,687,"IPAExtensions"],[688,767,"SpacingModLetters"],[880,1023,"GreekAndCoptic"],[1024,1279,"Cyrillic"],[7680,7935,"LatinExtendedAdditional"],[8192,8303,"GeneralPunctuation"],[8352,8399,"CurrencySymbols"],[8400,8447,"CombDiactForSymbols"],[8448,8527,"LetterlikeSymbols"],[8704,8959,"MathOperators"],[9216,9279,"ControlPictures"],[9312,9471,"EnclosedAlphanum"],[9472,9599,"BoxDrawing"],[64256,64335,"AlphaPresentForms"],[119912,119963,"MathBoldItalic"],[120016,120067,"MathBoldScript"],[120380,120431,"MathSSItalicBold"],[120604,120661,"GreekBoldItalic"],[120720,120777,"GreekSSBoldItalic"]]};',0,'initFont("',2,'");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%7e678d40f3d706592695175d1e38e18c"required_paths["c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/Main.js"dependency_paths[{"	path"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%8744bd4febe6ca72726cf776885f4d6e"_version"%aa7d0db7619379e13b08335dee027df2

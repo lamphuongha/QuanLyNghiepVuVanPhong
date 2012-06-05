@@ -6,10 +6,12 @@ class BuocthoihocsController < ApplicationController
   def index
     if params[:search]
         @buocthoihocs=Buocthoihoc.joins(:loaibuocthoihoc,:congvan).search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
+        @countbuocthoihocs=Buocthoihoc.joins(:loaibuocthoihoc,:congvan).search(params[:search])
       else
         @buocthoihocs = Buocthoihoc.paginate(:page => params[:page], :order => "id DESC")
+        @countbuocthoihocs = Buocthoihoc.all
       end
-
+      @count = @countbuocthoihocs.size
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @buocthoihocs }
@@ -59,7 +61,7 @@ class BuocthoihocsController < ApplicationController
     @buocthoihoc.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @buocthoihoc.save
-        format.html { redirect_to @buocthoihoc, :notice => 'Buocthoihoc was successfully created.' }
+        format.html { redirect_to @buocthoihoc, :notice => 'Thêm danh sách thành công.' }
         format.json { render :json => @buocthoihoc, :status => :created, :location => @buocthoihoc }
       else
         format.html { render :action => "new" }
@@ -77,7 +79,7 @@ class BuocthoihocsController < ApplicationController
     @buocthoihoc.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @buocthoihoc.update_attributes(params[:buocthoihoc])
-        format.html { redirect_to @buocthoihoc, :notice => 'Buocthoihoc was successfully updated.' }
+        format.html { redirect_to @buocthoihoc, :notice => 'Cập nhật thành công.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -111,6 +113,12 @@ class BuocthoihocsController < ApplicationController
       format.js
     end
   end
-  
+    def export_buocthoihocs
+    @buocthoihoc = Buocthoihoc.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout=>'export_lists' }
+      format.xml  { render :xml => @buocthoihoc }
+    end
+  end
   
 end

@@ -1,0 +1,40 @@
+<div id="shadow" class="shadow" >
+   <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+  <tr>
+    <th>STT</th>
+    <th>Mã ngoại trú</th>
+    <th>Tên ngoại trú</th>
+    <th>Loại ngoại trú</th>
+    <th>Công văn</th>
+    <th>Học kỳ</th>
+    <th>Năm học</th>
+    <th>Chức năng</th>
+
+  </tr>
+
+<% @ngoaitrus.each do |ngoaitru| %>
+  <tr>
+    <th><%= ngoaitru.id %></th>
+    <td><%= ngoaitru.MaNgoaiTru %></td>
+    <td><%= ngoaitru.TenNgoaiTru %></td>
+    <td><%= ngoaitru.loaingoaitru.TenLoaiNgoaiTru %></td>
+    <td><%= ngoaitru.congvan.SoCV %></td>
+    <td><%= ngoaitru.HocKy %></td>
+    <td><%= ngoaitru.NamHoc %></td>
+    <td>
+     <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), ngoaitru , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_ngoaitru_path(ngoaitru) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), ngoaitru, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+  </tr>
+<% end %>
+</table>
+
+
+<br />
+<div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @ngoaitrus %>
+      <br />
+    </div>
+</div>
+<br />
+      

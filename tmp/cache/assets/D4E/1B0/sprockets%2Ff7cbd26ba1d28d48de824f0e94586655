@@ -1,0 +1,125 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1338823678.981:@expires_in0:@value"‡0{"
+class"ProcessedAsset"logical_path"application.js"pathname"0$root/app/assets/javascripts/application.js"content_type"application/javascript"
+mtime"2012-06-04T22:07:12+07:00"lengthiÖ"digest"%ad71d6f11322cf5a50aa909ed9ff0ca3"source"Ö// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// the compiled file.
+//
+// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
+// GO AFTER THE REQUIRES BELOW.
+//
+
+
+
+
+
+   $(function(){
+       $('.toggleLink').click(function(){
+           $('#toggle_div').toggle();
+       });
+   });
+
+   // notice the hash(#) and dot(.) before the elements? A hash represents an HTML ID and a 
+   // dot represents an HTML class. I made the link have a class, and the toggle_div an ID 
+   // but you may use whatever you'd like, just make sure if you're referencing an ID that you put
+   // a hash(#) before it and if you're referencing a class, make sure you put a dot(.) before it.
+
+
+   // this javascript should also be in your application.js, or some other JS file. The whole reason link_to_remote and 
+   // those other "remote" tags were deprecated is to maintain unobtrusive javascript (take the JS out of the views).
+   // this makes for cleaner, separated, more modular code.
+
+$(function () {  
+  $('#sinhviens .pagination a').live('click', 
+    function () {  
+      $.getScript(this.href);  
+      return false;  
+    }  
+  );  
+}); 
+
+$('input.filldrl').on('keyup',function(e) {
+        
+        var $this = $(this);
+        value = $this.val();
+        alert(value);
+        name = $this.attr("name");
+         id = $this.attr("id");
+        var $same = $(":input[name='" + name + "']");
+         $same.val(value);
+ 
+});
+
+$(function() {
+  $('#sinhviens th a').live('click', function () {  
+    $.getScript(this.href);  
+    return false;  
+  });  
+  $('#sinhviens_search input').keyup(function () {  
+  $.get($('#sinhviens_search').attr('action'), 
+    $('#sinhviens_search').serialize(), null, 'script');  
+  return false;  
+    });  
+});
+
+$(function () {
+  $('#congvan_giangvien_tokens').tokenInput('/giangviens.json', { crossDomain: false });
+});
+"dependency_digest"%dfd13c1898d120fd39db0354dd838d40"required_paths[9"aC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery.js"eC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery_ujs.js"dC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery-ui.js"3$root/app/assets/javascripts/baoluus.js.coffee"8$root/app/assets/javascripts/buocthoihocs.js.coffee"3$root/app/assets/javascripts/chitiet.js.coffee"9$root/app/assets/javascripts/chitietloaisv.js.coffee"/$root/app/assets/javascripts/chong_save.js"3$root/app/assets/javascripts/chucvus.js.coffee"4$root/app/assets/javascripts/congvans.js.coffee"-$root/app/assets/javascripts/controls.js"7$root/app/assets/javascripts/covanhoctap.js.coffee"8$root/app/assets/javascripts/covanhoctaps.js.coffee"0$root/app/assets/javascripts/ddaccordion.js"9$root/app/assets/javascripts/diemrenluyens.js.coffee"-$root/app/assets/javascripts/dragdrop.js",$root/app/assets/javascripts/effects.js"8$root/app/assets/javascripts/extra_search.js.coffee".$root/app/assets/javascripts/fancyzoom.js"2$root/app/assets/javascripts/fancyzoom.min.js"0$root/app/assets/javascripts/flashobject.js",$root/app/assets/javascripts/general.js":$root/app/assets/javascripts/giangviens_lop.js.coffee"4$root/app/assets/javascripts/hocbongs.js.coffee"<$root/app/assets/javascripts/jcarousellite_1.0.1.min.js"5$root/app/assets/javascripts/jquery-1.2.6.min.js"2$root/app/assets/javascripts/jquery-latest.js"2$root/app/assets/javascripts/jquery-ui.min.js"1$root/app/assets/javascripts/jquery.bgpos.js"/$root/app/assets/javascripts/jquery.min.js"6$root/app/assets/javascripts/jquery.tokeninput.js"9$root/app/assets/javascripts/loai_sinhvien.js.coffee"8$root/app/assets/javascripts/loaisinhvien.js.coffee"0$root/app/assets/javascripts/lops.js.coffee"1$root/app/assets/javascripts/ngach.js.coffee"2$root/app/assets/javascripts/ngachs.js.coffee"5$root/app/assets/javascripts/ngoaitrus.js.coffee"3$root/app/assets/javascripts/noitrus.js.coffee";$root/app/assets/javascripts/password_resets.js.coffee".$root/app/assets/javascripts/prototype.js"*$root/app/assets/javascripts/rails.js"4$root/app/assets/javascripts/sessions.js.coffee".$root/app/assets/javascripts/slideshow.js"4$root/app/assets/javascripts/sorttable-small.js"6$root/app/assets/javascripts/statistics.js.coffee"4$root/app/assets/javascripts/svsearch.js.coffee"<$root/app/assets/javascripts/thongtinthuctaps.js.coffee".$root/app/assets/javascripts/tooltipfm.js"4$root/app/assets/javascripts/trangchu.js.coffee"3$root/app/assets/javascripts/trocaps.js.coffee"1$root/app/assets/javascripts/users.js.coffee"0$root/app/assets/javascripts/application.js"dependency_paths[:{"	path"!$root/app/assets/javascripts"
+mtime"2012-06-04T22:07:12+07:00"digest"%0c141207968e4da2c55362bff1f8cb89{"	path"0$root/app/assets/javascripts/application.js"
+mtime"2012-06-04T22:07:12+07:00"digest"%96cc90cdc915dfcb7ee2c99bf9c6be71{"	path"aC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery.js"
+mtime"2012-02-17T15:17:32+07:00"digest"%bd486c8c80023b62482fa73f4c6a8e4c{"	path"eC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery_ujs.js"
+mtime"2012-02-17T15:17:32+07:00"digest"%1cf4e1154e260df4a35fae1ca245c24b{"	path"dC:/jruby-1.6.5/lib/ruby/gems/1.8/gems/jquery-rails-2.0.0/vendor/assets/javascripts/jquery-ui.js"
+mtime"2012-02-17T15:17:32+07:00"digest"%4db9f5e735105c049af8cc8d34f5abf9{"	path"3$root/app/assets/javascripts/baoluus.js.coffee"
+mtime"2012-05-03T12:12:46+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"8$root/app/assets/javascripts/buocthoihocs.js.coffee"
+mtime"2012-05-03T14:23:14+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"3$root/app/assets/javascripts/chitiet.js.coffee"
+mtime"2012-05-09T07:47:05+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"9$root/app/assets/javascripts/chitietloaisv.js.coffee"
+mtime"2012-04-17T15:37:19+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"/$root/app/assets/javascripts/chong_save.js"
+mtime"2011-10-12T01:12:22+07:00"digest"%d820f03e51930b21af45c815b8dd32de{"	path"3$root/app/assets/javascripts/chucvus.js.coffee"
+mtime"2012-04-13T09:32:23+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"4$root/app/assets/javascripts/congvans.js.coffee"
+mtime"2012-03-01T04:52:56+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"-$root/app/assets/javascripts/controls.js"
+mtime"2010-12-13T22:29:54+07:00"digest"%562115618851c5fd895d71dca285c638{"	path"7$root/app/assets/javascripts/covanhoctap.js.coffee"
+mtime"2012-04-19T15:13:04+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"8$root/app/assets/javascripts/covanhoctaps.js.coffee"
+mtime"2012-04-19T15:14:06+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"0$root/app/assets/javascripts/ddaccordion.js"
+mtime"2012-03-02T05:52:34+07:00"digest"%3f6c6438d4a9941271fab6377a0beb6b{"	path"9$root/app/assets/javascripts/diemrenluyens.js.coffee"
+mtime"2012-05-04T00:18:00+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"-$root/app/assets/javascripts/dragdrop.js"
+mtime"2010-12-13T22:29:54+07:00"digest"%f5447617f25c86660f04a03d3881ba7f{"	path",$root/app/assets/javascripts/effects.js"
+mtime"2010-12-13T22:29:54+07:00"digest"%105761182040937388b159c54a84c78d{"	path"8$root/app/assets/javascripts/extra_search.js.coffee"
+mtime"2012-03-07T06:59:35+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path".$root/app/assets/javascripts/fancyzoom.js"
+mtime"2009-04-09T17:50:56+07:00"digest"%5c210c1e06f761d0b1eec4b37a079ea2{"	path"2$root/app/assets/javascripts/fancyzoom.min.js"
+mtime"2009-04-09T17:50:56+07:00"digest"%9700f4b22658815ba4c7df46b8dbcf6b{"	path"0$root/app/assets/javascripts/flashobject.js"
+mtime"2012-02-28T15:34:05+07:00"digest"%fa657193a7e9d0a4b4e6338d1782a16f{"	path",$root/app/assets/javascripts/general.js"
+mtime"2011-12-04T22:04:53+07:00"digest"%f8fc869d662beeea0ed3096495e6feb9{"	path":$root/app/assets/javascripts/giangviens_lop.js.coffee"
+mtime"2012-04-19T11:11:24+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"4$root/app/assets/javascripts/hocbongs.js.coffee"
+mtime"2012-04-27T11:11:02+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"<$root/app/assets/javascripts/jcarousellite_1.0.1.min.js"
+mtime"2011-10-12T15:09:49+07:00"digest"%1d0a3dbf9aa5379e80c7d2b4517afb62{"	path"5$root/app/assets/javascripts/jquery-1.2.6.min.js"
+mtime"2011-10-11T23:22:59+07:00"digest"%4becdf8373fec3b6fb8d483907790bbb{"	path"2$root/app/assets/javascripts/jquery-latest.js"
+mtime"2012-05-01T11:36:04+07:00"digest"%aeef0ce303adf226ff97e8c6608baf57{"	path"2$root/app/assets/javascripts/jquery-ui.min.js"
+mtime"2012-04-21T01:12:32+07:00"digest"%200669e08178b41b915f758f1fa9813d{"	path"1$root/app/assets/javascripts/jquery.bgpos.js"
+mtime"2011-10-11T23:23:21+07:00"digest"%24180d416012fb3da549a4cb4aefe780{"	path"/$root/app/assets/javascripts/jquery.min.js"
+mtime"2012-04-23T11:15:13+07:00"digest"%28f3463fc6f4e6b20eaa7163a1fb143c{"	path"6$root/app/assets/javascripts/jquery.tokeninput.js"
+mtime"2012-06-04T20:34:32+07:00"digest"%6ffea013d0fde1be5f15b9afe0681a0c{"	path"9$root/app/assets/javascripts/loai_sinhvien.js.coffee"
+mtime"2012-04-17T13:56:44+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"8$root/app/assets/javascripts/loaisinhvien.js.coffee"
+mtime"2012-04-17T13:59:20+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"0$root/app/assets/javascripts/lops.js.coffee"
+mtime"2012-05-29T19:13:33+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"1$root/app/assets/javascripts/ngach.js.coffee"
+mtime"2012-04-13T13:58:46+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"2$root/app/assets/javascripts/ngachs.js.coffee"
+mtime"2012-04-13T14:00:01+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"5$root/app/assets/javascripts/ngoaitrus.js.coffee"
+mtime"2012-05-03T08:16:27+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"3$root/app/assets/javascripts/noitrus.js.coffee"
+mtime"2012-05-03T09:16:17+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path";$root/app/assets/javascripts/password_resets.js.coffee"
+mtime"2012-05-11T23:09:06+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path".$root/app/assets/javascripts/prototype.js"
+mtime"2010-12-13T22:29:54+07:00"digest"%f4c5b838f5aa51f9f09f0df96ac827e1{"	path"*$root/app/assets/javascripts/rails.js"
+mtime"2010-12-13T22:29:54+07:00"digest"%b3c892b1d94321841c5f677f980d0416{"	path"4$root/app/assets/javascripts/sessions.js.coffee"
+mtime"2012-02-29T21:54:20+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path".$root/app/assets/javascripts/slideshow.js"
+mtime"2011-10-12T01:31:36+07:00"digest"%be7f2adb1cdc04c9b175d6164afb3776{"	path"4$root/app/assets/javascripts/sorttable-small.js"
+mtime"2012-03-13T08:50:00+07:00"digest"%4467e9b838f626bcc52f92d52341cd03{"	path"6$root/app/assets/javascripts/statistics.js.coffee"
+mtime"2012-05-31T23:26:49+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"4$root/app/assets/javascripts/svsearch.js.coffee"
+mtime"2012-04-20T03:41:27+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"<$root/app/assets/javascripts/thongtinthuctaps.js.coffee"
+mtime"2012-05-15T21:51:33+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path".$root/app/assets/javascripts/tooltipfm.js"
+mtime"2011-11-03T01:14:30+07:00"digest"%ce855ab6344f166d8b73c0b96e76499a{"	path"4$root/app/assets/javascripts/trangchu.js.coffee"
+mtime"2012-02-29T16:27:44+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"3$root/app/assets/javascripts/trocaps.js.coffee"
+mtime"2012-05-03T15:11:43+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72{"	path"1$root/app/assets/javascripts/users.js.coffee"
+mtime"2012-02-29T20:07:54+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

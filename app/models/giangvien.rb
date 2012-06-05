@@ -7,8 +7,12 @@ class Giangvien < ActiveRecord::Base
   has_many :covanhoctaps
   has_many :lops, :through => :covanhoctaps
   has_many :users
- validates_presence_of :MaGV, :HoTenGV, :DiaChiGV, :SDTGV, :chucvu_id,:hocvi_id,:Hocham,:ngach_id
- validates_uniqueness_of :MaGV
+  
+  has_many :nguoilienquans
+  has_many :congvans, :through => :nguoilienquans 
+  
+ validates_presence_of :MaGV, :HoTenGV, :DiaChiGV, :SDTGV, :chucvu_id,:hocvi_id,:Hocham,:ngach_id, :message => "không được trống"
+ validates_uniqueness_of :MaGV, :message => "đã tồn tại"
  
   cattr_reader :per_page
   @@per_page = 20

@@ -1,13 +1,14 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), congvans_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <h1>Tìm kiếm nâng cao</h1>
     <%= form_tag '/congvans/search',:remote => true, :method => 'get' do %>  
     <fieldset>
-    <table width ="100%">
+    <table width ="90%">
       <tr>
-        <td width ="20%">Số công văn:</td>
+        <td width ="18%">Số công văn:</td>
         <td width ="30%"><%= text_field_tag :SoCV, params[:SoCV], :size =>'19px'%></td>
         
         <td colspan="2">Nơi ban hành: </td>
@@ -40,22 +41,22 @@
       </tr>
       <tr>
         <td>Nội dung trích yếu:</td>
-        <td width ="30%"><%= text_field_tag :NoiDungCV, params[:NoiDungCV], :size =>'19px'%></td>
+        <td><%= text_field_tag :NoiDungCV, params[:NoiDungCV], :size =>'19px'%></td>
         
       </tr>
       <tr>
         <td>Tác giả:</td>
-        <td width ="30%"><%= text_field_tag :TacGia, params[:TacGia], :size =>'19px'%></td>
+        <td><%= text_field_tag :TacGia, params[:TacGia], :size =>'19px'%></td>
       </tr>
       <tr>
         <td>Người nhận:</td>
-        <td width ="30%"><%= text_field_tag :NguoiNhan, params[:NguoiNhan], :size =>'19px'%></td>
+        <td><%= text_field_tag :NguoiNhan, params[:NguoiNhan], :size =>'19px'%></td>
       </tr>
       <tr>
         <td>Ngày nhận công văn: </td>
         <!--<td><%= date_select params[:NgayNhanCV],:NgayNhanCV,:start_year =>2002,:end_year =>Time.now.year,:order =>[:day, :month, :year],:include_blank => :true %></td>-->
         <!--<td><%= text_field params[:NgayNhanCV],:NgayNhanCV,:id => "select_day" %></td>-->
-        <td width ="30%"><%= text_field_tag :NgayNhanCV, params[:NgayNhanCV], :size =>'19px'%></td>
+        <td><%= text_field_tag :NgayNhanCV, params[:NgayNhanCV], :size =>'19px'%> (yyyy-mm-dd)</td>
         <!--<td>
           <div id="date-picker">
 		<label for="occurred_on">Date event occurred:</label>
@@ -68,19 +69,21 @@
         </td>-->
         <td>Khoảng thời gian:</td>
         <td>Từ ngày:</td>
-        <td><%= text_field_tag :startday,params[:startday] %></td>
+        <td><%= text_field_tag :startday,params[:startday] %>(yyyy-mm-dd)</td>
       </tr>
       <tr>
         <td>Ngày ra công văn: </td>
-        <td width ="30%"><%= text_field_tag :NgayRaCV, params[:NgayRaCV], :size =>'19px'%></td>
+        <td><%= text_field_tag :NgayRaCV, params[:NgayRaCV], :size =>'19px'%>(yyyy-mm-dd)</td>
         <td></td>
         <td>Đến ngày:</td>
-        <td><%= text_field_tag :endday,params[:endday]%></td>
+        <td><%= text_field_tag :endday,params[:endday]%>(yyyy-mm-dd)</td>
       </tr>
-      
+      <tr>
+        <td>Giảng viên liên quan:</td>
+        <td  colpan="3"><%= select_tag :giangvien_id, options_from_collection_for_select(Giangvien.all, :id,  :HoTenGV, params[:giangvien_id]), :include_blank=>'Không' %></td>
+      </tr>
     </table>
     <%= submit_tag "Tìm kiếm", :name => nil %>
-    <%= link_to 'Quay lại', congvans_path %>
     </fieldset>
 <%end%>
     

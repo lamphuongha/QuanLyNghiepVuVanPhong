@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.273:@expires_in0:@value"ù{"
+class"ProcessedAsset"logical_path"NMathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/SuperAndSubscripts.js"pathname"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/SuperAndSubscripts.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÇ"digest"%4a8c56557b412be283f7306de52bbbaa"source"Ç/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Bold/SuperAndSubscripts.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold"],{8319:[700,-275,491,15,478]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Bold/SuperAndSubscripts.js");']
+]);
+
+"dependency_digest"%8c527ed63883268f1e0005193a90c531"required_paths["k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/SuperAndSubscripts.js"dependency_paths[{"	path"k$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/SuperAndSubscripts.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%8b5fadfef6fc063c98f051dabc9b469a"_version"%aa7d0db7619379e13b08335dee027df2

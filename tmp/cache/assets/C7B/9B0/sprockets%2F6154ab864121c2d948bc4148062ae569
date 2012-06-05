@@ -1,0 +1,6 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1334648081.079:@expires_in0:@value"J{"
+class"ProcessedAsset"logical_path"loai_sinhvien.js"pathname"9$root/app/assets/javascripts/loai_sinhvien.js.coffee"content_type"application/javascript"
+mtime"2012-04-17T13:56:44+07:00"lengthi"digest"%5b844cf4a2f60e8dbd112b502cb3dcee"source"
+
+"dependency_digest"%5e3193455a4516660caad393ceae8b70"required_paths["9$root/app/assets/javascripts/loai_sinhvien.js.coffee"dependency_paths[{"	path"9$root/app/assets/javascripts/loai_sinhvien.js.coffee"
+mtime"2012-04-17T13:56:44+07:00"digest"%6b7d15da56c9b5e72e591dce20abfd72"_version"%aa7d0db7619379e13b08335dee027df2

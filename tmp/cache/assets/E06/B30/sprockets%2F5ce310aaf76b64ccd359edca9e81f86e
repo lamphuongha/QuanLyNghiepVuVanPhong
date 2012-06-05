@@ -1,0 +1,34 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989061.654:@expires_in0:@value"j{"
+class"ProcessedAsset"logical_path"QMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GreekAndCoptic.js"pathname"n$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GreekAndCoptic.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthiC"digest"%3a5415abbe6671f2372e34d66067a11b"source"C/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GreekAndCoptic.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_AMS'],
+  {
+    0x3DD: [605,85,778,55,719],        // GREEK SMALL LETTER DIGAMMA
+    0x3F0: [434,6,667,37,734]          // GREEK KAPPA SYMBOL
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/AMS/Regular/GreekAndCoptic.js");
+"dependency_digest"%0d79877226721f9c0d8bf88a31011de0"required_paths["n$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GreekAndCoptic.js"dependency_paths[{"	path"n$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GreekAndCoptic.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%acc3563ac4d9ff18d5c32369c6d90a52"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989037.781:@expires_in0:@value"‰{"
+class"ProcessedAsset"logical_path"HMathJax/jax/output/HTML-CSS/fonts/STIX/NonUnicode/BoldItalic/All.js"pathname"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/NonUnicode/BoldItalic/All.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi†"digest"%cb09f891cc62a4a58823e90dd1834523"source"†/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/NonUnicode/BoldItalic/All.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXNonUnicode-bold-italic"],{32',':[0,0,250,0,0','],160',3,']});MathJax.Ajax.loadComplete',1,'fontDir+"/NonUnicode/BoldItalic/All.js");']
+]);
+
+"dependency_digest"%d36d922f6cbc09585925d18a093074f1"required_paths["e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/NonUnicode/BoldItalic/All.js"dependency_paths[{"	path"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/NonUnicode/BoldItalic/All.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%2fba03e621f8eed6071c6fb7a453f34e"_version"%aa7d0db7619379e13b08335dee027df2

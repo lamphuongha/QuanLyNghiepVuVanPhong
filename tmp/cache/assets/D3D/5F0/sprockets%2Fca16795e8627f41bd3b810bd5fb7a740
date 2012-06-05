@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989043.131:@expires_in0:@value"Û{"
+class"ProcessedAsset"logical_path"JMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/GeometricShapes.js"pathname"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/GeometricShapes.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÐ"digest"%7372b4aa29fa3afe1d9837bf062cf7af"source"Ð/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/GeometricShapes.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Main,{9651:[716,0',',889,59,828],','9657',':[505,5,500,26,','474],9661:[500,215',3,'9667',5,'473],9711:[715,215,1000,56,944]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Regular/GeometricShapes.js");']
+]);
+
+"dependency_digest"%8040b0db83d3c752c292e026385a0024"required_paths["g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/GeometricShapes.js"dependency_paths[{"	path"g$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/GeometricShapes.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%1bb96d6253446d6ffe15585cd23bda36"_version"%aa7d0db7619379e13b08335dee027df2

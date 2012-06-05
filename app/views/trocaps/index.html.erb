@@ -1,55 +1,29 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to 'Thêm', new_trocap_path %>
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+   <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
-  <%= form_tag trocaps_path, :method => 'get' do %>  
-     <fieldset>
+  <%= form_tag trocaps_path,:remote => true, :method => 'get' do %>  
+     <fieldset style="width: 70%">
         <legend>Lọc danh sách trợ cấp</legend>
       <%= text_field_tag :search, params[:search] %> 
       
       <%= submit_tag "Lọc", :name => nil %>
-        <%= link_to 'Tìm kiếm nâng cao', '/trocaps/search'  %>
+        <%= link_to 'Tìm kiếm nâng cao', '/trocaps/search', :style=> "color:#000"  %>
        </fieldset>
     <%end%>
 <h1>Danh sách trợ cấp</h1>
-<div id="shadow" class="shadow" >
-    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
-  <tr>
-    <th>STT</th>
-    <th>Mã trợ cấp</th>
-    <th>Tên trợ cấp</th>
-    <th>Loại trợ cấp</th>
-    <th>Công văn</th>
-    <th>Học kỳ</th>
-    <th>Năm học</th>
-    <th>Chức năng</th>
-  </tr>
-
-<% @trocaps.each do |trocap| %>
-  <tr>
-    <th><%= trocap.id %></th>
-    <td><%= trocap.MaTroCap %></td>
-    <td><%= trocap.TenTroCap %></td>
-    <td><%= trocap.loaitrocap.TenLoaiTroCap %></td>
-    <td><%= trocap.congvan.SoCV %></td>
-    <td><%= trocap.HocKy %></td>
-    <td><%= trocap.NamHoc %></td>
-    <td><%= link_to 'Xem', trocap , :style=>"color:#000"%> | 
-    <%= link_to 'Sửa', edit_trocap_path(trocap) , :style=>"color:#000"%> | 
-    <%= link_to 'Xóa', trocap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-</div>
-<br />
-      <div class ="menu-header" style="text-align:center" >
-      <%= will_paginate @noitrus %>
-      <br />
-    </div>
-<br />
+<div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm danh sách"), new_trocap_path %> Thêm danh sách trợ cấp
+     
+   </div>
+<div id ="trocaps">
+        <%= render :partial => 'trocap' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
 </div>  
 
 <div class="lock-screen" id="lock" style="display:block"></div>

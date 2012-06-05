@@ -1,0 +1,52 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989049.988:@expires_in0:@value"ø{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/x.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/x.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiE"digest"%f59d915da1a510512071fabec3cd59be"source"E/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/x.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'xcap': '\u22C2',
+    'xcirc': '\u25EF',
+    'xcup': '\u22C3',
+    'xdtri': '\u25BD',
+    'xhArr': '\u27FA',
+    'xharr': '\u27F7',
+    'xlArr': '\u27F8',
+    'xlarr': '\u27F5',
+    'xmap': '\u27FC',
+    'xnis': '\u22FB',
+    'xodot': '\u2A00',
+    'xoplus': '\u2A01',
+    'xotime': '\u2A02',
+    'xrArr': '\u27F9',
+    'xrarr': '\u27F6',
+    'xsqcup': '\u2A06',
+    'xuplus': '\u2A04',
+    'xutri': '\u25B3',
+    'xvee': '\u22C1',
+    'xwedge': '\u22C0'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/x.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%6fd9d2c0ce2325dd3b9a6141d8bb14f1"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/x.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/x.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%06cd3abbc33871eb667d72fa241bd20b"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,33 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989074.297:@expires_in0:@value"¯{"
+class"ProcessedAsset"logical_path".tiny_mce/plugins/xhtmlxtras/js/acronym.js"pathname"K$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/acronym.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi"digest"%0756d1db6ca515b8907b46ac53f2d826"source"/**
+ * acronym.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+function init() {
+	SXE.initElementDialog('acronym');
+	if (SXE.currentAction == "update") {
+		SXE.showRemoveButton();
+	}
+}
+
+function insertAcronym() {
+	SXE.insertElement('acronym');
+	tinyMCEPopup.close();
+}
+
+function removeAcronym() {
+	SXE.removeElement('acronym');
+	tinyMCEPopup.close();
+}
+
+tinyMCEPopup.onInit.add(init);
+"dependency_digest"%502f4a3752a7dfa3eb4ddc28f47ad679"required_paths["K$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/acronym.js"dependency_paths[{"	path"K$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/acronym.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%cb0477011193afed0ae80fa9123a3c47"_version"%aa7d0db7619379e13b08335dee027df2

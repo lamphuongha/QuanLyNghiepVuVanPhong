@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989072.071:@expires_in0:@value"n{"
+class"ProcessedAsset"logical_path"+tiny_mce/plugins/paste/langs/en_dlg.js"pathname"H$root/app/assets/javascripts/tiny_mce/plugins/paste/langs/en_dlg.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiá"digest"%a1d9a416c9a1ce1d69ee62b108ed8822"source"átinyMCE.addI18n('en.paste_dlg',{
+text_title:"Use CTRL+V on your keyboard to paste the text into the window.",
+text_linebreaks:"Keep linebreaks",
+word_title:"Use CTRL+V on your keyboard to paste the text into the window."
+});
+"dependency_digest"%0df38c3b332b3fd29ef033065d86c156"required_paths["H$root/app/assets/javascripts/tiny_mce/plugins/paste/langs/en_dlg.js"dependency_paths[{"	path"H$root/app/assets/javascripts/tiny_mce/plugins/paste/langs/en_dlg.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%903e632d5f6c66e422b7b9379c6b6b21"_version"%aa7d0db7619379e13b08335dee027df2

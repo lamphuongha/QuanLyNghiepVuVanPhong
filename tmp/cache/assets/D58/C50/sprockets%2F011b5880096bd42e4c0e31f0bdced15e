@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155585.04:@expires_in0:@value"µ{"
+class"ProcessedAsset"logical_path"'blueprint/jquery.ui.selectable.css"pathname"D$root/app/assets/stylesheets/blueprint/jquery.ui.selectable.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthiD"digest"%3c41d4a00de9ed6ef35ca6c674370ee6"source"D/*
+ * jQuery UI Selectable 1.8.18
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Selectable#theming
+ */
+
+.ui-selectable-helper { position: absolute; z-index: 100; border:1px dotted black; }
+"dependency_digest"%138dd23e3cd4eb0d81eeec1b6cf09bf0"required_paths["D$root/app/assets/stylesheets/blueprint/jquery.ui.selectable.css"dependency_paths[{"	path"D$root/app/assets/stylesheets/blueprint/jquery.ui.selectable.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%f2f13f4882ca121a18c268044ce9752e"_version"%aa7d0db7619379e13b08335dee027df2

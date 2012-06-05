@@ -1,0 +1,7 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.979:@expires_in0:@value"â{"
+class"ProcessedAsset"logical_path"-tiny_mce/plugins/example/langs/en_dlg.js"pathname"J$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en_dlg.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiT"digest"%06a479f6fbbc2f1765de1bbb5fbe4cb2"source"TtinyMCE.addI18n('en.example_dlg',{
+	title : 'This is just a example title'
+});
+"dependency_digest"%a72bc427f7fedd13101f67708b6b442f"required_paths["J$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en_dlg.js"dependency_paths[{"	path"J$root/app/assets/javascripts/tiny_mce/plugins/example/langs/en_dlg.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%ec29e331d6250364afb3b8b483409cb4"_version"%aa7d0db7619379e13b08335dee027df2

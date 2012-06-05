@@ -1,0 +1,36 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989052.561:@expires_in0:@value"'{"
+class"ProcessedAsset"logical_path"UMathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscMathSymbolsA.js"pathname"r$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscMathSymbolsA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthið"digest"%fc0bc5ce5dafb36f6a41fc9a944080d3"source"ð/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscMathSymbolsA.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['STIXGeneral-bold'],
+  {
+    0x27C8: [547,13,1025,62,943],      // REVERSE SOLIDUS PRECEDING SUBSET
+    0x27C9: [547,13,1025,62,943],      // SUBSET PRECEDING SOLIDUS
+    0x27E8: [732,193,445,69,399],      // MATHEMATICAL LEFT ANGLE BRACKET
+    0x27E9: [732,193,445,46,376]       // MATHEMATICAL RIGHT ANGLE BRACKET
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/General/Bold/MiscMathSymbolsA.js");
+"dependency_digest"%c5efc6992fbea446eff08520c448460a"required_paths["r$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscMathSymbolsA.js"dependency_paths[{"	path"r$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Bold/MiscMathSymbolsA.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%29a702a46d4e0d5f3dad54c0f99870d6"_version"%aa7d0db7619379e13b08335dee027df2

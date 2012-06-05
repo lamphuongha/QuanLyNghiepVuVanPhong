@@ -1,0 +1,48 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989062.869:@expires_in0:@value"¸
+{"
+class"ProcessedAsset"logical_path"IMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Greek/Regular/Main.js"pathname"f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Greek/Regular/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi±"digest"%9369686bfe100fec86550f203425e913"source"±/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Greek/Regular/Main.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Greek'] = {
+  directory: 'Greek/Regular',
+  family: 'MathJax_Greek',
+  testString: String.fromCharCode(0x393)+" "+String.fromCharCode(0x3A5)+" "+String.fromCharCode(0x39B),
+  0x20: [0,0,250,0,0],               // SPACE
+  0xA0: [0,0,250,0,0],               // NO-BREAK SPACE
+  0x393: [680,0,625,25,582],         // GREEK CAPITAL LETTER GAMMA
+  0x394: [716,0,833,46,786],         // GREEK CAPITAL LETTER DELTA
+  0x398: [705,22,778,56,722],        // GREEK CAPITAL LETTER THETA
+  0x39B: [716,0,694,32,661],         // GREEK CAPITAL LETTER LAMDA
+  0x39E: [677,0,667,42,624],         // GREEK CAPITAL LETTER XI
+  0x3A0: [680,0,750,25,724],         // GREEK CAPITAL LETTER PI
+  0x3A3: [683,0,722,55,666],         // GREEK CAPITAL LETTER SIGMA
+  0x3A5: [705,0,778,55,722],         // GREEK CAPITAL LETTER UPSILON
+  0x3A6: [683,0,722,56,665],         // GREEK CAPITAL LETTER PHI
+  0x3A8: [683,0,778,55,722],         // GREEK CAPITAL LETTER PSI
+  0x3A9: [704,0,722,44,677]          // GREEK CAPITAL LETTER OMEGA
+};
+
+MathJax.OutputJax["HTML-CSS"].initFont("MathJax_Greek");
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Greek/Regular/Main.js");
+"dependency_digest"%4f89b06c34df6a35cd3c482ded1ce9b9"required_paths["f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Greek/Regular/Main.js"dependency_paths[{"	path"f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Greek/Regular/Main.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%fa15b5059dc8e42a2d32bc40423c7d35"_version"%aa7d0db7619379e13b08335dee027df2

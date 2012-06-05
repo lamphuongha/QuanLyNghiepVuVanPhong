@@ -1,0 +1,93 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989048.991:@expires_in0:@value"Ù{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/e.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/e.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi&	"digest"%3933e1a61ca3ebf744a4e32c24ad7dc2"source"&	/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/e.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'ENG': '\u014A',
+    'ETH': '\u00D0',
+    'Eacute': '\u00C9',
+    'Ecaron': '\u011A',
+    'Ecirc': '\u00CA',
+    'Ecy': '\u042D',
+    'Edot': '\u0116',
+    'Egrave': '\u00C8',
+    'Emacr': '\u0112',
+    'EmptySmallSquare': '\u25FB',
+    'EmptyVerySmallSquare': '\u25AB',
+    'Eogon': '\u0118',
+    'Equal': '\u2A75',
+    'Esim': '\u2A73',
+    'Euml': '\u00CB',
+    'eDDot': '\u2A77',
+    'eDot': '\u2251',
+    'eacute': '\u00E9',
+    'easter': '\u2A6E',
+    'ecaron': '\u011B',
+    'ecirc': '\u00EA',
+    'ecolon': '\u2255',
+    'ecy': '\u044D',
+    'edot': '\u0117',
+    'ee': '\u2147',
+    'eg': '\u2A9A',
+    'egrave': '\u00E8',
+    'egsdot': '\u2A98',
+    'el': '\u2A99',
+    'elinters': '\uFFFD',
+    'elsdot': '\u2A97',
+    'emacr': '\u0113',
+    'emptyset': '\u2205',
+    'emptyv': '\u2205',
+    'emsp': '\u2003',
+    'emsp13': '\u2004',
+    'emsp14': '\u2005',
+    'eng': '\u014B',
+    'ensp': '\u2002',
+    'eogon': '\u0119',
+    'epar': '\u22D5',
+    'eparsl': '\u29E3',
+    'eplus': '\u2A71',
+    'eqcirc': '\u2256',
+    'eqcolon': '\u2255',
+    'eqsim': '\u2242',
+    'eqslantgtr': '\u2A96',
+    'eqslantless': '\u2A95',
+    'equals': '\u003D',
+    'equest': '\u225F',
+    'equiv': '\u2261',
+    'equivDD': '\u2A78',
+    'eqvparsl': '\u29E5',
+    'erarr': '\u2971',
+    'esdot': '\u2250',
+    'esim': '\u2242',
+    'euml': '\u00EB',
+    'excl': '\u0021',
+    'exist': '\u2203',
+    'expectation': '\u2130',
+    'exponentiale': '\u2147'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/e.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%84d1c9b5b877a9b0ffe1c337f436de9e"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/e.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/e.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%c852ad844af69d6ed29ad4598f4488d2"_version"%aa7d0db7619379e13b08335dee027df2

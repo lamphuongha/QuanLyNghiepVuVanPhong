@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989026.913:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"+MathJax/jax/input/MathML/entities/q.js"pathname"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/q.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiè"digest"%8d935e25d8d0c56ce5b6576b1f5e344c"source"è/*
+ *  ../SourceForge/trunk/mathjax/jax/input/MathML/entities/q.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){MathJax.Hub.Insert(a.Parse.Entity,{qint:"\\u2A0C",qprime:"\\u2057",quaternions:"\\u210D",quatint:"\\u2A16",quest:"\\u003F",questeq:"\\u225F",quot:"\\u0022"});MathJax.Ajax.loadComplete(a.entityDir+"/q.js")})(MathJax.InputJax.MathML);']
+]);
+
+"dependency_digest"%849b3d6c88a039ea4fd72cc6f8a18c32"required_paths["H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/q.js"dependency_paths[{"	path"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/q.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%12cfcb43b721f0277a7860e4568d3904"_version"%aa7d0db7619379e13b08335dee027df2

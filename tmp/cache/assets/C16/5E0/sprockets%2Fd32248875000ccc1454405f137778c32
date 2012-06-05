@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1331022261.587:@expires_in0:@value"{"
+class"StaticAsset"logical_path"boder_container.png"pathname"0$root/app/assets/images/boder_container.png"content_type"image/png"
+mtime"2012-03-01T14:39:58+07:00"lengthi1"digest"%6b798578fed49c8bf0962a97ebc81446"_version"%aa7d0db7619379e13b08335dee027df2

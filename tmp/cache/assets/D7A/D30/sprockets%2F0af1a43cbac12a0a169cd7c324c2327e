@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989059.189:@expires_in0:@value"9{"
+class"ProcessedAsset"logical_path"RMathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/IntegralsUpSm/Regular/Main.js"pathname"o$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/IntegralsUpSm/Regular/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi"digest"%4b4c80e479d6d908e2eae2bb7cc4f3b6"source"/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpSm/Regular/Main.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['STIXIntegralsUpSm'] = {
+  directory: 'IntegralsUpSm/Regular',
+  family: 'STIXIntegralsUpSm',
+  Ranges: [
+    [0x20,0x20,"All"],
+    [0xA0,0xA0,"All"],
+    [0x222B,0x2233,"All"],
+    [0x2A0B,0x2A1C,"All"]
+  ],
+  0x222B: [690,189,357,52,375],      // INTEGRAL
+  0x222E: [690,189,452,52,412]       // CONTOUR INTEGRAL
+};
+
+MathJax.OutputJax["HTML-CSS"].initFont("STIXIntegralsUpSm");
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/IntegralsUpSm/Regular/Main.js");
+"dependency_digest"%3baed8bdce5a86cdc38b514cb5c919ee"required_paths["o$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/IntegralsUpSm/Regular/Main.js"dependency_paths[{"	path"o$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/IntegralsUpSm/Regular/Main.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%cef89c5e904b401d1ec26933b96d2ede"_version"%aa7d0db7619379e13b08335dee027df2

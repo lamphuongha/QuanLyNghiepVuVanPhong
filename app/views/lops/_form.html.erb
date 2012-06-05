@@ -1,0 +1,43 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 60%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), lops_path %>
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    </div>
+<%= form_for(@lop) do |f| %>
+  <% if @lop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lop.errors.count, "Lỗi") %> Không thể lưu thông tin:</h2>
+
+      <ul>
+      <% @lop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<h1>Lớp</h1>
+
+  <table width ="70%" align ="center" >
+    <tr>
+      <td rowspan="3">
+        <%=image_tag'training_icon.gif',:style=>'height:10em;width:10em;'%>
+      </td>
+      <td><%= f.label 'Mã lớp:' %></td>
+        <td><%= f.text_field :MaLop%></td>
+    </tr>
+       <tr>
+        <td><%= f.label 'Tên lớp:' %></td>
+        <td><%= f.text_field :TenLop%></td>
+      </tr>
+      <tr>
+        <td colspan="2" align ="center">
+          <div class="action">
+            <%= f.submit 'Lưu lại'%>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>   

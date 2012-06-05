@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989040.686:@expires_in0:@value"â{"
+class"ProcessedAsset"logical_path">MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/PUA.js"pathname"[$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/PUA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi"digest"%3d365a84b82615e4fa3dccd80028c854"source"/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/PUA.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Fraktur-bold"],{58113:[630,27,587,64,512],58114:[693,212,394,37,408],58115:[681,219,387,36,384],58116:[473,212,593,67,531],58117:[684,27,393,33,387],58120:[679,220,981,32,875],58121:[717,137,727,17,633]});MathJax.Ajax.loadComplete',1,'fontDir+"/Fraktur/Bold/PUA.js");']
+]);
+
+"dependency_digest"%ee7b8b1f0bc9880be4eb36e4f212e5a1"required_paths["[$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/PUA.js"dependency_paths[{"	path"[$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/PUA.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%731582e63507fa0575a734f1408557d0"_version"%aa7d0db7619379e13b08335dee027df2

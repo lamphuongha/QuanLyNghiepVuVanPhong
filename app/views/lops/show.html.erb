@@ -1,0 +1,32 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 60%; top: 15%; left: 20%;overflow: auto" align="center"> 
+    <div id="close" class="closebutton" style="right: 10px" align="right">
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), lops_path %>
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    </div>
+    <h1>Lớp</h1>
+     <table width ="50%" align ="center" >  
+      <tr>
+        <td colspan="2">
+          <p id="notice"><%= notice %></p>
+        </td>
+      </tr>
+      <tr>
+      <td rowspan="3">
+        <%=image_tag'training_icon.gif',:style=>'height:10em;width:10em;'%>
+      </td>
+      <td><b>Mã lớp:</b></td>
+        <td><%= @lop.MaLop%></td>
+      <tr>
+        <td><b>Tên lớp:</b></td>
+        <td><%= @lop.TenLop %></td>
+      </tr> 
+      <tr>
+        <td colspan="2" align="center">
+          <%= link_to image_tag('new.png',:alt=>"Thêm lớp"), new_lop_path %> | 
+            <%= link_to image_tag('edit.png'), edit_lop_path(@lop) ,:style =>"color:#000"%> | 
+            <%= link_to image_tag('delete_1.png'), @lop, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%>
+        </td>
+    </tr>
+     </table>
+</div>    
+<div class="lock-screen" id="lock" style="display:block"></div>

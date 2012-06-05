@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989032.011:@expires_in0:@value"à{"
+class"ProcessedAsset"logical_path"MMathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"pathname"j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÉ"digest"%a922238b5332103866de9f05cf6d2992"source"É/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-italic"],{8355:[653,0,611,8,645],8356:[670,8,500,10,517],8359:[653,13,1149,0,1126],8364:[664,12,500,16,538]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Italic/CurrencySymbols.js");']
+]);
+
+"dependency_digest"%baa3215a7c2fb3e9d3f095a31a26c127"required_paths["j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"dependency_paths[{"	path"j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%3d1991f138abe5ff7df7299c08f9a081"_version"%aa7d0db7619379e13b08335dee027df2

@@ -3,9 +3,9 @@ class Noitru < ActiveRecord::Base
   has_many :chitietnoitrus
   has_many :sinhviens, :through => :chitietnoitrus
   
-  validates_presence_of :MaNoiTru, :TenNoiTru, :congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaNoiTru
-  
+  validates_presence_of :MaNoiTru, :TenNoiTru, :congvan_id, :HocKy, :NamHoc, :message => "không được trông"
+  validates_uniqueness_of :MaNoiTru, :message => "đã tồn tại"
+
   cattr_reader :per_page
   @@per_page = 20
   def self.search(search)  

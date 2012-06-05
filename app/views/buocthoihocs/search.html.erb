@@ -5,7 +5,8 @@
 
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/baoluus'%>
+         <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), buocthoihocs_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <h1>Tìm kiếm nâng cao</h1>
     <%= form_tag '/buocthoihocs/search',:remote => true, :method => 'get' do %>  

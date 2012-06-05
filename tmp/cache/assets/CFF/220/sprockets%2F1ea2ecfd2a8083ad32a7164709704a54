@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989010.791:@expires_in0:@value"ä{"
+class"ProcessedAsset"logical_path"7MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js"pathname"T$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js"content_type"application/javascript"
+mtime"2010-07-26T02:34:56+07:00"lengthi%"digest"%ede5843e221af0b68685d94141a1c982"source"%/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_AMS:{}});MathJax.Ajax.loadComplete(',0,'imgDir+"/AMS/Regular"+',0,'imgPacked+"/Main.js");']
+]);
+
+"dependency_digest"%3b385aa1eec4841199b1f0ee6689c84c"required_paths["T$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js"dependency_paths[{"	path"T$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/Main.js"
+mtime"2010-07-26T02:34:56+07:00"digest"%49945d2c6318d68f50d0fc834bca4474"_version"%aa7d0db7619379e13b08335dee027df2

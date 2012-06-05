@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989045.928:@expires_in0:@value"Î{"
+class"ProcessedAsset"logical_path"+MathJax/jax/output/NativeMML/config.js"pathname"H$root/app/assets/javascripts/MathJax/jax/output/NativeMML/config.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi?"digest"%11ef23a93a009c765ab72068516b6071"source"?/*
+ *  ../SourceForge/trunk/mathjax/jax/output/NativeMML/config.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax','.','NativeMML','=',0,'({name:"',2,'",version:"1.0",directory:',0,'.directory+"/',2,'",extensionDir:',0,'.extensionDir+"/',2,'",config:{scale:100,showMathMenu:true,showMathMenuMSIE:true,styles:{"DIV.MathJax_MathML":{"text-align":"center",margin:".75em 0px"}}}});',0,'.',2,'.Register("jax/mml");(function(b){if(b.isMSIE){var a=document.createElement("object");a.id="mathplayer";a.classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987";document.getElementsByTagName("head")[0].appendChild(a);','document.namespaces.','add("mjx","http://www.w3.org/1998/Math/MathML");',20,'mjx.doImport("#mathplayer")}})(MathJax.Hub.Browser);',0,'.',2,'.loadComplete("config.js");']
+]);
+
+"dependency_digest"%447d1148a89399975464a7d580cdea7c"required_paths["H$root/app/assets/javascripts/MathJax/jax/output/NativeMML/config.js"dependency_paths[{"	path"H$root/app/assets/javascripts/MathJax/jax/output/NativeMML/config.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%0030cd48f7793d94f84ed2e1d7e90cce"_version"%aa7d0db7619379e13b08335dee027df2

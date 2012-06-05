@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989040.536:@expires_in0:@value"Ò{"
+class"ProcessedAsset"logical_path"?MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Main.js"pathname"\$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthió"digest"%49be13d7550a684828402c82dc637c18"source"ó/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["','MathJax_Fraktur','-bold"]={directory:"Fraktur/Bold",family:"',2,'",weight:"bold",testString:"MathJax Fraktur",Ranges:[[0,127,"BasicLatin"],[128,57343,"Other"],[58112,58128,"PUA"]]};',0,'initFont("',2,'-bold");MathJax.Ajax.loadComplete(',0,'fontDir+"/Fraktur/Bold/Main.js");']
+]);
+
+"dependency_digest"%48dacc562df9e2a8cc19128418a0ea26"required_paths["\$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Main.js"dependency_paths[{"	path"\$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%f43ed24fa9fcd55a0cdc6970da50702f"_version"%aa7d0db7619379e13b08335dee027df2

@@ -6,16 +6,19 @@ class SinhviensController < ApplicationController
   def index
     #@sinhviens = Sinhvien.all
     if params[:search]
+      @countcvs=Sinhvien.joins(:lop) .search(params[:search])
       @sinhviens=Sinhvien.joins(:lop) .search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
       else
+        @countcvs = Sinhvien.all
         @sinhviens = Sinhvien.paginate(:page => params[:page], :order => "id DESC")
       end
-    
+    @countds = @countcvs.size
       
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @sinhviens }
       format.xml
+      format.js
     end
   end
 
@@ -96,14 +99,44 @@ class SinhviensController < ApplicationController
   end
   def search
     if params[:search]
+        @countcvs=Sinhvien.search(params[:search])
         @sinhviens=Sinhvien.search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
       else
+        @countcvs=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh])
         @sinhviens=Sinhvien.search_with_permission(params[:MSSV],params[:HoTenSV],params[:DiaChi],params[:SDT],params[:lop_id],params[:NgaySinh],params[:trinhdodaotao_id],params[:GioiTinh]).paginate(:page => params[:page], :order => "id DESC")
       end
+      @countds = @countcvs.size
       respond_to do |format|
       format.html # search.html.erb
       format.json { render :json => @sinhviens }
+      format.js
     end
   end
-  
+  def thongtinthuctap
+      if params[:search]
+      @sinhviens=Sinhvien.joins(:lop).search(params[:search]).paginate(:page => params[:page], :order => "id DESC")
+      else
+        @sinhviens = Sinhvien.paginate(:page => params[:page], :order => "id DESC")
+      end
+      
+      respond_to do |format|
+      format.html # search.html.erb
+      format.json { render :json => @sinhviens }
+      format.js
+    end
+  end
+  def updatett
+        @sinhviens = Sinhvien.all
+        #@sinhviens = Sinhvien.paginate(:page => params[:page], :order => "id DESC")
+        #Sinhvien.update_all(["completed_at=?", Time.now],:id => params[:sinhvien_ids])
+       #@sinhviens.update_all(["completed_at=?", Time.now],:id => params[:sinhvien_ids])
+      @sinhviens.each do |sinhvien|
+        sinhvien.update_attributes!(params[:sinhvien])
+        #sinhvien.update_all(["completed_at=?", Time.now],:TenCongTy => params[:tencongty])
+      end
+      #@sinhviens.update(params[:sinhvien])
+#      @sinhviens.update_attributes!(params[:sinhvien])
+       redirect_to '/trangchu'
+  end
+
 end

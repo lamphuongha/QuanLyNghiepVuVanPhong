@@ -1,0 +1,92 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508055.832:@expires_in0:@value"Û{"
+class"ProcessedAsset"logical_path"showproduct.css"pathname"1$root/app/assets/stylesheets/showproduct.css"content_type"text/css"
+mtime"2011-10-30T01:20:51+07:00"lengthi¶"digest"%97a79142d16acd2bd3f334dd913a3fb1"source"¶@charset "utf-8";
+/* CSS Document */
+
+.caption {
+	float: left;
+	position: absolute;
+	background: #4E2D64;
+    left:3px;
+	top: 107px;
+	height: 36px;
+	width: 160px;
+	opacity: 0.9;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.caption #id {
+	margin: 2px 6px;
+	display:block;
+	overflow:hidden;
+	color:#FFF;
+}
+.caption #price {
+	margin: 0px 6px;
+	display:block;
+	overflow:hidden;
+	color:#Ff0;
+	
+}
+.caption a:hover #price,.caption a:hover #id {
+	color:#F90;
+}
+.boxgrid{ 
+				width: 160px; 
+				height: 140px;
+				padding: 0px;
+				float:left; 
+				background:url(../violet/images/left-bg.png) #3d1b54 left 50px; 		 
+				overflow: hidden; 
+				position: relative; 
+			}
+.boxgrid img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+					width:160px;
+					height:140px;
+				}
+.boxgrid h4{ 
+	padding: 10px 0 0 5px; 
+	margin: 0px;
+	height:20px;
+	overflow:hidden;
+    font-size:13px;
+
+}
+.boxgrid h4 a,.boxgrid h4 a:visited 
+{
+    color:#FFF;
+}
+.boxgrid h4 a:hover 
+{
+    color:#F90;
+}
+.boxgrid p{ 
+margin: 35px 0 5px 0;
+					padding: 0 5px; 
+					color:#afafaf;
+					text-align:center;				
+					
+}
+.new-cont, .sale-cont
+{
+    z-index: 100;
+    position: absolute;
+    background: url(images/items.png) no-repeat 0 0;
+}
+.new-cont 
+{
+   height: 60px;
+width: 60px;
+top: -4px;
+left: 3px;
+     background-position: 0 -75px ;
+}
+				
+"dependency_digest"%7d02f5e461d07b5774a0b350cef8f246"required_paths["1$root/app/assets/stylesheets/showproduct.css"dependency_paths[{"	path"1$root/app/assets/stylesheets/showproduct.css"
+mtime"2011-10-30T01:20:51+07:00"digest"%6c43bcf133d52a1bc261c9943c79c126"_version"%aa7d0db7619379e13b08335dee027df2

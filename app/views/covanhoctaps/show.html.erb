@@ -1,8 +1,10 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 70%; height: 65%; top: 10%; left: 13%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/covanhoctaps'%>
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), covanhoctaps_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
     <h1>Cố vấn học tập</h1>
+    <fieldset style="width: 70%">
      <table width ="50%" align ="center" >  
       <tr>
         <td colspan="2">
@@ -34,19 +36,16 @@
       <tr>
         <td colspan="2" align="center">
           <% if can? :update, @covanhoctap %>
-            <%= link_to 'Sửa', edit_covanhoctap_path(@covanhoctap) ,:style =>"color:#000"%> | 
-          <% end %> 
-          <% if can? :destroy, @covanhoctap %>
-            <%= link_to 'Xóa', @covanhoctap, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete ,:style =>"color:#000"%> |
+            <%= link_to image_tag('edit.png'), edit_covanhoctap_path(@covanhoctap) ,:style=>"color:#000"%> | 
           <% end %> 
           <% if can? :create, @covanhoctap %>
-            <%= link_to 'Thêm ', new_covanhoctap_path ,:style =>"color:#000"%> |  
-          <% end %>
-            <%= link_to 'Quay lại', covanhoctaps_path ,:style =>"color:#000"%>
+          <%= link_to image_tag('new.png',:style=>"alt:Thêm cố vấn học tập",:alt=>"Thêm cố vấn học tập"), new_covanhoctap_path ,:style=>"color:#000"%>
+          <%  end %>
+         
           
         </td>
     </tr>
      </table>
-  
+    </fieldset>
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>

@@ -1,6 +1,7 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 8%; left: 8%;overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 8%; left: 8%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), hocbongs_path %>
+        <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <!--  
    <div id="checkbox">
@@ -32,7 +33,7 @@
 <%= form_for(@hocbong) do |f| %>
   <% if @hocbong.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@hocbong.errors.count, "error") %> prohibited this hocbong from being saved:</h2>
+      <h2><%= pluralize(@hocbong.errors.count, "Lỗi") %> Không thể lưu thông tin:</h2>
 
       <ul>
       <% @hocbong.errors.full_messages.each do |msg| %>
@@ -83,10 +84,14 @@
   
   </table>
 </fieldset>
+  <br />
+  <div class="actions">
+    <%= f.submit 'Lưu lại'%>
+  </div>
 <br />
 
 <div class="myclassname">
-   <a href="#" class="mylink" style="color:#000">Thêm sinh viên</a>
+  <a href="#" class="mylink" style="color:#000"><%=image_tag'addstudent.png'%></a>
    <div class="form">
       <div id ="sinhviens">
   <%= render :partial => 'sinhvien' %>
@@ -140,17 +145,13 @@ $(document).ready(function() {
         
       </fieldset>
 </div>
-<br />
-  <div class="actions">
-    <%= f.submit 'Lưu lại'%>
-  </div>
-<%= link_to 'Quay lại', hocbongs_path %>
+
 <% end %>
  
    </div>
 </div>
 <div class="searchlink">
-   <a href="#" class="show">Tìm kiếm</a>
+   <a href="#" class="show" style="color:#000"><%=image_tag'search.png'%></a>
    <div class="formsearchsv">
 <%= render :partial => 'partials/searchsv'%> 
      </div>

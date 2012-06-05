@@ -1,0 +1,43 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989065.561:@expires_in0:@value"”	{"
+class"ProcessedAsset"logical_path"XMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js"pathname"u$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthiê"digest"%35ed8bed5e703e10ce7676f2e6aa5fd9"source"ê/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_SansSerif-italic'],
+  {
+    0x300: [694,-527,0,-270,-87],      // COMBINING GRAVE ACCENT
+    0x301: [694,-527,0,-190,63],       // COMBINING ACUTE ACCENT
+    0x302: [694,-527,0,-310,33],       // COMBINING CIRCUMFLEX ACCENT
+    0x303: [677,-543,0,-301,60],       // COMBINING TILDE
+    0x304: [631,-552,0,-314,64],       // COMBINING MACRON
+    0x306: [694,-508,0,-284,73],       // COMBINING BREVE
+    0x307: [680,-576,0,-180,-54],      // COMBINING DOT ABOVE
+    0x308: [680,-582,0,-273,40],       // COMBINING DIAERESIS
+    0x30A: [694,-527,0,-227,-2],       // COMBINING RING ABOVE
+    0x30B: [694,-527,0,-287,63],       // COMBINING DOUBLE ACUTE ACCENT
+    0x30C: [654,-487,0,-283,60]        // COMBINING CARON
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/SansSerif/Italic/CombDiacritMarks.js");
+"dependency_digest"%84bc7db4f27f1a84179aafbd71cfce3c"required_paths["u$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js"dependency_paths[{"	path"u$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%9ca22b874e6e3f1fca7ac2b145091134"_version"%aa7d0db7619379e13b08335dee027df2

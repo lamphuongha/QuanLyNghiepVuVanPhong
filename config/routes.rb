@@ -1,7 +1,19 @@
 QuanLyCongVan::Application.routes.draw do
  
   
+  get "statistics/index"
+  get "diemrenluyens/search"
+  get "password_resets/forgot_password"
+  get "congvans/send_mail"
+  resources :lops
+
   get 'hocbongs/:id/export_hocbongs', :controller=>:hocbongs, :action=>:export_hocbongs
+  get 'baoluus/:id/export_baoluus', :controller=>:baoluus, :action=>:export_baoluus
+  get 'buocthoihocs/:id/export_buocthoihocs', :controller=>:buocthoihocs, :action=>:export_buocthoihocs
+  get 'diemrenluyens/:id/export_diemrenluyens', :controller=>:diemrenluyens, :action=>:export_diemrenluyens
+  get 'ngoaitrus/:id/export_ngoaitrus', :controller=>:ngoaitrus, :action=>:export_ngoaitrus
+  get 'noitrus/:id/export_noitrus', :controller=>:noitrus, :action=>:export_noitrus
+  get 'trocaps/:id/export_trocaps', :controller=>:trocaps, :action=>:export_trocaps
   resources :thongtinthuctaps
 
   get "sessions/new"
@@ -52,7 +64,8 @@ QuanLyCongVan::Application.routes.draw do
   get "trocaps/search"
   get "covanhoctaps/search"
   get "layouts/extra_search"
- 
+  get "sinhviens/thongtinthuctap"
+  get "sinhviens/updatett"
   resources :congvans
   
   #get "admin/index"
@@ -70,13 +83,14 @@ QuanLyCongVan::Application.routes.draw do
   get "admin/index"
   get "giangviens/index"
   get "sinhviens/index"
-  get "chucvus/new"
+ 
   get"hocvis/new"
   get"ngaches/new"
   get"covanhoctaps/index"
   get "trangchu/application"
 
   get"sinhviens/search"
+  
   resources:chucvus
   resources:ngaches
   resources:trangchu
@@ -89,7 +103,7 @@ QuanLyCongVan::Application.routes.draw do
   
   get "trangchu/index"
   
-  
+
   resource :congvans do
     collection do
       get 'view'

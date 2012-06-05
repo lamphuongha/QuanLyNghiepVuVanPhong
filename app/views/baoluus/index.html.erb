@@ -1,7 +1,6 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to 'Thêm', new_baoluu_path %>
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
   
   <%= form_tag baoluus_path,:remote => true, :method => 'get' do %>  
@@ -15,6 +14,11 @@
        </fieldset>
     <% end %>
 <h1>Danh sách bảo lưu</h1>
+<div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm danh sách"), new_baoluu_path %> Thêm danh sách bảo lưu 
+     
+   </div>
 <div id ="baoluus">
         <%= render :partial => 'baoluu' %>
       </div>

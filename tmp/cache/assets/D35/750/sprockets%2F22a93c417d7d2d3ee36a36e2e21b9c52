@@ -1,0 +1,33 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989074.267:@expires_in0:@value"‘{"
+class"ProcessedAsset"logical_path"+tiny_mce/plugins/xhtmlxtras/js/abbr.js"pathname"H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/abbr.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi"digest"%ce6e9a5dd45785240e30b81074792088"source"/**
+ * abbr.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+function init() {
+	SXE.initElementDialog('abbr');
+	if (SXE.currentAction == "update") {
+		SXE.showRemoveButton();
+	}
+}
+
+function insertAbbr() {
+	SXE.insertElement('abbr');
+	tinyMCEPopup.close();
+}
+
+function removeAbbr() {
+	SXE.removeElement('abbr');
+	tinyMCEPopup.close();
+}
+
+tinyMCEPopup.onInit.add(init);
+"dependency_digest"%e3924b08bb77354f0a2bd53ea4100992"required_paths["H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/abbr.js"dependency_paths[{"	path"H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/abbr.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%5d5eb345824149c62e4bc13796f2e420"_version"%aa7d0db7619379e13b08335dee027df2

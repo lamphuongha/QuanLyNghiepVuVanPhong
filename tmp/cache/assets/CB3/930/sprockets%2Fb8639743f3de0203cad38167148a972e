@@ -1,0 +1,35 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989062.404:@expires_in0:@value"…{"
+class"ProcessedAsset"logical_path"IMathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"pathname"f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi~"digest"%d7201b000c2d458e125d7beb78eb48c0"source"~/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['MathJax_Fraktur-bold'],
+  {
+    0xA0: [0,0,250,0,0],               // NO-BREAK SPACE
+    0x2018: [708,-411,254,53,187],     // LEFT SINGLE QUOTATION MARK
+    0x2019: [692,-394,254,58,193]      // RIGHT SINGLE QUOTATION MARK
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/Fraktur/Bold/Other.js");
+"dependency_digest"%8d52f03bd338627068681851b2f25c83"required_paths["f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"dependency_paths[{"	path"f$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%131c9fe990655e14090f4d9e766f79cf"_version"%aa7d0db7619379e13b08335dee027df2

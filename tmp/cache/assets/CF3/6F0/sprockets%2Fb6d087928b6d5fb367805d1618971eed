@@ -1,0 +1,55 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989072.015:@expires_in0:@value"Ë{"
+class"ProcessedAsset"logical_path"+tiny_mce/plugins/paste/js/pasteword.js"pathname"H$root/app/assets/javascripts/tiny_mce/plugins/paste/js/pasteword.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi<"digest"%4095ae9d232f2d0c038e66f573ce0bf7"source"<tinyMCEPopup.requireLangPack();
+
+var PasteWordDialog = {
+	init : function() {
+		var ed = tinyMCEPopup.editor, el = document.getElementById('iframecontainer'), ifr, doc, css, cssHTML = '';
+
+		// Create iframe
+		el.innerHTML = '<iframe id="iframe" src="javascript:\'\';" frameBorder="0" style="border: 1px solid gray"></iframe>';
+		ifr = document.getElementById('iframe');
+		doc = ifr.contentWindow.document;
+
+		// Force absolute CSS urls
+		css = [ed.baseURI.toAbsolute("themes/" + ed.settings.theme + "/skins/" + ed.settings.skin + "/content.css")];
+		css = css.concat(tinymce.explode(ed.settings.content_css) || []);
+		tinymce.each(css, function(u) {
+			cssHTML += '<link href="' + ed.documentBaseURI.toAbsolute('' + u) + '" rel="stylesheet" type="text/css" />';
+		});
+
+		// Write content into iframe
+		doc.open();
+		doc.write('<html><head>' + cssHTML + '</head><body class="mceContentBody" spellcheck="false"></body></html>');
+		doc.close();
+
+		doc.designMode = 'on';
+		this.resize();
+
+		window.setTimeout(function() {
+			ifr.contentWindow.focus();
+		}, 10);
+	},
+
+	insert : function() {
+		var h = document.getElementById('iframe').contentWindow.document.body.innerHTML;
+
+		tinyMCEPopup.editor.execCommand('mceInsertClipboardContent', false, {content : h, wordContent : true});
+		tinyMCEPopup.close();
+	},
+
+	resize : function() {
+		var vp = tinyMCEPopup.dom.getViewPort(window), el;
+
+		el = document.getElementById('iframe');
+
+		if (el) {
+			el.style.width  = (vp.w - 20) + 'px';
+			el.style.height = (vp.h - 90) + 'px';
+		}
+	}
+};
+
+tinyMCEPopup.onInit.add(PasteWordDialog.init, PasteWordDialog);
+"dependency_digest"%69dcdbd9aa88922a42d25487549d6f15"required_paths["H$root/app/assets/javascripts/tiny_mce/plugins/paste/js/pasteword.js"dependency_paths[{"	path"H$root/app/assets/javascripts/tiny_mce/plugins/paste/js/pasteword.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%769713dbec6c77ac7979feb43703eb09"_version"%aa7d0db7619379e13b08335dee027df2

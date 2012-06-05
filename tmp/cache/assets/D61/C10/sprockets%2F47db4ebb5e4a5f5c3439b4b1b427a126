@@ -1,0 +1,42 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989011.93:@expires_in0:@value"½{"
+class"ProcessedAsset"logical_path"NMathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/unpacked/GeneralPunctuation.js"pathname"k$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/unpacked/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-07-26T02:28:30+07:00"lengthi¢"digest"%92bf0459ad39e95e455846de41dcf1fd"source"¢/*************************************************************
+ *
+ *  MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js
+ *  
+ *  Defines the image size data needed for the HTML-CSS OutputJax
+ *  to display mathematics using fallback images when the fonts
+ *  are not availble to the client browser.
+ *
+ *  ---------------------------------------------------------------------
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.OutputJax["HTML-CSS"].defineImageData({
+  "MathJax_AMS": {
+    0x2035: [  // REVERSED PRIME
+      [2,4,0],[3,5,0],[3,5,0],[3,6,-1],[4,7,-1],[5,9,-1],[5,10,-1],[6,12,-1],
+      [7,15,-1],[9,17,-1],[10,20,-2],[12,24,-2],[14,29,-2],[17,34,-3]
+    ]
+  }
+});
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].imgDir+"/AMS/Regular"+
+                          MathJax.OutputJax["HTML-CSS"].imgPacked+"/GeneralPunctuation.js");
+"dependency_digest"%a7d49552dc7cacc95b75e22ace3245e0"required_paths["k$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/unpacked/GeneralPunctuation.js"dependency_paths[{"	path"k$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/unpacked/GeneralPunctuation.js"
+mtime"2010-07-26T02:28:30+07:00"digest"%fed3ce6a7279a93e4f99304105f64fe3"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,46 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989050.034:@expires_in0:@value"d{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/y.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/y.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi±"digest"%72d75c008c64d0478cddea47fa9ca734"source"±/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/y.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'YAcy': '\u042F',
+    'YIcy': '\u0407',
+    'YUcy': '\u042E',
+    'Yacute': '\u00DD',
+    'Ycirc': '\u0176',
+    'Ycy': '\u042B',
+    'Yuml': '\u0178',
+    'yacute': '\u00FD',
+    'yacy': '\u044F',
+    'ycirc': '\u0177',
+    'ycy': '\u044B',
+    'yicy': '\u0457',
+    'yucy': '\u044E',
+    'yuml': '\u00FF'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/y.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%16708fddef03a266e495fd620b80244c"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/y.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/y.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%c32f337d0b1e07c13c507cb0ae8343ef"_version"%aa7d0db7619379e13b08335dee027df2

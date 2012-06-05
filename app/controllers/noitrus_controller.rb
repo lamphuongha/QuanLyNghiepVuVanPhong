@@ -63,7 +63,7 @@ class NoitrusController < ApplicationController
     @noitru.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @noitru.save
-        format.html { redirect_to @noitru, :notice => 'Noitru was successfully created.' }
+        format.html { redirect_to @noitru, :notice => 'Thêm danh sách thành công.' }
         format.json { render :json => @noitru, :status => :created, :location => @noitru }
       else
         format.html { render :action => "new" }
@@ -81,7 +81,7 @@ class NoitrusController < ApplicationController
     @noitru.sinhviens = Sinhvien.find(params[:sinhvien_ids]) if params[:sinhvien_ids]
     respond_to do |format|
       if @noitru.update_attributes(params[:noitru])
-        format.html { redirect_to @noitru, :notice => 'Noitru was successfully updated.' }
+        format.html { redirect_to @noitru, :notice => 'Cập nhật thành công.' }
         format.json { head :no_content }
       else
         format.html { render :action => "edit" }
@@ -112,7 +112,14 @@ class NoitrusController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @noitrus }
+      format.js
     end
   end
-  
+    def export_noitrus
+    @noitru = Noitru.find(params[:id])
+    respond_to do |format|
+      format.html { render :layout=>'export_lists' }
+      format.xml  { render :xml => @noitru }
+    end
+  end
 end

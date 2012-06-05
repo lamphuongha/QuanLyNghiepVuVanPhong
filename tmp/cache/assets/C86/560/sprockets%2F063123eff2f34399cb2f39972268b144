@@ -1,0 +1,33 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989074.425:@expires_in0:@value"‘{"
+class"ProcessedAsset"logical_path"+tiny_mce/plugins/xhtmlxtras/js/cite.js"pathname"H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/cite.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi"digest"%121dec73ce498f3b02bf25c179a3f8ad"source"/**
+ * cite.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+function init() {
+	SXE.initElementDialog('cite');
+	if (SXE.currentAction == "update") {
+		SXE.showRemoveButton();
+	}
+}
+
+function insertCite() {
+	SXE.insertElement('cite');
+	tinyMCEPopup.close();
+}
+
+function removeCite() {
+	SXE.removeElement('cite');
+	tinyMCEPopup.close();
+}
+
+tinyMCEPopup.onInit.add(init);
+"dependency_digest"%b3503df4c90f2eb41c937cb122f5348c"required_paths["H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/cite.js"dependency_paths[{"	path"H$root/app/assets/javascripts/tiny_mce/plugins/xhtmlxtras/js/cite.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%257d8e2d307e6e37266f1a685cad5cf6"_version"%aa7d0db7619379e13b08335dee027df2

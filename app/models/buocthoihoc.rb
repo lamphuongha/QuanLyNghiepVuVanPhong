@@ -5,8 +5,9 @@ class Buocthoihoc < ActiveRecord::Base
   has_many :sinhviens, :through => :chitietbuocthoihocs
   
   
-  validates_presence_of :MaBTH, :TenBTH, :loaibuocthoihoc_id,:congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaBTH
+  validates_presence_of :MaBTH, :TenBTH, :loaibuocthoihoc_id,:congvan_id, :HocKy, :NamHoc, :message => "không được trống"
+  validates_uniqueness_of :MaBTH,:message => "đã tồn tại"
+
     cattr_reader :per_page
   @@per_page = 20
   

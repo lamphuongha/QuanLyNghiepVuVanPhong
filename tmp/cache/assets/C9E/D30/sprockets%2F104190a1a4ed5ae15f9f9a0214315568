@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989022.297:@expires_in0:@value"4{"
+class"ProcessedAsset"logical_path";MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/Other.js"pathname"X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/Other.js"content_type"application/javascript"
+mtime"2010-07-26T02:36:26+07:00"lengthie"digest"%ce5fe24e22c7aff7a2fc8bc3e9ff76e6"source"e/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/Other.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_Script:{160:[[1,1,0],[1,1',',0],[1,1,0],[1,1',2,2,2,2,2,',0]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/Script/Regular"+',0,'imgPacked+"/Other.js");']
+]);
+
+"dependency_digest"%45ea49953d05b050a23033d252f7de4b"required_paths["X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/Other.js"dependency_paths[{"	path"X$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Script/Regular/Other.js"
+mtime"2010-07-26T02:36:26+07:00"digest"%6187d9223e9ff715ee98c73c6b55da3b"_version"%aa7d0db7619379e13b08335dee027df2

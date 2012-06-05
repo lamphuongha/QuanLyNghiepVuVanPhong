@@ -1,6 +1,10 @@
 <fieldset>
-        <table class="table1" width="100%" align="center">
+   <div align="left">
+    Kết quả: <%= @countds %> sinh viên
+   </div>
+        <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
           <tr>
+            <th>STT</th>
             <th>Mã SV</th>
             <th>Họ tên</th>
             <th>Ngày sinh</th>
@@ -13,9 +17,11 @@
             <th>Chức năng</th>
 
           </tr>
+          <% i = 0 %>
           <% @sinhviensearchs.each do |sinhvien| %>
           <tr>
-            <td ><%= sinhvien.MSSV %></td>
+            <th><%= i = i+1 %></th>
+            <td><%= sinhvien.MSSV %></td>
             <td><%= sinhvien.HoTenSV %></td>
             <td><%= sinhvien.NgaySinh %></td>
             <td><%= sinhvien.GioiTinh %></td>
@@ -40,8 +46,13 @@
         <% end %>
           
         </table>
+ <div align="left">
+        Hiển thị: <%= i %> / <%= @countds %>
+        </div>
+  
         <%= will_paginate @sinhviensearchs %>
       </fieldset>
 <br/>
+
     
       

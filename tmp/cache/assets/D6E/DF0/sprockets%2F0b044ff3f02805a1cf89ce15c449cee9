@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989039.947:@expires_in0:@value"‡{"
+class"ProcessedAsset"logical_path"GMathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscTechnical.js"pathname"d$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscTechnical.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiˆ"digest"%b20b3cdfb088374a08903ffc62e1d671"source"ˆ/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscTechnical.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_AMS,{8994:[378,-122,778,55,722],8995:[378,-143,778,55,722]});MathJax.Ajax.loadComplete',1,'fontDir+"/AMS/Regular/MiscTechnical.js");']
+]);
+
+"dependency_digest"%f7c68f380e118a1c05578e6ab1167508"required_paths["d$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscTechnical.js"dependency_paths[{"	path"d$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/MiscTechnical.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%5b2df9099f900c5ee9f1dfc4f345d163"_version"%aa7d0db7619379e13b08335dee027df2

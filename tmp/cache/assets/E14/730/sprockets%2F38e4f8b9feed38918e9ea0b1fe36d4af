@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989039.542:@expires_in0:@value"‰{"
+class"ProcessedAsset"logical_path"LMathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GeneralPunctuation.js"pathname"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiv"digest"%9749971b9404ea130100a7504ec9050e"source"v/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GeneralPunctuation.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_AMS,{8245:[560,-43,275,12,244]});MathJax.Ajax.loadComplete',1,'fontDir+"/AMS/Regular/GeneralPunctuation.js");']
+]);
+
+"dependency_digest"%383cb1ee02e712800473ab568a1ae457"required_paths["i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GeneralPunctuation.js"dependency_paths[{"	path"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/AMS/Regular/GeneralPunctuation.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%31b99fad9b8360b3cf19a6b2f752ec73"_version"%aa7d0db7619379e13b08335dee027df2

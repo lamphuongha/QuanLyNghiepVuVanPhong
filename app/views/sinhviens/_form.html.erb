@@ -1,7 +1,8 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 60%; height: 70%; top: 10%; left: 18%;" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 70%; top: 10%; left: 10%;overflow: auto" align="center"> 
 
 <div id="close" class="closebutton" style="right: 10px" align="right">
-     <%= link_to image_tag('closex.jpg'),'/sinhviens'%>
+  <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), sinhviens_path %>
+  <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <%= form_for (@sinhvien) do |f| %>
       <% if @sinhvien.errors.any? %>
@@ -16,15 +17,7 @@
       <% end %>
  
 <div  align="center" ><h1>Sinh viên</h1>
- <!--<table with="50%" align="center" cellspacing="20">
-     <tr>
-        <td> <input id="1" name="hocbong" type="checkbox_hb" value="" /><b>Học bổng</b></td>
-        <td> <input id="2" name="buocthoihoc" type="checkbox_bth" value="" /><b>Buộc thôi học</b></td>
-        <td> <input id="3" name="baoluu" type="checkbox_bl" value="" /><b>Bảo lưu</b></td>
-        <td> <input id="4" name="thuongtru" type="checkbox_tt" value="" /><b>Thường trú</b></td>
-        <td> <input id="5" name="trocap" type="checkbox_tc" value="" /><b>Trợ cấp</b></td>
-      </tr>
-  </table>-->
+  <fieldset style="width: 90%">
 <table height="100" align="center">
    
 <!--      <div class="field"> -->
@@ -68,7 +61,7 @@
     <br>
     <br>
     <br>
-
+</fieldset>
     
 <% end %>
     

@@ -1,0 +1,25 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989042.431:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"LMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Italic/GeneralPunctuation.js"pathname"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Italic/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi
+"digest"%33678a087169441d2a7edc65dce704a2"source"
+/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Italic/GeneralPunctuation.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-italic"],{8211:[286,-248,511,91,554],8212:[285,-248,1022,117,1038],8216',':[694,-379,','307,197,362],8217',3,'307,213,377],8220:[694,-378,514,243,606],8221',3,'514,176,538]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Italic/GeneralPunctuation.js");']
+]);
+
+"dependency_digest"%5ff1fdc2af8a8586b88a6dc600c26d5d"required_paths["i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Italic/GeneralPunctuation.js"dependency_paths[{"	path"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Italic/GeneralPunctuation.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%543299f4cd32bb81d76ca7b8ddd731c1"_version"%aa7d0db7619379e13b08335dee027df2

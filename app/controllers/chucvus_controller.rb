@@ -1,5 +1,5 @@
 class ChucvusController < ApplicationController
-  layout 'main'
+  #layout 'main'
     load_and_authorize_resource 
     # GET /chucvus
   # GET /chucvus.json

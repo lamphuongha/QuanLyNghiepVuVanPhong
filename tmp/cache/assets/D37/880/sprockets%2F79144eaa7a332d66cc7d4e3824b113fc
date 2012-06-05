@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989033.419:@expires_in0:@value"h{"
+class"ProcessedAsset"logical_path"BMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"pathname"_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi}"digest"%ce532c206a255c5ade572892631672d4"source"}/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{12306:[662,0,685,10,672],12336:[417,-93,1412,45,1367]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/CJK.js");']
+]);
+
+"dependency_digest"%25cc27f49ea6dae248ad4f77bc378759"required_paths["_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"dependency_paths[{"	path"_$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/CJK.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%c2f8cb9104c6e605bcf6f662c3779a6d"_version"%aa7d0db7619379e13b08335dee027df2

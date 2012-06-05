@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989021.82:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"=MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Regular/Main.js"pathname"Z$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Regular/Main.js"content_type"application/javascript"
+mtime"2010-07-26T02:36:22+07:00"lengthi7"digest"%8149c75eb4e802b981649c47bfea856d"source"7/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Regular/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_SansSerif:{}});MathJax.Ajax.loadComplete(',0,'imgDir+"/SansSerif/Regular"+',0,'imgPacked+"/Main.js");']
+]);
+
+"dependency_digest"%266f4f9c54634d36b30c4480c3e49969"required_paths["Z$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Regular/Main.js"dependency_paths[{"	path"Z$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Regular/Main.js"
+mtime"2010-07-26T02:36:22+07:00"digest"%651da0600b81c47709c1cd5c5e6cc41e"_version"%aa7d0db7619379e13b08335dee027df2

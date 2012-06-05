@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989041.692:@expires_in0:@value"H{"
+class"ProcessedAsset"logical_path"FMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/GreekAndCoptic.js"pathname"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/GreekAndCoptic.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiM"digest"%baf17c01a77bf04e806c0a9db4b434fa"source"M/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/GreekAndCoptic.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Main-bold"],{915:[680,0,692,39,643],916:[698,0,958,56,901],920:[696,10',',894,64,829],','923:[699,0,806,40,765],926:[675,0,767,48,718],928:[680,0,900,39,860],931:[686,0,831,63,766],933:[697,0',3,'934:[686,0,831,64,766],936:[686,0',3,'937:[696,1,831,51,780]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Bold/GreekAndCoptic.js");']
+]);
+
+"dependency_digest"%cb38919b83ca0276e3d1ef97d1f5e887"required_paths["c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/GreekAndCoptic.js"dependency_paths[{"	path"c$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Bold/GreekAndCoptic.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%27a3df2049191bcb443f2aceb92c19d8"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989040.615:@expires_in0:@value"{{"
+class"ProcessedAsset"logical_path"@MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"pathname"]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi˜"digest"%a46085ca70da7ca927a9e47127154d63"source"˜/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["MathJax_Fraktur-bold"],{160:[0,0,250,0,0],8216:[708,-411,254,53,187],8217:[692,-394,254,58,193]});MathJax.Ajax.loadComplete',1,'fontDir+"/Fraktur/Bold/Other.js");']
+]);
+
+"dependency_digest"%d9c4dfba4fee98538c23e5835b35921f"required_paths["]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"dependency_paths[{"	path"]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Bold/Other.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%4eecb441caa813c4e473ef85c748c762"_version"%aa7d0db7619379e13b08335dee027df2

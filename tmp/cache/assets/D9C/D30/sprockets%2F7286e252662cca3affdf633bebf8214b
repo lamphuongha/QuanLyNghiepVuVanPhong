@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989038.378:@expires_in0:@value"ï{"
+class"ProcessedAsset"logical_path"DMathJax/jax/output/HTML-CSS/fonts/STIX/SizeFourSym/Bold/Main.js"pathname"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeFourSym/Bold/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiü"digest"%c5c77968af2ed1b8484ac66fbb4b1325"source"ü/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/SizeFourSym/Bold/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["','STIXSizeFourSym','-bold"]={directory:"','SizeFourSym/Bold','",family:"',2,'",weight:"bold",32',':[0,0,250,0,0],','40',':[2604,471,','818,115,761],41',10,'818,57,703],47',10,'1321,3,1318],','91',10,'699,314,691],92',10,15,'93',10,'699,8,385],123',10,'1119,197,944],125',10,'1119,175,922],160',8,'8730:[1510,345,1184,101,915],8968',10,'720,314,712],','8969',10,'720,8,406],','8970',10,31,'8971',10,34,'10216',10,'908,120,841],10217',10,'908,67,788]};',0,'initFont("',2,'-bold");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%15608b2b2b7a1ed99ad6b489892bc822"required_paths["a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeFourSym/Bold/Main.js"dependency_paths[{"	path"a$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/SizeFourSym/Bold/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%2daa54883ef7f2d17aa5d9c1238b32a6"_version"%aa7d0db7619379e13b08335dee027df2

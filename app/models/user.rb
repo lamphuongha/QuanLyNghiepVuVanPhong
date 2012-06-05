@@ -3,10 +3,10 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :giangvien_id, :role_id
   #attr_accessor :password
   #before_save :encrypt_password
-  validates_confirmation_of :password
-  validates_presence_of :password,:on => :create
-  validates_presence_of :email, :giangvien_id
-  validates_uniqueness_of :email, :giangvien_id
+  validates_confirmation_of :password,:message => "không trùng nhau"
+  validates_presence_of :password,:on => :create, :message => "không được trống"
+  validates_presence_of :email, :giangvien_id,:message => "không được trống"
+  validates_uniqueness_of :email, :giangvien_id,:message => "đã tồn tại"
   before_create { generate_token(:auth_token) }
   belongs_to :giangvien
   belongs_to :role
@@ -19,8 +19,9 @@ class User < ActiveRecord::Base
     save!
     #UserMailer.password_reset(self).deliver
     UserMailer.password_reset(self).deliver
+    
   end
-  
+
   def generate_token(column)
     begin
       self[column] = SecureRandom.hex()

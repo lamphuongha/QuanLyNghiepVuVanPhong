@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989043.464:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"LMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LetterlikeSymbols.js"pathname"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LetterlikeSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiò"digest"%c93bc700a5b641158c6f08fad1094537"source"ò/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LetterlikeSymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Main,{8463:[695,13,540,42,562],8465:[705,11,722,54,693],8467:[706,20,417,6,398],8472:[453,216,636,67,625],8476:[717,22,722,40,716],8501:[694,1,611,54,556]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Regular/LetterlikeSymbols.js");']
+]);
+
+"dependency_digest"%9048ac09ef95d68a7cfa18d019211936"required_paths["i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LetterlikeSymbols.js"dependency_paths[{"	path"i$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LetterlikeSymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%61f3c7f4ce6c44b6450d8efbc298b911"_version"%aa7d0db7619379e13b08335dee027df2

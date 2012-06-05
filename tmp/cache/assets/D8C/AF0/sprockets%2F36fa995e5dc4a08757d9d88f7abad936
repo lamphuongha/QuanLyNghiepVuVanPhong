@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989037.444:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"HMathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Regular/Main.js"pathname"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Regular/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi	"digest"%f755309de3e17aa5d9faae899024ecdd"source"	/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Regular/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.','STIXIntegralsUpD','={directory:"','IntegralsUpD/Regular','",family:"',2,'",Ranges:[[32,32,"All"],[160,160,"All"],[8747,8755,"All"],[10763,10780,"All"]],8747:[2000,269,467,58,512],8750:[2000,269,616,56,685]};',0,'initFont("',2,'");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%02f3f693c4b3cc5e1858804168221a4e"required_paths["e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Regular/Main.js"dependency_paths[{"	path"e$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/IntegralsUpD/Regular/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%25633e7a3e9d91c93715a217d45df6dc"_version"%aa7d0db7619379e13b08335dee027df2

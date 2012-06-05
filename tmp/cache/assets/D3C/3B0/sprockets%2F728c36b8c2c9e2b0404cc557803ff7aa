@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989021.419:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"<MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Italic/Main.js"pathname"Y$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Italic/Main.js"content_type"application/javascript"
+mtime"2010-07-26T02:36:18+07:00"lengthi>"digest"%1249918b71b46db05e9bf12c6e8eee6d"source">/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Italic/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({"MathJax_SansSerif-italic":{}});MathJax.Ajax.loadComplete(',0,'imgDir+"/SansSerif/Italic"+',0,'imgPacked+"/Main.js");']
+]);
+
+"dependency_digest"%534dc69991d6398cdaa079d30e8546bc"required_paths["Y$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Italic/Main.js"dependency_paths[{"	path"Y$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/SansSerif/Italic/Main.js"
+mtime"2010-07-26T02:36:18+07:00"digest"%c749b40947130c6cdb91c6c947caf269"_version"%aa7d0db7619379e13b08335dee027df2

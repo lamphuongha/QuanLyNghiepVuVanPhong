@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989027.923:@expires_in0:@value"9{"
+class"ProcessedAsset"logical_path"$MathJax/jax/input/TeX/config.js"pathname"A$root/app/assets/javascripts/MathJax/jax/input/TeX/config.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÆ"digest"%46b3c7e87c56ff1e03a81b6da6401e04"source"Æ/*
+ *  ../SourceForge/trunk/mathjax/jax/input/TeX/config.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.InputJax','.TeX','=',0,'({name:"TeX",version:"1.0",directory:',0,'.directory+"/','TeX",extensionDir:',0,'.extensionDir+"/TeX",require:[MathJax.ElementJax',6,'mml/jax.js"],config:{TagSide:"right",TagIndent:"0.8em",MultLineWidth:"85%"}});',0,1,'.Register("math/tex");',0,1,'.loadComplete("config.js");']
+]);
+
+"dependency_digest"%08ece58c851f68fa86cacda40374562c"required_paths["A$root/app/assets/javascripts/MathJax/jax/input/TeX/config.js"dependency_paths[{"	path"A$root/app/assets/javascripts/MathJax/jax/input/TeX/config.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%3d3781375d6222f8a6c033b661c4d9da"_version"%aa7d0db7619379e13b08335dee027df2

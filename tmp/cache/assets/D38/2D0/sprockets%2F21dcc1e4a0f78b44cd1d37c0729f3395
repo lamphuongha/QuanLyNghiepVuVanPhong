@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989044.37:@expires_in0:@value"ê{"
+class"ProcessedAsset"logical_path"AMathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Bold/Main.js"pathname"^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Bold/Main.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi"digest"%875efebf8114febc90c368ea619075b7"source"/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Bold/Main.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["','MathJax_SansSerif','-bold"]={directory:"','SansSerif/Bold','",family:"',2,'",weight:"bold",testString:"MathJax SansSerif",Ranges:[[0,127,"BasicLatin"],[128,65535,"Other"],[768,879,"CombDiacritMarks"]]};',0,'initFont("',2,'-bold");MathJax.Ajax.loadComplete(',0,'fontDir+"/',4,'/Main.js");']
+]);
+
+"dependency_digest"%0b0a5f09ea2aa28ce363164770927897"required_paths["^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Bold/Main.js"dependency_paths[{"	path"^$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/SansSerif/Bold/Main.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%d95058dfb0d340c48a1239441021c0e0"_version"%aa7d0db7619379e13b08335dee027df2

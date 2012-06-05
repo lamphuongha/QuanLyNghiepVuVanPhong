@@ -1,25 +1,29 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 65%; height: 60%; top: 10%; left: 15%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 65%; height: 60%; top: 15%; left: 15%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), users_path %>  
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
   <div id="user_nav">
     <% if current_user %>
-      Logged in as <%= current_user.email %>.
-      <%= link_to "Log out", logout_path %>
+      Xin chào <%= current_user.email %>.
+      <%= link_to "Đăng xuất", logout_path,:style => "color:#000;" %>
     <% else %>
-      <%= link_to "Sign up", signup_path %> or
-      <%= link_to "log in", login_path %>
+      <%= link_to "Quay về trang chủ", root_url,:style => "color:#000;" %> &nbsp;&nbsp;hay&nbsp;&nbsp;  
+      <%= link_to "Đăng nhập", login_path,:style => "color:#000;" %>
     <% end %>
   </div>
 <% flash.each do |name, msg| %>
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
 <% end %>
-<h1>Sign Up</h1>
-
+<h1>Đăng ký</h1>
+<fieldset style="width: 70%">
 <%= form_for @user do |f| %>
+<table>
+  <tr>
+    <td colspan="3">
   <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
+      <div class="error_messages">
+      <h3>Nội dung nhập không hợp lệ</h3>
       <ul>
         <% for message in @user.errors.full_messages %>
           <li><%= message %></li>
@@ -27,26 +31,35 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="field">
-    <%= f.label 'Giảng viên:' %>
-    <td><%= collection_select(:user, :giangvien_id, Giangvien.all, :id, :HoTenGV) %></td>
-  </div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="5">
+      <%=image_tag'signup.png',:style=>'height:10em;width:10em;'%>
+    </td>
+    <td><%= f.label 'Email' %></td>
+    <td><%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td><%= f.label 'Mật khẩu' %></td>
+    <td><%= f.password_field :password %></td>
+  </tr>
+  <tr>
+    <td><%= f.label 'Xác nhận mật khẩu' %></td>
+    <td><%= f.password_field :password_confirmation %></td>
+  </tr>
+  <tr>
+    <td><%= f.label 'Họ tên giảng viên:' %></td>
+    <td><%= collection_select(:user, :giangvien_id, Giangvien.all, :id, :HoTenGV,:include_blank=> true)  %></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <div class="actions"><%= f.submit 'Đăng ký' %></div>
+    </td>
+  </tr>
 
-  <div class="actions"><%= f.submit %></div>
-<% end %>
-  
-  
+ </table> 
+  <% end %>
+</fieldset>  
 </div>
 <div class="lock-screen" id="lock" style="display:block"></div> 

@@ -1,0 +1,36 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989054.384:@expires_in0:@value"æ{"
+class"ProcessedAsset"logical_path"VMathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"pathname"s$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:44+07:00"lengthi«"digest"%75d7ecfc5a6778ae9d7c944a6bc59557"source"«/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js
+ *
+ *  Copyright (c) 2009-2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+MathJax.Hub.Insert(
+  MathJax.OutputJax['HTML-CSS'].FONTDATA.FONTS['STIXGeneral-italic'],
+  {
+    0x20A3: [653,0,611,8,645],         // FRENCH FRANC SIGN
+    0x20A4: [670,8,500,10,517],        // LIRA SIGN
+    0x20A7: [653,13,1149,0,1126],      // PESETA SIGN
+    0x20AC: [664,12,500,16,538]        // EURO SIGN
+  }
+);
+
+MathJax.Ajax.loadComplete(MathJax.OutputJax["HTML-CSS"].fontDir + "/General/Italic/CurrencySymbols.js");
+"dependency_digest"%277c1faca25358e9b01f01d12e2e8b5d"required_paths["s$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"dependency_paths[{"	path"s$root/app/assets/javascripts/MathJax/unpacked/jax/output/HTML-CSS/fonts/STIX/General/Italic/CurrencySymbols.js"
+mtime"2010-08-10T15:06:44+07:00"digest"%9c0a2b1d72f5800676a463fa5b266efa"_version"%aa7d0db7619379e13b08335dee027df2

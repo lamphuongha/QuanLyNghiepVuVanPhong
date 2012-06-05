@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1338684333.315:@expires_in0:@value"{"
+class"StaticAsset"logical_path"training_icon.gif"pathname".$root/app/assets/images/training_icon.gif"content_type"image/gif"
+mtime"2012-06-03T07:45:02+07:00"lengthi"digest"%dc2ae96bac82913c4defe0afe4f9a4b0"_version"%aa7d0db7619379e13b08335dee027df2

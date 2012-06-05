@@ -1,0 +1,24 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.686:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path".tiny_mce/plugins/emotions/langs/en_dlg.js"pathname"K$root/app/assets/javascripts/tiny_mce/plugins/emotions/langs/en_dlg.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi‚"digest"%c6ebcc7a34f99246dc953b9968172a54"source"‚tinyMCE.addI18n('en.emotions_dlg',{
+title:"Insert emotion",
+desc:"Emotions",
+cool:"Cool",
+cry:"Cry",
+embarassed:"Embarassed",
+foot_in_mouth:"Foot in mouth",
+frown:"Frown",
+innocent:"Innocent",
+kiss:"Kiss",
+laughing:"Laughing",
+money_mouth:"Money mouth",
+sealed:"Sealed",
+smile:"Smile",
+surprised:"Surprised",
+tongue_out:"Tongue out",
+undecided:"Undecided",
+wink:"Wink",
+yell:"Yell"
+});
+"dependency_digest"%06965f08a0c4aa1892c272fc47dd5c58"required_paths["K$root/app/assets/javascripts/tiny_mce/plugins/emotions/langs/en_dlg.js"dependency_paths[{"	path"K$root/app/assets/javascripts/tiny_mce/plugins/emotions/langs/en_dlg.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%f91b24fe1ad722475f40b3aa39461569"_version"%aa7d0db7619379e13b08335dee027df2

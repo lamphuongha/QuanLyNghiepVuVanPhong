@@ -11,7 +11,17 @@ if defined?(Bundler)
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
-
+#require "smtp_tls"
+#ActionMailer::Base.raise_delivery_errors = false
+#ActionMailer::Base.delivery_method = :smtp
+#ActionMailer::Base.smtp_settings = {
+#:address => "smtp.gmail.com",
+#:port => 587,
+#:domain => 'gmail.com',
+#:user_name => "bangtamha@gmail.com",
+#:password => "bangtamha011090",
+#:authentication => :plain
+#}
 module QuanLyCongVan
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

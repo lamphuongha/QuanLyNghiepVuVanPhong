@@ -1,0 +1,26 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.634:@expires_in0:@value"ž{"
+class"ProcessedAsset"logical_path"-tiny_mce/plugins/emotions/js/emotions.js"pathname"J$root/app/assets/javascripts/tiny_mce/plugins/emotions/js/emotions.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi"digest"%8070fde8923b42cc9b493e4beadbe1c8"source"tinyMCEPopup.requireLangPack();
+
+var EmotionsDialog = {
+	init : function(ed) {
+		tinyMCEPopup.resizeToInnerSize();
+	},
+
+	insert : function(file, title) {
+		var ed = tinyMCEPopup.editor, dom = ed.dom;
+
+		tinyMCEPopup.execCommand('mceInsertContent', false, dom.createHTML('img', {
+			src : tinyMCEPopup.getWindowArg('plugin_url') + '/img/' + file,
+			alt : ed.getLang(title),
+			title : ed.getLang(title),
+			border : 0
+		}));
+
+		tinyMCEPopup.close();
+	}
+};
+
+tinyMCEPopup.onInit.add(EmotionsDialog.init, EmotionsDialog);
+"dependency_digest"%4694cae2917c2120282fb344f62b9725"required_paths["J$root/app/assets/javascripts/tiny_mce/plugins/emotions/js/emotions.js"dependency_paths[{"	path"J$root/app/assets/javascripts/tiny_mce/plugins/emotions/js/emotions.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%fa593a06dbfec2ac263843a0c15cb497"_version"%aa7d0db7619379e13b08335dee027df2

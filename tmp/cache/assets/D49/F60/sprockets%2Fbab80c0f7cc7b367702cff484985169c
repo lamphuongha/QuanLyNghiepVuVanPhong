@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989035.113:@expires_in0:@value"Ž{"
+class"ProcessedAsset"logical_path"MMathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/LatinExtendedD.js"pathname"j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/LatinExtendedD.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiw"digest"%daab61297b6e8dc328ac0afa8fbd36bd"source"w/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Regular/LatinExtendedD.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.STIXGeneral,{42791:[683,233,481,9,427]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Regular/LatinExtendedD.js");']
+]);
+
+"dependency_digest"%1022d32d60af4b38551311441973b51a"required_paths["j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/LatinExtendedD.js"dependency_paths[{"	path"j$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Regular/LatinExtendedD.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%b13f2e94e6fb83443ddb1a980724d040"_version"%aa7d0db7619379e13b08335dee027df2

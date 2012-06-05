@@ -1,0 +1,57 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508056.032:@expires_in0:@value""{"
+class"ProcessedAsset"logical_path"slideshow.css"pathname"/$root/app/assets/stylesheets/slideshow.css"content_type"text/css"
+mtime"2012-02-21T22:47:23+07:00"lengthi"digest"%37e79341b24c7c124d04b6d0751f3b5f"source"@charset "utf-8";
+/* CSS Document */
+
+.slideshow1 {
+    position:relative;
+    height:220px;
+	z-index:10;
+	overflow:hidden;
+}
+
+.slideshow1 img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:8;
+    opacity:1.0;
+    border:none;
+    display:block;
+	width:610px;
+	height:220px;
+	
+}
+
+.slideshow1 img.active {
+    z-index:10; 
+}
+
+.slideshow1 img.deactive {
+    z-index:9;
+}
+
+.slideshow1 .description{
+	position:absolute;
+	bottom:0;
+	width:611px;
+	left:-1px;
+	padding:10px 0;
+	text-align:center;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	background-color:#003333;
+	color:#fff;
+	z-index:11;
+	font-family:Tahoma;
+	height: 8px;
+}
+
+.slideshow1 .description a{
+	margin:0 10px;
+	color:#fff;	
+	text-decoration:none;
+	font-size:13px; font-weight:bold; display:block;
+}
+"dependency_digest"%73195a92cb25389604cf7f44c89d23ee"required_paths["/$root/app/assets/stylesheets/slideshow.css"dependency_paths[{"	path"/$root/app/assets/stylesheets/slideshow.css"
+mtime"2012-02-21T22:47:23+07:00"digest"%86c98caf88c15178ec31d665f3784809"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,62 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989072.552:@expires_in0:@value"ø{"
+class"ProcessedAsset"logical_path"8tiny_mce/plugins/searchreplace/editor_plugin_src.js"pathname"U$root/app/assets/javascripts/tiny_mce/plugins/searchreplace/editor_plugin_src.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi5"digest"%ee578137b91b759ddaec434c92e8b14b"source"5/**
+ * editor_plugin_src.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+(function() {
+	tinymce.create('tinymce.plugins.SearchReplacePlugin', {
+		init : function(ed, url) {
+			function open(m) {
+				ed.windowManager.open({
+					file : url + '/searchreplace.htm',
+					width : 420 + parseInt(ed.getLang('searchreplace.delta_width', 0)),
+					height : 170 + parseInt(ed.getLang('searchreplace.delta_height', 0)),
+					inline : 1,
+					auto_focus : 0
+				}, {
+					mode : m,
+					search_string : ed.selection.getContent({format : 'text'}),
+					plugin_url : url
+				});
+			};
+
+			// Register commands
+			ed.addCommand('mceSearch', function() {
+				open('search');
+			});
+
+			ed.addCommand('mceReplace', function() {
+				open('replace');
+			});
+
+			// Register buttons
+			ed.addButton('search', {title : 'searchreplace.search_desc', cmd : 'mceSearch'});
+			ed.addButton('replace', {title : 'searchreplace.replace_desc', cmd : 'mceReplace'});
+
+			ed.addShortcut('ctrl+f', 'searchreplace.search_desc', 'mceSearch');
+		},
+
+		getInfo : function() {
+			return {
+				longname : 'Search/Replace',
+				author : 'Moxiecode Systems AB',
+				authorurl : 'http://tinymce.moxiecode.com',
+				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/searchreplace',
+				version : tinymce.majorVersion + "." + tinymce.minorVersion
+			};
+		}
+	});
+
+	// Register plugin
+	tinymce.PluginManager.add('searchreplace', tinymce.plugins.SearchReplacePlugin);
+})();
+"dependency_digest"%d57cec32afcb5c4f24a0bf6747dfa766"required_paths["U$root/app/assets/javascripts/tiny_mce/plugins/searchreplace/editor_plugin_src.js"dependency_paths[{"	path"U$root/app/assets/javascripts/tiny_mce/plugins/searchreplace/editor_plugin_src.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%d9bca56a718f9bcb881e5d6e91136f36"_version"%aa7d0db7619379e13b08335dee027df2

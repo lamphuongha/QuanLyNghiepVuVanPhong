@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989069.876:@expires_in0:@value"Ù{"
+class"ProcessedAsset"logical_path"*tiny_mce/plugins/example/js/dialog.js"pathname"G$root/app/assets/javascripts/tiny_mce/plugins/example/js/dialog.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthiN"digest"%962755b395a6dc3e23690cd880e4e585"source"NtinyMCEPopup.requireLangPack();
+
+var ExampleDialog = {
+	init : function() {
+		var f = document.forms[0];
+
+		// Get the selected contents as text and place it in the input
+		f.someval.value = tinyMCEPopup.editor.selection.getContent({format : 'text'});
+		f.somearg.value = tinyMCEPopup.getWindowArg('some_custom_arg');
+	},
+
+	insert : function() {
+		// Insert the contents from the input into the document
+		tinyMCEPopup.editor.execCommand('mceInsertContent', false, document.forms[0].someval.value);
+		tinyMCEPopup.close();
+	}
+};
+
+tinyMCEPopup.onInit.add(ExampleDialog.init, ExampleDialog);
+"dependency_digest"%2f8966e4a28deff1b3a86c5d1b2f9776"required_paths["G$root/app/assets/javascripts/tiny_mce/plugins/example/js/dialog.js"dependency_paths[{"	path"G$root/app/assets/javascripts/tiny_mce/plugins/example/js/dialog.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%7801169baa243afa69c534253374e329"_version"%aa7d0db7619379e13b08335dee027df2

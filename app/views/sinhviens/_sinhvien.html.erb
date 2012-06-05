@@ -1,0 +1,46 @@
+     <div id="shadow" class="shadow" >
+       <div align="left">
+      Kết quả: <%= @countds %> sinh viên
+      </div>              
+      <!--<div style="overflow:auto;height:400px;background-color:white;" >--> 
+      <table border ="1" width ="90%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+      <tr>
+        <th>STT</th>
+        <th class ="menu-header">Mã SV</th>
+        <th class ="menu-header">Họ tên</th>
+        <th class ="menu-header">Ngày sinh</th>
+        <th class ="menu-header">Giới tính</th>
+        <th class ="menu-header">Lớp</th>
+        <th class ="menu-header">Trình độ đào tạo</th>
+        <th class ="menu-header">Chức năng</th>
+       
+      </tr>
+      <% i=0%>
+      <% @sinhviens.each do |sinhvien| %>
+      <tr>
+        <th><%= i=i+1 %></th>
+        <td ><%= sinhvien.MSSV %></td>
+        <td><%= sinhvien.HoTenSV %></td>
+        <td><%= sinhvien.NgaySinh %></td>
+        <td><%= sinhvien.GioiTinh %></td>
+        <td><%= sinhvien.lop.TenLop %></td>
+        <td><%= sinhvien.trinhdodaotao.TenTDDT %></td>
+        <td>
+          <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), sinhvien , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_sinhvien_path(sinhvien) , :style=>"color:#000"%> | 
+          <%= link_to image_tag('delete_1.png'), sinhvien, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+          
+        </td> 
+      </tr>
+    <% end %>
+    </table>
+    <br />
+    <div align="left">
+        Hiển thị: <%= i %> / <%= @countds %>
+        </div>
+      <br />
+    <div class ="menu-header" style="text-align:center" >
+      <%= will_paginate @giangviens %>
+    <br />
+    </div>
+     </div>

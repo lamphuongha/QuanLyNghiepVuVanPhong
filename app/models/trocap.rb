@@ -5,9 +5,9 @@ class Trocap < ActiveRecord::Base
   has_many :sinhviens, :through => :chitiettrocaps
   
   
-  validates_presence_of :MaTroCap, :TenTroCap, :loaitrocap_id, :congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaTroCap
-  
+  validates_presence_of :MaTroCap, :TenTroCap, :loaitrocap_id, :congvan_id, :HocKy, :NamHoc, :message => "không được trống"
+  validates_uniqueness_of :MaTroCap, :message => "đã tồn tại"
+
   cattr_reader :per_page
   @@per_page = 20
   def self.search(search)  

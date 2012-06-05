@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989024.385:@expires_in0:@value"R{"
+class"ProcessedAsset"logical_path";MathJax/jax/element/mml/optable/CombDiactForSymbols.js"pathname"X$root/app/assets/javascripts/MathJax/jax/element/mml/optable/CombDiactForSymbols.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiƒ"digest"%2a04742a883d32966f0ee6c04ee1ba7b"source"ƒ/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/CombDiactForSymbols.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{postfix:{"\\u20DB":c.ACCENT}}});MathJax.Ajax.loadComplete(a.optableDir+"/CombDiactForSymbols.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%cab57652bc87688a1c36a9944e409852"required_paths["X$root/app/assets/javascripts/MathJax/jax/element/mml/optable/CombDiactForSymbols.js"dependency_paths[{"	path"X$root/app/assets/javascripts/MathJax/jax/element/mml/optable/CombDiactForSymbols.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%5d12557dcf740b293174864bd5436e87"_version"%aa7d0db7619379e13b08335dee027df2

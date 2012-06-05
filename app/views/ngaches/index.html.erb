@@ -1,11 +1,16 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 75%; height: 65%; top: 10%; left: 10%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" align="right">
-    <%= link_to image_tag('closex.jpg'),'/giangviens/new'%>
+     <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
      
     <h1>Danh sách ngạch</h1>
-    <div id="shadow" class="shadow" >
-    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
+   <br />
+    <div align="left">
+     
+   <%= link_to image_tag('new.png',:alt=>"Thêm ngạch"), new_ngach_path %> Thêm ngạch
+     
+   </div>        
+    <table border ="1" width ="80%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
       <tr>
         <th> Mã Ngạch</th>
         <th>Tên Ngạch</th>
@@ -18,9 +23,9 @@
         <td><%= ngach.MaNgach %></td>
         <td><%= ngach.TenNgach%></td>
         <td>
-          <%= link_to 'Xem', ngach , :style=>"color:#000"%> | 
-          <%= link_to 'Sửa', edit_ngach_path(ngach) , :style=>"color:#000"%> | 
-          <%= link_to 'Xóa', ngach, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
+           <%= link_to image_tag('view.png',:style=>'height:2em;width:2em;'), ngach , :style=>"color:#000"%> | 
+          <%= link_to image_tag('edit.png'), edit_ngach_path(ngach) , :style=>"color:#000" %> | 
+          <%= link_to image_tag('delete_1.png'), ngach, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%>
           
         </td>
       </tr>

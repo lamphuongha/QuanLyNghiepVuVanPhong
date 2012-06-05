@@ -1,11 +1,12 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 60%; height: 60%; top: 20%; left: 20%;" align="center">   
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 60%; height: 60%; top: 15%; left: 18%;" align="center">   
 
 <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/sinhviens'%>
+         <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), sinhviens_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <div align="center">
   <h1><b>Chi tiết Sinh viên</b></h1>
-
+  <fieldset style="width: 70%">
   <table height="250" align ="center" >  
       <tr>
         <td colspan="2">
@@ -50,12 +51,13 @@
       </tr>
           <tr>
         <td colspan="2" align="center">
-          <%= link_to 'Sửa', edit_sinhvien_path(@sinhvien) ,:style=>"color:#000"%> | 
-          <%= link_to 'Thêm', new_sinhvien_path ,:style=>"color:#000"%>
+          <%= link_to image_tag('edit.png'), edit_sinhvien_path(@sinhvien) ,:style=>"color:#000"%> | 
+          <%= link_to image_tag('new.png'), new_sinhvien_path ,:style=>"color:#000"%>
         
         </td>
     </tr>
      </table>
+    </fieldset>
 </div> 
  </div>
 <div class="lock-screen" id="lock" style="display:block"></div>

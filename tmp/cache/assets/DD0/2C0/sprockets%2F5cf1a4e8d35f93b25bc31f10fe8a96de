@@ -1,0 +1,42 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508058.386:@expires_in0:@value"{"
+class"ProcessedAsset"logical_path"chong_save.js"pathname"/$root/app/assets/javascripts/chong_save.js"content_type"application/javascript"
+mtime"2011-10-12T01:12:22+07:00"lengthiÙ"digest"%b059273cbc14e99c6f603d795ef51006"source"Ù// JavaScript Document
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Function Disabled!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+//alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+//alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false;")
+
+// --> 
+;
+"dependency_digest"%41c57c5da3c8e75f3acabece4f141031"required_paths["/$root/app/assets/javascripts/chong_save.js"dependency_paths[{"	path"/$root/app/assets/javascripts/chong_save.js"
+mtime"2011-10-12T01:12:22+07:00"digest"%d820f03e51930b21af45c815b8dd32de"_version"%aa7d0db7619379e13b08335dee027df2

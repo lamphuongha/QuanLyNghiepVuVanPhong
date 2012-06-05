@@ -1,1 +1,0 @@
-insert into lops(MaLop,TenLop) values ('DCT',N'DCT1081');

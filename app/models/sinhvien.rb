@@ -2,6 +2,8 @@ class Sinhvien < ActiveRecord::Base
   belongs_to :lop
   belongs_to :trinhdodaotao
   has_one :thongtinthuctap
+  belongs_to :loaithuctap
+  #has_one :ttthuctap
   #has_and_belongs_to_many :loaibaoluus
   #has_and_belongs_to_many :loaibuocthoihocs
   #has_and_belongs_to_many :loaihocbongs
@@ -25,8 +27,9 @@ class Sinhvien < ActiveRecord::Base
   has_many :diemrenluyens, :through => :chitietdiemrenluyens
   #accepts_nested_attributes_for :chitietdiemrenluyens
   
- validates_presence_of :MSSV, :HoTenSV, :NgaySinh, :GioiTinh, :DiaChi, :lop_id,:trinhdodaotao_id
- validates_uniqueness_of :MSSV
+ validates_presence_of :MSSV, :HoTenSV, :NgaySinh, :GioiTinh, :DiaChi, :lop_id,:trinhdodaotao_id, :message => "không được trống"
+ validates_uniqueness_of :MSSV, :message => "đã tồn tại"
+ 
   cattr_reader :per_page
   @@per_page = 20
   
@@ -91,6 +94,53 @@ class Sinhvien < ActiveRecord::Base
                   :lop_id=>"#{slop_id}",
                   :trinhdodaotao_id=>"#{strinhdodaotao_id}",
                }])
+    
+  end
+  
+    def self.build_query_search_for_statistic(sMSSV,slop_id,strinhdodaotao_id)
+    term_portion=''
+    term_portion='(Mid(MSSV,3,2)= :MSSV) AND ' unless sMSSV.blank?
+    lop_id_portion = ' (lop_id=:lop_id) AND ' unless slop_id.blank?
+    trinhdodaotao_portion = ' (trinhdodaotao_id = :trinhdodaotao_id) AND ' unless strinhdodaotao_id.blank?
+    
+    search_str='%s %s %s ' % [term_portion, lop_id_portion, trinhdodaotao_portion]
+    search_str.strip!
+    search_str.gsub!(/^(AND +)+/,'')
+    search_str.gsub!(/( +AND)+$/,'')
+    return search_str
+  end
+  
+  def self.search_for_statistic(sMSSV,slop_id,strinhdodaotao_id)  
+    filter_str=build_query_search_for_statistic(sMSSV,slop_id,strinhdodaotao_id)
+    Sinhvien.includes(:lop,:trinhdodaotao).where([filter_str,
+                {:MSSV=>"#{sMSSV}",
+                  :lop_id=>"#{slop_id}",
+                  :trinhdodaotao_id=>"#{strinhdodaotao_id}",
+                }])
+    
+  end
+  
+      def self.build_query_search_for_statistic_sex(sMSSV,slop_id,strinhdodaotao_id,sGioiTinh)
+    term_portion=''
+    term_portion='(Mid(MSSV,3,2)= :MSSV) AND ' unless sMSSV.blank?
+    lop_id_portion = ' (lop_id=:lop_id) AND ' unless slop_id.blank?
+    trinhdodaotao_portion = ' (trinhdodaotao_id = :trinhdodaotao_id) AND ' unless strinhdodaotao_id.blank?
+    gioitinh_portion = ' (GioiTinh = :GioiTinh) ' unless sGioiTinh.blank?
+    search_str='%s %s %s %s ' % [term_portion, lop_id_portion, trinhdodaotao_portion,gioitinh_portion]
+    search_str.strip!
+    search_str.gsub!(/^(AND +)+/,'')
+    search_str.gsub!(/( +AND)+$/,'')
+    return search_str
+  end
+  
+  def self.search_for_statistic_sex(sMSSV,slop_id,strinhdodaotao_id,sGioiTinh)  
+    filter_str=build_query_search_for_statistic_sex(sMSSV,slop_id,strinhdodaotao_id,sGioiTinh)
+    Sinhvien.includes(:lop,:trinhdodaotao).where([filter_str,
+                {:MSSV=>"#{sMSSV}",
+                  :lop_id=>"#{slop_id}",
+                  :trinhdodaotao_id=>"#{strinhdodaotao_id}",
+                  :GioiTinh=>"#{sGioiTinh}"
+                }])
     
   end
       

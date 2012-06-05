@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989043.349:@expires_in0:@value"u{"
+class"ProcessedAsset"logical_path"IMathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LatinExtendedA.js"pathname"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LatinExtendedA.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthin"digest"%205d029e60314adc0de590e002c4fb5e"source"n/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LatinExtendedA.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Main,{305:[442,0,278,26,255]});MathJax.Ajax.loadComplete',1,'fontDir+"/Main/Regular/LatinExtendedA.js");']
+]);
+
+"dependency_digest"%86e99a514678178fdb14aa1e43a66808"required_paths["f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LatinExtendedA.js"dependency_paths[{"	path"f$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Main/Regular/LatinExtendedA.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%93be58e7103fb3135557d7b3d79ab4a1"_version"%aa7d0db7619379e13b08335dee027df2

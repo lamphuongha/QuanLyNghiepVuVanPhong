@@ -1,0 +1,41 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989049.271:@expires_in0:@value"ù{"
+class"ProcessedAsset"logical_path"4MathJax/unpacked/jax/input/MathML/entities/j.js"pathname"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/j.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiF"digest"%bf0c59b29874221267a0f23f2f3dac4c"source"F/*************************************************************
+ *
+ *  MathJax/jax/output/HTML-CSS/entities/j.js
+ *
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ */
+
+
+(function (MATHML) {
+  MathJax.Hub.Insert(MATHML.Parse.Entity,{
+    'Jcirc': '\u0134',
+    'Jcy': '\u0419',
+    'Jsercy': '\u0408',
+    'Jukcy': '\u0404',
+    'jcirc': '\u0135',
+    'jcy': '\u0439',
+    'jmath': '\u006A',
+    'jsercy': '\u0458',
+    'jukcy': '\u0454'
+  });
+
+  MathJax.Ajax.loadComplete(MATHML.entityDir+"/j.js");
+
+})(MathJax.InputJax.MathML);
+"dependency_digest"%ec102c10fbdcf15e48bba36bb2ce85e9"required_paths["Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/j.js"dependency_paths[{"	path"Q$root/app/assets/javascripts/MathJax/unpacked/jax/input/MathML/entities/j.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%d250d9fd35ba4b3fa73b6c33c78d4024"_version"%aa7d0db7619379e13b08335dee027df2

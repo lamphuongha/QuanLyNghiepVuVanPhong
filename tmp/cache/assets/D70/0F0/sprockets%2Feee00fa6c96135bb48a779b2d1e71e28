@@ -1,0 +1,58 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989072.175:@expires_in0:@value"â{"
+class"ProcessedAsset"logical_path"2tiny_mce/plugins/preview/editor_plugin_src.js"pathname"O$root/app/assets/javascripts/tiny_mce/plugins/preview/editor_plugin_src.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi7"digest"%6a32bd8a08e5f4285b058b5629088c6d"source"7/**
+ * editor_plugin_src.js
+ *
+ * Copyright 2009, Moxiecode Systems AB
+ * Released under LGPL License.
+ *
+ * License: http://tinymce.moxiecode.com/license
+ * Contributing: http://tinymce.moxiecode.com/contributing
+ */
+
+
+(function() {
+	tinymce.create('tinymce.plugins.Preview', {
+		init : function(ed, url) {
+			var t = this, css = tinymce.explode(ed.settings.content_css);
+
+			t.editor = ed;
+
+			// Force absolute CSS urls	
+			tinymce.each(css, function(u, k) {
+				css[k] = ed.documentBaseURI.toAbsolute(u);
+			});
+
+			ed.addCommand('mcePreview', function() {
+				ed.windowManager.open({
+					file : ed.getParam("plugin_preview_pageurl", url + "/preview.html"),
+					width : parseInt(ed.getParam("plugin_preview_width", "550")),
+					height : parseInt(ed.getParam("plugin_preview_height", "600")),
+					resizable : "yes",
+					scrollbars : "yes",
+					popup_css : css ? css.join(',') : ed.baseURI.toAbsolute("themes/" + ed.settings.theme + "/skins/" + ed.settings.skin + "/content.css"),
+					inline : ed.getParam("plugin_preview_inline", 1)
+				}, {
+					base : ed.documentBaseURI.getURI()
+				});
+			});
+
+			ed.addButton('preview', {title : 'preview.preview_desc', cmd : 'mcePreview'});
+		},
+
+		getInfo : function() {
+			return {
+				longname : 'Preview',
+				author : 'Moxiecode Systems AB',
+				authorurl : 'http://tinymce.moxiecode.com',
+				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/preview',
+				version : tinymce.majorVersion + "." + tinymce.minorVersion
+			};
+		}
+	});
+
+	// Register plugin
+	tinymce.PluginManager.add('preview', tinymce.plugins.Preview);
+})();
+"dependency_digest"%99f614135158f52ed6c58b3048e663fc"required_paths["O$root/app/assets/javascripts/tiny_mce/plugins/preview/editor_plugin_src.js"dependency_paths[{"	path"O$root/app/assets/javascripts/tiny_mce/plugins/preview/editor_plugin_src.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%481f9a584957bdaf9f244bd92a5c4471"_version"%aa7d0db7619379e13b08335dee027df2

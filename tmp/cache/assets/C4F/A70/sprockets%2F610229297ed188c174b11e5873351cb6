@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989009.517:@expires_in0:@value"­	{"
+class"ProcessedAsset"logical_path"%MathJax/extensions/jsMath2jax.js"pathname"B$root/app/assets/javascripts/MathJax/extensions/jsMath2jax.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi6"digest"%5221cc6f1eb3c4782342d653196ad979"source"6/*
+ *  ../SourceForge/trunk/mathjax/extensions/jsMath2jax.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Extension.jsMath2jax','={version:"1.0",config:{element:null,','preview',':"TeX"},','PreProcess',':function(','b){if(!','this.configured','){','MathJax.Hub.','Insert(this','.config,(',9,'config.jsMath2jax||{}));if(','this.config.','Augment','){',9,10,',',14,15,')}','if(typeof(',14,'previewTeX',')!=="undefined"&&!',14,25,'){',14,2,'="none"}this.previewClass=',9,'config.preRemoveClass',';',7,'=true}',23,'b)==="string"){b=document.getElementById(b)}if(!b){b=',14,'element||document.body}var c','=b.getElementsByTagName("','span"),a;for(a=c','.length-1;a>=0;a--){if(String(','c','[a].className).match(/\\bmath\\b/)){this.ConvertMath(','c[a],"")}}var d',42,'div");for(a=d',44,'d',46,'d[a],"; mode=display")}}},ConvertMath',5,'c,d){var b=c','.parentNode',',a=this.','createMathTag','(d,c.innerHTML);if(c.nextSibling){b','.insertBefore(','a,c.nextSibling)}else{b.appendChild(a)}if(',14,2,'!=="none"){this.','createPreview','(c)}b.removeChild(c)},',65,5,'a){var b;if(',14,2,'==="TeX"){b=[this.filterTeX(a.innerHTML)]}else{if(',14,2,' instanceof Array){b=',14,2,'}}if(b){b=MathJax.HTML.Element("span",{className:',9,34,'},b);a',56,60,'b,a)}},',58,5,'c,b){var a=document.createElement("script");a.type="math/tex"+c;if(',9,'Browser.isMSIE){a.text=b}else{a.appendChild(document.createTextNode(b))}return a},filterTeX',5,'a){return a}};',9,'Register.PreProcessor(["',4,'",',0,']);MathJax.Ajax.loadComplete("[MathJax]/extensions/jsMath2jax.js");']
+]);
+
+"dependency_digest"%275f1ae6c00243224874963d6fa029fc"required_paths["B$root/app/assets/javascripts/MathJax/extensions/jsMath2jax.js"dependency_paths[{"	path"B$root/app/assets/javascripts/MathJax/extensions/jsMath2jax.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%992b111dc080207cafa6806da1590d4c"_version"%aa7d0db7619379e13b08335dee027df2

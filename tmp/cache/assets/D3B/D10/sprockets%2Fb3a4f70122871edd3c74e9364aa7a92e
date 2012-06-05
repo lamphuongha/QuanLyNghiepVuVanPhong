@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989024.26:@expires_in0:@value"9{"
+class"ProcessedAsset"logical_path"2MathJax/jax/element/mml/optable/BasicLatin.js"pathname"O$root/app/assets/javascripts/MathJax/jax/element/mml/optable/BasicLatin.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiŽ"digest"%8392e972314005342b3be1a90286b9cf"source"Ž/*
+ *  ../SourceForge/trunk/mathjax/jax/element/mml/optable/BasicLatin.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){var c=a.mo.OPTYPES;var b=a.TEXCLASS;MathJax.Hub.Insert(a.mo.prototype,{OPTABLE:{postfix:{"!!":[1,0,b.BIN],"\'":c.ACCENT,"++":[0,0,b.BIN],"--":[0,0,b.BIN],"..":[0,0,b.BIN],"...":c.ORD},infix:{"!=":c.BIN4,"&&":c.BIN4,"**":[1,1,b.BIN],"*=":c.BIN4,"+=":c.BIN4,"-=":c.BIN4,"->":c.BIN4,"//":c.BIN4,"/=":c.BIN4,":=":c.BIN4,"<=":c.BIN4,"<>":[1,1,b.BIN],"==":c.BIN4,">=":c.BIN4,"@":c.ORD11,"||":c.BIN3}}});MathJax.Ajax.loadComplete(a.optableDir+"/BasicLatin.js")})(MathJax.ElementJax.mml);']
+]);
+
+"dependency_digest"%8869beecd3056ba9c5710c1dd5473027"required_paths["O$root/app/assets/javascripts/MathJax/jax/element/mml/optable/BasicLatin.js"dependency_paths[{"	path"O$root/app/assets/javascripts/MathJax/jax/element/mml/optable/BasicLatin.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%334b70e8b50ef268d3f145fa32388217"_version"%aa7d0db7619379e13b08335dee027df2

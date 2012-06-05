@@ -1,0 +1,38 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989009.796:@expires_in0:@value"ë{"
+class"ProcessedAsset"logical_path",MathJax/fonts/HTML-CSS/TeX/imagedata.js"pathname"I$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/imagedata.js"content_type"application/javascript"
+mtime"2010-08-02T23:58:28+07:00"lengthiX"digest"%ce706487f1f3f5e39df7efe73f7b1eef"source"X/*
+ *  imagedata.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+(function (HTMLCSS) {
+
+  //
+  //  Since this is the new font data, reset the 
+  //  flag and the imgPacked values
+  //
+  HTMLCSS.config.useOldImageData = false;
+  HTMLCSS.imgPacked = (MathJax.isPacked ? "" : "/unpacked");
+
+  //
+  //  Load the actual image data file
+  //  before loadComplete is called
+  //
+  MathJax.Callback.Queue(
+    ["Require",MathJax.Ajax,HTMLCSS.imgDir+HTMLCSS.imgPacked+"/imagedata.js"],
+    ["loadComplete",MathJax.Ajax,HTMLCSS.webfontDir+"/imagedata.js"]
+  );
+
+})(MathJax.OutputJax["HTML-CSS"]);
+"dependency_digest"%00de0fb03e78f4f7c0db4b8fd6ab0af1"required_paths["I$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/imagedata.js"dependency_paths[{"	path"I$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/imagedata.js"
+mtime"2010-08-02T23:58:28+07:00"digest"%e702925435aea45decb78c06100c460d"_version"%aa7d0db7619379e13b08335dee027df2

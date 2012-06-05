@@ -5,10 +5,11 @@
 
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 90%; height: 80%; top: 8%; left: 5%; overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/noitrus'%>
+        <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), noitrus_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
 <h1>Tìm kiếm nâng cao</h1>
-    <%= form_tag '/noitrus/search', :method => 'get' do %>  
+    <%= form_tag '/noitrus/search', :remote => true, :method => 'get' do %> 
     <fieldset>
     <table width ="100%">
       <tr>
@@ -36,37 +37,12 @@
 <%end%>
     
     <h1>Danh sách nội trú</h1>
-    <div id="shadow" class="shadow" >
-    <table border ="1" width ="100%" align="center" cellspacing ="0" class="alternative" bgcolor ="white" >
-     <tr>
-    <th>STT</th>
-    <th>Mã danh sách</th>
-    <th>Tên danh sách</th>
-    <th>Công văn</th>
-    <th>Học kỳ</th>
-    <th>Năm học</th>
-    <th>Chức năng</th>
-
-  </tr>
-
-<% @noitrus.each do |noitru| %>
-  <tr>
-    <th><%= noitru.id %></th>
-    <td><%= noitru.MaNoiTru %></td>
-    <td><%= noitru.TenNoiTru %></td>
-    <td><%= noitru.congvan.SoCV %></td>
-    <td><%= noitru.HocKy %></td>
-    <td><%= noitru.NamHoc %></td>
-    <td><%= link_to 'Xem', noitru , :style=>"color:#000"%> | 
-    <%= link_to 'Sửa', edit_noitru_path(noitru) , :style=>"color:#000"%> | 
-    <%= link_to 'Xóa', noitru, :confirm => 'Bạn có chắc muốn xóa?', :method => :delete , :style=>"color:#000"%></td>
-  </tr>
-<% end %>
-      
-    </table>
-    </div>
-    <br />
-      <%= will_paginate @baoluus %>
-    <br />
+     <div id ="noitrus">
+        <%= render :partial => 'noitru' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>

@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989068.123:@expires_in0:@value"â{"
+class"ProcessedAsset"logical_path"+tiny_mce/plugins/advhr/langs/en_dlg.js"pathname"H$root/app/assets/javascripts/tiny_mce/plugins/advhr/langs/en_dlg.js"content_type"application/javascript"
+mtime"2010-09-29T20:38:00+07:00"lengthi\"digest"%ef672c3ae1f4c52250d9fbafdc0a0778"source"\tinyMCE.addI18n('en.advhr_dlg',{
+width:"Width",
+size:"Height",
+noshade:"No shadow"
+});
+"dependency_digest"%241ad4e150a5514ce8cada7290bf61d2"required_paths["H$root/app/assets/javascripts/tiny_mce/plugins/advhr/langs/en_dlg.js"dependency_paths[{"	path"H$root/app/assets/javascripts/tiny_mce/plugins/advhr/langs/en_dlg.js"
+mtime"2010-09-29T20:38:00+07:00"digest"%39242097d655494dd3ed482d021b2296"_version"%aa7d0db7619379e13b08335dee027df2

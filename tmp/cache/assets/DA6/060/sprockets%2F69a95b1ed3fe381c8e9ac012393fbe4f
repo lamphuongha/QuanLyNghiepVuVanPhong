@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989032.911:@expires_in0:@value"i{"
+class"ProcessedAsset"logical_path"@MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/ij.js"pathname"]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/ij.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi†"digest"%c8b87e9b8d579eb3c82d0e7475c14168"source"†/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/Italic/ij.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-italic"],{120484:[441,11,278,47,235],120485:[441,207,278,-124,246]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/Italic/ij.js");']
+]);
+
+"dependency_digest"%7a64f4f0abc175477e9f291f168b879f"required_paths["]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/ij.js"dependency_paths[{"	path"]$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/Italic/ij.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%5ba365f3e47e679b5303ba804ff322f5"_version"%aa7d0db7619379e13b08335dee027df2

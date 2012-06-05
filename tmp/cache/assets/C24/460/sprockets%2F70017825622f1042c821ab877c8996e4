@@ -1,0 +1,50 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337839604.844:@expires_in0:@value"û{"
+class"ProcessedAsset"logical_path"export_question.css"pathname"5$root/app/assets/stylesheets/export_question.css"content_type"text/css"
+mtime"2012-05-24T13:06:39+07:00"lengthiÆ"digest"%e1c76f74c110e624fa93a86abc80309d"source"Æul.export_answers {
+    list-style: upper-alpha;
+}
+
+.export_questions_inner ol>li {
+    margin-bottom: 1em;
+}
+.logo{
+    top: 3em;
+    
+    position: absolute;
+}
+.leftheader{
+    top: 2em;
+    margin-right: 1em;
+    margin-left: 5em;
+    position: absolute;
+}
+.middleheader{
+    margin-top: 1em;
+    text-align: center;
+    position: absolute;
+}
+.rightheader{
+    margin-top: 5em;
+    position: absolute;
+    right: 15em;
+}
+.bodyex{
+    width: 90%;
+    margin-left: 1em;
+    position: absolute;
+    margin-top: 10em;
+    text-align: center;
+     
+}
+.footerex{
+    text-align: right;
+}
+.page{
+    font-size: 13px;
+    font-family:"Times New Roman";
+    width: 672px;
+    height: 950px;
+    position:relative;
+}
+"dependency_digest"%918507635d27fca5004bb4eb1fd9c009"required_paths["5$root/app/assets/stylesheets/export_question.css"dependency_paths[{"	path"5$root/app/assets/stylesheets/export_question.css"
+mtime"2012-05-24T13:06:39+07:00"digest"%f245d05c71508a2eff1085bafb225da1"_version"%aa7d0db7619379e13b08335dee027df2

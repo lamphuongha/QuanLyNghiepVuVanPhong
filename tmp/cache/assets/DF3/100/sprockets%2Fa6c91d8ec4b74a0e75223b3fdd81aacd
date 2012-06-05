@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989016.289:@expires_in0:@value"¬{"
+class"ProcessedAsset"logical_path"AMathJax/fonts/HTML-CSS/TeX/png/Main/Italic/LatinExtendedA.js"pathname"^$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Italic/LatinExtendedA.js"content_type"application/javascript"
+mtime"2010-07-26T02:35:32+07:00"lengthiÅ"digest"%9b63f0d2fada94f47e50fae3530e4915"source"Å/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/Main/Italic/LatinExtendedA.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({"MathJax_Main-italic":{305:[[3,3,0],[3,4,0],[4,4,0],[4,5,0],[5,6,0],[6,7,0],[7,9,0],[8,10,0],[10,12,0],[12,15,0],[14,17,0],[16,22,1],[19,26,1],[23,30,1]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/Main/Italic"+',0,'imgPacked+"/LatinExtendedA.js");']
+]);
+
+"dependency_digest"%d25f7a9eeaf95644363c4dc6c4e4659f"required_paths["^$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Italic/LatinExtendedA.js"dependency_paths[{"	path"^$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/Main/Italic/LatinExtendedA.js"
+mtime"2010-07-26T02:35:32+07:00"digest"%d8e4fbe2d9a11990b48a3d867962022e"_version"%aa7d0db7619379e13b08335dee027df2

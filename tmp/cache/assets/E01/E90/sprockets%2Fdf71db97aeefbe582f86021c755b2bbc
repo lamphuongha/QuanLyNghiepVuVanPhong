@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989026.815:@expires_in0:@value"c{"
+class"ProcessedAsset"logical_path"+MathJax/jax/input/MathML/entities/p.js"pathname"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/p.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÔ"digest"%b8595eed79dd6c45f5da32ccb3ea13f4"source"Ô/*
+ *  ../SourceForge/trunk/mathjax/jax/input/MathML/entities/p.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['(function(a){MathJax.Hub.Insert(a.Parse.Entity,{Pcy:"\\u041F",Poincareplane:"\\u210C",Pr:"\\u2ABB",Prime:"\\u2033",Proportion:"\\u2237",par:"\\u2225",para:"\\u00B6",parallel:"\\u2225",parsim:"\\u2AF3",parsl:"\\u2AFD",part:"\\u2202",pcy:"\\u043F",percnt:"\\u0025",permil:"\\u2030",perp:"\\u22A5",pertenk:"\\u2031",phmmat:"\\u2133",phone:"\\u260E",pitchfork:"\\u22D4",planck:"\\u210F",planckh:"\\u210E",plankv:"\\u210F",plus:"\\u002B",plusacir:"\\u2A23",plusb:"\\u229E",pluscir:"\\u2A22",plusdo:"\\u2214",plusdu:"\\u2A25",pluse:"\\u2A72",plusmn:"\\u00B1",plussim:"\\u2A26",plustwo:"\\u2A27",pm:"\\u00B1",pointint:"\\u2A15",pound:"\\u00A3",pr:"\\u227A",prE:"\\u2AB3",prcue:"\\u227C",pre:"\\u2AAF",prec:"\\u227A",precapprox:"\\u2AB7",preccurlyeq:"\\u227C",preceq:"\\u2AAF",precsim:"\\u227E",primes:"\\u2119",prnE:"\\u2AB5",prnap:"\\u2AB9",prnsim:"\\u22E8",prod:"\\u220F",profalar:"\\u232E",profline:"\\u2312",profsurf:"\\u2313",prop:"\\u221D",propto:"\\u221D",prsim:"\\u227E",prurel:"\\u22B0",puncsp:"\\u2008"});MathJax.Ajax.loadComplete(a.entityDir+"/p.js")})(MathJax.InputJax.MathML);']
+]);
+
+"dependency_digest"%59a8538a654678729ea9c62e2072f8b4"required_paths["H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/p.js"dependency_paths[{"	path"H$root/app/assets/javascripts/MathJax/jax/input/MathML/entities/p.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%9974be4a05b9a9ca083bad1158278210"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,141 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155583.265:@expires_in0:@value"G	{"
+class"ProcessedAsset"logical_path"blueprint/default_view.css"pathname"<$root/app/assets/stylesheets/blueprint/default_view.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthiö"digest"%fe208a947a1ba0b7c1d9fca1e04e44b4"source"öDIV#navigation 
+{
+	float: left; 
+	border: 1px solid #455A65; 
+
+	background:url(../images/main_nav.png) repeat-x;
+	overflow:hidden;
+	bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+DIV#navigation UL
+{ 
+	position: relative; 
+	list-style: none; 
+	float: left; 
+	background: #DDDEDA; 
+	padding: 0px;
+	margin: 0px; 
+}
+
+
+DIV#navigation UL LI
+{ 
+	position: relative; 
+	float: left; 
+	padding: 3px; 
+}
+
+DIV#navigation UL LI A 
+{ 
+	text-decoration: none; 
+	width: 1px;
+	white-space: nowrap; 
+	text-align: center; 
+	padding: 3px 5px 3px 5px; 
+	display: block; 
+	color: #000; 
+}
+
+DIV#navigation UL LI>A 
+{ 
+	width:auto ; 
+}
+
+DIV#navigation UL LI A:hover 
+{ 
+	text-decoration: underline; 
+}
+
+
+DIV#navigation UL UL.default 
+{ 
+	text-align: left; 
+	width: 170px; 
+	display: none; 
+	margin-top: 4px; 
+	position: absolute; 
+	left: -3px; 
+	top: 30px;
+	padding: 0px; 
+}
+
+DIV#navigation UL UL.default LI 
+{ 
+	position: relative; 
+	padding: 0px;
+	margin: 0px; 	
+
+}
+
+DIV#navigation UL UL.default A 
+{ 
+	height: auto;
+	text-align: left; 
+	white-space: normal; 
+	display: block;
+	
+	padding: 5px; 
+	margin: 0px; 
+	
+	/* 
+	we have 7px padding therefore width is 163 instead of 170.
+	in IE 5.5 this doesn't work. 
+	*/ 
+	width: 160px; 	
+}
+
+DIV#navigation UL UL.default A:hover 
+{ 
+	position:relative;
+	background: #6F8D9D; 
+}
+
+DIV#navigation UL UL.default UL
+{ 
+	margin: -30px 0px 0px 175px; 
+	position: absolute; 
+}  
+
+
+
+DIV#navigation UL UL.information 
+{ 
+	text-align: left; 
+	width: 350px; 
+	display: none; 
+	margin-top: 4px; 
+	position: absolute; 
+	left: -3px; 
+	top: 30px;
+	padding: 0px; 
+}
+
+DIV#navigation UL UL.information P 
+{ 
+	padding: 0px; 
+	margin: 3px 0px 0px 0px; 
+}
+
+
+DIV#navigation UL UL.information A
+{
+	color: blue; 
+}
+
+LI.marked 
+{ 
+	background: #ccc; 
+}
+
+LI.unmarked 
+{
+	background: none; 
+}
+
+"dependency_digest"%7c8a86172bae585146e60af7bee912f1"required_paths["<$root/app/assets/stylesheets/blueprint/default_view.css"dependency_paths[{"	path"<$root/app/assets/stylesheets/blueprint/default_view.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%f7cc9417b342b8d9d99ac7bdaeaaffc6"_version"%aa7d0db7619379e13b08335dee027df2

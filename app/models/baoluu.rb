@@ -3,8 +3,9 @@ class Baoluu < ActiveRecord::Base
   has_many :chitietbaoluus
   has_many :sinhviens, :through => :chitietbaoluus
   
-  validates_presence_of :MaBaoLuu, :TenBaoLuu, :congvan_id, :HocKy, :NamHoc
-  validates_uniqueness_of :MaBaoLuu
+  validates_presence_of :MaBaoLuu, :TenBaoLuu, :congvan_id, :HocKy, :NamHoc, :message => "không được trống"
+ 
+  validates_uniqueness_of :MaBaoLuu, :message => "đã tồn tại"
   
   cattr_reader :per_page
   @@per_page = 20

@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989010.356:@expires_in0:@value"Å{"
+class"ProcessedAsset"logical_path"EMathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js"pathname"b$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-07-26T02:34:52+07:00"lengthiÎ"digest"%dd9fc3c2c77a650cf41f6a9da078b8c4"source"Î/*
+ *  /MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.OutputJax["HTML-CSS"].','defineImageData({MathJax_AMS:{8245:[[2,4,0],[3,5,0],[3,5,0],[3,6,-1],[4,7,-1],[5,9,-1],[5,10,-1],[6,12,-1],[7,15,-1],[9,17,-1],[10,20,-2],[12,24,-2],[14,29,-2],[17,34,-3]]}});MathJax.Ajax.loadComplete(',0,'imgDir+"/AMS/Regular"+',0,'imgPacked+"/GeneralPunctuation.js");']
+]);
+
+"dependency_digest"%9b80131abf1c89766078680eab7e7931"required_paths["b$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js"dependency_paths[{"	path"b$root/app/assets/javascripts/MathJax/fonts/HTML-CSS/TeX/png/AMS/Regular/GeneralPunctuation.js"
+mtime"2010-07-26T02:34:52+07:00"digest"%105b9546681a4a375aa50d6a07269f49"_version"%aa7d0db7619379e13b08335dee027df2

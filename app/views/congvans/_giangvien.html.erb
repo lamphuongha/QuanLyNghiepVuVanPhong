@@ -1,0 +1,21 @@
+ <table>
+            <tr>
+              
+            <% @giangviens.in_groups(3, false) do |giangviens| %>
+              <td>
+               
+                <% giangviens.each do |giangvien| %>
+                    <input type="checkbox"
+                         id="<%= giangvien.id %>s"
+                         name="giangvien_ids[]"
+                         value="<%= giangvien.id %>"
+                         <% if @congvan.giangviens.include? giangvien%>checked="checked"<%end%>
+                         ><%= giangvien.HoTenGV %>
+                              <%= link_to image_tag('sendmail.png',:style=>'height:1.2em;width:2em;'), {:action=>"send_mail",:id => giangvien.id}, {:remote => true} %><br />
+                          
+                  <% end %>
+                </td>
+              <% end %>
+            </tr>
+                
+         </table>  

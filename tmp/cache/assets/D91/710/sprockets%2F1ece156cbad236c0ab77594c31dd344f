@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989040.858:@expires_in0:@value"…{"
+class"ProcessedAsset"logical_path"CMathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/Other.js"pathname"`$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/Other.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi–"digest"%945a3d5bac47146e72bae8ca439f4ed8"source"–/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/Other.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS.MathJax_Fraktur,{160:[0,0,250,0,0],8216:[708,-410,215,45,158],8217:[692,-395,215,49,163]});MathJax.Ajax.loadComplete',1,'fontDir+"/Fraktur/Regular/Other.js");']
+]);
+
+"dependency_digest"%4793c532e44a0508075eed108bdf0703"required_paths["`$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/Other.js"dependency_paths[{"	path"`$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/TeX/Fraktur/Regular/Other.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%86cf62ae7b4ca66773e0380c37e5ac90"_version"%aa7d0db7619379e13b08335dee027df2

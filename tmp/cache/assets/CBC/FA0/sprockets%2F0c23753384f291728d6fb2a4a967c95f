@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989008.923:@expires_in0:@value"Y{"
+class"ProcessedAsset"logical_path"'MathJax/extensions/TeX/autobold.js"pathname"D$root/app/assets/javascripts/MathJax/extensions/TeX/autobold.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthiÚ"digest"%ba3c8711774b6d72aa5e5c9a9cfd0f45"source"Ú/*
+ *  ../SourceForge/trunk/mathjax/extensions/TeX/autobold.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.','Hub.Register.StartupHook("TeX Jax Ready",function(){var b="1.0";var c=',0,'InputJax.TeX;var a=','c.prefilterMath',';',4,'=function(g,h,e){var f=e.parentNode.insertBefore(document.createElement("span"),e);f.visibility="hidden";f.style.fontFamily="Times, serif";f.appendChild(document.createTextNode("ABCXYZabcxyz"));var d=f.offsetWidth;f.style.fontWeight="bold";if(f.offsetWidth==d){g="\\\\bf {"+g+"}"}f.parentNode.removeChild(f);return a.call(c,g,h,e)};',0,'Hub.Startup.signal.Post("TeX autobold Ready")});',0,'Ajax.loadComplete("[MathJax]/extensions/TeX/autobold.js");']
+]);
+
+"dependency_digest"%39e9c50d577238acf66ec6388e0c3a4e"required_paths["D$root/app/assets/javascripts/MathJax/extensions/TeX/autobold.js"dependency_paths[{"	path"D$root/app/assets/javascripts/MathJax/extensions/TeX/autobold.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%177230a216132ea9ba74afafde3a2406"_version"%aa7d0db7619379e13b08335dee027df2

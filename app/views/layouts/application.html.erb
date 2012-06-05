@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>QuanLyCongVan</title>
-  <%= stylesheet_link_tag    "application", "marqueeimg","jquery-ui", :media => "all" %>
+  <title>Quản lý nghiệp vụ văn phòng</title>
+  <%= stylesheet_link_tag    "application", "marqueeimg","jquery-ui",'token-input', :media => "all" %>
   <%= javascript_include_tag :all%>
-  <%= javascript_include_tag "application","jcarousellite_1.0.1.min","general","jquery-1.2.6.min","jquery.bgpos","slideshow.js","flashobject","ddaccordion","jquery.filestyle.js","sorttable-small","jquery-ui.min","jquery.min",'rails','jquery-latest'%>
+  <%= javascript_include_tag "application","jcarousellite_1.0.1.min","general","jquery-1.2.6.min","jquery.bgpos","slideshow.js","flashobject","ddaccordion","jquery.filestyle.js","sorttable-small","jquery-ui.min","jquery.min",'rails','jquery-latest','jquery.tokeninput'%>
   
   <%= csrf_meta_tags %>
 
@@ -20,6 +20,29 @@
     }
 
   </style>
+  
+  
+  
+  <!--Nguoi lien quan-->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+      $(this).show();
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#congvan_giangvien_tokens').tokenInput('/giangviens.json', { crossDomain: false });
+    });
+  </script>
+  
+  
+  <!--End Nguoi lien quan-->
+ 
   <script type="text/javascript">
   $(".checkbox").click(function(){
 
@@ -27,6 +50,151 @@
 
 });​
   </script>
+ <!--statistics--> 
+<script type="text/javascript">
+  $(function(){
+   $('.statistic .tkcv').click(function(){
+      
+      $('.statistic .tkcongvan').show();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkgv').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').show();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tksv').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').show();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkdrl').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').show();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkhb').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').show();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tktc').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').show();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tknt').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').show();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkngt').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').show();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkbl').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').show();
+      $('.statistic .tkbuocthoihoc').hide();
+      return false;
+   });
+   $('.statistic .tkbth').click(function(){
+      
+      $('.statistic .tkcongvan').hide();
+      $('.statistic .tkgiangvien').hide();
+      $('.statistic .tksinhvien').hide();
+      $('.statistic .tkdiemrenluyen').hide();
+      $('.statistic .tkhocbong').hide();
+      $('.statistic .tktrocap').hide();
+      $('.statistic .tknoitru').hide();
+      $('.statistic .tkngoaitru').hide();
+      $('.statistic .tkbaoluu').hide();
+      $('.statistic .tkbuocthoihoc').show();
+      return false;
+   });
+});
+  </script>  
 <!--hide-->  
 <script type="text/javascript">
   $(function(){
@@ -260,7 +428,6 @@ return true;
                               </ul>
                             </li>-->
                             
-                            <li><%= link_to 'Thêmcông văn','/congvans/new',:style=>"color:#000" %></li>
                             <li><%= link_to 'Danh sách công văn','/congvans',:style=>"color:#000" %></li>
                             <li>
                                 <%= link_to "Công văn đến",:style=>"color:#000", :action => "../congvans/search", :loai =>'true'%> 
@@ -284,7 +451,7 @@ return true;
                
                 <!-- GROUP: end -->
                   
-               
+ <!--              
                 <div class="menu-group" id="menu-ads">
                     <div id="top-menu"><h2>Liên kết quảng cáo</h2></div>
                     <div id="body-menu">
@@ -300,7 +467,7 @@ return true;
                     <div id="bottom-menu"></div>
                 </div>
                 <!-- GROUP: end -->
-               
+<!--               
                 <div class="menu-group" id="menu-overview">
                     <div id="top-menu"><h2>Thống kê</h2></div>
                     <div id="body-menu">
@@ -392,14 +559,14 @@ return true;
        <!--     ContentPlaceHolder : start -->  
    
                  
-
   <!-- Start: Main group -->
-<div class='group-cont'>
+<!--
+  <div class='group-cont'>
                 <div id="top-group"><h3></h3></div>
                 <div id="body-group">
                  <!-- Show: Noi bat -->
 						   
-                    <div class="items-cont" title='Tin tức noi bat'> 
+ <!--                   <div class="items-cont" title='Tin tức noi bat'> 
                     	<div class="title-items">Tin tức nổi bật</div>    
                         <div class="content-items" id='id-noibat'>	
                                 
@@ -426,7 +593,7 @@ return true;
                      
                     
                   <!-- end: Show product -->   
-                 </div>
+ <!--                </div>
                  <div id="bottom-group"></div>
  </div> 
  <!-- End: Main group 

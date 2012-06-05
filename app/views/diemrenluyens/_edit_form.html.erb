@@ -1,12 +1,13 @@
 <div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 85%; height: 80%; top: 7%; left: 7%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+       <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), diemrenluyens_path %>  
+          <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
    
     <%= form_for(@diemrenluyen) do |f| %>
       <% if @diemrenluyen.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@diemrenluyen.errors.count, "error") %> prohibited this diemrenluyen from being saved:</h2>
+          <h2><%= pluralize(@diemrenluyen.errors.count, "Lỗi") %> Lưu không thành công:</h2>
 
           <ul>
           <% @diemrenluyen.errors.full_messages.each do |msg| %>
@@ -72,7 +73,7 @@
   <div class="actions">
     <%= f.submit 'Lưu lại' %>
   </div>
-  <%= link_to 'Quay lại', diemrenluyens_path %>
+
   
 <% end %>
 <br />

@@ -1,0 +1,27 @@
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 80%; top: 7%; left: 8%; overflow: auto" align="center"> 
+    <div id="close" class="closebutton" align="right">
+    <%= link_to image_tag('closeit.png'),'/trangchu'%>
+    </div>
+  <%= form_tag lops_path,:remote => true, :method => 'get' do %>  
+     <fieldset style="width: 50%">
+        <legend>Lọc danh sách lớp</legend>
+      <%= text_field_tag :search, params[:search] %> 
+      
+      <%= submit_tag "Lọc", :name => nil %>
+       
+       </fieldset>
+    <%end%>
+<h1>Danh sách lớp</h1>
+ <div align="left">
+<%= link_to image_tag('new.png',:alt=>"Thêm lớp"), new_lop_path %> Thêm lớp
+ </div>
+<div id ="lops">
+        <%= render :partial => 'lop' %>
+      </div>
+      <script>
+      $(document).ready(function() {
+          $('.pagination a').attr('data-remote', 'true');
+      });</script>
+</div>  
+
+<div class="lock-screen" id="lock" style="display:block"></div>

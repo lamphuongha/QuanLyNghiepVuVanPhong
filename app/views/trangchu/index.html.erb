@@ -1,22 +1,54 @@
  <div class="items-cont" title='Tin tức noi bat'> 
-                    	<div class="title-items">Tin tức nổi bật</div>    
-                        <div class="content-items" id='id-noibat'>	
+                    	<div class="title-items">Đăng nhập vào hệ thống</div>    
+                        <div class="content-items" id='id-noibat' align="center">	
                                 
-                                <div class="carousel">
+                                <%#*<div class="carousel">%>
                                     
                                      
-                                  <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                                  <!--<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
                                     
                                       <a href="detail.aspx?id=SC001">» Mã: SC001</br><%=image_tag'hh6.jpg'%></a>           
                                       <a href="detail.aspx?id=SC005">» Mã: SC001 <%=image_tag'hh1.jpg'%></a>           
                                       <a href="detail.aspx?id=SE005">» Mã: SC001<%=image_tag'hh9.jpg'%></a>          
                                                                  
-                                  </marquee>
-                                                
-                                            
-                                       
+                                  </marquee>-->
+                                  <div style="background-color:#79b7e7; width: 80% " align="center" >
+                                  <%= form_tag trangchu_path do %>
+                                    <table>
+                                      <tr>
+                                        <td rowspan="5">
+                                          <%=image_tag'login.png',:style=>'height:10em;width:10em;'%>
+                                        </td>
+                                        <td><%= label_tag 'Email: ' %></td>
+                                        <td><%= text_field_tag :email, params[:email] %></td>
+                                      </tr>
+                                      <tr>
+                                        <td><%= label_tag 'Mật khẩu: ' %></td>
+                                        <td><%= password_field_tag :password %></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2" align="center" >
+                                        <%= link_to "Quên mật khẩu?", new_password_reset_path,:style => "color:#000;" %>
+                                        </td>  
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2"  align="center" >
+                                        <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+                                        <%= label_tag 'Ghi nhớ mật khẩu' %>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2"  align="center" >
+                                          <div class="actions"><%= submit_tag "Đăng nhập" %></div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    
+                                  <% end %>
                                     
                                     <div class="clear"></div>   
-                                </div>
+                                <%#*</div>%>
+                                  </div>  
+                                  
                           </div>
 </div>

@@ -1,0 +1,15 @@
+<p>
+    Kết quả thống kê có <%= @congvans.size %> công văn <br />
+    Trong đó: <br />
+    <% den =0%>
+    <% di =0%>
+    <% for i in @congvans %>
+      <%if i.nhomloaicv_id == 1%>
+          <% den = den +1 %>
+      <% else %>
+          <% di = di +1 %>
+      <% end %>    
+    <% end %>
+    Số công văn đến: <%= den %> công văn <br />
+    Số công văn đi: <%= di %> công văn
+</p>

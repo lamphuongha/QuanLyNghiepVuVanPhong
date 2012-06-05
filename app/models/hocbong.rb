@@ -4,9 +4,9 @@ class Hocbong < ActiveRecord::Base
   has_many :chitiethocbongs
   has_many :sinhviens, :through => :chitiethocbongs
   
-  validates_presence_of :MaHocBong, :TenHocBong, :loaihocbong_id, :congvan_id, :NoiCap, :HocKy, :NgayLap, :NamHoc
-  validates_uniqueness_of :MaHocBong
-  
+  validates_presence_of :MaHocBong, :TenHocBong, :loaihocbong_id, :congvan_id, :NoiCap, :HocKy, :NgayLap, :NamHoc, :message =>"không được trống"
+  validates_uniqueness_of :MaHocBong,:message => "đã tồn tại"
+
   cattr_reader :per_page
   @@per_page = 20
   

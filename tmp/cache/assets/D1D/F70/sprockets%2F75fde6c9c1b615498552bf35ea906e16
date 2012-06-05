@@ -1,0 +1,23 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1332989030.811:@expires_in0:@value"ì{"
+class"ProcessedAsset"logical_path"TMathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/GeneralPunctuation.js"pathname"q$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/GeneralPunctuation.js"content_type"application/javascript"
+mtime"2010-08-10T15:06:42+07:00"lengthi¹"digest"%b1bb85cd37c8009d47be1c8eb2fc3d8e"source"¹/*
+ *  ../SourceForge/trunk/mathjax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/GeneralPunctuation.js
+ *  
+ *  Copyright (c) 2010 Design Science, Inc.
+ *
+ *  Part of the MathJax library.
+ *  See http://www.mathjax.org for details.
+ * 
+ *  Licensed under the Apache License, Version 2.0;
+ *  you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ */
+
+
+MathJax.Unpack([
+  ['MathJax.Hub.Insert','(MathJax.OutputJax["HTML-CSS"].','FONTDATA.FONTS["STIXGeneral-bold-italic"],{8208',':[282,-166,333,-4,273],','8209',3,'8210:[282,-166',',500,-40,477],','8211:[269,-178',7,'8212:[269,-178,1000,-40,977],8216',':[685,-369,','333,128,','332],8217',11,'333,98,302],8218:[134,182,333,-5,199],8219',11,12,'302],8220',11,'500,53,513],','8221',11,20,'8222:[134,182,500,-57,403],8223',11,'500,92,513],8224:[685,145,500,91,494],8225:[685,139,500,10,493],8226:[462,-42,560,70,490],8230:[135,13,1000,40,852],8240:[706,29,1118,80,1068],8241:[706,29,1480,80,1430],8249',':[415,-32,333,','32,303],8250',27,'10,281],8254:[637,-565,500,0,500],8260:[688,12,183,-168,345]});MathJax.Ajax.loadComplete',1,'fontDir+"/General/BoldItalic/GeneralPunctuation.js");']
+]);
+
+"dependency_digest"%6f84f79287f7cc8306ff17f0039d9991"required_paths["q$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/GeneralPunctuation.js"dependency_paths[{"	path"q$root/app/assets/javascripts/MathJax/jax/output/HTML-CSS/fonts/STIX/General/BoldItalic/GeneralPunctuation.js"
+mtime"2010-08-10T15:06:42+07:00"digest"%3cbfe3c3c80d18e28f083fe7c81ff477"_version"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,146 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1337155587.034:@expires_in0:@value"×{"
+class"ProcessedAsset"logical_path"blueprint/vertical.css"pathname"8$root/app/assets/stylesheets/blueprint/vertical.css"content_type"text/css"
+mtime"2012-05-16T15:05:34+07:00"lengthi–"digest"%c28f973c2bbe94f1f3e957267f49132d"source"–DIV#navigation 
+{
+	float: left; 
+	border: 1px solid #455A65; 
+}
+
+
+DIV#navigation UL
+{ 
+	position: relative; 
+	list-style: none; 
+	padding: 0px; 
+	margin: 0px; 
+	background: #DDDEDA; 
+
+}
+
+DIV#navigation UL LI
+{ 
+	position: relative; 
+	padding: 5px; 
+}
+
+DIV#navigation UL LI A 
+{ 
+	text-decoration: none; 
+	width: 1px;
+	white-space: nowrap; 
+	padding: 3px 5px 3px 5px; 
+	display: block; 
+	color: #000; 
+}
+
+DIV#navigation UL LI>A {
+	width: auto; 
+}
+
+DIV#navigation UL LI A:hover 
+{ 
+	text-decoration: underline; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIV#navigation UL UL.default 
+{ 
+	margin: -30px 0px 0px 145px; 
+	text-align: left; 
+	width: 170px; 
+	display: none; 
+	margin-top: 4px; 
+	position: absolute; 
+	left: -3px; 
+	top: 0px;
+	padding: 0px; 
+}
+
+DIV#navigation UL UL.default LI 
+{ 
+	position: relative; 
+	padding: 0px;
+	margin: 0px; 	
+
+}
+
+DIV#navigation UL UL.default A 
+{ 
+	height: auto;
+	text-align: left; 
+	white-space: normal; 
+	display: block;
+	
+	padding: 5px; 
+	margin: 0px; 
+	
+	/* 
+	we have 7px padding therefore width is 163 instead of 170.
+	in IE 5.5 this doesn't work. 
+	*/ 
+	width: 160px; 	
+}
+
+DIV#navigation UL UL.default A:hover 
+{ 
+	position:relative;
+	background: #6F8D9D; 
+}
+
+DIV#navigation UL UL.default UL
+{ 
+	margin: 0px 0px 0px 175px; 
+	position: absolute; 
+}  
+
+
+DIV#navigation UL UL.information 
+{ 
+	margin: 0px 0px 0px 145px; 
+	text-align: left; 
+	width: 350px; 
+	display: none; 
+	margin-top: 4px; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px;
+	padding: 0px; 
+}
+
+DIV#navigation UL UL.information P 
+{ 
+	padding: 0px; 
+	margin: 3px 0px 0px 0px; 
+}
+
+
+DIV#navigation UL UL.information A
+{
+	color: blue; 
+}
+
+LI.marked 
+{ 
+	background: #ccc; 
+}
+
+LI.unmarked 
+{
+	background: none; 
+}
+
+
+"dependency_digest"%177202cb414749f706a9e10ded86eabd"required_paths["8$root/app/assets/stylesheets/blueprint/vertical.css"dependency_paths[{"	path"8$root/app/assets/stylesheets/blueprint/vertical.css"
+mtime"2012-05-16T15:05:34+07:00"digest"%9db343c907a0ed831e72c53e4aac8049"_version"%aa7d0db7619379e13b08335dee027df2

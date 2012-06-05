@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@created_atf1330508074.732:@expires_in0:@value"{"
+class"StaticAsset"logical_path"top_menu_blue.png"pathname".$root/app/assets/images/top_menu_blue.png"content_type"image/png"
+mtime"2012-02-23T05:59:35+07:00"lengthiŒ"digest"%d21e6464852c78c15c186ce605702da1"_version"%aa7d0db7619379e13b08335dee027df2

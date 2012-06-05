@@ -1,8 +1,10 @@
-<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 55%; height: 65%; top: 15%; left: 20%;overflow: auto" align="center"> 
+<div id="login" class="login-cont" style="padding: 10px; margin: 10px; width: 80%; height: 65%; top: 15%; left: 8%;overflow: auto" align="center"> 
     <div id="close" class="closebutton" style="right: 10px" align="right">
-        <%= link_to image_tag('closex.jpg'),'/trangchu'%>
+      <%= link_to image_tag('back.png',:style=>'height:3em;width:3em;'), congvans_path %>  
+      <%= link_to image_tag('closeit.png'),'/trangchu'%>
     </div>
     <h1>Chi tiết công văn</h1>
+    <fieldset>
      <table width ="100%" align ="center" >  
       <tr>
         <td colspan="3">
@@ -10,18 +12,18 @@
         </td>
       </tr>
       <tr>
-        <td rowspan="10" width ="30%" align="center">
+        <td rowspan="12" width ="30%" align="center">
           <b>File đính kèm:</b>
           <br>
           <br>
           <% if @congvan.image? %>
           <%= image_tag @congvan.image.url %>
           <br>
-          <%= link_to @congvan.image_file_name,@congvan.image.url %>
+          <%= link_to @congvan.image_file_name,@congvan.image.url,:style => "color:#000" %>
           <% end %>
           
           <% for asset in @congvan.assets %>
-            <li> <%= link_to image_tag(asset.image.url(:thumb)), asset.image.url(:original)%> </li>
+            <li> <%= link_to image_tag(asset.image.url(:thumb)), asset.image.url(:original),:style => "color:#000"%> </li>
           <%end%>
         </td>
         <td align="left" width="20%"><b>Số công văn:</b></td>
@@ -88,14 +90,21 @@
       </tr>
       
       <tr>
-        <td align="right"><b>Công văn liên quan:</b></td>
-        <td colspan ="2">
+        <td><b>Công văn liên quan:</b></td>
+        <td>
           <% for nhomcv in @congvan.nhomcvs %>
             <%=nhomcv.TenNhomCV%>,
           <%end%>
         </td>
       </tr>
-      
+      <tr>
+        <td><b>Giảng viên liên quan:</b></td>
+        <td>
+          <% for giangvien in @congvan.giangviens %>
+            <%=giangvien.HoTenGV%>,
+          <%end%>
+        </td>
+      </tr>
       <tr>
         <td align="right"><b>Ghi Chú:</b></td>
         <td><%= @congvan.GhiChu %></td>
@@ -103,13 +112,14 @@
       
       <tr>
         <td colspan="3" align="center">
-            <%= link_to 'Sửa', edit_congvan_path(@congvan) %> | 
-        
-            <%= link_to 'Quay lại', congvans_path %> |
-            <%= link_to 'Thêm công văn', :action => 'new' %>
+            <%= link_to image_tag('edit.png'), edit_congvan_path(@congvan) %> | 
+
+            <%= link_to image_tag('new.png',:alt=>"Thêm công văn"), :action => 'new' %>
         </td>
     </tr>
      </table>
-  
+  </fieldset>
+    <br />
+    <br />
 </div>    
 <div class="lock-screen" id="lock" style="display:block"></div>
